@@ -1,0 +1,544 @@
+# ::id b-salah-darat-json.1
+# ::snt-type body
+# ::preferred
+# ::tok Kantor Imigrasi Bandara Soekarno-Hatta bersama Kantor Otoritas Bandara Soekarno-Hatta dan PT Angkasa Pura II akan membahas insiden penumpang penerbangan pesawat Lion Air JT 161 yang tiba di Jakarta dari Singapura 10 Mei 2016, yang keluar melalui Terminal 1 Domestik tanpa melalui pemeriksaan Imigrasi.
+# ::alignments 15-16|0 0-1|0.0 16-19|0.2 
+(b / bahas-01
+    :ARG0 (K / Kantor Imigrasi Bandara Soekarno-Hatta
+        :accompanier (d / dan
+            :op1 (K2 / Kantor Otoritas Bandara Soekarno-Hatta)
+            :op2 (A / PT Angkasa Pura II)))
+    :topic (i / insiden 
+        (t / terbang-01 
+            :ARG0 (p / pesawat Lion Air JT-161)
+            :ARG1 (p2 / penumpang)
+            :ARG2 (t / tiba-01)
+                :destination (Jakarta)
+                :source (Singapura)
+                :time  (d / date-entity
+                    :year 2016
+                    :month 5
+                    :day 10)
+            :ARG3 (k / keluar-01
+                :ARG0 p
+                :path (Terminal 1 Domestik)
+                :path (p3 / periksa-01
+                    :ARG0 (i / imigrasi)
+                    :polarity -)))))
+
+# ::id b-salah-darat-json.2
+# ::snt-type body
+# ::preferred
+# ::tok Kami akan meeting soal ini," ujar Kepala Kantor Imigrasi Soekarno-Hatta Alif Suadi kepada Tempo, Sabtu malam ini, 14 Mei 2016.
+# ::alignments 2-3|0 0-1|0.0 3-4|0.1 2-3|0.2 3-6|0.2.1 
+(m / meeting-01
+    :ARG0 (K / Kami)
+    :ARG1 (s / soal)
+    :ARG2 (m / meeting-01
+        :ARG0 (i / ini,*objek_perubahan*Kami)
+        :ARG1 (s / soal ini," ujar)))
+
+# ::id b-salah-darat-json.3
+# ::snt-type body
+# ::preferred
+# ::tok Dalam tulisannya itu, anak temannya bernama Natalie berangkat dari Singapura dan menggunakan pesawat Lion Air JT 161, pada pukul 18.50.
+# ::alignments 7-8|0 0-2|0.0 2-6|0.1 8-10|0.2 11-12|0.3 12-13|0.3.0 17-20|0.3.1 
+(b / berangkat-01
+    :ARG0 (t / tulisannya Dalam)
+    :ARG1 (i / itu, anak temannya bernama)
+    :source (S / Singapura dari)
+    :ARG2 (g / guna-01
+        :ARG0 (p / pesawat)
+        :ARG1 (p / pukul pada 18.50.)))
+
+# ::id b-salah-darat-json.4
+# ::snt-type body
+# ::preferred
+# ::tok Sekretaris Perusahaan PT Angkasa Pura II Agus Haryadi juga mengatakan selaku pengelola Bandara Internasional Soekarno-Hatta, pihaknya akan berkoordinasi dengan Kantor Otoritas Bandara Wilayah I terkait dengan peristiwa ini.
+# ::alignments 9-10|0 0-4|0.0 11-12|0.1 17-18|0.2 19-20|0.2.0 18-19|0.2.0.0 24-25|0.2.1 18-19|0.2.1.0 26-28|0.2.1.0 
+(k / kata-01
+    :ARG0 (S / Sekretaris Perusahaan PT Angkasa)
+    :ARG1 (p / pengelola)
+    :ARG2 (k / koordinasi-01
+        :ARG0 (K / Kantor
+            :accompanier (d / dengan))
+        :ARG1 (k / kait-01
+            :ARG1 (p / peristiwa dengan ini.))))
+
+# ::id b-salah-darat-json.5
+# ::snt-type body
+# ::preferred
+# ::tok Agus mengatakan petugas Aviation Security Bandara Internasional Soekarno-Hatta yang mengetahui kesalahan prosedur ini lalu mengambil tindakan untuk mengarahkan penumpang ke jalur yang benar, yakni kembali ke bus untuk menuju kedatangan internasional Terminal 2 supaya penumpang melalui proses imigrasi.
+# ::alignments 1-2|0 0-1|0.0 2-3|0.1 14-15|0.2 15-16|0.2.0 
+(k / kata-01
+    :ARG0 (A / Agus)
+    :ARG1 (p / petugas)
+    :ARG2 (a / ambil-01
+        :ARG0 (t / tindakan mengarahkan)))
+
+# ::id b-salah-darat-json.6
+# ::snt-type body
+# ::preferred
+# ::tok "Untuk setiap pesawat yang parkir di remote area sudah kami siapkan bus untuk mengantar penumpang ke terminal.
+# ::alignments 0-1|0 10-11|0.0 1-3|0.0.1 11-12|0.0.1 13-14|0.0.2 12-13|0.0.2.0 14-15|0.0.2.1 15-17|0.0.2.2 
+(o / objek ubah untuk-01
+    :ARG1 (s / siap-01
+        :ARG1 (p / pesawat setiap parkir)
+        :ARG0 (b / bus)
+        :ARG2 (a / antar-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / penumpang)
+            :destination (t / terminal. ke))))
+
+# ::id b-salah-darat-json.7
+# ::snt-type body
+# ::preferred
+# ::tok Apa yang terjadi adalah terdapat salah satu sopir bus yang akan menjemput penumpang dari Padang dan mengira bahwa penumpang JT 161 adalah dari Padang dan membawa penumpang ke terminal 1B," ujar Edward.
+# ::alignments 4-5|0 0-1|0.0 7-8|0.1 
+    (d / dan
+        :op1 (j / jemput-01
+            :ARG0 (s / sopir bus)
+            :ARG1 (p / penumpang
+                :source (p2 / Padang)))
+        :op2 (k / kira-01
+            :topic (d
+                :op1 (a / adalah-01
+                    :ARG0 p
+                    :source (p2 /Padang)
+                :op2 (b / bawa-01
+                    :ARG0 s
+                    :ARG1 (p)
+                    :destination (terminal 1B))))))
+
+# ::id b-salah-darat-json.8
+# ::snt-type body
+# ::preferred
+# ::tok "Akibat laporan masyarakat ini, besok tanggal 15 Mei, pihak Otoritas Bandara Soetta akan memanggil pihak-pihak terkait dan dilakukan investigasi.
+# ::alignments 13-14|0 0-1|0.0 1-4|0.0.0 14-16|0.1 
+(p / panggil-01
+    :ARG0 (* / *objek_perubahan*"Akibat
+        :time (l / laporan masyarakat ini,))
+    :ARG1 (p / pihak-pihak terkait))
+
+# ::id b-salah-darat-json.9
+# ::snt-type body
+# ::preferred
+# ::tok Kemenhub akan memberikan sanksi kepada pihak-pihak yang lalai," ujarnya.
+# ::alignments 2-3|0 0-1|0.0 2-6|0.1 
+(u / ujar-01
+    :ARG0 (d / dia)
+    :ARG1 ("Kemenhub akan memberikan sanksi kepada pihak-pihak yang lalai,"))
+
+# ::id b-salah-darat-json.10
+# ::snt-type body
+# ::preferred
+# ::tok Pesawat itu mendarat tidak di Terminal II sebagaimana lazimnya kedatangan dari luar negeri, melainkan pesawat mendarat di Terminal I, terminal domestik, kata Zara mengutip cerita temannya.
+# ::alignments 2-3|0 0-2|0.0 3-4|0.1 5-7|0.2 2-3|0.3 9-10|0.3.0 8-9|0.3.0.0 10-13|0.3.0.0 14-15|0.3.1 5-6|0.3.0 18-20|0.3.2 23-24|0.3.3 24-26|0.3.3.0 
+(d / darat-01
+    :ARG0 (P / Pesawat itu)
+    :ARG1 (t / tidak)
+    :location (T / Terminal II)
+    :ARG2 (d / darat-01
+        :ARG0 (k / kedatangan
+            :ARG2 (l / lazim luar dari negeri-01))
+        :ARG1 (p / pesawat)
+        :location (T / Terminal I, terminal)
+        :ARG2 (k / kutip-01
+            :ARG0 (c / cerita temannya.))))
+
+# ::id b-salah-darat-json.11
+# ::snt-type body
+# ::preferred
+# ::tok "Untuk setiap pesawat yang parkir di remote area sudah kami siapkan bus untuk mengantar penumpang ke terminal.
+# ::alignments 0-1|0 10-11|0.0 1-3|0.0.1 11-12|0.0.1 13-14|0.0.2 12-13|0.0.2.0 14-15|0.0.2.1 15-17|0.0.2.2 
+(o / objek ubah untuk-01
+    :ARG1 (s / siap-01
+        :ARG1 (p / pesawat setiap parkir)
+        :ARG0 (b / bus)
+        :ARG2 (a / antar-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / penumpang)
+            :destination (t / terminal. ke))))
+
+# ::id b-salah-darat-json.12
+# ::snt-type body
+# ::preferred
+# ::tok Apa yang terjadi adalah terdapat salah satu supir bus yang akan menjemput penumpang dari Padang dan mengira bahwa penumpang JT 161 adalah dari Padang dan membawa penumpang ke terminal 1B", kata Edward dalam keterangan yang diterima, Sabtu *(14/5/2016)*.
+# ::alignments 4-5|0 0-1|0.0 7-8|0.1 
+(d / dan
+    :op1 (j / jemput-01
+        :ARG0 (s / sopir bus)
+        :ARG1 (p / penumpang
+            :source (p2 / Padang)))
+    :op2 (k / kira-01
+        :topic (d
+            :op1 (a / adalah-01
+                :ARG0 p
+                :source (p2 /Padang)
+            :op2 (b / bawa-01
+                :ARG0 s
+                :ARG1 (p)
+                :destination (terminal 1B))))))
+
+# ::id b-salah-darat-json.13
+# ::snt-type body
+# ::preferred
+# ::tok "Kemudian, beliau kembali ke remote 56, dapat informasi awal akan ada landing dari Padang.
+# ::alignments 2-3|0 0-1|0.0 1-2|0.1 4-6|0.1 
+(k / kembali-01
+    :ARG1 (* / *objek_perubahan*"Kemudian,)
+    :ARG0 (b / beliau)
+    :destination (r / remote 56, informasi))
+
+# ::id b-salah-darat-json.14
+# ::snt-type body
+# ::preferred
+# ::tok Namun, Edward menambahkan penumpang JT 161 langsung diarahkan kembali ke bus untuk dibawa ke Terminal 2 setelah petugas menyadari telah terjadi kesalahan.
+# ::alignments 2-3|0 0-2|0.0 3-6|0.2 
+(a / arah-01
+    :ARG0 (p / penumpang JT 161)
+    :destination (b / bus)
+        :purpose (b2 / bawa
+            :destination (t / terminal 2))
+    :time (s / setelah
+        :op1 (s / sadar-01
+            :ARG0 (p2 / petugas)
+            :ARG2 (terjadi kesalahan))))
+
+# ::id b-salah-darat-json.15
+# ::snt-type body
+# ::preferred
+# ::tok "Pada saat JT 161 parkir di R54 terdapat pula JT lain dari Padang yang parkir di R56.
+# ::alignments 7-8|0 0-1|0.0 2-3|0.0 
+(d / dapat-01
+    :ARG1 (* / *objek_perubahan*"Pada)
+    :ARG0 (J / JT parkir))
+
+# ::id b-salah-darat-json.16
+# ::snt-type body
+# ::preferred
+# ::tok "Ketika penumpang melalui pintu menjelang baggage claim di terminal IB, petugas avsec melihat penumpang bingung kemudian ditanya dan mereka menyatakan baru landing dari Singapura, kemudian oleh petugas avsec para penumpang diminta kembali ke airside dan naik bus untuk dibawa ke Terminal II," katanya, dalam rilis yang diterima Republika.co.id, Sabtu *(14/5)*.
+# ::alignments 12-13|0 0-1|0.0 1-2|0.0 
+(k / kata-01
+    :ARG1 (" / "Ketika penumpang melalui pintu menjelang baggage claim di terminal IB, petugas avsec melihat penumpang bingung kemudian ditanya dan mereka menyatakan baru landing dari Singapura, kemudian oleh petugas avsec para penumpang diminta kembali ke airside dan naik bus untuk dibawa ke Terminal II,"))
+
+# ::id b-salah-darat-json.17
+# ::snt-type body
+# ::preferred
+# ::tok Pesawat Lion Air JT 161 dari Singapura yang mendarat di Bandara Soekarno Hatta, Banten, pada Selasa *(10/5)* dilaporkan menurunkan penumpang tanpa melalui terminal imigrasi.
+# ::alignments 17-18|0 0-1|0.0 6-7|0.0.0 16-17|0.1 18-19|0.2 19-20|0.2.0 20-24|0.2.1 
+(l / lapor-01
+    :ARG1 (P / Pesawat Lion
+        :source (S / Singapura mendarat))
+    :ARG0 (* / *(10/5)*)
+    :ARG2 (t / turun-01
+        :ARG0 (p / penumpang)
+        :ARG1 (t / terminal tanpa melalui imigrasi.)))
+
+# ::id b-salah-darat-json.18
+# ::snt-type body
+# ::preferred
+# ::tok Penyebabnya, si sopir disebut melakukan kesalahan menurunkan sebagian penumpang Lion Air JT 161 rute Singapura-Jakarta, yang seharusnya diantar ke Terminal Internasional malah ke Terminal Domestik.
+# ::alignments 3-4|0 0-3|0.0 6-7|0.1 7-10|0.1.0 
+(s / sebut-01
+    :ARG1 (P / Penyebabnya, sopir si)
+    :ARG0 (t / turun-01
+        :ARG0 (p / penumpang sebagian Lion)))
+
+# ::id b-salah-darat-json.19
+# ::snt-type body
+# ::preferred
+# ::tok Sebelumnya, beredar di media sosial Zara menceritakan anak rekannya yang terbang dari Singapura menuju Jakarta, ketika tiba di Bandara Soekarno-Hatta tidak diarahkan ke Terminal II seperti lazimnya kedatangan luar negeri.
+# ::alignments 1-2|0 0-1|0.0 2-6|0.1 6-7|0.2 7-9|0.2.1 10-11|0.2.2 
+(e / edar-01
+    :ARG0 (S / Sebelumnya,)
+    :ARG1 (m / media di sosial Zara)
+    :ARG2 (c / cerita-01
+        :ARG0 (a / anak rekannya terbang menuju)))
+
+# ::id b-salah-darat-json.20
+# ::snt-type body
+# ::preferred
+# ::tok Pesawat ini mendarat tidak di terminal II sebagaimana lazimnya kedatangan dari luar negeri melainkan pesawat mendarat di terminal I, terminal domestik.
+# ::alignments 2-3|0 0-2|0.0 3-4|0.1 5-7|0.2 2-3|0.3 9-10|0.3.0 8-9|0.3.0.0 10-13|0.3.0.0 14-15|0.3.1 
+(d / darat-01
+    :ARG0 (P / Pesawat ini)
+    :ARG1 (t / tidak)
+    :location (t / terminal II)
+    :ARG2 (d / darat-01
+        :ARG0 (k / kedatangan
+            :ARG2 (l / lazim luar dari negeri-01))
+        :ARG1 (p / pesawat)))
+
+# ::id b-salah-darat-json.21
+# ::snt-type body
+# ::preferred
+# ::tok Kala itu, sejumlah penumpang Lion Air JT 161 tujuan Singapura-Jakarta yang seharusnya turun di terminal kedatangan internasional di Terminal 2 malah dibawa ke terminal domestik di Terminal 1 oleh bus ground handling Lion Air.
+# ::alignments 21-22|0 0-1|0.0 14-15|0.0 22-23|0.1 18-19|0.0 
+(b / bawa-01
+    :ARG1 (K / Kala)
+    :ARG0 (t / terminal ke domestik)
+    :location (T / Terminal 1))
+
+# ::id b-salah-darat-json.22
+# ::snt-type body
+# ::preferred
+# ::tok Insiden salah mendarat Pesawat Lion Air dengan penerbangan internasional di Terminal Domestik Bandara Soekarno-Hatta, Tangerang, Banten berpotensi terjadinya penyelundupan.
+# ::alignments 2-3|0 0-2|0.0 3-4|0.1 7-9|0.1.1 16-17|0.2 15-16|0.2.0 18-19|0.2.1 
+(d / darat-01
+    :ARG0 (I / Insiden salah)
+    :ARG1 (P / Pesawat
+        :medium (p / penerbangan internasional Terminal))
+    :ARG2 (p / potensi-01
+        :ARG0 (B / Banten)
+        :ARG1 (p / penyelundupan.)))
+
+# ::id b-salah-darat-json.23
+# ::snt-type body
+# ::preferred
+# ::tok Seiring dengan insiden tersebut, Budi menuturkan pihaknya siap berkoordinasi dengan Kantor Otoritas Bandara Wilayah I Soekarni-Hatta, dan mendorong pihak ground handling untuk lebih meningkatkan tanggung jawabnya.
+# ::alignments 5-6|0 0-1|0.0 2-5|0.0.0 7-8|0.1 8-9|0.2 10-11|0.2.0 1-2|0.2.0.0 
+(t / tutur-01
+    :ARG0 (S / Seiring
+        :instrument (i / insiden tersebut, Budi))
+    :ARG1 (s / siap-01)
+    :ARG2 (k / koordinasi-01
+        :ARG0 (K / Kantor
+            :instrument (d / dengan))))
+
+# ::id b-salah-darat-json.24
+# ::snt-type body
+# ::preferred
+# ::tok Kala itu, sejumlah penumpang Lion Air JT 161 tujuan Singapura-Jakarta yang seharusnya turun di terminal kedatangan internasional di Terminal 2 malah dibawa ke terminal domestik di Terminal 1 oleh bus ground handling Lion Air.
+# ::alignments 21-22|0 0-1|0.0 14-15|0.0 22-23|0.1 18-19|0.0 
+(b / bawa-01
+    :ARG1 (K / Kala)
+    :ARG0 (t / terminal ke domestik)
+    :location (T / Terminal 1))
+
+# ::id b-salah-darat-json.25
+# ::snt-type body
+# ::preferred
+# ::tok Dari total 182 penumpang yang diantar ke gedung terminal menggunakan empat bus, satu bus di antaranya bukan diantarkan ke terminal kedatangan internasional, melainkan ke terminal kedatangan domestik di Terminal 1.
+# ::alignments 9-10|0 0-1|0.0 1-4|0.2 17-18|0.2 12-16|0.2.0 16-17|0.2.1 
+(g / guna-01
+    :ARG0 (D / Dari)
+    :ARG1 (t / total penumpang 182 diantar)
+    :ARG2 (a / antar-01
+        :ARG1 (b / bus satu antaranya di)
+        :ARG0 (b / bukan)))
+
+# ::id b-salah-darat-json.26
+# ::snt-type body
+# ::preferred
+# ::tok Seperti diketahui, pesawat Lion Air dari Singapura mendarat di bandara Soekarno-Hatta pada Rabu, 10 Mei malam lalu.
+# ::alignments 7-8|0 0-3|0.0 8-11|0.1 
+(d / darat-01
+    :ARG0 (p / pesawat Lion Air
+        :source (s / Singapura))
+    :location (b / bandara Soekarno-Hatta)
+    :time (d / date-entity
+        :month 5
+        :day 10
+        :weekday (r / rabu)))
+
+# ::id b-salah-darat-json.27
+# ::snt-type body
+# ::preferred
+# ::tok Semua instansi itu hendak memastikan berapa penumpang dari penerbangan internasional itu yang lolos dari pemeriksaan Imigrasi dan barang apa saja yang lolos dari pemeriksaan petugas Bea dan Cukai.
+# ::alignments 4-5|0 0-3|0.0 5-7|0.1 
+(p / pasti-01
+    :ARG0 (s / Semua instansi itu)
+    :ARG1 (d / dan
+        :op1 (l / lolos-01
+            :ARG0 (p2 / penumpang
+                :source (p3 / penerbangan internasional)
+                :quant (a / amr-unknown))
+            :source (p4 / pemeriksaan Imigras))
+        :op2 (l
+            :ARG0 (b / barang
+                :ARG2 a)
+            :source (p5 / pemeriksaan petugas Bea dan Cukai))))
+
+# ::id b-salah-darat-json.28
+# ::snt-type body
+# ::preferred
+# ::tok "Sebenarnya itu dari pihak Lion sudah mengakui ada kesalahan tersebut. Ini saya katakan, jarang terjadi kasus seperti ini terjadi," kata Prasetyo saaat dihubungi Liputan6.com, Jakarta, Sabtu *(14/5/2016)*.
+# ::alignments 22-23|0 0-1|0.0 21-22|0.1 23-25|0.2 
+(h / hubung-01
+    :ARG1 (* / *objek_perubahan* kata)
+    :ARG0 (s / saaat)
+    :weekday (L / Liputan6.com, Jakarta,))
+
+# ::id b-salah-darat-json.29
+# ::snt-type body
+# ::preferred
+# ::tok Apa yang terjadi adalah terdapat salah satu supir bus yang akan menjemput penumpang dari Padang dan mengira bahwa penumpang JT 161 adalah dari Padang dan membawa penumpang ke terminal 1B, kata Direktur Utama Lion Air, Edward Sirait, kepada VIVA.co.id, Minggu 15 Mei 2016.
+# ::alignments 4-5|0 0-1|0.0 7-8|0.1 
+(d / dan
+    :op1 (j / jemput-01
+        :ARG0 (s / sopir bus)
+        :ARG1 (p / penumpang
+            :source (p2 / Padang)))
+    :op2 (k / kira-01
+        :topic (d
+            :op1 (a / adalah-01
+                :ARG0 p
+                :source (p2 /Padang)
+            :op2 (b / bawa-01
+                :ARG0 s
+                :ARG1 (p)
+                :destination (terminal 1B))))))
+
+# ::id b-salah-darat-json.30
+# ::snt-type body
+# ::preferred
+# ::tok Setelah didera masalah penundaan penerbangan akibat pilot mogok terbang pekan lalu, giliran petugas layanan darat Lion Air salah mengantar penumpang rute internasional ke terminal domestik.
+# ::alignments 1-2|0 0-1|0.0 
+(s / salah-antar-01
+    :ARG0 (p / petugas layanan darat Lion Air)
+    :ARG1 (p2 / penumpang rute internasional
+        :direction (t / terminal domestik))
+    :time (s / setelah
+        :op1 (d / dera-01
+            :ARG1 (m / masalah penundaan penerbangan
+                :cause (m2 / mogok-terbang-01
+                    :ARG0 (p3 / pilot)
+                    :time (p4 / pekan lalu))))))
+
+# ::id b-salah-darat-json.31
+# ::snt-type body
+# ::preferred
+# ::tok Maskapai Lion Air kembali menjadi perbincangan publik.
+# ::alignments 4-5|0 0-3|0.0 5-7|0.1 
+(j / jadi-01
+    :ARG0 (M / Maskapai Lion Air)
+    :ARG1 (p / perbincangan publik))
+
+# ::id b-salah-darat-json.32
+# ::snt-type body
+# ::preferred
+# ::tok Hal ini terkait pada  10 Mei 2016, Lion Air dengan nomor penerbangan JT 161 tujuan Singapura - Cengkareng membawa 182 penumpang  landing pukul 19.20 dan diarahkan untuk parkir di remote area oleh Air Traffic Controller.
+# ::alignments 2-3|0 0-2|0.0 5-6|0.1 4-5|0.1.0 10-13|0.2 18-19|0.3 19-22|0.3.0 25-26|0.3.1 23-24|0.3.1.0 27-28|0.3.1.1 26-27|0.3.1.1.0 29-30|0.3.1.1.1 28-29|0.3.1.1.1.0 
+(k / kait-01
+    :ARG1 (H / Hal ini)
+    :ARG0 (M / Mei
+        :location (1 / 10 2016,))
+    :manner (n / nomor penerbangan JT)
+    :ARG2 (b / bawa-01
+        :ARG0 (p / penumpang 182 landing)
+        :ARG1 (a / arah-01
+            :ARG1 (1 / 19.20)
+            :ARG0 (p / parkir-01
+                :ARG1 (u / untuk)
+                :ARG0 (r / remote
+                    :location (d / di area))))))
+
+# ::id b-salah-darat-json.33
+# ::snt-type body
+# ::preferred
+# ::tok Sementara itu, Direktur Utama PT Angkasa Pura *(AP)* II Budi Karya Sumadi mengatakan insiden tersebut disebabkan adanya miskomunikasi di antara pengemudi bus ground handling Lion Air sehingga penumpang rute internasional justru diantar ke Terminal 1 yang merupakan terminal kedatangan domestik.
+# ::alignments 12-13|0 0-1|0.0 1-2|0.1 
+(k / kata-01
+    :ARG0 (D / Direktur Utama PT Angkasa Pura *(AP)* II Budi Karya Sumadi)
+    :ARG1 (i / insiden tersebut
+        :cause (a / ada-01
+            :ARG0 (m / miskomunikasi di antara pengemudi bus ground handling Lion Air
+                :cause (a2 / antar-01
+                    :ARG0 (p / penumpang rute internasional)
+                    :destination (t / terminal 1
+                        :ARG2 (r / rupa-01
+                            :ARG0 t
+                            :ARG1 (t2 / terminal kedatangan domestik))))))))
+
+# ::id b-salah-darat-json.34
+# ::snt-type body
+# ::preferred
+# ::tok Dia menambahkan jika nanti ditemukan ada kesalahan fatal dari hasil investigasi tersebut, setidaknya Lion Air akan mendapat teguran keras berupa penangguhan izin atau suspend *( izin rute bisa dibekukan)*.
+# ::alignments 1-2|0 0-1|0.0 4-5|0.1 2-3|0.1.0 
+(t / tambah-01
+    :ARG0 (D / Dia)
+    :ARG1 (t / temu-01
+        :ARG1 (j / jika)))
+
+# ::id b-salah-darat-json.35
+# ::snt-type body
+# ::preferred
+# ::tok Apakah situasi ini lazim? Penumpang penerbangan dari luar negeri mendarat di terminal domestik tanpa melewati pos integrasi. Jika ini lazim, tidakkah berpengaruh pada keamanan negara andai ada warga asing penyusup tanpa izin.
+# ::alignments 9-10|0 0-1|0.0 1-3|0.1 3-4|0.2 4-5|0.2.0 5-6|0.2.0.0 7-9|0.2.0.0 11-13|0.3 
+(d / darat-01
+    :ARG0 (A / Apakah)
+    :ARG1 (s / situasi ini)
+    :ARG2 (l / lazim-01
+        :ARG1 (P / Penumpang
+            :source (p / penerbangan luar negeri)))
+    :location (t / terminal domestik))
+
+# ::id b-salah-darat-json.36
+# ::snt-type body
+# ::preferred
+# ::tok "Anak saya dan penumpang warga asing tidak diarahkan oleh petugas ground crew Lion Air untuk cap paspor imigrasi yang seharusnya menjadi protokol wajib bagi Airlines yang berasal dari luar negeri
+# ::alignments 7-8|0 0-1|0.0 6-7|0.1 
+(a / arah-01
+    :ARG1 (* / *objek_perubahan*"Anak)
+    :ARG0 (t / tidak))
+
+# ::id b-salah-darat-json.37
+# ::snt-type body
+# ::preferred
+# ::tok Manajemen Lion Air mengakui 'lolosnya' ratusan penumpang Lion Air JT 0161 Singapura-Jakarta dari pemeriksaan keimigrasian di Terminal II Kedatangan Internasional Bandara Soekarno-Hatta pada 10 Mei 2016 lalu adalah kesalahan petugasnya.
+# ::alignments 3-4|0 0-3|0.0 4-5|0.1 
+(a / aku-01
+    :ARG0 (M / Manajemen Lion Air)
+    :ARG1 (r / rupa-01
+        :ARG0 (l / lolos-01
+            :ARG0 (p / penumpang Lion Air JT 0161 Singapura Jakarta
+                :quant ratusan)
+            :source (p / pemeriksaan keimigrasian
+                :location (t / Terminal II Kedatangan Internasional Bandara Soekarno-Hatta))
+            :time (d / date-entity
+                :year 2016
+                :month 5
+                :day 10))
+        :ARG1 (k / kesalahan petugasnya)))
+
+# ::id b-salah-darat-json.38
+# ::snt-type body
+# ::preferred
+# ::tok Zara menuliskan bahwa pesawat Lion Air JT 161 tersebut terbang dari Singapura pada 10 Mei 2016 pukul 18.50 WIB dan mendarat di Cengkareng pukul 19.35 WIB.
+# ::alignments 1-2|0 0-1|0.0 9-10|0.1 3-5|0.1.0 10-12|0.1.1 14-15|0.1.2 13-14|0.1.2.0 20-21|0.1.3 22-23|0.1.3.0 16-17|0.1.3.0.0 24-26|0.1.3.0.0 
+(t / tulis-01
+    :ARG0 (Z / Zara)
+    :ARG1 (t / terbang-01
+        :ARG1 (p / pesawat Lion)
+        :ARG0 (S / Singapura dari)
+        :month (M / Mei
+            :location (1 / 10 2016))
+        :ARG2 (d / darat-01
+            :ARG0 (C / Cengkareng
+                :location (p / pukul WIB. 19.35)))))
+
+# ::id b-salah-darat-json.39
+# ::snt-type body
+# ::preferred
+# ::tok Seorang pengguna media sosial Facebook bernama Zara Zetira berbagi informasi mengenai Lion Air JT 161 dari Singapura yang mendarat di Bandara Soekarno Hatta namun penumpangnya dibawa ke terminal domestik, dan tak lewat bagian imigrasi.
+# ::alignments 8-9|0 5-6|0.0 1-2|0.0.0 6-8|0.0.1 9-10|0.1 25-26|0.2 24-25|0.2.0 26-29|0.2.1 
+(b / bagi-01
+    :ARG0 (n / nama-01
+        :ARG0 (p / pengguna)
+        :ARG1 (Z / Zara Zetira))
+    :ARG1 (i / informasi)
+    :ARG2 (b / bawa-01
+        :ARG1 (p / penumpangnya)
+        :ARG0 (t / terminal ke domestik,)))
+
+# ::id b-salah-darat-json.40
+# ::snt-type body
+# ::preferred
+# ::tok Edward menambahkan bahwa setelah petugas menyadari bahwa telah terjadi kesalahan, maka penumpang JT 161 langsung diarahkan kembali ke bus untuk dibawa ke Terminal II.
+# ::alignments 1-2|0 0-1|0.0 5-6|0.1 3-5|0.1.0 
+(t / tambah-01
+    :ARG0 (E / Edward)
+    :ARG1 (s / sadar-01
+        :ARG0 (p / petugas setelah)))
+

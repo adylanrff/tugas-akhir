@@ -1,0 +1,97 @@
+(n / nyata-01
+    :ARG0 (S / Stasiun)
+    :ARG1 (g / gempa mengguncang))
+
+(l / lihat-01
+    :ARG0 (J / Jika)
+    :ARG1 (k / koordinat dari tersebut, kata))
+
+(r / rekomendasi-01
+    :ARG0 (k / kait-01
+        :ARG1 (h / hal itu, kata))
+    :ARG1 (j / jalan seluruh mendekati))
+
+(k / kata-01
+    :ARG0 (S / Sementara)
+    :ARG1 (K / Kepala Pusat Vulkanologi Mitigasi)
+    :ARG2 (r / rekam-01
+        :ARG1 (g / gempa terjadi)
+        :ARG0 (W / WIB 19.00--19.25)
+        :frequency (s / sebanyak 86 amplituda)))
+
+(l / laku-01
+    :ARG1 (P / Penutupan ini, lanjut dia,)
+    :ARG0 (t / tim-01
+        :ARG1 (l / lapangan di mengukur)))
+
+(r / rekomendasi-01
+    :ARG0 (k / kait-01
+        :ARG1 (h / hal itu, kata))
+    :ARG1 (j / jalan seluruh mendekati))
+
+(t / terjun-01
+    :ARG1 (B / Bibit,)
+    :ARG0 (p / pantau-01
+        :ARG0 (u / untuk)
+        :ARG1 (a / aktivitas Kawah Timbang)))
+
+(s / sebut-01
+    :ARG0 (D / Data dikeluarkan)
+    :ARG1 (g / gempa terasa))
+
+(t / tinggal-01
+    :ARG0 (p / pengungsi Sebagian desa)
+    :ARG1 (a / akibat gempa terjadi)
+    :weekday (S / Sabtu pada))
+
+(n / nyata-01
+    :ARG0 (S / Stasiun Geofisika)
+    :ARG1 (g / gempa mengguncang))
+
+(m / minta-01
+    :ARG0 (M / Menanggapi hal itu,)
+    :ARG1 (B / Bibit))
+
+(i / imbau-01
+    :ARG0 (G / Gubernur Jawa Tengah)
+    :ARG1 (B / Bibit Waluyo))
+
+(r / rekomendasi-01
+    :ARG0 (P / PVMBG)
+    :ARG1 (t / tutup-01
+        :ARG0 (u / untuk)))
+
+(k / kata-01
+    :ARG0 (S / Sementara)
+    :ARG1 (i / itu,)
+    :ARG2 (r / rekam-01
+        :ARG1 (g / gempa terjadi)
+        :ARG0 (W / WIB 19.00-19.25)
+        :frequency (s / sebanyak 86 amplituda)))
+
+(a / ada-01
+    :ARG1 (r / rumah satu rusak berat,))
+
+(d / deteksi-01
+    :ARG1 (d / dia, Menurut informasi didapat)
+    :ARG0 (a / akibat gempa semalam)
+    :polarity -)
+
+(k / kata-01
+    :ARG0 (s / staf))
+
+(d / deteksi-01
+    :ARG1 (d / dasar-01
+        :ARG1 (i / informasi
+            :source (P / Pusat Vulkanologi Mitigasi)))
+    :ARG0 (a / akibat gempa semalam)
+    :polarity -)
+
+(k / kata-01
+    :ARG0 (p / petugas)
+    :ARG1 (k / kebutuhan logistik pengungsi dibantu))
+
+(a / asa-01
+    :ARG1 (G / Gempa besar mengguncang)
+    :ARG0 (w / wilayah di Kabupaten Batang.))
+

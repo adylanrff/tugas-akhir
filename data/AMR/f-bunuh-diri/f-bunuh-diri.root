@@ -1,0 +1,117 @@
+(_ROOT_ / _ROOT_ (
+    (c / ciptadi-01
+        :ARG1 (* / *(54)* nekat dengan melompat))
+    (u / ungkap-01
+        :ARG1 (H / Hal tersebut)
+        :ARG0 (K / Kabag)
+        :ARG2 (d / damping-01
+            :ARG1 (K / Kasubag)
+            :ARG0 (t / temu-01
+                :ARG1 (M / Mapolrestabes di Bandung, Jumat)
+                :ARG0 (* / *(1/7/2016)*.))))
+    (k / kata-01
+        :ARG0 (R / Rezha Noviana)
+        :ARG1 (* / *(27)*,)
+        :ARG2 (p / perhati-01
+            :ARG0 (m / megatron)))
+    (d / diri-01
+        :ARG0 (K / Ketika)
+        :ARG1 (i / itu-01
+            :ARG1 (p / petugas))
+        :direction (d / di JPO)
+        :ARG2 (d / dialog-01
+            :ARG0 (s / seseorang dengan duduk megatron.)))
+    (b / bunuh-01
+        :ARG1 (A / Aksi)
+        :ARG0 (A / Alun-alun di Bandung))
+    (k / kata-01
+        :ARG0 (S / Sudirman,))
+    (k / kira-01
+        :ARG1 (p / pria SEORANG terjun)
+        :ARG0 (d / dengan)
+        :ARG2 (c / capai-01
+            :ARG0 (m / meter, 15)))
+    (a / akhir-01
+        :ARG0 (l / lelaki Seorang tengah)
+        :ARG1 (b / baya nekat)
+        :ARG2 (t / tengah-01
+            :ARG1 (k / kepadatan lalu)))
+    (b / buat-01
+        :ARG0 (P / Pria misterius bunuh)
+        :ARG1 (p / pesan nekat))
+    (d / diri-01
+        :ARG0 (K / Ketika)
+        :ARG1 (i / itu-01
+            :ARG1 (p / petugas))
+        :direction (d / di JPO)
+        :ARG2 (d / dialog-01
+            :ARG0 (s / seseorang dengan duduk megatron.)))
+    (k / kata-01
+        :ARG0 (R / Rezha Noviana)
+        :ARG1 (* / *(27)*,)
+        :ARG2 (p / perhati-01
+            :ARG0 (m / megatron)))
+    (d / diri-01
+        :ARG0 (K / Ketika)
+        :ARG1 (i / itu-01
+            :ARG1 (p / petugas))
+        :direction (d / di JPO)
+        :ARG2 (d / dialog-01
+            :ARG0 (s / seseorang dengan duduk megatron.)))
+    (n / naik-01
+        :ARG1 (d / dasar-01
+            :ARG1 (l / laporan Galamedianews, lelaki diketahui))
+        :ARG0 (d / duduk-01)
+        :location (m / megatron atas JPO))
+    (c / catat-01
+        :ARG0 (W / WHO)
+        :ARG1 (b / bunuh-01
+            :ARG1 (p / penyebab
+                :ARG2 (m / mati-01)
+                :duration (m / media, seminar Gangguan))))
+    (g / geger-01
+        :ARG1 (J / Jumat
+            :location (P / PADA))
+        :ARG0 (a / aksi bunuh))
+    (t / tewas-01
+        :ARG1 (w / warga)
+        :ARG0 (* / *(54)*,)
+        :ARG2 (l / lompat-01
+            :ARG0 (j / jembatan
+                :source (p / penyeberangan orang *(JPO)*)
+                :ARG2 (l / letak-01
+                    :ARG1 (J / Jalan
+                        :location (d / di))))))
+    (t / tutur-01
+        :ARG0 (s / saksi)
+        :ARG1 (* / *(59)*))
+    (b / bunuh-01
+        :ARG1 (N / Ngeri,)
+        :ARG0 (i / ini)
+        :ARG2 (n / nekat-01)
+        :location (a / alun di))
+    (k / kata-01
+        :ARG0 (S / Saksi mata merupakan)
+        :ARG1 (p / pria itu diperkirakan))
+    (s / sebut-01
+        :ARG0 (I / Ia)
+        :ARG1 (k / kena-01
+            :ARG0 (p / pakaian putih)
+            :ARG1 (j / jatuh-01
+                :ARG1 (c / celana biru, pria itu)
+                :ARG0 (p / posisi dengan tengkurap.))))
+    (n / naik-01
+        :ARG1 (S / Sebelumnya, lelaki diketahui)
+        :ARG0 (n / nongkrong-01)
+        :location (m / megatron atas jembatan))
+    (b / bunuh-01
+        :ARG1 (p / pria)
+        :ARG0 (j / jembatan
+            :location (p / penyebrangan orang *(JPO)*)))
+    (s / sebut-01
+        :ARG0 (I / Ia)
+        :ARG1 (k / kena-01
+            :ARG0 (p / pakaian putih)
+            :ARG1 (j / jatuh-01
+                :ARG1 (c / celana biru, pria itu)
+                :ARG0 (p / posisi dengan tengkurap.)))))

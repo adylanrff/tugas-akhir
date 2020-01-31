@@ -1,0 +1,122 @@
+[
+  {
+    "amr_graph": "objek ubah :ARG1 ( Ketua Menurut Badan menghimpun ) :ARG0 ( bangun  :ARG1 ( silam. pada 1995 ) )",
+    "sentence": "Menurut Ketua Badan Informasi dan Hubungan Masyarakat Ikatan Arsitek Indonesia *(IAI)* Zakie Muttaqien yang menghimpun keterangan dari Kepala Bidang Bangunan Dinas Tata Kota Bangunan dan Pemukiman *(DTKBP)* Kota Tangsel Muqoddas Syuhada, gedung tersebut sudah \"salah\" sejak awal dibangun pada 1995 silam."
+  },
+  {
+    "amr_graph": "laku :ARG1 ( Pengalihan ) :ARG0 ( pengendara bagi melaju )",
+    "sentence": "Pengalihan dilakukan bagi pengendara yang melaju dari arah mal Bintaro XChange dan tol Bintaro menuju Jalan Boulevard Bintaro dengan menggunakan flyover di atas lampu merah Indomobil."
+  },
+  {
+    "amr_graph": "jadi :ARG1 ( Kegagalan struktur kesalahan ) :ARG0 ( Menara pada Saidah )",
+    "sentence": "Kegagalan struktur dan kesalahan tes tanah yang mengakibatkan gedung miring juga terjadi pada Menara Saidah di Jalan MT Haryono, Jakarta Timur."
+  },
+  {
+    "amr_graph": "kutip :ARG0 ( Padahal, ) :ARG1 ( Undang-Undang  :unit ( Nomor 28 2002 ) :topic ( Bangunan Gedung, persyaratan ) )",
+    "sentence": "Padahal, mengutip Undang-Undang Nomor 28 Tahun 2002 tentang Bangunan Gedung, apabila persyaratan teknis bangunan gedung yang mencakup dua persyaratan, yakni tata bangunan dan persyaratan keandalan bangunan gedung tidak terpenuhi, maka gedung tersebut tidak bisa difungsikan."
+  },
+  {
+    "amr_graph": "benar :ARG0 ( Kapolres ) :ARG1 ( peristiwa  :location ( robohnya gedung Bintaro ) :ARG2 ( tarik  :ARG0 ( perhatian masyarakat banyak, ada ) ) )",
+    "sentence": "Kapolres Tangerang Selatan, AKBP Ayi Supardan membenarkan peristiwa robohnya gedung di Bintaro yang menarik perhatian masyarakat banyak, bahkan kendaraan yang tengah melintas ada yang terkena serpihan dari gedung yang roboh tersebut."
+  },
+  {
+    "amr_graph": "putus :ARG0 ( Panin ) :ARG1 ( lanjut  :ARG0 ( tidak ) :ARG1 ( pembangunan gedung itu ) :ARG2 ( nyata  :ARG1 ( karena ) :ARG0 ( lulus  :polarity - ( uji kelayakan ada ) ) ) )",
+    "sentence": "Panin memutuskan tidak melanjutkan pembangunan gedung itu karena dinyatakan tidak lulus uji kelayakan dan ada bagian gedung yang miring sehingga dinilai tidak aman untuk ditempati."
+  },
+  {
+    "amr_graph": "nyata :ARG1 ( Namun,  :duration ( perkembangannya, gedung tersebut ) ) :ARG0 ( lulus  :ARG1 ( tidak ) :ARG0 ( uji ) :polarity - ( kuat atau ) :ARG2 ( putus  :ARG1 ( pembangunan gedung ) :ARG0 ( dilanjutkan. untuk tidak ) ) )",
+    "sentence": "Namun, dalam perkembangannya, gedung tersebut dinyatakan tidak lulus uji atau tidak kuat sehingga pembangunan gedung diputuskan untuk tidak dilanjutkan."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Kasat )",
+    "sentence": "Kasat Reskrim Polres Tangerangg Selatan, AKP Samian mengatakan saat ini pihaknya tengah melakukan penyelidikan untuk mengetahui pasti penyebab runtuhnya gedung."
+  },
+  {
+    "amr_graph": "timbul :ARG1 ( Atas kejadian ) :ARG0 ( tidak )",
+    "sentence": "Atas kejadian tersebut tidak timbul korban dan tidak terjadi kerugian material, hingga kini kami masih mendalami peristiwa tersebut, ujarnya."
+  },
+  {
+    "amr_graph": "salah :ARG0 ( Pembongkaran gedung ) :ARG1 ( Tangerang Selatan, roboh ) :ARG2 ( duga )",
+    "sentence": "Pembongkaran terhadap gedung di Sektor 7, Bintaro, Tangerang Selatan, yang kemudian sebagian roboh pada Kamis *(2/6/2016)*, diduga menyalahi prosedur."
+  },
+  {
+    "amr_graph": "alih :ARG1 ( Arus ) :ARG0 ( lintas ) :source ( pintu keluar Tol ) :path ( melalui )",
+    "sentence": "Arus lalu lintas dari pintu keluar Tol Pondok Aren menuju Sektor 9 Bintaro  dialihkan melalui jembatan layan *(flyover)* untuk memutar balik di belakang Hotel Santika, Bintaro, atau melalui akses Bintaro Jaya Xchange Mall."
+  },
+  {
+    "amr_graph": "nyata :ARG1 ( Namun uji ) :ARG0 ( kelayakan ) :ARG2 ( lulus  :ARG1 ( tidak ) :ARG0 ( uji ) :polarity - ( kuat atau ) :ARG2 ( biar  :ARG1 ( bangunan ) :ARG0 ( dilanjutkan,  :purpose ( tidak kemudian ) ) ) )",
+    "sentence": "Namun uji kelayakan dinyatakan tidak lulus uji atau tidak kuat sehingga bangunan dibiarkan untuk tidak dilanjutkan, kemudian rangka tersebut di beli oleh H Rozak, H Tulsiam dan H Soleman, kemudian tanggal 1 Mei 2016 mulai dilakukan pembongkaran secara manual oleh pekerja sebanyak 15 orang, kata Ayi."
+  },
+  {
+    "amr_graph": "geger :ARG1 ( Warga ) :ARG0 ( dengan )",
+    "sentence": "Warga Bintaro Jaya, Tangerang Selatan, digegerkan dengan getaran dan dentuman keras dari gedung milik Bank Panin Bank yang roboh, Kamis 2 Juni."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Nadia, pegawai ) :ARG1 ( pagi sejak )",
+    "sentence": "Nadia, pegawai lain di sekitar bangunan tersebut mengatakan, sejak pagi sekitar pukul 08.00 WIB, dia melihat ada petugas yang merobohkan satu persatu lantai di bangunan tersebut."
+  },
+  {
+    "amr_graph": "tutup :ARG1 ( Kawasan ) :ARG0 ( umum  :ARG1 ( untuk ) ) :weekday ( Jumat hingga )",
+    "sentence": "Kawasan sekitar gedung 21 lantai milik Panin di Jalan Boulevard Bintaro Jaya, Bintaro Sektor 7, Tangerang Selatan, masih ditutup untuk umum hingga Jumat *(3/6/2016)* pagi menjelang siang ini."
+  },
+  {
+    "amr_graph": "jadi :ARG1 ( gedung  :ARG1 ( Bank Panin Bintaro ) :ARG0 ( bangun  :ARG1 ( konstruksinya ) :ARG0 ( pada ) ) )",
+    "sentence": "Jadi itu sebenarnya gedung Bank Panin Bintaro yang konstruksinya dibangun pada 1995 oleh Jaya Property, ungkap Kapolres Kota Tangsel AKBP Ayi Supardan, di lokasi kejadin tadi sore."
+  },
+  {
+    "amr_graph": "lihat :ARG1 ( Gedung  :ARG2 ( roboh bintaro di beli ) ) :ARG0 ( tua sudah )",
+    "sentence": "Gedung roboh di Bintaro yang dibeli dari Bank Panin pada tahun 1998 oleh Jaya Property itu memang terlihat sudah tua dan terbengkalai."
+  },
+  {
+    "amr_graph": "tunggu :ARG0 ( Property ) :ARG1 ( rekomendasi Pemerintah )",
+    "sentence": "Property Development Panin Group Paulus Indra Intan menunggu rekomendasi dari Pemerintah Kota Tangerang Selatan untuk mendapatkan kontraktor dan konsultan bersertifikat untuk merobohkan gedung di Bintaro Jaya Sektor 7."
+  },
+  {
+    "amr_graph": "jaga :ARG0 ( pantauan  :source ( Tangsel Pos ) :location ( lokasi, kemarin, ) ) :ARG1 ( petugas )",
+    "sentence": "Dari pantauan Tangsel Pos di lokasi, kemarin, para petugas Polres Tangsel dan juga Polsek Pondok Aren masih berjaga di sekitar gedung ruboh itu sekitar pukul 16.30 WIB."
+  },
+  {
+    "amr_graph": "lokasi :ARG0 ( gedung Sebuah kosong ) :ARG1 ( Bintaro  :location ( di dekat ) )",
+    "sentence": "Sebuah gedung kosong berlokasi di dekat Bintaro Trade Center, Sektor 7, Bintaro, Kota Tangerang Selatan *(Tangsel)*, roboh pada Kamis *(2/6)*, sekitar pukul 15.00 WIB."
+  },
+  {
+    "amr_graph": "ungkap :ARG0 ( Saksi mata, Nadia bekerja ) :ARG1 ( sekitar 08.00 WIB, )",
+    "sentence": "Saksi mata, Nadia yang bekerja tak jauh dari lokasi ambruknya gedung kembar itu mengungkapkan sekitar pukul 08.00 WIB, dia melihat sejumlah orang merobohkan satu per satu lantai di gedung kembar."
+  },
+  {
+    "amr_graph": "tutur :ARG0 ( Airin ) :ARG1 ( sejarah gedung tersebut, ) :source ( sejarahnya menurutnya )",
+    "sentence": "Airin menuturkan sejarah gedung tersebut, menurutnya   dari sejarahnya sebelum adanya Kota Tangsel, memang gedung tersebut telah mendapat izin untuk mendirikan perkantoran."
+  },
+  {
+    "amr_graph": "blokir :ARG0 ( Hingga ) :ARG1 ( ini, kepolisian )",
+    "sentence": "Hingga saat ini, kepolisian masih memblokir akses di depan gedung milik Bank Panin yang roboh pada Kamis 2 Juni itu."
+  },
+  {
+    "amr_graph": "laku :ARG0 ( Polres Tangerang Selatan ) :ARG1 ( pengalihan arus ) :ARG2 ( susul  :ARG0 ( lintas ) :ARG1 ( robohnya gedung Bintaro ) )",
+    "sentence": "Polres Tangerang Selatan memberlakukan pengalihan arus lalu lintas menyusul robohnya gedung Panin di Bintaro Sektor 7, Tangerang Selatan, Kamis *(2/6/2016)* pukul 15.00 WIB."
+  },
+  {
+    "amr_graph": "putus :ARG0 ( Bank Panin pemilik sebagai ) :ARG1 ( lanjut  :ARG0 ( tidak ) :ARG1 ( pembangunan gedung itu ) :ARG2 ( nyata  :ARG1 ( karena ) :ARG0 ( lulus  :polarity - ( uji kelayakan ada ) ) ) )",
+    "sentence": "Bank Panin sebagai pemilik memutuskan tidak melanjutkan pembangunan gedung itu karena dinyatakan tidak lulus uji kelayakan dan ada bagian gedung yang miring, sehingga dinilai tidak aman untuk ditempati."
+  },
+  {
+    "amr_graph": "jelas :ARG0 ( Kapolres ) :ARG1 ( perihal  :location ( Sektor 7, Bintaro, ) )",
+    "sentence": "Kapolres Tangerang Selatan Ajun Komisaris Besar Ayi Supardan menjelaskan perihal gedung yang roboh di Sektor 7, Bintaro, Tangerang Selatan, Kamis *(2/6/2016)* siang."
+  },
+  {
+    "amr_graph": "laku :ARG1 ( Adapun ) :ARG0 ( sisi )",
+    "sentence": "Adapun sebelum sisi depan gedung tersebut roboh kemarin, memang sedang dilakukan pembongkaran oleh 15 pekerja bangunan."
+  },
+  {
+    "amr_graph": "jadi :ARG1 ( Benar ) :ARG0 ( siang )",
+    "sentence": "Benar peristiwa gedung Bintaro roboh ini terjadi siang tadi sekitar pukul 14.00 WIB, ungkap AKBP Ayi Supardan, Kapolres Tangerang Selatan,, Kamis *(2/6/2016)*."
+  },
+  {
+    "amr_graph": "sambang :ARG0 ( Wali Kota Tangerang ) :ARG1 ( gedung  :ARG1 ( roboh ) :ARG0 ( Bintaro, di Tangerang Selatan. ) )",
+    "sentence": "Wali Kota Tangerang Selatan *(Tangsel)* Airin Rachmi Diany menyambangi langsung gedung roboh di Bintaro, Tangerang Selatan."
+  },
+  {
+    "amr_graph": "beri :ARG0 ( Kepala daerah, hal ) :ARG1 ( persetujuan )",
+    "sentence": "Kepala daerah, dalam hal ini Wali Kota Tangerang Selatan, akan memberikan persetujuan setelah mendapat pertimbangan dari tim ahli bangunan atau gedung."
+  }
+]

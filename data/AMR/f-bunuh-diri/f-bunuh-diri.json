@@ -1,0 +1,94 @@
+[
+  {
+    "amr_graph": "ciptadi :ARG1 ( *(54)* nekat dengan melompat )",
+    "sentence": "Ciptadi *(54)* dengan nekat melompat dari megatron jembatan penyebrangan orang *(JPO)* yang tingginya diperkirakan mencapai 15 meter."
+  },
+  {
+    "amr_graph": "ungkap :ARG1 ( Hal tersebut ) :ARG0 ( Kabag ) :ARG2 ( damping  :ARG1 ( Kasubag ) :ARG0 ( temu  :ARG1 ( Mapolrestabes di Bandung, Jumat ) :ARG0 ( *(1/7/2016)*. ) ) )",
+    "sentence": "Hal tersebut diungkapkan Kabag Ops Polrestabes Bandung Kompol Dede Rojudin didampingi Kasubag Humas Kompol Reny Marthaliana, saat ditemui di Mapolrestabes Bandung, Jumat *(1/7/2016)*."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Rezha Noviana ) :ARG1 ( *(27)*, ) :ARG2 ( perhati  :ARG0 ( megatron ) )",
+    "sentence": "Rezha Noviana *(27)*, warga Kota Bandung mengatakan ia dan jemaat lainnya langsung memperhatikan megatron jembatan penyeberangan orang depan Kantor Pos Besar Bandung setelah bubar salat Jumat di Masjid Raya Bandung."
+  },
+  {
+    "amr_graph": "diri :ARG0 ( Ketika ) :ARG1 ( itu  :ARG1 ( petugas ) ) :direction ( di JPO ) :ARG2 ( dialog  :ARG0 ( seseorang dengan duduk megatron. ) )",
+    "sentence": "Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron."
+  },
+  {
+    "amr_graph": "bunuh :ARG1 ( Aksi ) :ARG0 ( Alun-alun di Bandung )",
+    "sentence": "Aksi bunuh diri di Alun-alun Bandung belum lama ini terjadi, seorang pria tua nekat menjatuhkan diri dari JPO alias jembatan penyebrangan orang yang letaknya tak jauh dari Alun-alun Kota Bandung."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Sudirman, )",
+    "sentence": "Sudirman, anggota Linmas Satpol PP Kota Bandung yang menjadi saksi mata aksi bunuh diri di Alun-alun Bandung itu mengatakan, pria tersebut diperkirakan berusia 50 tahun."
+  },
+  {
+    "amr_graph": "kira :ARG1 ( pria SEORANG terjun ) :ARG0 ( dengan ) :ARG2 ( capai  :ARG0 ( meter, 15 ) )",
+    "sentence": "SEORANG pria yang nekat terjun bebas dari megatron jembatan penyebrangan orang *(JPO)* di Jalan Asia Afrika atau depan PT Pos Indonesia, dengan ketinggian diperkirakan mencapai 15 meter, diketahui bernama Ciptadi *(54)* dan tercatat sebagai  warga Kampung Lemahduhur, RT 02/RW 06 Kelurahan Lemahduhur, Kecamatan Kuwarasa, Kabupaten Kebumen, Jateng."
+  },
+  {
+    "amr_graph": "akhir :ARG0 ( lelaki Seorang tengah ) :ARG1 ( baya nekat ) :ARG2 ( tengah  :ARG1 ( kepadatan lalu ) )",
+    "sentence": "Seorang lelaki tengah baya nekat mengakhiri hidupnya ditengah kepadatan lalu lintas Jalan Asia Afrika dengan menjatuhkan diri dari megatron jembatan penyebarangan di depan Pos Giro Besar Bandung, Bandung, Jumat *(1/7/2016)*."
+  },
+  {
+    "amr_graph": "buat :ARG0 ( Pria misterius bunuh ) :ARG1 ( pesan nekat )",
+    "sentence": "Pria misterius yang bunuh diri dari jembatan penyeberangan orang *(JPO)* di Jalan Asia Afrika, Bandung, Jawa Barat, membuat pesan sebelum nekat terjun."
+  },
+  {
+    "amr_graph": "diri :ARG0 ( Ketika ) :ARG1 ( itu  :ARG1 ( petugas ) ) :direction ( di JPO ) :ARG2 ( dialog  :ARG0 ( seseorang dengan duduk megatron. ) )",
+    "sentence": "Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Rezha Noviana ) :ARG1 ( *(27)*, ) :ARG2 ( perhati  :ARG0 ( megatron ) )",
+    "sentence": "Rezha Noviana *(27)*, warga Kota Bandung mengatakan ia dan jemaat lainnya langsung memperhatikan megatron jembatan penyeberangan orang depan Kantor Pos Besar Bandung setelah bubar salat Jumat di Masjid Raya Bandung."
+  },
+  {
+    "amr_graph": "diri :ARG0 ( Ketika ) :ARG1 ( itu  :ARG1 ( petugas ) ) :direction ( di JPO ) :ARG2 ( dialog  :ARG0 ( seseorang dengan duduk megatron. ) )",
+    "sentence": "Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron."
+  },
+  {
+    "amr_graph": "naik :ARG1 ( dasar  :ARG1 ( laporan Galamedianews, lelaki diketahui ) ) :ARG0 ( duduk ) :location ( megatron atas JPO )",
+    "sentence": "Berdasarkan laporan Galamedianews, lelaki yang belum diketahui identitasnya itu sempat naik dan duduk di atas megatron JPO depan Gedung Kantor Pos Besar tersebut, pukul 11.00 WIB."
+  },
+  {
+    "amr_graph": "catat :ARG0 ( WHO ) :ARG1 ( bunuh  :ARG1 ( penyebab  :ARG2 ( mati ) :duration ( media, seminar Gangguan ) ) )",
+    "sentence": "WHO mencatat bunuh diri sebagai penyebab kematian kelima, ujarnya, dalam seminar media, Gangguan Bipolar vs Fenomena Bunuh Diri di Kota Besar, Juni lalu di Jakarta seperti dirilis Femina."
+  },
+  {
+    "amr_graph": "geger :ARG1 ( Jumat  :location ( PADA ) ) :ARG0 ( aksi bunuh )",
+    "sentence": "PADA Jumat *(1/7/2016)*, warga Kota Bandung digegerkan aksi bunuh diri lelaki paruh baya yang terjun dari Jembatan Penyeberangan Orang *(JPO)* Alun-Alun Bandung."
+  },
+  {
+    "amr_graph": "tewas :ARG1 ( warga ) :ARG0 ( *(54)*, ) :ARG2 ( lompat  :ARG0 ( jembatan  :source ( penyeberangan orang *(JPO)* ) :ARG2 ( letak  :ARG1 ( Jalan  :location ( di ) ) ) ) )",
+    "sentence": "Seorang warga asal Kebumen, Ciptadi *(54)*, tewas seketika setelah melompat dari jembatan penyeberangan orang *(JPO)* yang terletak di Jalan Asia Afrika, Kota Bandung."
+  },
+  {
+    "amr_graph": "tutur :ARG0 ( saksi ) :ARG1 ( *(59)* )",
+    "sentence": "Salah seorang saksi mata, Sudirman *(59)* menuturkan kronologi kejadian yaitu sekitar pukul 12.00 WIB, korban yang mengenakan kaos putih dan celana training itu menaiki anak tangga JPO seperti warga lainnya."
+  },
+  {
+    "amr_graph": "bunuh :ARG1 ( Ngeri, ) :ARG0 ( ini ) :ARG2 ( nekat ) :location ( alun di )",
+    "sentence": "Ngeri, orang ini nekat bunuh diri di alun - alun Bandung, Karena cinta mungkin lalu depresi, seorang lelaki tanpa identitas nekat mengakhiri nyawanya sendiri di jembatan penyeberangan orang, yang berada di sekitar alun - alun kota Bandung 1/7."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Saksi mata merupakan ) :ARG1 ( pria itu diperkirakan )",
+    "sentence": "Saksi mata yang merupakan anggota linmas Satpol PP Kota Bandung, Sudirman mengatakan pria itu diperkirakan berumur 50 tahunan."
+  },
+  {
+    "amr_graph": "sebut :ARG0 ( Ia ) :ARG1 ( kena  :ARG0 ( pakaian putih ) :ARG1 ( jatuh  :ARG1 ( celana biru, pria itu ) :ARG0 ( posisi dengan tengkurap. ) ) )",
+    "sentence": "Ia menyebutkan mengenakan pakaian putih dan celana biru, pria itu jatuh dengan posisi tengkurap."
+  },
+  {
+    "amr_graph": "naik :ARG1 ( Sebelumnya, lelaki diketahui ) :ARG0 ( nongkrong ) :location ( megatron atas jembatan )",
+    "sentence": "Sebelumnya, lelaki yang belum diketahui identitasnya itu sempat naik dan nongkrong di atas megatron jembatan penyebrangan di atas Jln."
+  },
+  {
+    "amr_graph": "bunuh :ARG1 ( pria ) :ARG0 ( jembatan  :location ( penyebrangan orang *(JPO)* ) )",
+    "sentence": "Seorang pria paruh baya tanpa identitas nekat bunuh diri di jembatan penyebrangan orang *(JPO)* yang berada dekat Alun-alun Kota Bandung, Jumat *(1/7)*."
+  },
+  {
+    "amr_graph": "sebut :ARG0 ( Ia ) :ARG1 ( kena  :ARG0 ( pakaian putih ) :ARG1 ( jatuh  :ARG1 ( celana biru, pria itu ) :ARG0 ( posisi dengan tengkurap. ) ) )",
+    "sentence": "Ia menyebutkan mengenakan pakaian putih dan celana biru, pria itu jatuh dengan posisi tengkurap."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "amr_graph": "nyata :ARG0 ( Stasiun ) :ARG1 ( gempa mengguncang )",
+    "sentence": "Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)* Banjarnegara, Jawa Tengah, menyatakan bahwa gempa yang mengguncang Dataran Tinggi Dieng pukul 19.00 WIB berkekuatan 4,8 pada skala richter."
+  },
+  {
+    "amr_graph": "lihat :ARG0 ( Jika ) :ARG1 ( koordinat dari tersebut, kata )",
+    "sentence": "Jika melihat dari koordinat tersebut, kata dia, pusat gempa diperkirakan berada di Desa Tanji Gugur, Kecamatan Bawang, Kabupaten Batang, dan lokasinya cukup dekat dengan Dataran Tinggi Dieng."
+  },
+  {
+    "amr_graph": "rekomendasi :ARG0 ( kait  :ARG1 ( hal itu, kata ) ) :ARG1 ( jalan seluruh mendekati )",
+    "sentence": "Terkait hal itu, kata dia, PVMBG merekomendasikan seluruh jalan yang mendekati Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Banjarnegara, baik jalan desa maupun jalan antarkabupaten untuk sementara ditutup."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Sementara ) :ARG1 ( Kepala Pusat Vulkanologi Mitigasi ) :ARG2 ( rekam  :ARG1 ( gempa terjadi ) :ARG0 ( WIB 19.00--19.25 ) :frequency ( sebanyak 86 amplituda ) )",
+    "sentence": "Sementara Kepala Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* Surono mengatakan bahwa gempa yang terjadi di Dataran Tinggi Dieng pukul 19.00--19.25 WIB terekam sebanyak 86 kali dengan amplituda maksimum 10--100 milimeter *(mm)* dan lama gempa 10--70 detik."
+  },
+  {
+    "amr_graph": "laku :ARG1 ( Penutupan ini, lanjut dia, ) :ARG0 ( tim  :ARG1 ( lapangan di mengukur ) )",
+    "sentence": "Penutupan ini, lanjut dia, dilakukan hingga tim di lapangan yang mengukur konsentrasi gas dan menyatakan tidak ada gas yang berbahaya bagi kehidupan serta jalur jalan aman digunakan."
+  },
+  {
+    "amr_graph": "rekomendasi :ARG0 ( kait  :ARG1 ( hal itu, kata ) ) :ARG1 ( jalan seluruh mendekati )",
+    "sentence": "Terkait hal itu, kata dia, PVMBG merekomendasikan seluruh jalan yang mendekati Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Banjarnegara, baik jalan desa maupun jalan antarkabupaten untuk sementara ditutup."
+  },
+  {
+    "amr_graph": "terjun :ARG1 ( Bibit, ) :ARG0 ( pantau  :ARG0 ( untuk ) :ARG1 ( aktivitas Kawah Timbang ) )",
+    "sentence": "Menurut Bibit, petugas Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* telah diterjunkan untuk memantau aktivitas Kawah Timbang dan memberikan informasi, misalnya ada perkembangan aktivitas yang membahayakan."
+  },
+  {
+    "amr_graph": "sebut :ARG0 ( Data dikeluarkan ) :ARG1 ( gempa terasa )",
+    "sentence": "Data yang dikeluarkan dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* menyebutkan gempa mulai terasa pukul 19.00-19.25 WIB dan telah terekam gempa sebanyak 86 kali dengan maksimum 10-100 mm dengan lama gempa 1070 detik."
+  },
+  {
+    "amr_graph": "tinggal :ARG0 ( pengungsi Sebagian desa ) :ARG1 ( akibat gempa terjadi ) :weekday ( Sabtu pada )",
+    "sentence": "Sebagian pengungsi dari beberapa desa di Kabupaten Banjarnegara ke Balai Desa Dieng Wetan, Kabupaten Wonosobo, akibat gempa yang terjadi Jumat *(19/4)* malam, pada Sabtu pagi mulai meninggalkan pengungsian."
+  },
+  {
+    "amr_graph": "nyata :ARG0 ( Stasiun Geofisika ) :ARG1 ( gempa mengguncang )",
+    "sentence": "Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)* Banjarnegara menyatakan gempa yang mengguncang Dataran Tinggi Dieng pukul 19.00 WIB berkekuatan 4,8 Skala Richter *(SR)*."
+  },
+  {
+    "amr_graph": "minta :ARG0 ( Menanggapi hal itu, ) :ARG1 ( Bibit )",
+    "sentence": "Menanggapi hal itu, Bibit meminta masyarakat tetap tenang dan tidak panik seraya terus memantau informasi atas perkembangan aktivitas Kawah Timbang dari PVMBG yang bertanggung jawab mengawasi kawah tersebut."
+  },
+  {
+    "amr_graph": "imbau :ARG0 ( Gubernur Jawa Tengah ) :ARG1 ( Bibit Waluyo )",
+    "sentence": "Gubernur Jawa Tengah Bibit Waluyo mengimbau warga yang tinggal di sekitar Kawah Timbang untuk tetap tenang tanpa mengurangi kewaspadaan terhadap perkembangan aktivitas kawah tersebut."
+  },
+  {
+    "amr_graph": "rekomendasi :ARG0 ( PVMBG ) :ARG1 ( tutup  :ARG0 ( untuk ) )",
+    "sentence": "PVMBG juga sempat merekomendasikan untuk menutup sementara ruas Jalan Dieng-Batur *(jalan antarkabupaten)* dan Jalan Simpangan-Pekasiran untuk mengantisipasi kemungkinan adanya gas beracun akibat aktivitas gempa itu."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( Sementara ) :ARG1 ( itu, ) :ARG2 ( rekam  :ARG1 ( gempa terjadi ) :ARG0 ( WIB 19.00-19.25 ) :frequency ( sebanyak 86 amplituda ) )",
+    "sentence": "Sementara itu, Kepala Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* Surono mengatakan bahwa gempa yang terjadi di Dataran Tinggi Dieng pukul 19.00-19.25 WIB terekam sebanyak 86 kali dengan amplituda maksimum 10-100 milimeter *(mm)* dan lama gempa 10-70 detik."
+  },
+  {
+    "amr_graph": "ada :ARG1 ( rumah satu rusak berat, )",
+    "sentence": "Ada satu rumah rusak berat, dua rumah rusak sedang, dan empat rumah rusak ringan di Di Dusun Gandoran *(Desa Mlandi, Kecamatan Gerung, Kabupaten Wonosobo)*, kata Maulana."
+  },
+  {
+    "amr_graph": "deteksi :ARG1 ( dia, Menurut informasi didapat ) :ARG0 ( akibat gempa semalam ) :polarity - ( tidak )",
+    "sentence": "Menurut dia, informasi yang didapat dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)*, akibat gempa semalam tidak terdeteksi gas beracun sekitar Kawah Timbang, Desa Sumberejo, Kabupaten Banjarnegara, Jawa Tengah."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( staf )",
+    "sentence": "Salah satu staf hubungan masyarakat Badan SAR Nasional Semarang, Maulana Afandy, mengatakan ada sekitar 380 orang yang diungsikan ke Dukuh Bintoro Mulyo, Desa Pranten, Kecamatan Bawang akibat gempa di dataran tinggi Dieng."
+  },
+  {
+    "amr_graph": "deteksi :ARG1 ( dasar  :ARG1 ( informasi  :source ( Pusat Vulkanologi Mitigasi ) ) ) :ARG0 ( akibat gempa semalam ) :polarity - ( tidak )",
+    "sentence": "Berdasarkan informasi dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)*, kata dia, akibat gempa semalam tidak terdeteksi gas beracun sekitar Kawah Timbang, Desa Sumberejo, Kabupaten Banjarnegara, Jawa Tengah."
+  },
+  {
+    "amr_graph": "kata :ARG0 ( petugas ) :ARG1 ( kebutuhan logistik pengungsi dibantu )",
+    "sentence": "Salah seorang petugas Pos Pengungsian Balai Desa Gembol, Dani Irawan mengatakan kebutuhan logistik pengungsi untuk sementara dibantu oleh warga sekitar yang dikoordinasikan oleh Karang Taruna Desa Gembol."
+  },
+  {
+    "amr_graph": "asa :ARG1 ( Gempa besar mengguncang ) :ARG0 ( wilayah di Kabupaten Batang. )",
+    "sentence": "Gempa besar yang mengguncang kawasan Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Kabupaten Banjarnegara, Jumat 19 April 2013 malam, juga terasa di wilayah Kabupaten Batang."
+  }
+]

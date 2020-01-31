@@ -1,0 +1,200 @@
+[node]: 0 1 - -1 _ROOT_ _ROOT_
+[node]: 1 1 d 0.3 berdialog dialog-01
+[node]: 2 1 m 0.2.0 meter, meter, 15
+[node]: 3 1 k 0.2.0 kepadatan kepadatan lalu
+[node]: 4 1 K 0.1 Kabag Kabag
+[node]: 5 1 m 0.1.0.1 media, media, seminar Gangguan
+[node]: 6 1 * 0.2.1.1 *(1/7/2016)*. *(1/7/2016)*.
+[node]: 7 1 d 0.0 Berdasarkan dasar-01
+[node]: 8 1 j 0.1.1 jatuh jatuh-01
+[node]: 9 1 S 0.0 Sebelumnya, Sebelumnya, lelaki diketahui
+[node]: 10 1 d 0.1 duduk duduk-01
+[node]: 11 2 k 0|0 mengatakan kata-01
+[node]: 12 1 * 0.0 *(54)* *(54)* nekat dengan melompat
+[node]: 13 1 c 0 mencatat catat-01
+[node]: 14 1 b 0 membuat buat-01
+[node]: 15 1 * 0.1 *(59)* *(59)*
+[node]: 16 1 l 0.0 lelaki lelaki Seorang tengah
+[node]: 17 1 c 0 Ciptadi ciptadi-01
+[node]: 18 2 j 0.1|0.2.0 jembatan jembatan
+[node]: 19 1 s 0.0 saksi saksi
+[node]: 20 1 S 0.0 Saksi Saksi mata merupakan
+[node]: 21 1 d 0.2 didampingi damping-01
+[node]: 22 1 p 0.2.0.0 dari penyeberangan orang *(JPO)*
+[node]: 23 1 p 0.1.0 petugas petugas
+[node]: 24 1 A 0.0 Aksi Aksi
+[node]: 25 1 p 0.1.0 di penyebrangan orang *(JPO)*
+[node]: 26 1 m 0.2 megatron megatron atas JPO
+[node]: 27 1 N 0.0 Ngeri, Ngeri,
+[node]: 28 1 d 0 berdiri diri-01
+[node]: 29 1 R 0.0 Rezha Rezha Noviana
+[node]: 30 1 S 0.0 Sudirman, Sudirman,
+[node]: 31 1 P 0.0.0 PADA PADA
+[node]: 32 1 b 0.1 baya baya nekat
+[node]: 33 1 k 0.1 mengenakan kena-01
+[node]: 34 1 a 0.1 aksi aksi bunuh
+[node]: 35 1 i 0.1 itu, itu-01
+[node]: 36 1 a 0 mengakhiri akhir-01
+[node]: 37 1 c 0.2 mencapai capai-01
+[node]: 38 1 H 0.0 Hal Hal tersebut
+[node]: 39 1 J 0.0 Jumat Jumat
+[node]: 40 1 * 0.1 *(27)*, *(27)*,
+[node]: 41 1 K 0.0 Ketika Ketika
+[node]: 42 1 A 0.1 Alun-alun Alun-alun di Bandung
+[node]: 43 1 I 0.0 Ia Ia
+[node]: 44 1 t 0.2.1 ditemui temu-01
+[node]: 45 1 p 0.2 memperhatikan perhati-01
+[node]: 46 1 P 0.0 Pria Pria misterius bunuh
+[node]: 47 1 J 0.2.0.1.0 Jalan Jalan
+[node]: 48 1 u 0 diungkapkan ungkap-01
+[node]: 49 1 n 0.2 nekat nekat-01
+[node]: 50 1 d 0.2 atas di JPO
+[node]: 51 1 m 0.2 megatron megatron atas jembatan
+[node]: 52 1 p 0.1.0 pakaian pakaian putih
+[node]: 53 1 d 0.2.0.1.0.0 di di
+[node]: 54 1 a 0.3 alun alun di
+[node]: 55 1 s 0 menyebutkan sebut-01
+[node]: 56 1 i 0.1 ini ini
+[node]: 57 1 t 0 menuturkan tutur-01
+[node]: 58 1 s 0.3.0 seseorang seseorang dengan duduk megatron.
+[node]: 59 1 M 0.2.1.0 Mapolrestabes Mapolrestabes di Bandung, Jumat
+[node]: 60 1 t 0 tewas tewas-01
+[node]: 61 1 * 0.1 *(54)*, *(54)*,
+[node]: 62 1 k 0 diperkirakan kira-01
+[node]: 63 1 p 0.0 pria pria
+[node]: 64 1 t 0.2 ditengah tengah-01
+[node]: 65 1 l 0.2 melompat lompat-01
+[node]: 66 1 n 0 naik naik-01
+[node]: 67 1 W 0.0 WHO WHO
+[node]: 68 1 p 0.1 pesan pesan nekat
+[node]: 69 1 g 0 digegerkan geger-01
+[node]: 70 1 m 0.1.0.0 kematian mati-01
+[node]: 71 1 l 0.2.0.1 terletak letak-01
+[node]: 72 2 b 0|0.1 bunuh bunuh-01
+[node]: 73 1 p 0.0 pria pria SEORANG terjun
+[node]: 74 1 m 0.2.0 megatron megatron
+[node]: 75 1 w 0.0 warga warga
+[node]: 76 1 d 0.1 dengan dengan
+[node]: 77 1 c 0.1.1.0 celana celana biru, pria itu
+[node]: 78 1 p 0.1 pria pria itu diperkirakan
+[node]: 79 1 K 0.2.0 Kasubag Kasubag
+[node]: 80 1 p 0.1.1.1 posisi posisi dengan tengkurap.
+[node]: 81 1 n 0.1 nongkrong nongkrong-01
+[node]: 82 1 p 0.1.0 penyebab penyebab
+[node]: 83 1 l 0.0.0 laporan laporan Galamedianews, lelaki diketahui
+[edge]: 1 0 17 ROOT
+[edge]: 1 17 12 ARG1
+[edge]: 1 0 48 ROOT
+[edge]: 1 48 38 ARG1
+[edge]: 1 48 4 ARG0
+[edge]: 1 48 21 ARG2
+[edge]: 1 21 79 ARG1
+[edge]: 1 21 44 ARG0
+[edge]: 1 44 59 ARG1
+[edge]: 1 44 6 ARG0
+[edge]: 1 0 11 ROOT
+[edge]: 1 11 29 ARG0
+[edge]: 1 11 40 ARG1
+[edge]: 1 11 45 ARG2
+[edge]: 1 45 74 ARG0
+[edge]: 1 0 28 ROOT
+[edge]: 1 28 41 ARG0
+[edge]: 1 28 35 ARG1
+[edge]: 1 35 23 ARG1
+[edge]: 1 28 50 direction
+[edge]: 1 28 1 ARG2
+[edge]: 1 1 58 ARG0
+[edge]: 1 0 72 ROOT
+[edge]: 1 72 24 ARG1
+[edge]: 1 72 42 ARG0
+[edge]: 2 0 11 ROOT|ROOT
+[edge]: 1 11 30 ARG0
+[edge]: 1 0 62 ROOT
+[edge]: 1 62 73 ARG1
+[edge]: 1 62 76 ARG0
+[edge]: 1 62 37 ARG2
+[edge]: 1 37 2 ARG0
+[edge]: 1 0 36 ROOT
+[edge]: 1 36 16 ARG0
+[edge]: 1 36 32 ARG1
+[edge]: 1 36 64 ARG2
+[edge]: 1 64 3 ARG1
+[edge]: 1 0 14 ROOT
+[edge]: 1 14 46 ARG0
+[edge]: 1 14 68 ARG1
+[edge]: 2 0 28 ROOT|ROOT
+[edge]: 2 28 41 ARG0|ARG0
+[edge]: 2 28 35 ARG1|ARG1
+[edge]: 2 35 23 ARG1|ARG1
+[edge]: 2 28 50 direction|direction
+[edge]: 2 28 1 ARG2|ARG2
+[edge]: 2 1 58 ARG0|ARG0
+[edge]: 2 0 11 ROOT|ROOT
+[edge]: 2 11 29 ARG0|ARG0
+[edge]: 2 11 40 ARG1|ARG1
+[edge]: 2 11 45 ARG2|ARG2
+[edge]: 2 45 74 ARG0|ARG0
+[edge]: 2 0 28 ROOT|ROOT
+[edge]: 2 28 41 ARG0|ARG0
+[edge]: 2 28 35 ARG1|ARG1
+[edge]: 2 35 23 ARG1|ARG1
+[edge]: 2 28 50 direction|direction
+[edge]: 2 28 1 ARG2|ARG2
+[edge]: 2 1 58 ARG0|ARG0
+[edge]: 1 0 66 ROOT
+[edge]: 1 66 7 ARG1
+[edge]: 1 7 83 ARG1
+[edge]: 1 66 10 ARG0
+[edge]: 1 66 26 location
+[edge]: 1 0 13 ROOT
+[edge]: 1 13 67 ARG0
+[edge]: 1 13 72 ARG1
+[edge]: 1 72 82 ARG1
+[edge]: 1 82 70 ARG2
+[edge]: 1 82 5 duration
+[edge]: 1 0 69 ROOT
+[edge]: 1 69 39 ARG1
+[edge]: 1 39 31 location
+[edge]: 1 69 34 ARG0
+[edge]: 1 0 60 ROOT
+[edge]: 1 60 75 ARG1
+[edge]: 1 60 61 ARG0
+[edge]: 1 60 65 ARG2
+[edge]: 1 65 18 ARG0
+[edge]: 1 18 22 source
+[edge]: 1 18 71 ARG2
+[edge]: 1 71 47 ARG1
+[edge]: 1 47 53 location
+[edge]: 1 0 57 ROOT
+[edge]: 1 57 19 ARG0
+[edge]: 1 57 15 ARG1
+[edge]: 2 0 72 ROOT|ROOT
+[edge]: 1 72 27 ARG1
+[edge]: 1 72 56 ARG0
+[edge]: 1 72 49 ARG2
+[edge]: 1 72 54 location
+[edge]: 2 0 11 ROOT|ROOT
+[edge]: 1 11 20 ARG0
+[edge]: 1 11 78 ARG1
+[edge]: 1 0 55 ROOT
+[edge]: 1 55 43 ARG0
+[edge]: 1 55 33 ARG1
+[edge]: 1 33 52 ARG0
+[edge]: 1 33 8 ARG1
+[edge]: 1 8 77 ARG1
+[edge]: 1 8 80 ARG0
+[edge]: 2 0 66 ROOT|ROOT
+[edge]: 1 66 9 ARG1
+[edge]: 1 66 81 ARG0
+[edge]: 1 66 51 location
+[edge]: 2 0 72 ROOT|ROOT
+[edge]: 1 72 63 ARG1
+[edge]: 1 72 18 ARG0
+[edge]: 1 18 25 location
+[edge]: 2 0 55 ROOT|ROOT
+[edge]: 2 55 43 ARG0|ARG0
+[edge]: 2 55 33 ARG1|ARG1
+[edge]: 2 33 52 ARG0|ARG0
+[edge]: 2 33 8 ARG1|ARG1
+[edge]: 2 8 77 ARG1|ARG1
+[edge]: 2 8 80 ARG0|ARG0

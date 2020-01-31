@@ -1,0 +1,256 @@
+[node]: 0 1 - -1 _ROOT_ _ROOT_
+[node]: 1 1 S 0.0 Saksi Saksi mata, Nadia bekerja
+[node]: 2 3 t 0.2.0|0.1.0|0.1 tidak tidak
+[node]: 3 1 A 0.0 Arus Arus
+[node]: 4 1 t 0 ditutup tutup-01
+[node]: 5 1 s 0.2 menyusul susul-01
+[node]: 6 1 N 0.0 Namun, Namun,
+[node]: 7 1 p 0.1 pagi pagi sejak
+[node]: 8 1 N 0.0 Nadia, Nadia, pegawai
+[node]: 9 1 P 0.0 Property Property
+[node]: 10 1 p 0.1.3.0 pembangunan pembangunan gedung
+[node]: 11 2 j 0|0 terjadi jadi-01
+[node]: 12 1 j 0 menjelaskan jelas-01
+[node]: 13 2 p 0|0.1.3 memutuskan putus-01
+[node]: 14 1 K 0.0 Kapolres Kapolres
+[node]: 15 1 s 0 menyalahi salah-01
+[node]: 16 1 s 0.1 sekitar sekitar 08.00 WIB,
+[node]: 17 2 k 0|0 mengatakan kata-01
+[node]: 18 2 l 0|0 dilakukan laku-01
+[node]: 19 1 m 0.3 melalui melalui
+[node]: 20 1 G 0.0 Gedung Gedung
+[node]: 21 1 p 0.1 perihal perihal
+[node]: 22 1 r 0.0.0 roboh roboh bintaro di beli-01
+[node]: 23 1 u 0 mengungkapkan ungkap-01
+[node]: 24 1 g 0.0 gedung gedung Sebuah kosong
+[node]: 25 2 r 0.1.0|0.2.1 robohnya robohnya gedung Bintaro
+[node]: 26 1 l 0.0.1 lokasi, lokasi, kemarin,
+[node]: 27 1 b 0 memblokir blokir-01
+[node]: 28 1 s 0 menyambangi sambang-01
+[node]: 29 1 s 0.1.0 silam. silam. pada 1995
+[node]: 30 1 t 0.1.1 menarik tarik-01
+[node]: 31 1 p 0.0.1.1 pada pada
+[node]: 32 1 K 0.0 Kasat Kasat
+[node]: 33 1 N 0.0 Namun Namun uji
+[node]: 34 1 p 0.0.0 perkembangannya, perkembangannya, gedung tersebut
+[node]: 35 1 B 0.1 Bintaro Bintaro
+[node]: 36 1 B 0.0 Benar Benar
+[node]: 37 2 u 0.2.1|0.1.1 uji uji-01
+[node]: 38 2 l 0.2|0.1 lulus lulus-01
+[node]: 39 1 T 0.1 Tangerang Tangerang Selatan, roboh
+[node]: 40 1 K 0.0 Kepala Kepala daerah, hal
+[node]: 41 1 s 0.1 siang siang
+[node]: 42 1 i 0.1 ini, ini, kepolisian
+[node]: 43 1 W 0.0 Warga Warga
+[node]: 44 1 l 0.1 melanjutkan lanjut-01
+[node]: 45 1 s 0.1 sejarah sejarah gedung tersebut,
+[node]: 46 1 W 0.0 Wali Wali Kota Tangerang
+[node]: 47 1 T 0.0.0 Dari Tangsel Pos
+[node]: 48 1 d 0.2.3.1 dilanjutkan, dilanjutkan,
+[node]: 49 1 P 0.0 Polres Polres Tangerang Selatan
+[node]: 50 1 p 0.1 pengalihan pengalihan arus
+[node]: 51 1 s 0.2 sejarahnya sejarahnya menurutnya
+[node]: 52 1 u 0.1.0 untuk untuk
+[node]: 53 1 B 0.1.1 Bangunan Bangunan Gedung, persyaratan
+[node]: 54 1 B 0.0.0 Bank Bank Panin Bintaro
+[node]: 55 1 U 0.1 Undang-Undang Undang-Undang
+[node]: 56 1 r 0.1.0 roboh roboh-01
+[node]: 57 1 P 0.0 Panin Panin
+[node]: 58 2 l 0.2.0|0.1 lintas lintas
+[node]: 59 1 p 0.1 peristiwa peristiwa
+[node]: 60 1 p 0.1 pengendara pengendara bagi melaju
+[node]: 61 1 H 0.0 Hingga Hingga
+[node]: 62 1 A 0.0 Adapun Adapun
+[node]: 63 1 p 0.1 petugas petugas
+[node]: 64 1 a 0 dialihkan alih-01
+[node]: 65 1 k 0.0.1.0 konstruksinya konstruksinya
+[node]: 66 1 p 0.1.1.0 perhatian perhatian masyarakat banyak, ada
+[node]: 67 1 b 0.2.3.0 bangunan bangunan
+[node]: 68 1 k 0.1 kelayakan kelayakan
+[node]: 69 1 d 0.1.0 di di dekat
+[node]: 70 2 g 0.1|0.0 gedung gedung-01
+[node]: 71 1 p 0.1 persetujuan persetujuan
+[node]: 72 1 r 0.1 rekomendasi rekomendasi Pemerintah
+[node]: 73 1 l 0 berlokasi lokasi-01
+[node]: 74 1 A 0.0 Airin Airin
+[node]: 75 1 u 0.1.2.1.0 tidak uji kelayakan ada
+[node]: 76 1 M 0.1 Menara Menara pada Saidah
+[node]: 77 1 s 0.1 sisi sisi
+[node]: 78 1 t 0.1 tua tua sudah
+[node]: 79 1 b 0 membenarkan benar-01
+[node]: 80 1 B 0.1.1 Bintaro, Bintaro, di Tangerang Selatan.
+[node]: 81 1 t 0 menunggu tunggu-01
+[node]: 82 1 A 0.0 Atas Atas kejadian
+[node]: 83 1 B 0.0 Bank Bank Panin pemilik sebagai
+[node]: 84 1 K 0.0 Kawasan Kawasan
+[node]: 85 1 N 0.1.0 Nomor Nomor 28 2002
+[node]: 86 1 d 0.2 diduga duga-01
+[node]: 87 1 t 0 menuturkan tutur-01
+[node]: 88 1 p 0.2 pintu pintu keluar Tol
+[node]: 89 2 b 0.1|0.0.1 dibangun bangun-01
+[node]: 90 1 P 0.0 Padahal, Padahal,
+[node]: 91 1 P 0.0 Pengalihan Pengalihan
+[node]: 92 1 o 0 *objek_perubahan* objek ubah-01
+[node]: 93 1 t 0 timbul timbul-01
+[node]: 94 1 b 0 memberikan beri-01
+[node]: 95 1 u 0.1 umum umum-01
+[node]: 96 1 j 0 berjaga jaga-01
+[node]: 97 2 n 0.1.2|0 dinyatakan nyata-01
+[node]: 98 2 k 0.1.2|0.2.2 kuat kuat atau
+[node]: 99 1 S 0.1.0 Sektor Sektor 7, Bintaro,
+[node]: 100 1 g 0 digegerkan geger-01
+[node]: 101 1 t 0.2.3.1.0 untuk tidak kemudian
+[node]: 102 1 K 0.0 Ketua Ketua Menurut Badan menghimpun
+[node]: 103 1 P 0.0 Pembongkaran Pembongkaran gedung
+[node]: 104 1 l 0 terlihat lihat-01
+[node]: 105 1 k 0.1.2.0 karena karena
+[node]: 106 1 k 0 mengutip kutip-01
+[node]: 107 1 d 0.1 dengan dengan
+[node]: 108 1 b 0.2.3 dibiarkan biar-01
+[node]: 109 1 p 0.0 pantauan pantauan
+[node]: 110 1 d 0.1.3.1 dilanjutkan. dilanjutkan. untuk tidak
+[node]: 111 1 p 0.1.1 pembangunan pembangunan gedung itu
+[node]: 112 1 K 0.0 Kegagalan Kegagalan struktur kesalahan
+[node]: 113 1 l 0.1.2.1 lulus lulus
+[node]: 114 1 J 0.2 Jumat Jumat hingga
+[edge]: 1 0 92 ROOT
+[edge]: 1 92 102 ARG1
+[edge]: 1 92 89 ARG0
+[edge]: 1 89 29 ARG1
+[edge]: 1 0 18 ROOT
+[edge]: 1 18 91 ARG1
+[edge]: 1 18 60 ARG0
+[edge]: 1 0 11 ROOT
+[edge]: 1 11 112 ARG1
+[edge]: 1 11 76 ARG0
+[edge]: 1 0 106 ROOT
+[edge]: 1 106 90 ARG0
+[edge]: 1 106 55 ARG1
+[edge]: 1 55 85 unit
+[edge]: 1 55 53 topic
+[edge]: 1 0 79 ROOT
+[edge]: 1 79 14 ARG0
+[edge]: 1 79 59 ARG1
+[edge]: 1 59 25 location
+[edge]: 1 59 30 ARG2
+[edge]: 1 30 66 ARG0
+[edge]: 1 0 13 ROOT
+[edge]: 1 13 57 ARG0
+[edge]: 1 13 44 ARG1
+[edge]: 1 44 2 ARG0
+[edge]: 1 44 111 ARG1
+[edge]: 1 44 97 ARG2
+[edge]: 1 97 105 ARG1
+[edge]: 1 97 113 ARG0
+[edge]: 1 113 75 polarity -
+[edge]: 1 0 97 ROOT
+[edge]: 1 97 6 ARG1
+[edge]: 1 6 34 duration
+[edge]: 1 97 38 ARG0
+[edge]: 1 38 2 ARG1
+[edge]: 1 38 37 ARG0
+[edge]: 1 38 98 polarity -
+[edge]: 1 38 13 ARG2
+[edge]: 1 13 10 ARG1
+[edge]: 1 13 110 ARG0
+[edge]: 1 0 17 ROOT
+[edge]: 1 17 32 ARG0
+[edge]: 1 0 93 ROOT
+[edge]: 1 93 82 ARG1
+[edge]: 1 93 2 ARG0
+[edge]: 1 0 15 ROOT
+[edge]: 1 15 103 ARG0
+[edge]: 1 15 39 ARG1
+[edge]: 1 15 86 ARG2
+[edge]: 1 0 64 ROOT
+[edge]: 1 64 3 ARG1
+[edge]: 1 64 58 ARG0
+[edge]: 1 64 88 source
+[edge]: 1 64 19 path
+[edge]: 2 0 97 ROOT|ROOT
+[edge]: 1 97 33 ARG1
+[edge]: 1 97 68 ARG0
+[edge]: 2 97 38 ARG0|ARG2
+[edge]: 2 38 2 ARG1|ARG1
+[edge]: 2 38 37 ARG0|ARG0
+[edge]: 2 38 98 polarity -|polarity -
+[edge]: 1 38 108 ARG2
+[edge]: 1 108 67 ARG1
+[edge]: 1 108 48 ARG0
+[edge]: 1 48 101 purpose
+[edge]: 1 0 100 ROOT
+[edge]: 1 100 43 ARG1
+[edge]: 1 100 107 ARG0
+[edge]: 2 0 17 ROOT|ROOT
+[edge]: 1 17 8 ARG0
+[edge]: 1 17 7 ARG1
+[edge]: 1 0 4 ROOT
+[edge]: 1 4 84 ARG1
+[edge]: 1 4 95 ARG0
+[edge]: 1 95 52 ARG1
+[edge]: 1 4 114 weekday
+[edge]: 2 0 11 ROOT|ROOT
+[edge]: 1 11 70 ARG1
+[edge]: 1 70 54 ARG1
+[edge]: 1 70 89 ARG0
+[edge]: 1 89 65 ARG1
+[edge]: 1 89 31 ARG0
+[edge]: 1 0 104 ROOT
+[edge]: 1 104 20 ARG1
+[edge]: 1 20 22 ARG2
+[edge]: 1 104 78 ARG0
+[edge]: 1 0 81 ROOT
+[edge]: 1 81 9 ARG0
+[edge]: 1 81 72 ARG1
+[edge]: 1 0 96 ROOT
+[edge]: 1 96 109 ARG0
+[edge]: 1 109 47 source
+[edge]: 1 109 26 location
+[edge]: 1 96 63 ARG1
+[edge]: 1 0 73 ROOT
+[edge]: 1 73 24 ARG0
+[edge]: 1 73 35 ARG1
+[edge]: 1 35 69 location
+[edge]: 1 0 23 ROOT
+[edge]: 1 23 1 ARG0
+[edge]: 1 23 16 ARG1
+[edge]: 1 0 87 ROOT
+[edge]: 1 87 74 ARG0
+[edge]: 1 87 45 ARG1
+[edge]: 1 87 51 source
+[edge]: 1 0 27 ROOT
+[edge]: 1 27 61 ARG0
+[edge]: 1 27 42 ARG1
+[edge]: 2 0 18 ROOT|ROOT
+[edge]: 1 18 49 ARG0
+[edge]: 1 18 50 ARG1
+[edge]: 1 18 5 ARG2
+[edge]: 1 5 58 ARG0
+[edge]: 1 5 25 ARG1
+[edge]: 2 0 13 ROOT|ROOT
+[edge]: 1 13 83 ARG0
+[edge]: 2 13 44 ARG1|ARG1
+[edge]: 2 44 2 ARG0|ARG0
+[edge]: 2 44 111 ARG1|ARG1
+[edge]: 2 44 97 ARG2|ARG2
+[edge]: 2 97 105 ARG1|ARG1
+[edge]: 2 97 113 ARG0|ARG0
+[edge]: 2 113 75 polarity -|polarity -
+[edge]: 1 0 12 ROOT
+[edge]: 1 12 14 ARG0
+[edge]: 1 12 21 ARG1
+[edge]: 1 21 99 location
+[edge]: 2 0 18 ROOT|ROOT
+[edge]: 1 18 62 ARG1
+[edge]: 1 18 77 ARG0
+[edge]: 2 0 11 ROOT|ROOT
+[edge]: 1 11 36 ARG1
+[edge]: 1 11 41 ARG0
+[edge]: 1 0 28 ROOT
+[edge]: 1 28 46 ARG0
+[edge]: 1 28 70 ARG1
+[edge]: 1 70 56 ARG1
+[edge]: 1 70 80 ARG0
+[edge]: 1 0 94 ROOT
+[edge]: 1 94 40 ARG0
+[edge]: 1 94 71 ARG1

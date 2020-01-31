@@ -1,0 +1,118 @@
+[
+  {
+    "amr_graph": "menandatangani :ARG0 ( INDOSAT  :accompanier ( Ooredoo Fujitsu Indonesia ) ) :ARG1 ( Nota  :duration ( Kesepahaman rangka memantapkan ) )",
+    "sentence": "INDOSAT Ooredoo bersama Fujitsu Indonesia menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerja sama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*."
+  },
+  {
+    "amr_graph": "menandatangani :ARG0 ( Seiring ) :ARG1 ( Fujitsu Indonesia pun )",
+    "sentence": "Seiring perkembangan tersebut, Indosat Ooredoo bersama Fujitsu Indonesia pun menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerjasama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*."
+  },
+  {
+    "amr_graph": "alami :ARG0 ( Smart Mobility IoT dan ) :ARG1 ( perkembangan )",
+    "sentence": "Smart Mobility dan IoT mengalami perkembangan yang cukup signifikan baik dari segi kuantitas atau kualitas informasi real-time yang tersedia sehingga mengubah cara perusahaan dalam mengelola aset, jaringan, serta dalam memberikan pengalaman terbaik kepada pelanggan."
+  },
+  {
+    "amr_graph": "menandatangani :ARG0 ( Indosat  :accompanier ( Ooredoo Fujitsu Indonesia ) ) :ARG1 ( Nota  :duration ( Kesepahaman rangka memantapkan ) )",
+    "sentence": "Indosat Ooredoo bersama Fujitsu Indonesia menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerja sama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( awal, Sebagai ) :ARG1 ( kerjasama ini ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) )",
+    "sentence": "Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "sedia :ARG0 ( Mobilitas ) :ARG1 ( optimal  :ARG0 ( untuk ) :ARG1 ( strategi perusahaan ) :ARG2 ( manfaat  :ARG0 ( dengan ) :ARG1 ( aplikasi layanan dan memproses ) ) )",
+    "sentence": "Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, tutur Achmad Sofwan, President Director Fujitsu Indonesia."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( langkah Sebagai awal, ) :ARG1 ( kerjasama ini ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) )",
+    "sentence": "Sebagai langkah awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "kerja :ARG1 ( Indosat Ooredoo ) :ARG0 ( Fujitsu dengan Indonesia ) :ARG2 ( hadir  :ARG0 ( dalam ) :ARG1 ( solusi Smart *(IoT)*. ) )",
+    "sentence": "Indosat Ooredoo bekerja sama dengan Fujitsu Indonesia dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*."
+  },
+  {
+    "amr_graph": "tambah :ARG1 ( *objek_perubahan* ) :ARG0 ( Ahmad. )",
+    "sentence": "\"Fujitsu dan Indosat Ooredoo berkomitmen bersama untuk mendukung setiap institusi dalam pengambilan keputusan secara real-time berbasis data bisnis yang ktitikal yang dahulu sering terabaikan. Mobilitas di masa depan dipercaya akan makin dinamis dan lebih human sentris. Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini,\" tambah Ahmad."
+  },
+  {
+    "amr_graph": "yakin :ARG0 ( Baik ) :ARG1 ( Fujitsu Indosat maupun Ooredoo ) :ARG2 ( dukung  :ARG0 ( kemitraan ) :ARG1 ( mendayagunakan  :ARG0 ( dalam ) :ARG1 ( kekuatan seluruh miliki ) :ARG2 ( atas  :ARG0 ( dalam ) :ARG1 ( tantangan seluruh hadir ) ) ) )",
+    "sentence": "Baik Fujitsu maupun Indosat Ooredoo meyakini bahwa kemitraan strategis yang terjalin ini nantinya akan mampu mendukung keduanya dalam mendayagunakan seluruh kekuatan yang mereka miliki dalam mengatasi seluruh tantangan yang akan hadir di masa depan."
+  },
+  {
+    "amr_graph": "ungkap :ARG0 ( itu, Selain President ) :ARG1 ( mobilitas ) :ARG2 ( sedia  :ARG0 ( mengoptimalisasikan ) )",
+    "sentence": "Selain itu, President Director Fujitsu, Achmad Sofwan juga mengungkap, mobilitas akan menyediakan cara mengoptimalisasikan strategi perusahaan dengan memanfaatkan aplikasi dan layanan dalam aktivitas memproses data real-time, sehingga mampu menghadirkan informasi instan yang akurat."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( awal, Sebagai ) :ARG1 ( kerjasama ini ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) )",
+    "sentence": "Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( peranti, layanan, solusi teknologi )",
+    "sentence": "Kemitraan ini menyinergikan peranti, layanan, dan solusi teknologi informasi mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "sedia :ARG0 ( Mobilitas ) :ARG1 ( optimal  :ARG0 ( untuk ) :ARG1 ( strategi perusahaan ) :ARG2 ( manfaat  :ARG0 ( dengan ) :ARG1 ( aplikasi layanan dan memproses ) ) )",
+    "sentence": "Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, tutur Achmad Sofwan, President Director Fujitsu Indonesia."
+  },
+  {
+    "amr_graph": "sedia :ARG0 ( Mobilitas ) :ARG1 ( optimal  :ARG0 ( untuk ) :ARG1 ( strategi perusahaan ) :ARG2 ( manfaat  :ARG0 ( dengan ) :ARG1 ( aplikasi layanan dan memproses ) ) )",
+    "sentence": "Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, ujarnya."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan terbaru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( awal, Sebagai ) :ARG1 ( kerjasama ini ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) )",
+    "sentence": "Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia serta perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "sebut :ARG0 ( Director ) :ARG1 ( pandang  :ARG1 ( era digital ) :ARG0 ( peluang ) )",
+    "sentence": "Director & Chief Wholesale and Enterprise Indosat Ooredoo Herfini Haryono menyebutkan bahwa era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi."
+  },
+  {
+    "amr_graph": "alami :ARG0 ( Smart mobility IoT dan ) :ARG1 ( perkembangan )",
+    "sentence": "Smart mobility dan IoT mengalami perkembangan yang cukup signifikan baik dari segi kuantitas atau kualitas informasi real-time yang tersedia sehingga mengubah cara perusahaan dalam mengelola aset, jaringan, serta dalam memberikan pengalaman terbaik kepada pelanggan."
+  },
+  {
+    "amr_graph": "tutur :ARG0 ( Herfini ) :ARG1 ( era digital ) :ARG2 ( pandang  :ARG1 ( peluang ) )",
+    "sentence": "Herfini Haryono, Director & Chief Wholesale and Enterprise Indosat Ooredoo menuturkan era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( awal, Sebagai ) :ARG1 ( kerjasama ini ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) )",
+    "sentence": "Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "fokus :ARG0 ( sektor  :location ( otomotif transportasi, dan ) :ARG2 ( luas  :ARG1 ( sektor ke berbagai industri ) ) )",
+    "sentence": "Sebagai awal kerja sama ini akan berfokus pada sektor otomotif dan transportasi, yang akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "tutur :ARG0 ( Herfini ) :ARG1 ( era digital ) :ARG2 ( pandang  :ARG1 ( peluang ) )",
+    "sentence": "Herfini Haryono, Director & Chief Wholesale and Enterprise Indosat Ooredoo menuturkan era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "tambah :ARG0 ( Achmad ) :ARG1 ( sinergi  :ARG0 ( kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) ) )",
+    "sentence": "Achmad Sofwan, President Director Fujitsu Indonesia menambahkan bahwa kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  },
+  {
+    "amr_graph": "sinergi :ARG0 ( Kemitraan ini ) :ARG1 ( piranti, layanan, solusi ) :ARG2 ( hadir  :ARG0 ( untuk ) :ARG1 ( produk ) )",
+    "sentence": "Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia."
+  }
+]

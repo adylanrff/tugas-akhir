@@ -1,0 +1,291 @@
+# ::id c-gedung-roboh-json.1
+# ::snt-type body
+# ::preferred
+# ::snt Menurut Ketua Badan Informasi dan Hubungan Masyarakat Ikatan Arsitek Indonesia *(IAI)* Zakie Muttaqien yang menghimpun keterangan dari Kepala Bidang Bangunan Dinas Tata Kota Bangunan dan Pemukiman *(DTKBP)* Kota Tangsel Muqoddas Syuhada, gedung tersebut sudah "salah" sejak awal dibangun pada 1995 silam.
+(o / objek ubah-01
+    :ARG1 (K / Ketua Menurut Badan menghimpun)
+    :ARG0 (b / bangun-01
+        :ARG1 (s / silam. pada 1995)))
+
+# ::id c-gedung-roboh-json.2
+# ::snt-type body
+# ::preferred
+# ::snt Pengalihan dilakukan bagi pengendara yang melaju dari arah mal Bintaro XChange dan tol Bintaro menuju Jalan Boulevard Bintaro dengan menggunakan flyover di atas lampu merah Indomobil.
+(l / laku-01
+    :ARG1 (P / Pengalihan)
+    :ARG0 (p / pengendara bagi melaju))
+
+# ::id c-gedung-roboh-json.3
+# ::snt-type body
+# ::preferred
+# ::snt Kegagalan struktur dan kesalahan tes tanah yang mengakibatkan gedung miring juga terjadi pada Menara Saidah di Jalan MT Haryono, Jakarta Timur.
+(j / jadi-01
+    :ARG1 (K / Kegagalan struktur kesalahan)
+    :ARG0 (M / Menara pada Saidah))
+
+# ::id c-gedung-roboh-json.4
+# ::snt-type body
+# ::preferred
+# ::snt Padahal, mengutip Undang-Undang Nomor 28 Tahun 2002 tentang Bangunan Gedung, apabila persyaratan teknis bangunan gedung yang mencakup dua persyaratan, yakni tata bangunan dan persyaratan keandalan bangunan gedung tidak terpenuhi, maka gedung tersebut tidak bisa difungsikan.
+(k / kutip-01
+    :ARG0 (P / Padahal,)
+    :ARG1 (U / Undang-Undang
+        :unit (N / Nomor 28 2002)
+        :topic (B / Bangunan Gedung, persyaratan)))
+
+# ::id c-gedung-roboh-json.5
+# ::snt-type body
+# ::preferred
+# ::snt Kapolres Tangerang Selatan, AKBP Ayi Supardan membenarkan peristiwa robohnya gedung di Bintaro yang menarik perhatian masyarakat banyak, bahkan kendaraan yang tengah melintas ada yang terkena serpihan dari gedung yang roboh tersebut.
+(b / benar-01
+    :ARG0 (K / Kapolres)
+    :ARG1 (p / peristiwa
+        :location (r / robohnya gedung Bintaro)
+        :ARG2 (t / tarik-01
+            :ARG0 (p / perhatian masyarakat banyak, ada))))
+
+# ::id c-gedung-roboh-json.6
+# ::snt-type body
+# ::preferred
+# ::snt Panin memutuskan tidak melanjutkan pembangunan gedung itu karena dinyatakan tidak lulus uji kelayakan dan ada bagian gedung yang miring sehingga dinilai tidak aman untuk ditempati.
+(p / putus-01
+    :ARG0 (P / Panin)
+    :ARG1 (l / lanjut-01
+        :ARG0 (t / tidak)
+        :ARG1 (p / pembangunan gedung itu)
+        :ARG2 (n / nyata-01
+            :ARG1 (k / karena)
+            :ARG0 (l / lulus
+                :polarity -))))
+
+# ::id c-gedung-roboh-json.7
+# ::snt-type body
+# ::preferred
+# ::snt Namun, dalam perkembangannya, gedung tersebut dinyatakan tidak lulus uji atau tidak kuat sehingga pembangunan gedung diputuskan untuk tidak dilanjutkan.
+(n / nyata-01
+    :ARG1 (N / Namun,
+        :duration (p / perkembangannya, gedung tersebut))
+    :ARG0 (l / lulus-01
+        :ARG1 (t / tidak)
+        :ARG0 (u / uji-01)
+        :polarity -
+        :ARG2 (p / putus-01
+            :ARG1 (p / pembangunan gedung)
+            :ARG0 (d / dilanjutkan. untuk tidak))))
+
+# ::id c-gedung-roboh-json.8
+# ::snt-type body
+# ::preferred
+# ::snt Kasat Reskrim Polres Tangerangg Selatan, AKP Samian mengatakan saat ini pihaknya tengah melakukan penyelidikan untuk mengetahui pasti penyebab runtuhnya gedung.
+(k / kata-01
+    :ARG0 (K / Kasat))
+
+# ::id c-gedung-roboh-json.9
+# ::snt-type body
+# ::preferred
+# ::snt Atas kejadian tersebut tidak timbul korban dan tidak terjadi kerugian material, hingga kini kami masih mendalami peristiwa tersebut, ujarnya.
+(t / timbul-01
+    :ARG1 (A / Atas kejadian)
+    :ARG0 (t / tidak))
+
+# ::id c-gedung-roboh-json.10
+# ::snt-type body
+# ::preferred
+# ::snt Pembongkaran terhadap gedung di Sektor 7, Bintaro, Tangerang Selatan, yang kemudian sebagian roboh pada Kamis *(2/6/2016)*, diduga menyalahi prosedur.
+(s / salah-01
+    :ARG0 (P / Pembongkaran gedung)
+    :ARG1 (T / Tangerang Selatan, roboh)
+    :ARG2 (d / duga-01))
+
+# ::id c-gedung-roboh-json.11
+# ::snt-type body
+# ::preferred
+# ::snt Arus lalu lintas dari pintu keluar Tol Pondok Aren menuju Sektor 9 Bintaro  dialihkan melalui jembatan layan *(flyover)* untuk memutar balik di belakang Hotel Santika, Bintaro, atau melalui akses Bintaro Jaya Xchange Mall.
+(a / alih-01
+    :ARG1 (A / Arus)
+    :ARG0 (l / lintas)
+    :source (p / pintu keluar Tol)
+    :path (m / melalui))
+
+# ::id c-gedung-roboh-json.12
+# ::snt-type body
+# ::preferred
+# ::snt Namun uji kelayakan dinyatakan tidak lulus uji atau tidak kuat sehingga bangunan dibiarkan untuk tidak dilanjutkan, kemudian rangka tersebut di beli oleh H Rozak, H Tulsiam dan H Soleman, kemudian tanggal 1 Mei 2016 mulai dilakukan pembongkaran secara manual oleh pekerja sebanyak 15 orang, kata Ayi.
+(n / nyata-01
+    :ARG1 (N / Namun uji)
+    :ARG0 (k / kelayakan)
+    :ARG2 (l / lulus-01
+        :ARG1 (t / tidak)
+        :ARG0 (u / uji-01)
+        :polarity -
+        :ARG2 (b / biar-01
+            :ARG1 (b / bangunan)
+            :ARG0 (d / dilanjutkan,
+                :purpose (t / tidak kemudian)))))
+
+# ::id c-gedung-roboh-json.13
+# ::snt-type body
+# ::preferred
+# ::snt Warga Bintaro Jaya, Tangerang Selatan, digegerkan dengan getaran dan dentuman keras dari gedung milik Bank Panin Bank yang roboh, Kamis 2 Juni.
+(g / geger-01
+    :ARG1 (W / Warga)
+    :ARG0 (d / dengan))
+
+# ::id c-gedung-roboh-json.14
+# ::snt-type body
+# ::preferred
+# ::snt Nadia, pegawai lain di sekitar bangunan tersebut mengatakan, sejak pagi sekitar pukul 08.00 WIB, dia melihat ada petugas yang merobohkan satu persatu lantai di bangunan tersebut.
+(k / kata-01
+    :ARG0 (N / Nadia, pegawai)
+    :ARG1 (p / pagi sejak))
+
+# ::id c-gedung-roboh-json.15
+# ::snt-type body
+# ::preferred
+# ::snt Kawasan sekitar gedung 21 lantai milik Panin di Jalan Boulevard Bintaro Jaya, Bintaro Sektor 7, Tangerang Selatan, masih ditutup untuk umum hingga Jumat *(3/6/2016)* pagi menjelang siang ini.
+(t / tutup-01
+    :ARG1 (K / Kawasan)
+    :ARG0 (u / umum-01
+        :ARG1 (u / untuk))
+    :weekday (J / Jumat hingga))
+
+# ::id c-gedung-roboh-json.16
+# ::snt-type body
+# ::preferred
+# ::snt Jadi itu sebenarnya gedung Bank Panin Bintaro yang konstruksinya dibangun pada 1995 oleh Jaya Property, ungkap Kapolres Kota Tangsel AKBP Ayi Supardan, di lokasi kejadin tadi sore.
+(j / jadi-01
+    :ARG1 (g / gedung-01
+        :ARG1 (B / Bank Panin Bintaro)
+        :ARG0 (b / bangun-01
+            :ARG1 (k / konstruksinya)
+            :ARG0 (p / pada))))
+
+# ::id c-gedung-roboh-json.17
+# ::snt-type body
+# ::preferred
+# ::snt Gedung roboh di Bintaro yang dibeli dari Bank Panin pada tahun 1998 oleh Jaya Property itu memang terlihat sudah tua dan terbengkalai.
+(l / lihat-01
+    :ARG1 (G / Gedung
+        :ARG2 (r / roboh bintaro di beli-01))
+    :ARG0 (t / tua sudah))
+
+# ::id c-gedung-roboh-json.18
+# ::snt-type body
+# ::preferred
+# ::snt Property Development Panin Group Paulus Indra Intan menunggu rekomendasi dari Pemerintah Kota Tangerang Selatan untuk mendapatkan kontraktor dan konsultan bersertifikat untuk merobohkan gedung di Bintaro Jaya Sektor 7.
+(t / tunggu-01
+    :ARG0 (P / Property)
+    :ARG1 (r / rekomendasi Pemerintah))
+
+# ::id c-gedung-roboh-json.19
+# ::snt-type body
+# ::preferred
+# ::snt Dari pantauan Tangsel Pos di lokasi, kemarin, para petugas Polres Tangsel dan juga Polsek Pondok Aren masih berjaga di sekitar gedung ruboh itu sekitar pukul 16.30 WIB.
+(j / jaga-01
+    :ARG0 (p / pantauan
+        :source (T / Tangsel Pos)
+        :location (l / lokasi, kemarin,))
+    :ARG1 (p / petugas))
+
+# ::id c-gedung-roboh-json.20
+# ::snt-type body
+# ::preferred
+# ::snt Sebuah gedung kosong berlokasi di dekat Bintaro Trade Center, Sektor 7, Bintaro, Kota Tangerang Selatan *(Tangsel)*, roboh pada Kamis *(2/6)*, sekitar pukul 15.00 WIB.
+(l / lokasi-01
+    :ARG0 (g / gedung Sebuah kosong)
+    :ARG1 (B / Bintaro
+        :location (d / di dekat)))
+
+# ::id c-gedung-roboh-json.21
+# ::snt-type body
+# ::preferred
+# ::snt Saksi mata, Nadia yang bekerja tak jauh dari lokasi ambruknya gedung kembar itu mengungkapkan sekitar pukul 08.00 WIB, dia melihat sejumlah orang merobohkan satu per satu lantai di gedung kembar.
+(u / ungkap-01
+    :ARG0 (S / Saksi mata, Nadia bekerja)
+    :ARG1 (s / sekitar 08.00 WIB,))
+
+# ::id c-gedung-roboh-json.22
+# ::snt-type body
+# ::preferred
+# ::snt Airin menuturkan sejarah gedung tersebut, menurutnya   dari sejarahnya sebelum adanya Kota Tangsel, memang gedung tersebut telah mendapat izin untuk mendirikan perkantoran.
+(t / tutur-01
+    :ARG0 (A / Airin)
+    :ARG1 (s / sejarah gedung tersebut,)
+    :source (s / sejarahnya menurutnya))
+
+# ::id c-gedung-roboh-json.23
+# ::snt-type body
+# ::preferred
+# ::snt Hingga saat ini, kepolisian masih memblokir akses di depan gedung milik Bank Panin yang roboh pada Kamis 2 Juni itu.
+(b / blokir-01
+    :ARG0 (H / Hingga)
+    :ARG1 (i / ini, kepolisian))
+
+# ::id c-gedung-roboh-json.24
+# ::snt-type body
+# ::preferred
+# ::snt Polres Tangerang Selatan memberlakukan pengalihan arus lalu lintas menyusul robohnya gedung Panin di Bintaro Sektor 7, Tangerang Selatan, Kamis *(2/6/2016)* pukul 15.00 WIB.
+(l / laku-01
+    :ARG0 (P / Polres Tangerang Selatan)
+    :ARG1 (p / pengalihan arus)
+    :ARG2 (s / susul-01
+        :ARG0 (l / lintas)
+        :ARG1 (r / robohnya gedung Bintaro)))
+
+# ::id c-gedung-roboh-json.25
+# ::snt-type body
+# ::preferred
+# ::snt Bank Panin sebagai pemilik memutuskan tidak melanjutkan pembangunan gedung itu karena dinyatakan tidak lulus uji kelayakan dan ada bagian gedung yang miring, sehingga dinilai tidak aman untuk ditempati.
+(p / putus-01
+    :ARG0 (B / Bank Panin pemilik sebagai)
+    :ARG1 (l / lanjut-01
+        :ARG0 (t / tidak)
+        :ARG1 (p / pembangunan gedung itu)
+        :ARG2 (n / nyata-01
+            :ARG1 (k / karena)
+            :ARG0 (l / lulus
+                :polarity -))))
+
+# ::id c-gedung-roboh-json.26
+# ::snt-type body
+# ::preferred
+# ::snt Kapolres Tangerang Selatan Ajun Komisaris Besar Ayi Supardan menjelaskan perihal gedung yang roboh di Sektor 7, Bintaro, Tangerang Selatan, Kamis *(2/6/2016)* siang.
+(j / jelas-01
+    :ARG0 (K / Kapolres)
+    :ARG1 (p / perihal
+        :location (S / Sektor 7, Bintaro,)))
+
+# ::id c-gedung-roboh-json.27
+# ::snt-type body
+# ::preferred
+# ::snt Adapun sebelum sisi depan gedung tersebut roboh kemarin, memang sedang dilakukan pembongkaran oleh 15 pekerja bangunan.
+(l / laku-01
+    :ARG1 (A / Adapun)
+    :ARG0 (s / sisi))
+
+# ::id c-gedung-roboh-json.28
+# ::snt-type body
+# ::preferred
+# ::snt Benar peristiwa gedung Bintaro roboh ini terjadi siang tadi sekitar pukul 14.00 WIB, ungkap AKBP Ayi Supardan, Kapolres Tangerang Selatan,, Kamis *(2/6/2016)*.
+(j / jadi-01
+    :ARG1 (B / Benar)
+    :ARG0 (s / siang))
+
+# ::id c-gedung-roboh-json.29
+# ::snt-type body
+# ::preferred
+# ::snt Wali Kota Tangerang Selatan *(Tangsel)* Airin Rachmi Diany menyambangi langsung gedung roboh di Bintaro, Tangerang Selatan.
+(s / sambang-01
+    :ARG0 (W / Wali Kota Tangerang)
+    :ARG1 (g / gedung-01
+        :ARG1 (r / roboh-01)
+        :ARG0 (B / Bintaro, di Tangerang Selatan.)))
+
+# ::id c-gedung-roboh-json.30
+# ::snt-type body
+# ::preferred
+# ::snt Kepala daerah, dalam hal ini Wali Kota Tangerang Selatan, akan memberikan persetujuan setelah mendapat pertimbangan dari tim ahli bangunan atau gedung.
+(b / beri-01
+    :ARG0 (K / Kepala daerah, hal)
+    :ARG1 (p / persetujuan))
+

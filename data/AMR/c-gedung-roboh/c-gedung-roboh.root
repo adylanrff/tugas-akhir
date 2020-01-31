@@ -1,0 +1,142 @@
+(_ROOT_ / _ROOT_ (
+    (o / objek ubah-01
+        :ARG1 (K / Ketua Menurut Badan menghimpun)
+        :ARG0 (b / bangun-01
+            :ARG1 (s / silam. pada 1995)))
+    (l / laku-01
+        :ARG1 (P / Pengalihan)
+        :ARG0 (p / pengendara bagi melaju))
+    (j / jadi-01
+        :ARG1 (K / Kegagalan struktur kesalahan)
+        :ARG0 (M / Menara pada Saidah))
+    (k / kutip-01
+        :ARG0 (P / Padahal,)
+        :ARG1 (U / Undang-Undang
+            :unit (N / Nomor 28 2002)
+            :topic (B / Bangunan Gedung, persyaratan)))
+    (b / benar-01
+        :ARG0 (K / Kapolres)
+        :ARG1 (p / peristiwa
+            :location (r / robohnya gedung Bintaro)
+            :ARG2 (t / tarik-01
+                :ARG0 (p / perhatian masyarakat banyak, ada))))
+    (p / putus-01
+        :ARG0 (P / Panin)
+        :ARG1 (l / lanjut-01
+            :ARG0 (t / tidak)
+            :ARG1 (p / pembangunan gedung itu)
+            :ARG2 (n / nyata-01
+                :ARG1 (k / karena)
+                :ARG0 (l / lulus
+                    :polarity -))))
+    (n / nyata-01
+        :ARG1 (N / Namun,
+            :duration (p / perkembangannya, gedung tersebut))
+        :ARG0 (l / lulus-01
+            :ARG1 (t / tidak)
+            :ARG0 (u / uji-01)
+            :polarity -
+            :ARG2 (p / putus-01
+                :ARG1 (p / pembangunan gedung)
+                :ARG0 (d / dilanjutkan. untuk tidak))))
+    (k / kata-01
+        :ARG0 (K / Kasat))
+    (t / timbul-01
+        :ARG1 (A / Atas kejadian)
+        :ARG0 (t / tidak))
+    (s / salah-01
+        :ARG0 (P / Pembongkaran gedung)
+        :ARG1 (T / Tangerang Selatan, roboh)
+        :ARG2 (d / duga-01))
+    (a / alih-01
+        :ARG1 (A / Arus)
+        :ARG0 (l / lintas)
+        :source (p / pintu keluar Tol)
+        :path (m / melalui))
+    (n / nyata-01
+        :ARG1 (N / Namun uji)
+        :ARG0 (k / kelayakan)
+        :ARG2 (l / lulus-01
+            :ARG1 (t / tidak)
+            :ARG0 (u / uji-01)
+            :polarity -
+            :ARG2 (b / biar-01
+                :ARG1 (b / bangunan)
+                :ARG0 (d / dilanjutkan,
+                    :purpose (t / tidak kemudian)))))
+    (g / geger-01
+        :ARG1 (W / Warga)
+        :ARG0 (d / dengan))
+    (k / kata-01
+        :ARG0 (N / Nadia, pegawai)
+        :ARG1 (p / pagi sejak))
+    (t / tutup-01
+        :ARG1 (K / Kawasan)
+        :ARG0 (u / umum-01
+            :ARG1 (u / untuk))
+        :weekday (J / Jumat hingga))
+    (j / jadi-01
+        :ARG1 (g / gedung-01
+            :ARG1 (B / Bank Panin Bintaro)
+            :ARG0 (b / bangun-01
+                :ARG1 (k / konstruksinya)
+                :ARG0 (p / pada))))
+    (l / lihat-01
+        :ARG1 (G / Gedung
+            :ARG2 (r / roboh bintaro di beli-01))
+        :ARG0 (t / tua sudah))
+    (t / tunggu-01
+        :ARG0 (P / Property)
+        :ARG1 (r / rekomendasi Pemerintah))
+    (j / jaga-01
+        :ARG0 (p / pantauan
+            :source (T / Tangsel Pos)
+            :location (l / lokasi, kemarin,))
+        :ARG1 (p / petugas))
+    (l / lokasi-01
+        :ARG0 (g / gedung Sebuah kosong)
+        :ARG1 (B / Bintaro
+            :location (d / di dekat)))
+    (u / ungkap-01
+        :ARG0 (S / Saksi mata, Nadia bekerja)
+        :ARG1 (s / sekitar 08.00 WIB,))
+    (t / tutur-01
+        :ARG0 (A / Airin)
+        :ARG1 (s / sejarah gedung tersebut,)
+        :source (s / sejarahnya menurutnya))
+    (b / blokir-01
+        :ARG0 (H / Hingga)
+        :ARG1 (i / ini, kepolisian))
+    (l / laku-01
+        :ARG0 (P / Polres Tangerang Selatan)
+        :ARG1 (p / pengalihan arus)
+        :ARG2 (s / susul-01
+            :ARG0 (l / lintas)
+            :ARG1 (r / robohnya gedung Bintaro)))
+    (p / putus-01
+        :ARG0 (B / Bank Panin pemilik sebagai)
+        :ARG1 (l / lanjut-01
+            :ARG0 (t / tidak)
+            :ARG1 (p / pembangunan gedung itu)
+            :ARG2 (n / nyata-01
+                :ARG1 (k / karena)
+                :ARG0 (l / lulus
+                    :polarity -))))
+    (j / jelas-01
+        :ARG0 (K / Kapolres)
+        :ARG1 (p / perihal
+            :location (S / Sektor 7, Bintaro,)))
+    (l / laku-01
+        :ARG1 (A / Adapun)
+        :ARG0 (s / sisi))
+    (j / jadi-01
+        :ARG1 (B / Benar)
+        :ARG0 (s / siang))
+    (s / sambang-01
+        :ARG0 (W / Wali Kota Tangerang)
+        :ARG1 (g / gedung-01
+            :ARG1 (r / roboh-01)
+            :ARG0 (B / Bintaro, di Tangerang Selatan.)))
+    (b / beri-01
+        :ARG0 (K / Kepala daerah, hal)
+        :ARG1 (p / persetujuan)))

@@ -1,0 +1,370 @@
+# ::id d-indo-fuji-json.1
+# ::snt-type body
+# ::preferred
+# ::tok INDOSAT Ooredoo bersama Fujitsu Indonesia menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerja sama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*.
+# ::alignments 5-6|0 0-1|0.0 1-2|0.0.0 3-5|0.0.0 6-7|0.1 7-8|0.1.0 9-11|0.1.0 
+(m / menandatangani-01
+    :ARG0 (I / INDOSAT
+        :accompanier (O / Ooredoo Fujitsu Indonesia))
+    :ARG1 (N / Nota
+        :duration (K / Kesepahaman rangka memantapkan)))
+
+# ::id d-indo-fuji-json.2
+# ::snt-type body
+# ::preferred
+# ::tok Seiring perkembangan tersebut, Indosat Ooredoo bersama Fujitsu Indonesia pun menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerjasama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*.
+# ::alignments 9-10|0 0-1|0.0 6-9|0.1 
+(t / tandatangan-01
+    :ARG0 (I / Indosat Ooredoo
+        :accompanier (F / Fujitsu Indonesia))
+    :ARG1 (N / Nota Kesepahaman)
+    :ARG2 (m / mantap-01
+        :ARG1 (d / dan
+            :op1 (k / kemitraan
+                :accompanier (p / para pelanggan bisnis)
+                :ARG2 (b / bangun-01))
+            :op2 (k2 / kerjasama-01
+                :ARG2 (h / hadir-01
+                    :ARG1 (s / solusi Smart Mobility dan Internet of Things *(IoT)*))))))
+
+# ::id d-indo-fuji-json.3
+# ::snt-type body
+# ::preferred
+# ::tok Smart Mobility dan IoT mengalami perkembangan yang cukup signifikan baik dari segi kuantitas atau kualitas informasi real-time yang tersedia sehingga mengubah cara perusahaan dalam mengelola aset, jaringan, serta dalam memberikan pengalaman terbaik kepada pelanggan.
+# ::alignments 4-5|0 0-4|0.0 5-6|0.1 
+(a / alami-01
+    :ARG0 (d / dan
+        :op1 (s / Smart Mobility)
+        :op2 (i / IoT))
+    :ARG1 (p / perkembangan
+        :ARG2 (c / cukup signifikan)))
+
+# ::id d-indo-fuji-json.4
+# ::snt-type body
+# ::preferred
+# ::tok Indosat Ooredoo bersama Fujitsu Indonesia menandatangani Nota Kesepahaman dalam rangka memantapkan kemitraan dengan para pelanggan bisnis yang telah dibangun dan bekerja sama dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*.
+# ::alignments 5-6|0 0-1|0.0 1-2|0.0.0 3-5|0.0.0 6-7|0.1 7-8|0.1.0 9-11|0.1.0 
+(t / tandatangan-01
+    :ARG0 (I / Indosat Ooredoo
+        :accompanier (F / Fujitsu Indonesia))
+    :ARG1 (N / Nota Kesepahaman)
+    :ARG2 (m / mantap-01
+        :ARG1 (d / dan
+            :op1 (k / kemitraan
+                :accompanier (p / para pelanggan bisnis)
+                :ARG2 (b / bangun-01))
+            :op2 (k2 / kerjasama-01
+                :ARG2 (h / hadir-01
+                    :ARG1 (s / solusi Smart Mobility dan Internet of Things *(IoT)*))))))
+
+# ::id d-indo-fuji-json.5
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 5-6|0 0-2|0.0 2-4|0.1 13-14|0.2 7-8|0.2.0 14-16|0.2.2 
+(f / fokus-01
+    :ARG0 (a / awal, Sebagai)
+    :ARG1 (k / kerjasama ini)
+    :ARG2 (l / luas-01
+        :ARG1 (s / sektor ke berbagai industri)))
+
+# ::id d-indo-fuji-json.6
+# ::snt-type body
+# ::preferred
+# ::tok Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, tutur Achmad Sofwan, President Director Fujitsu Indonesia.
+# ::alignments 2-3|0 0-1|0.0 5-6|0.1 4-5|0.1.0 6-8|0.1.1 9-10|0.1.2 8-9|0.1.2.0 10-13|0.1.2.2 
+(s / sedia-01
+    :ARG0 (M / Mobilitas)
+    :ARG1 (o / optimal-01
+        :ARG0 (u / untuk)
+        :ARG1 (s / strategi perusahaan)
+        :ARG2 (m / manfaat-01
+            :ARG0 (d / dengan)
+            :ARG1 (a / aplikasi layanan dan memproses))))
+
+# ::id d-indo-fuji-json.7
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai langkah awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 6-7|0 0-3|0.0 3-5|0.1 14-15|0.2 8-9|0.2.0 15-17|0.2.2 
+(f / fokus-01
+    :ARG0 (l / langkah Sebagai awal,)
+    :ARG1 (k / kerjasama ini)
+    :ARG2 (l / luas-01
+        :ARG1 (s / sektor ke berbagai industri)))
+
+# ::id d-indo-fuji-json.8
+# ::snt-type body
+# ::preferred
+# ::tok Indosat Ooredoo bekerja sama dengan Fujitsu Indonesia dalam menghadirkan solusi Smart Mobility dan Internet of Things *(IoT)*.
+# ::alignments 2-3|0 0-2|0.0 4-7|0.1 8-9|0.2 7-8|0.2.0 9-11|0.2.1 
+(k / kerja-01
+    :ARG1 (I / Indosat Ooredoo)
+    :ARG0 (F / Fujitsu dengan Indonesia)
+    :ARG2 (h / hadir-01
+        :ARG0 (d / dalam)
+        :ARG1 (s / solusi Smart *(IoT)*.)))
+
+# ::id d-indo-fuji-json.9
+# ::snt-type body
+# ::preferred
+# ::tok "Fujitsu dan Indosat Ooredoo berkomitmen bersama untuk mendukung setiap institusi dalam pengambilan keputusan secara real-time berbasis data bisnis yang ktitikal yang dahulu sering terabaikan. Mobilitas di masa depan dipercaya akan makin dinamis dan lebih human sentris. Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini," tambah Ahmad.
+# ::alignments 64-65|0 0-1|0.0 65-66|0.1 
+(t / tambah-01
+    :ARG1 (* / *objek_perubahan*)
+    :ARG0 (A / Ahmad.))
+
+# ::id d-indo-fuji-json.10
+# ::snt-type body
+# ::preferred
+# ::tok Baik Fujitsu maupun Indosat Ooredoo meyakini bahwa kemitraan strategis yang terjalin ini nantinya akan mampu mendukung keduanya dalam mendayagunakan seluruh kekuatan yang mereka miliki dalam mengatasi seluruh tantangan yang akan hadir di masa depan.
+# ::alignments 5-6|0 0-1|0.0 1-5|0.1 15-16|0.2 7-8|0.2.0 18-19|0.2.1 17-18|0.2.1.0 19-21|0.2.1.1 25-26|0.2.1.2 17-18|0.2.1.2.0 19-20|0.2.1.2.0 27-28|0.2.1.2.1 
+(y / yakin-01
+    :ARG0 (B / Baik)
+    :ARG1 (F / Fujitsu Indosat maupun Ooredoo)
+    :ARG2 (d / dukung-01
+        :ARG0 (k / kemitraan)
+        :ARG1 (m / mendayagunakan-01
+            :ARG0 (d / dalam)
+            :ARG1 (k / kekuatan seluruh miliki)
+            :ARG2 (a / atas-01
+                :ARG0 (d / dalam)
+                :ARG1 (t / tantangan seluruh hadir)))))
+
+# ::id d-indo-fuji-json.11
+# ::snt-type body
+# ::preferred
+# ::tok Selain itu, President Director Fujitsu, Achmad Sofwan juga mengungkap, mobilitas akan menyediakan cara mengoptimalisasikan strategi perusahaan dengan memanfaatkan aplikasi dan layanan dalam aktivitas memproses data real-time, sehingga mampu menghadirkan informasi instan yang akurat.
+# ::alignments 8-9|0 0-3|0.0 9-10|0.1 11-12|0.2 13-14|0.2.0 
+(u / ungkap-01
+    :ARG0 (i / itu, Selain President)
+    :ARG1 (m / mobilitas)
+    :ARG2 (s / sedia-01
+        :ARG0 (m / mengoptimalisasikan)))
+
+# ::id d-indo-fuji-json.12
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 5-6|0 0-2|0.0 2-4|0.1 13-14|0.2 7-8|0.2.0 14-16|0.2.2 
+(f / fokus-01
+    :ARG0 (a / awal, Sebagai)
+    :ARG1 (k / kerjasama ini)
+    :ARG2 (l / luas-01
+        :ARG1 (s / sektor ke berbagai industri)))
+
+# ::id d-indo-fuji-json.13
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini menyinergikan peranti, layanan, dan solusi teknologi informasi mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 6-8|0.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (d / dan
+        :op1 (p / peranti)
+        :op2 (l / layanan)
+        :op3 (s / solusi teknologi informasi mutakhir)
+        :source (F / Fujitsu))
+    :ARG2 (h / hadir-01
+        :ARG0 (t / teknologi telekomunikasi terdepan
+            :ARG2 (m / milik-01
+                :ARG0 (i / Indosat Ooredoo)
+                :ARG1 t)
+        :ARG1 (d
+            :op1 (p2 / produk)
+            :op2 (l2 / layanan-layanan baru
+            :beneficiary (p3 / pelanggan korporasi
+                :location (I2 / Indonesia)))))))
+
+# ::id d-indo-fuji-json.14
+# ::snt-type body
+# ::preferred
+# ::tok Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, tutur Achmad Sofwan, President Director Fujitsu Indonesia.
+# ::alignments 2-3|0 0-1|0.0 5-6|0.1 4-5|0.1.0 6-8|0.1.1 9-10|0.1.2 8-9|0.1.2.0 10-13|0.1.2.2 
+(s / sedia-01
+    :ARG0 (M / Mobilitas)
+    :ARG1 (o / optimal-01
+        :ARG0 (u / untuk)
+        :ARG1 (s / strategi perusahaan)
+        :ARG2 (m / manfaat-01
+            :ARG0 (d / dengan)
+            :ARG1 (a / aplikasi layanan dan memproses))))
+
+# ::id d-indo-fuji-json.15
+# ::snt-type body
+# ::preferred
+# ::tok Mobilitas akan menyediakan cara untuk mengoptimalkan strategi perusahaan dengan memanfaatkan aplikasi dan layanan yang dapat memproses data real-time guna menghadirkan informasi yang instan yang akurat di setiap lini, ujarnya.
+# ::alignments 2-3|0 0-1|0.0 5-6|0.1 4-5|0.1.0 6-8|0.1.1 9-10|0.1.2 8-9|0.1.2.0 10-13|0.1.2.2 
+(s / sedia-01
+    :ARG0 (M / Mobilitas)
+    :ARG1 (o / optimal-01
+        :ARG0 (u / untuk)
+        :ARG1 (s / strategi perusahaan)
+        :ARG2 (m / manfaat-01
+            :ARG0 (d / dengan)
+            :ARG1 (a / aplikasi layanan dan memproses))))
+
+# ::id d-indo-fuji-json.16
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan terbaru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+
+# ::id d-indo-fuji-json.17
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia serta perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 5-6|0 0-2|0.0 2-4|0.1 13-14|0.2 7-8|0.2.0 14-16|0.2.2 
+(f / fokus-01
+    :ARG0 (a / awal, Sebagai)
+    :ARG1 (k / kerjasama ini)
+    :ARG2 (l / luas-01
+        :ARG1 (s / sektor ke berbagai industri)))
+
+# ::id d-indo-fuji-json.18
+# ::snt-type body
+# ::preferred
+# ::tok Director & Chief Wholesale and Enterprise Indosat Ooredoo Herfini Haryono menyebutkan bahwa era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi.
+# ::alignments 10-11|0 0-1|0.0 15-16|0.1 12-14|0.1.0 18-19|0.1.1 
+(s / sebut-01
+    :ARG0 (D / Director)
+    :ARG1 (p / pandang-01
+        :ARG1 (e / era digital)
+        :ARG0 (p / peluang)))
+
+# ::id d-indo-fuji-json.19
+# ::snt-type body
+# ::preferred
+# ::tok Smart mobility dan IoT mengalami perkembangan yang cukup signifikan baik dari segi kuantitas atau kualitas informasi real-time yang tersedia sehingga mengubah cara perusahaan dalam mengelola aset, jaringan, serta dalam memberikan pengalaman terbaik kepada pelanggan.
+# ::alignments 4-5|0 0-4|0.0 5-6|0.1 
+(a / alami-01
+    :ARG0 (d / dan
+        :op1 (s / Smart Mobility)
+        :op2 (i / IoT))
+    :ARG1 (p / perkembangan
+        :ARG2 (c / cukup signifikan)))
+
+# ::id d-indo-fuji-json.20
+# ::snt-type body
+# ::preferred
+# ::tok Herfini Haryono, Director & Chief Wholesale and Enterprise Indosat Ooredoo menuturkan era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi.
+# ::alignments 10-11|0 0-1|0.0 11-13|0.1 14-15|0.2 17-18|0.2.0 
+(t / tutur-01
+    :ARG0 (H / Herfini)
+    :ARG1 (e / era digital)
+    :ARG2 (p / pandang-01
+        :ARG1 (p / peluang)))
+
+# ::id d-indo-fuji-json.21
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai awal, kerjasama ini akan berfokus pada sektor otomotif dan transportasi dan akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 5-6|0 0-2|0.0 2-4|0.1 13-14|0.2 7-8|0.2.0 14-16|0.2.2 
+(f / fokus-01
+    :ARG0 (a / awal, Sebagai)
+    :ARG1 (k / kerjasama ini)
+    :ARG2 (l / luas-01
+        :ARG1 (s / sektor ke berbagai industri)))
+
+# ::id d-indo-fuji-json.22
+# ::snt-type body
+# ::preferred
+# ::tok Sebagai awal kerja sama ini akan berfokus pada sektor otomotif dan transportasi, yang akan diperluas ke berbagai sektor industri termasuk sektor publik untuk memenuhi kebutuhan pelanggan korporasi di Indonesia tetapi juga perusahaan-perusahaan Jepang yang beroperasi di Indonesia.
+# ::alignments 6-7|0 8-9|0.0 9-12|0.0.0 14-15|0.0.1 8-9|0.0.1.0 15-17|0.0.1.2 
+(f / fokus-01
+    :ARG0 (s / sektor
+        :location (o / otomotif transportasi, dan)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri))))
+
+# ::id d-indo-fuji-json.23
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+
+# ::id d-indo-fuji-json.24
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+
+# ::id d-indo-fuji-json.25
+# ::snt-type body
+# ::preferred
+# ::tok Herfini Haryono, Director & Chief Wholesale and Enterprise Indosat Ooredoo menuturkan era digital dapat dipandang sebagai sebuah peluang besar bagi institusi maupun perusahaan untuk menjadi lebih efektif dalam menghadirkan produk-produk dan layanan baru ke pasar dan menjangkau pelanggan lebih luas lagi.
+# ::alignments 10-11|0 0-1|0.0 11-13|0.1 14-15|0.2 17-18|0.2.0 
+(t / tutur-01
+    :ARG0 (H / Herfini)
+    :ARG1 (e / era digital)
+    :ARG2 (p / pandang-01
+        :ARG1 (p / peluang)))
+
+# ::id d-indo-fuji-json.26
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+
+# ::id d-indo-fuji-json.27
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+
+# ::id d-indo-fuji-json.28
+# ::snt-type body
+# ::preferred
+# ::tok Achmad Sofwan, President Director Fujitsu Indonesia menambahkan bahwa kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 6-7|0 0-1|0.0 10-11|0.1 8-10|0.1.0 11-13|0.1.1 30-31|0.1.2 29-30|0.1.2.0 31-32|0.1.2.1 
+(t / tambah-01
+    :ARG0 (A / Achmad)
+    :ARG1 (s / sinergi-01
+        :ARG0 (k / kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk))))
+
+# ::id d-indo-fuji-json.29
+# ::snt-type body
+# ::preferred
+# ::tok Kemitraan ini mensinergikan piranti, layanan, dan solusi teknologi informasi yang mutakhir dari Fujitsu dengan teknologi telekomunikasi terdepan yang dimiliki Indosat Ooredoo untuk menghadirkan produk dan layanan-layanan baru yang bermanfaat bagi pelanggan korporasi di Indonesia.
+# ::alignments 2-3|0 0-2|0.0 3-5|0.1 22-23|0.2 21-22|0.2.0 23-24|0.2.1 
+(s / sinergi-01
+    :ARG0 (K / Kemitraan ini)
+    :ARG1 (p / piranti, layanan, solusi)
+    :ARG2 (h / hadir-01
+        :ARG0 (u / untuk)
+        :ARG1 (p / produk)))
+

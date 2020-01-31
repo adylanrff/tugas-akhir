@@ -1,0 +1,161 @@
+(_ROOT_ / _ROOT_ (
+    (m / menandatangani-01
+        :ARG0 (I / INDOSAT
+            :accompanier (O / Ooredoo Fujitsu Indonesia))
+        :ARG1 (N / Nota
+            :duration (K / Kesepahaman rangka memantapkan)))
+    (m / menandatangani-01
+        :ARG0 (S / Seiring)
+        :ARG1 (F / Fujitsu Indonesia pun))
+    (a / alami-01
+        :ARG0 (S / Smart Mobility IoT dan)
+        :ARG1 (p / perkembangan))
+    (m / menandatangani-01
+        :ARG0 (I / Indosat
+            :accompanier (O / Ooredoo Fujitsu Indonesia))
+        :ARG1 (N / Nota
+            :duration (K / Kesepahaman rangka memantapkan)))
+    (f / fokus-01
+        :ARG0 (a / awal, Sebagai)
+        :ARG1 (k / kerjasama ini)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri)))
+    (s / sedia-01
+        :ARG0 (M / Mobilitas)
+        :ARG1 (o / optimal-01
+            :ARG0 (u / untuk)
+            :ARG1 (s / strategi perusahaan)
+            :ARG2 (m / manfaat-01
+                :ARG0 (d / dengan)
+                :ARG1 (a / aplikasi layanan dan memproses))))
+    (f / fokus-01
+        :ARG0 (l / langkah Sebagai awal,)
+        :ARG1 (k / kerjasama ini)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri)))
+    (k / kerja-01
+        :ARG1 (I / Indosat Ooredoo)
+        :ARG0 (F / Fujitsu dengan Indonesia)
+        :ARG2 (h / hadir-01
+            :ARG0 (d / dalam)
+            :ARG1 (s / solusi Smart *(IoT)*.)))
+    (t / tambah-01
+        :ARG1 (* / *objek_perubahan*)
+        :ARG0 (A / Ahmad.))
+    (y / yakin-01
+        :ARG0 (B / Baik)
+        :ARG1 (F / Fujitsu Indosat maupun Ooredoo)
+        :ARG2 (d / dukung-01
+            :ARG0 (k / kemitraan)
+            :ARG1 (m / mendayagunakan-01
+                :ARG0 (d / dalam)
+                :ARG1 (k / kekuatan seluruh miliki)
+                :ARG2 (a / atas-01
+                    :ARG0 (d / dalam)
+                    :ARG1 (t / tantangan seluruh hadir)))))
+    (u / ungkap-01
+        :ARG0 (i / itu, Selain President)
+        :ARG1 (m / mobilitas)
+        :ARG2 (s / sedia-01
+            :ARG0 (m / mengoptimalisasikan)))
+    (f / fokus-01
+        :ARG0 (a / awal, Sebagai)
+        :ARG1 (k / kerjasama ini)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri)))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / peranti, layanan, solusi teknologi))
+    (s / sedia-01
+        :ARG0 (M / Mobilitas)
+        :ARG1 (o / optimal-01
+            :ARG0 (u / untuk)
+            :ARG1 (s / strategi perusahaan)
+            :ARG2 (m / manfaat-01
+                :ARG0 (d / dengan)
+                :ARG1 (a / aplikasi layanan dan memproses))))
+    (s / sedia-01
+        :ARG0 (M / Mobilitas)
+        :ARG1 (o / optimal-01
+            :ARG0 (u / untuk)
+            :ARG1 (s / strategi perusahaan)
+            :ARG2 (m / manfaat-01
+                :ARG0 (d / dengan)
+                :ARG1 (a / aplikasi layanan dan memproses))))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk)))
+    (f / fokus-01
+        :ARG0 (a / awal, Sebagai)
+        :ARG1 (k / kerjasama ini)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri)))
+    (s / sebut-01
+        :ARG0 (D / Director)
+        :ARG1 (p / pandang-01
+            :ARG1 (e / era digital)
+            :ARG0 (p / peluang)))
+    (a / alami-01
+        :ARG0 (S / Smart mobility IoT dan)
+        :ARG1 (p / perkembangan))
+    (t / tutur-01
+        :ARG0 (H / Herfini)
+        :ARG1 (e / era digital)
+        :ARG2 (p / pandang-01
+            :ARG1 (p / peluang)))
+    (f / fokus-01
+        :ARG0 (a / awal, Sebagai)
+        :ARG1 (k / kerjasama ini)
+        :ARG2 (l / luas-01
+            :ARG1 (s / sektor ke berbagai industri)))
+    (f / fokus-01
+        :ARG0 (s / sektor
+            :location (o / otomotif transportasi, dan)
+            :ARG2 (l / luas-01
+                :ARG1 (s / sektor ke berbagai industri))))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk)))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk)))
+    (t / tutur-01
+        :ARG0 (H / Herfini)
+        :ARG1 (e / era digital)
+        :ARG2 (p / pandang-01
+            :ARG1 (p / peluang)))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk)))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk)))
+    (t / tambah-01
+        :ARG0 (A / Achmad)
+        :ARG1 (s / sinergi-01
+            :ARG0 (k / kemitraan ini)
+            :ARG1 (p / piranti, layanan, solusi)
+            :ARG2 (h / hadir-01
+                :ARG0 (u / untuk)
+                :ARG1 (p / produk))))
+    (s / sinergi-01
+        :ARG0 (K / Kemitraan ini)
+        :ARG1 (p / piranti, layanan, solusi)
+        :ARG2 (h / hadir-01
+            :ARG0 (u / untuk)
+            :ARG1 (p / produk))))

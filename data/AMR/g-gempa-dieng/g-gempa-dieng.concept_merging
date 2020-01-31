@@ -1,0 +1,137 @@
+[node]: 0 1 - -1 _ROOT_ _ROOT_
+[node]: 1 1 a 0.1 akibat akibat gempa semalam
+[node]: 2 1 k 0.0 Terkait kait-01
+[node]: 3 1 W 0.2.1 WIB WIB 19.00--19.25
+[node]: 4 1 d 0.0 dia, dia, Menurut informasi didapat
+[node]: 5 1 t 0.1 tim tim-01
+[node]: 6 1 P 0.0.0.0 Pusat Pusat Vulkanologi Mitigasi
+[node]: 7 1 M 0.0 Menanggapi Menanggapi hal itu,
+[node]: 8 1 G 0.0 Gubernur Gubernur Jawa Tengah
+[node]: 9 1 d 0.0 Berdasarkan dasar-01
+[node]: 10 1 a 0.1.1 aktivitas aktivitas Kawah Timbang
+[node]: 11 1 a 0 terasa asa-01
+[node]: 12 1 w 0.1 wilayah wilayah di Kabupaten Batang.
+[node]: 13 1 B 0.0 Bibit, Bibit,
+[node]: 14 1 r 0 merekomendasikan rekomendasi-01
+[node]: 15 1 a 0.1 akibat akibat gempa terjadi
+[node]: 16 1 k 0 mengatakan kata-01
+[node]: 17 1 k 0.1 kebutuhan kebutuhan logistik pengungsi dibantu
+[node]: 18 1 i 0 mengimbau imbau-01
+[node]: 19 1 s 0.2.2 kali sebanyak 86 amplituda
+[node]: 20 1 S 0.0 Stasiun Stasiun Geofisika
+[node]: 21 1 l 0 dilakukan laku-01
+[node]: 22 1 p 0.0 petugas petugas
+[node]: 23 1 p 0.1 memantau pantau-01
+[node]: 24 1 u 0.1.0 untuk untuk
+[node]: 25 1 S 0.0 Stasiun Stasiun
+[node]: 26 1 t 0.2 tidak tidak
+[node]: 27 1 m 0 meminta minta-01
+[node]: 28 1 t 0.1 menutup tutup-01
+[node]: 29 1 g 0.1 gempa gempa mengguncang
+[node]: 30 1 G 0.0 Gempa Gempa besar mengguncang
+[node]: 31 1 S 0.0 Sementara Sementara
+[node]: 32 1 g 0.2.0 gempa gempa terjadi
+[node]: 33 1 P 0.0 PVMBG PVMBG
+[node]: 34 1 t 0 meninggalkan tinggal-01
+[node]: 35 1 j 0.1 jalan jalan seluruh mendekati
+[node]: 36 1 r 0.2 terekam rekam-01
+[node]: 37 1 D 0.0 Data Data dikeluarkan
+[node]: 38 1 p 0.0 pengungsi pengungsi Sebagian desa
+[node]: 39 1 i 0.0.0 informasi informasi
+[node]: 40 1 K 0.1 Kepala Kepala Pusat Vulkanologi Mitigasi
+[node]: 41 1 h 0.0.0 hal hal itu, kata
+[node]: 42 1 r 0.0 rumah rumah satu rusak berat,
+[node]: 43 1 d 0 terdeteksi deteksi-01
+[node]: 44 1 S 0.2 Sabtu Sabtu pada
+[node]: 45 1 J 0.0 Jika Jika
+[node]: 46 1 k 0.1 koordinat koordinat dari tersebut, kata
+[node]: 47 1 n 0 menyatakan nyata-01
+[node]: 48 1 s 0 menyebutkan sebut-01
+[node]: 49 1 l 0 melihat lihat-01
+[node]: 50 1 B 0.1 Bibit Bibit Waluyo
+[node]: 51 1 i 0.1 itu, itu,
+[node]: 52 1 l 0.1.0 lapangan lapangan di mengukur
+[node]: 53 1 a 0 Ada ada-01
+[node]: 54 1 P 0.0 Penutupan Penutupan ini, lanjut dia,
+[node]: 55 1 B 0.1 Bibit Bibit
+[node]: 56 1 g 0.1 gempa gempa terasa
+[node]: 57 1 t 0 diterjunkan terjun-01
+[node]: 58 1 s 0.0 staf staf
+[node]: 59 1 W 0.2.1 WIB WIB 19.00-19.25
+[edge]: 1 0 47 ROOT
+[edge]: 1 47 25 ARG0
+[edge]: 1 47 29 ARG1
+[edge]: 1 0 49 ROOT
+[edge]: 1 49 45 ARG0
+[edge]: 1 49 46 ARG1
+[edge]: 1 0 14 ROOT
+[edge]: 1 14 2 ARG0
+[edge]: 1 2 41 ARG1
+[edge]: 1 14 35 ARG1
+[edge]: 1 0 16 ROOT
+[edge]: 1 16 31 ARG0
+[edge]: 1 16 40 ARG1
+[edge]: 1 16 36 ARG2
+[edge]: 1 36 32 ARG1
+[edge]: 1 36 3 ARG0
+[edge]: 1 36 19 frequency
+[edge]: 1 0 21 ROOT
+[edge]: 1 21 54 ARG1
+[edge]: 1 21 5 ARG0
+[edge]: 1 5 52 ARG1
+[edge]: 2 0 14 ROOT|ROOT
+[edge]: 2 14 2 ARG0|ARG0
+[edge]: 2 2 41 ARG1|ARG1
+[edge]: 2 14 35 ARG1|ARG1
+[edge]: 1 0 57 ROOT
+[edge]: 1 57 13 ARG1
+[edge]: 1 57 23 ARG0
+[edge]: 1 23 24 ARG0
+[edge]: 1 23 10 ARG1
+[edge]: 1 0 48 ROOT
+[edge]: 1 48 37 ARG0
+[edge]: 1 48 56 ARG1
+[edge]: 1 0 34 ROOT
+[edge]: 1 34 38 ARG0
+[edge]: 1 34 15 ARG1
+[edge]: 1 34 44 weekday
+[edge]: 2 0 47 ROOT|ROOT
+[edge]: 1 47 20 ARG0
+[edge]: 2 47 29 ARG1|ARG1
+[edge]: 1 0 27 ROOT
+[edge]: 1 27 7 ARG0
+[edge]: 1 27 55 ARG1
+[edge]: 1 0 18 ROOT
+[edge]: 1 18 8 ARG0
+[edge]: 1 18 50 ARG1
+[edge]: 2 0 14 ROOT|ROOT
+[edge]: 1 14 33 ARG0
+[edge]: 1 14 28 ARG1
+[edge]: 1 28 24 ARG0
+[edge]: 2 0 16 ROOT|ROOT
+[edge]: 2 16 31 ARG0|ARG0
+[edge]: 1 16 51 ARG1
+[edge]: 2 16 36 ARG2|ARG2
+[edge]: 2 36 32 ARG1|ARG1
+[edge]: 1 36 59 ARG0
+[edge]: 2 36 19 frequency|frequency
+[edge]: 1 0 53 ROOT
+[edge]: 1 53 42 ARG1
+[edge]: 1 0 43 ROOT
+[edge]: 1 43 4 ARG1
+[edge]: 1 43 1 ARG0
+[edge]: 1 43 26 polarity -
+[edge]: 2 0 16 ROOT|ROOT
+[edge]: 1 16 58 ARG0
+[edge]: 2 0 43 ROOT|ROOT
+[edge]: 1 43 9 ARG1
+[edge]: 1 9 39 ARG1
+[edge]: 1 39 6 source
+[edge]: 2 43 1 ARG0|ARG0
+[edge]: 2 43 26 polarity -|polarity -
+[edge]: 2 0 16 ROOT|ROOT
+[edge]: 1 16 22 ARG0
+[edge]: 1 16 17 ARG1
+[edge]: 1 0 11 ROOT
+[edge]: 1 11 30 ARG1
+[edge]: 1 11 12 ARG0

@@ -1,0 +1,208 @@
+(_ROOT_ / _ROOT_ (
+    (b / bahas-01
+        :ARG0 (K / Kantor)
+        :ARG1 (i / insiden penumpang penerbangan keluar))
+    (m / meeting-01
+        :ARG0 (K / Kami)
+        :ARG1 (s / soal)
+        :ARG2 (m / meeting-01
+            :ARG0 (i / ini,*objek_perubahan*Kami)
+            :ARG1 (s / soal ini," ujar)))
+    (b / berangkat-01
+        :ARG0 (t / tulisannya Dalam)
+        :ARG1 (i / itu, anak temannya bernama)
+        :source (S / Singapura dari)
+        :ARG2 (g / guna-01
+            :ARG0 (p / pesawat)
+            :ARG1 (p / pukul pada 18.50.)))
+    (k / kata-01
+        :ARG0 (S / Sekretaris Perusahaan PT Angkasa)
+        :ARG1 (p / pengelola)
+        :ARG2 (k / koordinasi-01
+            :ARG0 (K / Kantor
+                :accompanier (d / dengan))
+            :ARG1 (k / kait-01
+                :ARG1 (p / peristiwa dengan ini.))))
+    (k / kata-01
+        :ARG0 (A / Agus)
+        :ARG1 (p / petugas)
+        :ARG2 (a / ambil-01
+            :ARG0 (t / tindakan mengarahkan)))
+    (o / objek ubah untuk-01
+        :ARG1 (s / siap-01
+            :ARG1 (p / pesawat setiap parkir)
+            :ARG0 (b / bus)
+            :ARG2 (a / antar-01
+                :ARG0 (u / untuk)
+                :ARG1 (p / penumpang)
+                :destination (t / terminal. ke))))
+    (d / dapat-01
+        :ARG1 (A / Apa terjadi)
+        :ARG0 (s / sopir))
+    (p / panggil-01
+        :ARG0 (* / *objek_perubahan*"Akibat
+            :time (l / laporan masyarakat ini,))
+        :ARG1 (p / pihak-pihak terkait))
+    (b / beri-01
+        :ARG0 (K / Kemenhub)
+        :ARG1 (s / sanksi pihak-pihak kepada memberikan))
+    (d / darat-01
+        :ARG0 (P / Pesawat itu)
+        :ARG1 (t / tidak)
+        :location (T / Terminal II)
+        :ARG2 (d / darat-01
+            :ARG0 (k / kedatangan
+                :ARG2 (l / lazim luar dari negeri-01))
+            :ARG1 (p / pesawat)
+            :location (T / Terminal I, terminal)
+            :ARG2 (k / kutip-01
+                :ARG0 (c / cerita temannya.))))
+    (o / objek ubah untuk-01
+        :ARG1 (s / siap-01
+            :ARG1 (p / pesawat setiap parkir)
+            :ARG0 (b / bus)
+            :ARG2 (a / antar-01
+                :ARG0 (u / untuk)
+                :ARG1 (p / penumpang)
+                :destination (t / terminal. ke))))
+    (d / dapat-01
+        :ARG1 (A / Apa terjadi)
+        :ARG0 (s / supir))
+    (k / kembali-01
+        :ARG1 (* / *objek_perubahan*"Kemudian,)
+        :ARG0 (b / beliau)
+        :destination (r / remote 56, informasi))
+    (t / tambah-01
+        :ARG0 (N / Namun, Edward)
+        :ARG1 (p / penumpang JT 161 diarahkan))
+    (d / dapat-01
+        :ARG1 (* / *objek_perubahan*"Pada)
+        :ARG0 (J / JT parkir))
+    (l / lihat-01
+        :ARG0 (K / Ketika)
+        :ARG1 (p / penumpang pintu))
+    (l / lapor-01
+        :ARG1 (P / Pesawat
+            :source (S / Singapura mendarat))
+        :ARG0 (* / *(10/5)*)
+        :ARG2 (t / turun-01
+            :ARG0 (p / penumpang)
+            :ARG1 (t / terminal tanpa melalui imigrasi.)))
+    (s / sebut-01
+        :ARG1 (P / Penyebabnya, sopir si)
+        :ARG0 (t / turun-01
+            :ARG0 (p / penumpang sebagian Lion)))
+    (e / edar-01
+        :ARG0 (S / Sebelumnya,)
+        :ARG1 (m / media di sosial Zara)
+        :ARG2 (c / cerita-01
+            :ARG0 (a / anak rekannya terbang menuju)))
+    (d / darat-01
+        :ARG0 (P / Pesawat ini)
+        :ARG1 (t / tidak)
+        :location (t / terminal II)
+        :ARG2 (d / darat-01
+            :ARG0 (k / kedatangan
+                :ARG2 (l / lazim luar dari negeri-01))
+            :ARG1 (p / pesawat)))
+    (b / bawa-01
+        :ARG1 (K / Kala)
+        :ARG0 (t / terminal ke domestik)
+        :location (T / Terminal 1))
+    (d / darat-01
+        :ARG0 (I / Insiden salah)
+        :ARG1 (P / Pesawat
+            :medium (p / penerbangan internasional Terminal))
+        :ARG2 (p / potensi-01
+            :ARG0 (B / Banten)
+            :ARG1 (p / penyelundupan.)))
+    (t / tutur-01
+        :ARG0 (S / Seiring
+            :instrument (i / insiden tersebut, Budi))
+        :ARG1 (s / siap-01)
+        :ARG2 (k / koordinasi-01
+            :ARG0 (K / Kantor
+                :instrument (d / dengan))))
+    (b / bawa-01
+        :ARG1 (K / Kala)
+        :ARG0 (t / terminal ke domestik)
+        :location (T / Terminal 1))
+    (g / guna-01
+        :ARG0 (D / Dari)
+        :ARG1 (t / total penumpang 182 diantar)
+        :ARG2 (a / antar-01
+            :ARG1 (b / bus satu antaranya di)
+            :ARG0 (b / bukan)))
+    (d / darat-01
+        :ARG0 (d / diketahui, Seperti pesawat)
+        :ARG1 (b / bandara di Soekarno-Hatta))
+    (p / pasti-01
+        :ARG0 (i / instansi Semua itu)
+        :ARG1 (p / penumpang berapa penerbangan))
+    (h / hubung-01
+        :ARG1 (* / *objek_perubahan* kata)
+        :ARG0 (s / saaat)
+        :weekday (L / Liputan6.com, Jakarta,))
+    (d / dapat-01
+        :ARG1 (A / Apa terjadi)
+        :ARG0 (s / supir))
+    (d / dera-01
+        :ARG1 (S / Setelah))
+    (j / jadi-01
+        :ARG0 (M / Maskapai Lion Air)
+        :ARG1 (p / perbincangan publik.))
+    (k / kait-01
+        :ARG1 (H / Hal ini)
+        :ARG0 (M / Mei
+            :location (1 / 10 2016,))
+        :manner (n / nomor penerbangan JT)
+        :ARG2 (b / bawa-01
+            :ARG0 (p / penumpang 182 landing)
+            :ARG1 (a / arah-01
+                :ARG1 (1 / 19.20)
+                :ARG0 (p / parkir-01
+                    :ARG1 (u / untuk)
+                    :ARG0 (r / remote
+                        :location (d / di area))))))
+    (k / kata-01
+        :ARG0 (S / Sementara)
+        :ARG1 (i / itu,))
+    (t / tambah-01
+        :ARG0 (D / Dia)
+        :ARG1 (t / temu-01
+            :ARG1 (j / jika)))
+    (d / darat-01
+        :ARG0 (A / Apakah)
+        :ARG1 (s / situasi ini)
+        :ARG2 (l / lazim-01
+            :ARG1 (P / Penumpang
+                :source (p / penerbangan luar negeri)))
+        :location (t / terminal domestik))
+    (a / arah-01
+        :ARG1 (* / *objek_perubahan*"Anak)
+        :ARG0 (t / tidak))
+    (a / aku-01
+        :ARG0 (M / Manajemen Lion Air)
+        :ARG1 (' / 'lolosnya'))
+    (t / tulis-01
+        :ARG0 (Z / Zara)
+        :ARG1 (t / terbang-01
+            :ARG1 (p / pesawat Lion)
+            :ARG0 (S / Singapura dari)
+            :month (M / Mei
+                :location (1 / 10 2016))
+            :ARG2 (d / darat-01
+                :ARG0 (C / Cengkareng
+                    :location (p / pukul WIB. 19.35)))))
+    (b / bagi-01
+        :ARG0 (n / nama-01
+            :ARG0 (p / pengguna)
+            :ARG1 (Z / Zara Zetira))
+        :ARG1 (i / informasi)
+        :ARG2 (b / bawa-01
+            :ARG1 (p / penumpangnya)
+            :ARG0 (t / terminal ke domestik,)))
+    (t / tambah-01
+        :ARG0 (E / Edward)
+        :ARG1 (s / sadar-01
+            :ARG0 (p / petugas setelah))))

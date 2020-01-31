@@ -1,0 +1,264 @@
+# ::id g-gempa-dieng-json.1
+# ::snt-type body
+# ::preferred
+# ::tok Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)* Banjarnegara, Jawa Tengah, menyatakan bahwa gempa yang mengguncang Dataran Tinggi Dieng pukul 19.00 WIB berkekuatan 4,8 pada skala richter.
+# ::alignments 11-12|0 0-1|0.0 13-14|0.0 
+(n / nyata-01
+    :ARG0 (S / Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)*
+        :location (b / Banjarnegara, Jawa Tengah,))
+    :ARG1 (g / guncang-01
+        :ARG0 (g2 / gempa
+            :ARG2 (k / kuat-01
+                :quant 4.8
+                :unit skala richter))
+        :ARG1 (d / Dataran Tinggi Dieng)
+        :time (19.00 WIB)))
+
+# ::id g-gempa-dieng-json.2
+# ::snt-type body
+# ::preferred
+# ::tok Jika melihat dari koordinat tersebut, kata dia, pusat gempa diperkirakan berada di Desa Tanji Gugur, Kecamatan Bawang, Kabupaten Batang, dan lokasinya cukup dekat dengan Dataran Tinggi Dieng.
+# ::alignments 1-2|0 0-1|0.0 2-6|0.1 
+(k / kira-01
+    :ARG0 (p / pusat gempa)
+    :location (d / Desa Tanji Gugur, Kecamatan Bawang, Kabupaten Batang)
+    :location (d2 / dekat Dataran Tinggi Dieng)
+    :condition (l / lihat-01
+        :source (k / koordinat)))
+
+# ::id g-gempa-dieng-json.3
+# ::snt-type body
+# ::preferred
+# ::tok Terkait hal itu, kata dia, PVMBG merekomendasikan seluruh jalan yang mendekati Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Banjarnegara, baik jalan desa maupun jalan antarkabupaten untuk sementara ditutup.
+# ::alignments 6-7|0 0-1|0.0 1-4|0.0.0 7-9|0.1 
+(r / rekomendasi-01
+    :ARG0 (k / kait-01
+        :ARG1 (h / hal itu, kata))
+    :ARG1 (j / jalan seluruh mendekati))
+
+# ::id g-gempa-dieng-json.4
+# ::snt-type body
+# ::preferred
+# ::tok Sementara Kepala Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* Surono mengatakan bahwa gempa yang terjadi di Dataran Tinggi Dieng pukul 19.00--19.25 WIB terekam sebanyak 86 kali dengan amplituda maksimum 10--100 milimeter *(mm)* dan lama gempa 10--70 detik.
+# ::alignments 10-11|0 0-1|0.0 1-4|0.2 22-23|0.2 12-13|0.2.0 20-22|0.2.1 23-25|0.2.1 
+(k / kata-01
+    :ARG0 (S / Sementara)
+    :ARG1 (K / Kepala Pusat Vulkanologi Mitigasi)
+    :ARG2 (r / rekam-01
+        :ARG1 (g / gempa terjadi)
+        :ARG0 (W / WIB 19.00--19.25)
+        :frequency (s / sebanyak 86 amplituda)))
+
+# ::id g-gempa-dieng-json.5
+# ::snt-type body
+# ::preferred
+# ::tok Penutupan ini, lanjut dia, dilakukan hingga tim di lapangan yang mengukur konsentrasi gas dan menyatakan tidak ada gas yang berbahaya bagi kehidupan serta jalur jalan aman digunakan.
+# ::alignments 4-5|0 0-4|0.0 6-7|0.1 7-9|0.1.1 
+(l / laku-01
+    :ARG1 (P / Penutupan ini, lanjut dia,)
+    :ARG0 (t / tim-01
+        :ARG1 (l / lapangan di mengukur)))
+
+# ::id g-gempa-dieng-json.6
+# ::snt-type body
+# ::preferred
+# ::tok Terkait hal itu, kata dia, PVMBG merekomendasikan seluruh jalan yang mendekati Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Banjarnegara, baik jalan desa maupun jalan antarkabupaten untuk sementara ditutup.
+# ::alignments 6-7|0 0-1|0.0 1-4|0.0.0 7-9|0.1 
+(r / rekomendasi-01
+    :ARG0 (k / kait-01
+        :ARG1 (h / hal itu, kata))
+    :ARG1 (j / jalan seluruh mendekati))
+
+# ::id g-gempa-dieng-json.7
+# ::snt-type body
+# ::preferred
+# ::tok Menurut Bibit, petugas Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* telah diterjunkan untuk memantau aktivitas Kawah Timbang dan memberikan informasi, misalnya ada perkembangan aktivitas yang membahayakan.
+# ::alignments 11-12|0 1-2|0.0 13-14|0.1 12-13|0.1.0 14-17|0.1.1 
+(t / terjun-01
+    :ARG1 (B / Bibit,)
+    :ARG0 (p / pantau-01
+        :ARG0 (u / untuk)
+        :ARG1 (a / aktivitas Kawah Timbang)))
+
+# ::id g-gempa-dieng-json.8
+# ::snt-type body
+# ::preferred
+# ::tok Data yang dikeluarkan dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* menyebutkan gempa mulai terasa pukul 19.00-19.25 WIB dan telah terekam gempa sebanyak 86 kali dengan maksimum 10-100 mm dengan lama gempa 1070 detik.
+# ::alignments 11-12|0 0-1|0.0 12-13|0.0 
+(s / sebut-01
+    :ARG0 (k / keluar-01
+        :ARG0 (d / datar
+            :source (p / Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)*)))
+    :ARG1 (r / rasa-01
+        :ARG0 (g / gempa)
+        :time 19.00-19.25 WIB)
+    :ARG2 (r2 / rekam-01
+        :ARG0 g
+        :quant 86))
+
+# ::id g-gempa-dieng-json.9
+# ::snt-type body
+# ::preferred
+# ::tok Sebagian pengungsi dari beberapa desa di Kabupaten Banjarnegara ke Balai Desa Dieng Wetan, Kabupaten Wonosobo, akibat gempa yang terjadi Jumat *(19/4)* malam, pada Sabtu pagi mulai meninggalkan pengungsian.
+# ::alignments 26-27|0 0-2|0.1 15-17|0.1 22-24|0.2 
+(t / tinggal-01
+    :ARG0 (p / pengungsi Sebagian desa)
+    :ARG1 (a / akibat gempa terjadi)
+    :weekday (S / Sabtu pada))
+
+# ::id g-gempa-dieng-json.10
+# ::snt-type body
+# ::preferred
+# ::tok Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)* Banjarnegara menyatakan gempa yang mengguncang Dataran Tinggi Dieng pukul 19.00 WIB berkekuatan 4,8 Skala Richter *(SR)*.
+# ::alignments 9-10|0 0-2|0.0 10-11|0.0 
+(k / kata-01
+    :ARG0 (S / Stasiun Geofisika Badan Meteorologi Klimatologi dan Geofisika *(BMKG)* Banjarnegara)
+    :ARG1 (g / gempa 
+        :ARG2 (g2 / guncang
+            :location (d / Dataran Tinggi Dieng))
+        :time 19.00 WIB)
+        :ARG3 (k2 / kuat-01
+            :quant 4,8
+            :unit Skala Richter))
+
+# ::id g-gempa-dieng-json.11
+# ::snt-type body
+# ::preferred
+# ::tok Menanggapi hal itu, Bibit meminta masyarakat tetap tenang dan tidak panik seraya terus memantau informasi atas perkembangan aktivitas Kawah Timbang dari PVMBG yang bertanggung jawab mengawasi kawah tersebut.
+# ::alignments 4-5|0 0-3|0.0 3-4|0.1 
+(m / minta-01
+    :ARG0 (Bibit)
+    :ARG1 (m2 / masyarakat
+        :ARG2 (d / dan 
+            :op1 (t / tenang)
+            :op2 (p / panik
+                :polarity -)
+        :ARG3 (m3 / mantau-01
+            :ARG0 m2
+            :ARG1 (i / informasi
+                :topic (p2 / perkembangan aktivitas
+                    :location (k / Kawah Timbang
+                        :source (p3 / PVMBG
+                            :ARG2 (t2 / tanggung jawab mengawasi
+                                :ARG1 k))))))))
+
+# ::id g-gempa-dieng-json.12
+# ::snt-type body
+# ::preferred
+# ::tok Gubernur Jawa Tengah Bibit Waluyo mengimbau warga yang tinggal di sekitar Kawah Timbang untuk tetap tenang tanpa mengurangi kewaspadaan terhadap perkembangan aktivitas kawah tersebut.
+# ::alignments 5-6|0 0-3|0.0 3-5|0.1 
+(i / imbau-01
+    :ARG0 (G / Gubernur Jawa Tengah Bibit Waluyo)
+    :ARG1 (w / warga
+        :ARG2 (t / tinggal
+            :location (s / sekitar Kawah Timbang)
+            :purpose (k / kurang-01
+                :ARG1 (k2 / kewaspadaan
+                    :ARG2 (perkembangan aktivitas kawah tersebut))
+                :polarity -))))
+
+# ::id g-gempa-dieng-json.13
+# ::snt-type body
+# ::preferred
+# ::tok PVMBG juga sempat merekomendasikan untuk menutup sementara ruas Jalan Dieng-Batur *(jalan antarkabupaten)* dan Jalan Simpangan-Pekasiran untuk mengantisipasi kemungkinan adanya gas beracun akibat aktivitas gempa itu.
+# ::alignments 3-4|0 0-1|0.0 5-6|0.1 4-5|0.1.0 
+(r / rekomendasi-01
+    :ARG0 (P / PVMBG)
+    :ARG1 (t / tutup-01
+        :ARG0 (u / untuk)))
+
+# ::id g-gempa-dieng-json.14
+# ::snt-type body
+# ::preferred
+# ::tok Sementara itu, Kepala Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)* Surono mengatakan bahwa gempa yang terjadi di Dataran Tinggi Dieng pukul 19.00-19.25 WIB terekam sebanyak 86 kali dengan amplituda maksimum 10-100 milimeter *(mm)* dan lama gempa 10-70 detik.
+# ::alignments 11-12|0 0-1|0.0 1-2|0.1 23-24|0.2 13-14|0.2.0 21-23|0.2.1 24-26|0.2.1 
+(k / kata-01
+    :ARG0 (S / Sementara)
+    :ARG1 (i / itu,)
+    :ARG2 (r / rekam-01
+        :ARG1 (g / gempa terjadi)
+        :ARG0 (W / WIB 19.00-19.25)
+        :frequency (s / sebanyak 86 amplituda)))
+
+# ::id g-gempa-dieng-json.15
+# ::snt-type body
+# ::preferred
+# ::tok Ada satu rumah rusak berat, dua rumah rusak sedang, dan empat rumah rusak ringan di Di Dusun Gandoran *(Desa Mlandi, Kecamatan Gerung, Kabupaten Wonosobo)*, kata Maulana.
+# ::alignments 0-1|0 1-5|0.0 
+(k / kata-01
+    :ARG0 (M / Maulana)
+    :ARG1 (d / dan (
+        :op1 (r / rusak-01
+            :ARG0 (r2 /rumah
+                :quant 1)
+            :degree (b /berat))
+        :op2 (r
+            :ARG0 (r2
+                :quant 2)
+            :degree (s / sedang))
+        :op3 (r
+            :ARG0 (r2
+                :quant 4)
+            :degree (r3 / ringan)))))
+
+# ::id g-gempa-dieng-json.16
+# ::snt-type body
+# ::preferred
+# ::tok Menurut dia, informasi yang didapat dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)*, akibat gempa semalam tidak terdeteksi gas beracun sekitar Kawah Timbang, Desa Sumberejo, Kabupaten Banjarnegara, Jawa Tengah.
+# ::alignments 17-18|0 0-3|0.2 13-16|0.1 16-17|0.2 
+(d / deteksi-01
+    :ARG1 (d / dia, Menurut informasi didapat)
+    :ARG0 (a / akibat gempa semalam)
+    :polarity -)
+
+        # ::id g-gempa-dieng-json.17
+        # ::snt-type body
+        # ::preferred
+        # ::tok Salah satu staf hubungan masyarakat Badan SAR Nasional Semarang, Maulana Afandy, mengatakan ada sekitar 380 orang yang diungsikan ke Dukuh Bintoro Mulyo, Desa Pranten, Kecamatan Bawang akibat gempa di dataran tinggi Dieng.
+        # ::alignments 11-12|0 2-3|0.0 
+        (k / kata-01
+            :ARG0 (s / staf))
+
+# ::id g-gempa-dieng-json.18
+# ::snt-type body
+# ::preferred
+# ::tok Berdasarkan informasi dari Pusat Vulkanologi dan Mitigasi Bencana Geologi *(PVMBG)*, kata dia, akibat gempa semalam tidak terdeteksi gas beracun sekitar Kawah Timbang, Desa Sumberejo, Kabupaten Banjarnegara, Jawa Tengah.
+# ::alignments 16-17|0 0-1|0.0 1-2|0.0.0 3-5|0.0.0.1 12-15|0.1 15-16|0.2 
+(d / deteksi-01
+    :ARG1 (d / dasar-01
+        :ARG1 (i / informasi
+            :source (P / Pusat Vulkanologi Mitigasi)))
+    :ARG0 (a / akibat gempa semalam)
+    :polarity -)
+
+# ::id g-gempa-dieng-json.19
+# ::snt-type body
+# ::preferred
+# ::tok Salah seorang petugas Pos Pengungsian Balai Desa Gembol, Dani Irawan mengatakan kebutuhan logistik pengungsi untuk sementara dibantu oleh warga sekitar yang dikoordinasikan oleh Karang Taruna Desa Gembol.
+# ::alignments 10-11|0 2-3|0.0 11-14|0.2 
+(k / kata-01
+    :ARG0 (p / petugas Pos Pengungsian Balai Desa Gembol, Dani Irawan)
+    :ARG1 (b / bantu-01
+        :ARG1 (k2 / kebutuhan logistik pengungsi)
+        :ARG0 (w / warga sekitar)
+        :ARG2 (k3 / koordinasi-01
+            :ARG0 (k4 / Karang Taruna Desa Gembol))))
+
+# ::id g-gempa-dieng-json.20
+# ::snt-type body
+# ::preferred
+# ::tok Gempa besar yang mengguncang kawasan Kawah Timbang di Desa Sumberejo, Kecamatan Batur, Kabupaten Banjarnegara, Jumat 19 April 2013 malam, juga terasa di wilayah Kabupaten Batang.
+# ::alignments 20-21|0 0-2|0.1 7-8|0.0 12-13|0.1 22-23|0.2 
+(g / guncang-01
+    :ARG0 (G / Gempa besar)
+    :ARG1 (k / kawasan Kawah Timbang
+        :location (Desa Sumberejo, Kecamatan Batur, Kabupaten Banjarnegara)
+        :time (d / date-entity
+            :year 2013
+            :month 4
+            :day 19
+            :weekday (j / jumat)))
+    :ARG2 (r / rasa-01
+        :ARG0 G
+        :location (Kabupaten Batang)))
+

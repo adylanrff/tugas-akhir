@@ -1,0 +1,231 @@
+# ::id f-bunuh-diri-json.1
+# ::snt-type body
+# ::preferred
+# ::snt Ciptadi *(54)* dengan nekat melompat dari megatron jembatan penyebrangan orang *(JPO)* yang tingginya diperkirakan mencapai 15 meter.
+(c / ciptadi-01
+    :ARG1 (* / *(54)* nekat dengan melompat))
+
+# ::id f-bunuh-diri-json.2
+# ::snt-type body
+# ::preferred
+# ::snt Hal tersebut diungkapkan Kabag Ops Polrestabes Bandung Kompol Dede Rojudin didampingi Kasubag Humas Kompol Reny Marthaliana, saat ditemui di Mapolrestabes Bandung, Jumat *(1/7/2016)*.
+(u / ungkap-01
+    :ARG1 (H / Hal tersebut)
+    :ARG0 (K / Kabag)
+    :ARG2 (d / damping-01
+        :ARG1 (K / Kasubag)
+        :ARG0 (t / temu-01
+            :ARG1 (M / Mapolrestabes di Bandung, Jumat)
+            :ARG0 (* / *(1/7/2016)*.))))
+
+# ::id f-bunuh-diri-json.3
+# ::snt-type body
+# ::preferred
+# ::snt Rezha Noviana *(27)*, warga Kota Bandung mengatakan ia dan jemaat lainnya langsung memperhatikan megatron jembatan penyeberangan orang depan Kantor Pos Besar Bandung setelah bubar salat Jumat di Masjid Raya Bandung.
+(k / kata-01
+    :ARG0 (R / Rezha Noviana)
+    :ARG1 (* / *(27)*,)
+    :ARG2 (p / perhati-01
+        :ARG0 (m / megatron)))
+
+# ::id f-bunuh-diri-json.4
+# ::snt-type body
+# ::preferred
+# ::snt Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron.
+(d / diri-01
+    :ARG0 (K / Ketika)
+    :ARG1 (i / itu-01
+        :ARG1 (p / petugas))
+    :direction (d / di JPO)
+    :ARG2 (d / dialog-01
+        :ARG0 (s / seseorang dengan duduk megatron.)))
+
+# ::id f-bunuh-diri-json.5
+# ::snt-type body
+# ::preferred
+# ::snt Aksi bunuh diri di Alun-alun Bandung belum lama ini terjadi, seorang pria tua nekat menjatuhkan diri dari JPO alias jembatan penyebrangan orang yang letaknya tak jauh dari Alun-alun Kota Bandung.
+(b / bunuh-01
+    :ARG1 (A / Aksi)
+    :ARG0 (A / Alun-alun di Bandung))
+
+# ::id f-bunuh-diri-json.6
+# ::snt-type body
+# ::preferred
+# ::snt Sudirman, anggota Linmas Satpol PP Kota Bandung yang menjadi saksi mata aksi bunuh diri di Alun-alun Bandung itu mengatakan, pria tersebut diperkirakan berusia 50 tahun.
+(k / kata-01
+    :ARG0 (S / Sudirman,))
+
+# ::id f-bunuh-diri-json.7
+# ::snt-type body
+# ::preferred
+# ::snt SEORANG pria yang nekat terjun bebas dari megatron jembatan penyebrangan orang *(JPO)* di Jalan Asia Afrika atau depan PT Pos Indonesia, dengan ketinggian diperkirakan mencapai 15 meter, diketahui bernama Ciptadi *(54)* dan tercatat sebagai  warga Kampung Lemahduhur, RT 02/RW 06 Kelurahan Lemahduhur, Kecamatan Kuwarasa, Kabupaten Kebumen, Jateng.
+(k / kira-01
+    :ARG1 (p / pria SEORANG terjun)
+    :ARG0 (d / dengan)
+    :ARG2 (c / capai-01
+        :ARG0 (m / meter, 15)))
+
+# ::id f-bunuh-diri-json.8
+# ::snt-type body
+# ::preferred
+# ::snt Seorang lelaki tengah baya nekat mengakhiri hidupnya ditengah kepadatan lalu lintas Jalan Asia Afrika dengan menjatuhkan diri dari megatron jembatan penyebarangan di depan Pos Giro Besar Bandung, Bandung, Jumat *(1/7/2016)*.
+(a / akhir-01
+    :ARG0 (l / lelaki Seorang tengah)
+    :ARG1 (b / baya nekat)
+    :ARG2 (t / tengah-01
+        :ARG1 (k / kepadatan lalu)))
+
+# ::id f-bunuh-diri-json.9
+# ::snt-type body
+# ::preferred
+# ::snt Pria misterius yang bunuh diri dari jembatan penyeberangan orang *(JPO)* di Jalan Asia Afrika, Bandung, Jawa Barat, membuat pesan sebelum nekat terjun.
+(b / buat-01
+    :ARG0 (P / Pria misterius bunuh)
+    :ARG1 (p / pesan nekat))
+
+# ::id f-bunuh-diri-json.10
+# ::snt-type body
+# ::preferred
+# ::snt Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron.
+(d / diri-01
+    :ARG0 (K / Ketika)
+    :ARG1 (i / itu-01
+        :ARG1 (p / petugas))
+    :direction (d / di JPO)
+    :ARG2 (d / dialog-01
+        :ARG0 (s / seseorang dengan duduk megatron.)))
+
+# ::id f-bunuh-diri-json.11
+# ::snt-type body
+# ::preferred
+# ::snt Rezha Noviana *(27)*, warga Kota Bandung mengatakan ia dan jemaat lainnya langsung memperhatikan megatron jembatan penyeberangan orang depan Kantor Pos Besar Bandung setelah bubar salat Jumat di Masjid Raya Bandung.
+(k / kata-01
+    :ARG0 (R / Rezha Noviana)
+    :ARG1 (* / *(27)*,)
+    :ARG2 (p / perhati-01
+        :ARG0 (m / megatron)))
+
+# ::id f-bunuh-diri-json.12
+# ::snt-type body
+# ::preferred
+# ::snt Ketika itu, petugas linmas dan beberapa satpam sedang berdiri di atas JPO dan tampak berdialog dengan seseorang yang duduk di atas megatron.
+(d / diri-01
+    :ARG0 (K / Ketika)
+    :ARG1 (i / itu-01
+        :ARG1 (p / petugas))
+    :direction (d / di JPO)
+    :ARG2 (d / dialog-01
+        :ARG0 (s / seseorang dengan duduk megatron.)))
+
+# ::id f-bunuh-diri-json.13
+# ::snt-type body
+# ::preferred
+# ::snt Berdasarkan laporan Galamedianews, lelaki yang belum diketahui identitasnya itu sempat naik dan duduk di atas megatron JPO depan Gedung Kantor Pos Besar tersebut, pukul 11.00 WIB.
+(n / naik-01
+    :ARG1 (d / dasar-01
+        :ARG1 (l / laporan Galamedianews, lelaki diketahui))
+    :ARG0 (d / duduk-01)
+    :location (m / megatron atas JPO))
+
+# ::id f-bunuh-diri-json.14
+# ::snt-type body
+# ::preferred
+# ::snt WHO mencatat bunuh diri sebagai penyebab kematian kelima, ujarnya, dalam seminar media, Gangguan Bipolar vs Fenomena Bunuh Diri di Kota Besar, Juni lalu di Jakarta seperti dirilis Femina.
+(c / catat-01
+    :ARG0 (W / WHO)
+    :ARG1 (b / bunuh-01
+        :ARG1 (p / penyebab
+            :ARG2 (m / mati-01)
+            :duration (m / media, seminar Gangguan))))
+
+# ::id f-bunuh-diri-json.15
+# ::snt-type body
+# ::preferred
+# ::snt PADA Jumat *(1/7/2016)*, warga Kota Bandung digegerkan aksi bunuh diri lelaki paruh baya yang terjun dari Jembatan Penyeberangan Orang *(JPO)* Alun-Alun Bandung.
+(g / geger-01
+    :ARG1 (J / Jumat
+        :location (P / PADA))
+    :ARG0 (a / aksi bunuh))
+
+# ::id f-bunuh-diri-json.16
+# ::snt-type body
+# ::preferred
+# ::snt Seorang warga asal Kebumen, Ciptadi *(54)*, tewas seketika setelah melompat dari jembatan penyeberangan orang *(JPO)* yang terletak di Jalan Asia Afrika, Kota Bandung.
+(t / tewas-01
+    :ARG1 (w / warga)
+    :ARG0 (* / *(54)*,)
+    :ARG2 (l / lompat-01
+        :ARG0 (j / jembatan
+            :source (p / penyeberangan orang *(JPO)*)
+            :ARG2 (l / letak-01
+                :ARG1 (J / Jalan
+                    :location (d / di))))))
+
+# ::id f-bunuh-diri-json.17
+# ::snt-type body
+# ::preferred
+# ::snt Salah seorang saksi mata, Sudirman *(59)* menuturkan kronologi kejadian yaitu sekitar pukul 12.00 WIB, korban yang mengenakan kaos putih dan celana training itu menaiki anak tangga JPO seperti warga lainnya.
+(t / tutur-01
+    :ARG0 (s / saksi)
+    :ARG1 (* / *(59)*))
+
+# ::id f-bunuh-diri-json.18
+# ::snt-type body
+# ::preferred
+# ::snt Ngeri, orang ini nekat bunuh diri di alun - alun Bandung, Karena cinta mungkin lalu depresi, seorang lelaki tanpa identitas nekat mengakhiri nyawanya sendiri di jembatan penyeberangan orang, yang berada di sekitar alun - alun kota Bandung 1/7.
+(b / bunuh-01
+    :ARG1 (N / Ngeri,)
+    :ARG0 (i / ini)
+    :ARG2 (n / nekat-01)
+    :location (a / alun di))
+
+# ::id f-bunuh-diri-json.19
+# ::snt-type body
+# ::preferred
+# ::snt Saksi mata yang merupakan anggota linmas Satpol PP Kota Bandung, Sudirman mengatakan pria itu diperkirakan berumur 50 tahunan.
+(k / kata-01
+    :ARG0 (S / Saksi mata merupakan)
+    :ARG1 (p / pria itu diperkirakan))
+
+# ::id f-bunuh-diri-json.20
+# ::snt-type body
+# ::preferred
+# ::snt Ia menyebutkan mengenakan pakaian putih dan celana biru, pria itu jatuh dengan posisi tengkurap.
+(s / sebut-01
+    :ARG0 (I / Ia)
+    :ARG1 (k / kena-01
+        :ARG0 (p / pakaian putih)
+        :ARG1 (j / jatuh-01
+            :ARG1 (c / celana biru, pria itu)
+            :ARG0 (p / posisi dengan tengkurap.))))
+
+# ::id f-bunuh-diri-json.21
+# ::snt-type body
+# ::preferred
+# ::snt Sebelumnya, lelaki yang belum diketahui identitasnya itu sempat naik dan nongkrong di atas megatron jembatan penyebrangan di atas Jln.
+(n / naik-01
+    :ARG1 (S / Sebelumnya, lelaki diketahui)
+    :ARG0 (n / nongkrong-01)
+    :location (m / megatron atas jembatan))
+
+# ::id f-bunuh-diri-json.22
+# ::snt-type body
+# ::preferred
+# ::snt Seorang pria paruh baya tanpa identitas nekat bunuh diri di jembatan penyebrangan orang *(JPO)* yang berada dekat Alun-alun Kota Bandung, Jumat *(1/7)*.
+(b / bunuh-01
+    :ARG1 (p / pria)
+    :ARG0 (j / jembatan
+        :location (p / penyebrangan orang *(JPO)*)))
+
+# ::id f-bunuh-diri-json.23
+# ::snt-type body
+# ::preferred
+# ::snt Ia menyebutkan mengenakan pakaian putih dan celana biru, pria itu jatuh dengan posisi tengkurap.
+(s / sebut-01
+    :ARG0 (I / Ia)
+    :ARG1 (k / kena-01
+        :ARG0 (p / pakaian putih)
+        :ARG1 (j / jatuh-01
+            :ARG1 (c / celana biru, pria itu)
+            :ARG0 (p / posisi dengan tengkurap.))))
+
