@@ -1,0 +1,783 @@
+# ::snt JR Saragih lalu menaiki podium yang disediakan para pendukungnya yang begitu setia menunggu di halaman gedung.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "PROPN", "PRON", "VERB", "DET", "NOUN", "PRON", "ADV", "ADJ", "VERB", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(n / name
+      / naik-01
+      :ARG0 (p1 / person
+            :name n)
+      :ARG1 (p2 / podium
+            :ARG0 (p3 / person
+                  :ARG0-of (d / dukung)
+                  :ARG1-of (t / tunggu)
+                  :location (h / halaman
+                        :mod (g / gedung))
+                  :mod (s2 / setia))
+            :ARG1-of (s / sedia))
+      :op1 "JR Saragih")
+
+# ::snt Kapolri Jenderal Tito Karnavian akan terjun ke berbagai daerah, terutama daerah yang tengah melaksanakan proses Pilkada serentak 2018.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "ADV", "VERB", "ADP", "DET", "NOUN", "PUNCT", "ADV", "NOUN", "PRON", "ADJ", "VERB", "NOUN", "PROPN", "ADP", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "EVT"]
+(m / multi-sentence
+      :snt1 (t / terjun
+            :ARG0 (p1 / person
+                  :name (n / name
+                        :op1 "Tito"
+                        :op2 "Karnavian"))
+            :ARG4 (d / date-entity
+                  / daerah
+                  :ARG0-of (l / laksana)
+                  :ARG1 (p2 / pilkada
+                        :time d)
+                  :quant (b / banyak)
+                  :year 2018))
+      :snt2 d)
+
+# ::snt Kader harus fokus untuk memenangkan Pilkada Jatim dan Pilkada serentak 2018.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "ADV", "VERB", "ADP", "VERB", "PROPN", "PROPN", "CCONJ", "PROPN", "ADP", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "ORG", "NOR", "O", "ORG", "LOC", "EVT"]
+(f / fokus
+      :ARG0 (k / kader)
+      :ARG1 (m / menang
+            :ARG1 (a / and
+                  :op1 (p1 / Pilkada
+                        :location (p2 / province
+                              :name (n / name
+                                    :op1 "Jatim"))))
+            :op2 (p3 / Pilkada
+                  :time (d / date-entity
+                        :year 2018))))
+
+# ::snt Apalagi Prabowo berangkat belakangan dari Eropa.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["SCONJ", "PROPN", "VERB", "NOUN", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "PER", "O", "O", "O", "LOC"]
+(b / berangkat
+      :ARG0 (p / person
+            :name (n1 / name
+                  :op1 "Prabowo"))
+      :ARG3 (c / continent
+            :name (n2 / name
+                  :op1 "Eropa")))
+
+# ::snt Amien Rais berangkat lebih dulu dari Indonesia.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "VERB", "ADV", "ADV", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O"]
+(b / berangkat
+      :ARG0 (p / person
+            :name (n1 / name
+                  :op1 "Amien"
+                  :op2 "Rais"))
+      :ARG3 (c / country
+            :name (n2 / name
+                  :op1 "Indonesia")))
+
+# ::snt Ketum PDIP Megawati Soekarno Putri menandatangani Surat keputusan dari PDIP
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "ADP", "PROPN"]
+# ::ner_tags ["ORG", "NOR", "O", "PER", "O", "O", "O", "O", "O", "GPE"]
+(t / tanda-tangan
+      :ARG0 (p / putus
+            / person
+            :ARG0-of (j / jabat
+                  :ARG1 (o / organization
+                        :name (n / name
+                              :op1 "PDIP"
+                              :op1 "Megawati"
+                              :op2 "Soekarno"
+                              :op3 "Putri"))
+                  :ARG3 (k / ketum))
+            :name n)
+      :ARG1 (s / surat
+            :mod p
+            :mod (d / dari
+                  :op1 o)))
+
+# ::snt Kepala Sudin bernama Subaedah menandatangani SKPI pada 9 Maret 2018.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PROPN", "VERB", "PROPN", "ADP", "NUM", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "PER", "O", "ORG", "O", "DAT", "O", "TIM"]
+(t / tanda-tangan
+      :ARG0 (p / person
+            :ARG0-of (j / jabat
+                  :ARG1 (o / organization
+                        :name (n / name
+                              :op1 "Sudin"
+                              :op1 "Subaedah"
+                              :op1 "SKPI"))
+                  :ARG3 (k / kepala)))
+      :ARG1 (s / surat
+            :name n)
+      :name n
+      :time (d / date-entity
+            :day 9
+            :month 3
+            :year 2018))
+
+# ::snt Tiga orang berinisial CDR, MAX, dan YRN sudah dua kali mengedarkan uang palsu, dengan nilai transaksi pertama mencapai Rp 250 juta.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NUM", "NOUN", "VERB", "PROPN", "PUNCT", "PROPN", "PUNCT", "CCONJ", "PROPN", "ADV", "NUM", "NOUN", "VERB", "NOUN", "NOUN", "PUNCT", "ADP", "NOUN", "NOUN", "ADJ", "VERB", "PROPN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["CRD", "O", "O", "ORG", "O", "O", "PER", "O", "CRD", "O", "O", "O", "O", "O", "O", "O", "CRD", "O", "MON", "O", "QTY"]
+(e / edar
+      :ARG0 (a / and
+            :op1 (p1 / person
+                  :name (n / nilai
+                        / name
+                        :mod (t / transaksi
+                              :mod (o / ordinal-entity
+                                    :value 1))
+                        :op1 "CDR"
+                        :op1 "MAX"
+                        :op1 "YRN"
+                        :quant 250000000
+                        :unit (r / rupiah)))
+            :op1 (p2 / person
+                  :name n)
+            :op1 (p3 / person
+                  :name n))
+      :ARG1 (u / uang
+            :mod (p4 / palsu))
+      :mod n
+      :quant 2)
+
+# ::snt Sekitar awal pekan lalu, beredar sebuah rekaman yang diduga merupakan suara salah seorang pejabat di Dinas Pendidikan Sumatera Utara.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["ADP", "ADJ", "NOUN", "ADJ", "PUNCT", "VERB", "DET", "NOUN", "PRON", "VERB", "VERB", "NOUN", "DET", "DET", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NOR", "O", "O", "LOC"]
+(e / edar
+      :ARG1 (r / rekaman
+            :mod (s / suara
+                  :mod (p1 / person
+                        :ARG0-of (j / jabat
+                              :ARG1 (o / organization))
+                        :location (p2 / province
+                              :name (n / name
+                                    :op1 "Dinas"
+                                    :op1 "Sumatera"
+                                    :op2 "Pendidikan"
+                                    :op2 "Utara"))
+                        :name n)))
+      :time (p3 / pekan
+            :mod (a / awal
+                  :mod (l / lalu))))
+
+# ::snt Namun, Golkar belum membahas siapa calon wakil presiden pendamping Jokowi.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["SCONJ", "PUNCT", "PROPN", "ADV", "VERB", "PRON", "NOUN", "NOUN", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "ORG"]
+(c / calon
+      / contrast
+      :ARG0 (o / organization
+            :name (n / name
+                  :op1 "Golkar"
+                  :op1 "Jokowi"))
+      :ARG1 (p1 / presiden
+            :mod c
+            :mod (w / wakil)
+            :mod (p2 / person
+                  :ARG0-of (d / damping)
+                  :ARG1 (p3 / person
+                        :name n)))
+      :ARG2 (b / bahas)
+      :polarity -)
+
+# ::snt Sekretaris Jenderal PDI Perjuangan Hasto Kristiyanto dan sejumlah kader PDIP menyambangi kantor Dewan Pimpinan Pusat Partai Golkar di Slipi, Jakarta Barat.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "CCONJ", "DET", "NOUN", "PROPN", "VERB", "NOUN", "PROPN", "NOUN", "PROPN", "PROPN", "PROPN", "ADP", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "O", "PER", "O", "O", "O", "ORG", "O", "O", "NOR", "O", "O", "O", "PER", "O", "ORG", "NOR", "PER"]
+(s / sekretaris
+      / sambang
+      :ARG0 (a / and
+            :ARG0-of (j / jumlah
+                  / jendral
+                  / jabat
+                  :ARG1 (o / organization
+                        :name (n / name
+                              :location (c / city
+                                    :name n)
+                              :op1 "Hasto"
+                              :op1 "PDI"
+                              :op1 "Dewan"
+                              :op1 "Slipi"
+                              :op2 "Kristiyanto"
+                              :op2 "Pimpinan"
+                              :op2 "Jakarta"
+                              :op3 "Pusat"
+                              :op3 "Barat"
+                              :op4 "Partai"
+                              :op5 "Golkar"))
+                  :ARG3 s)
+            :op1 (p / person
+                  :name n)
+            :op2 (p2 / person
+                  :mod (k1 / kader)
+                  :quant j))
+      :ARG1 (k2 / kantor
+            :name n)
+      :mod j)
+
+# ::snt Dalam beberapa tahun terakhir, destinasi desa wisata di Lombok mengalami geliat yang cukup menggembirakan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["ADP", "DET", "NOUN", "ADJ", "PUNCT", "NOUN", "NOUN", "NOUN", "ADP", "PROPN", "VERB", "NOUN", "PRON", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "PRD", "O", "O", "GPE", "O", "O", "O", "O", "O"]
+(a / alam
+      :ARG0 (d / desa
+            / destinasi
+            :ARG1 (g / gembira
+                  / geliat
+                  :mod g
+                  :mod (c2 / cukup))
+            :location (c1 / city
+                  :name (n / name
+                        :op1 "Lombok"))
+            :mod d
+            :mod (w / wisata)
+            :time (t2 / tahun
+                  :mod (b / beberapa))))
+
+# ::snt Namun, jumlah data DPT yang saat ini tercatat masih mungkin mengalami perubahan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["SCONJ", "PUNCT", "NOUN", "NOUN", "PROPN", "PRON", "NOUN", "DET", "VERB", "ADV", "ADV", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(c / catat
+      / contrast
+      :ARG0 (d / data
+            :ARG1-of c
+            :name (n / name
+                  :op1 "DPT")
+            :quant (j / jumlah))
+      :ARG1 (p / perubahan)
+      :ARG2 (a / alam))
+
+# ::snt KPU DKI akan bekerja hingga 1 Mei 2017 untuk menyelesaikan rekapitulasi suara.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "ADP", "NUM", "PROPN", "NUM", "ADP", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "GPE", "O", "O", "O", "DAT", "O", "O", "O", "O", "O", "O"]
+(k / kerja
+      :ARG0 (o / organization
+            :location (c / city
+                  :name (n2 / name
+                        :op1 "DKI"))
+            :name (n1 / name
+                  :op1 "KPU")
+            :time (h / hingga
+                  :op1 (d / date-entity
+                        :day 1
+                        :month 5
+                        :year 2017)))
+      :purpose (s / suara
+            / selesai
+            :ARG1 (r / rekapitulasi
+                  :ARG1 s)))
+
+# ::snt Selama itu, Marianus bekerja serabutan, mulai dari bertani, menjadi joki pacuan kuda, pekerja batu bata dan lain-lain.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["ADP", "DET", "PUNCT", "PROPN", "VERB", "NOUN", "PUNCT", "VERB", "ADP", "NOUN", "PUNCT", "VERB", "NOUN", "NOUN", "NOUN", "PUNCT", "NOUN", "NOUN", "NOUN", "CCONJ", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "LOC", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(k / kuda
+      / kerja
+      :ARG0 (p / pacuan
+            / person
+            :mod k
+            :name (n / name
+                  :op1 "Marianus"))
+      :ARG1 (e / example
+            :op1 (t / tani)
+            :op2 (j / jadi
+                  :ARG1 p)
+            :op3 k)
+      :ARG1 (b1 / batu
+            :mod (b2 / bata))
+      :mod (s / serabut))
+
+# ::snt Masing-masing partai juga bekerja sesuai dengan konstitusinya.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "NOUN", "ADV", "VERB", "ADJ", "ADP", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+(k / konstitusi
+      / kerja
+      :ARG0 (p / partai
+            :mod (m / masing-masing))
+      :ARG1 (s / sesuai
+            :mod k)
+      :poss p)
+
+# ::snt empat panelis yang terdiri dari tiga akademisi dan satu praktisi adalah Nunuk Nuswardani, Abdul Chalik, Fauzan, dan Lutfi Kurniawan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NUM", "NOUN", "PRON", "VERB", "ADP", "NUM", "NOUN", "CCONJ", "DET", "NOUN", "AUX", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT", "PROPN", "PUNCT", "CCONJ", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["CRD", "O", "O", "O", "O", "CRD", "O", "O", "CRD", "O", "O", "ORG", "NOR", "O", "PER", "O", "O", "ORG", "PER"]
+(p1 / panelis
+      :consist-of (a / akademisi
+            / and
+            :op1 a
+            :op1 (p / person
+                  :name (n / name
+                        :op1 "Nunuk"
+                        :op1 "Abdul"
+                        :op1 "Fauzan"
+                        :op1 "Lutfi"
+                        :op2 "Nuswardani"
+                        :op2 "Chalik"
+                        :op2 "Kurniawan"))
+            :op2 (p2 / praktisi
+                  :quant 1)
+            :op2 p
+            :op3 p
+            :op4 p
+            :quant 3)
+      :mod a
+      :quant 4)
+
+# ::snt Jumlah tersebut terdiri dari 74.597.647 pemilih laki-laki dan 75.149.517 pemilih perempuan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "DET", "VERB", "ADP", "NUM", "NOUN", "NOUN", "CCONJ", "NUM", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "O", "O", "O", "CRD", "O", "O"]
+(j / jumlah
+      :consist-of (a / and
+            :op1 (p1 / pemilih
+                  :mod (l / laki-laki)
+                  :quant 74597647)
+            :op2 (p2 / pemilih
+                  :mod (p3 / perempuan)
+                  :quant 75149517)))
+
+# ::snt Jumlah tersebut terdiri dari 76.348.813 pemilih laki-laki dan 76.520.478 pemilih perempuan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "DET", "VERB", "ADP", "NUM", "NOUN", "NOUN", "CCONJ", "NUM", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "O", "O", "O", "CRD", "O", "O"]
+(j / jumlah
+      :consist-of (a / and
+            :op1 (p1 / pemilih
+                  :mod (l / laki-laki)
+                  :quant 76348813)
+            :op2 (p2 / pemilih
+                  :mod (p3 / perempuan)
+                  :quant 76520478)))
+
+# ::snt Ferdiman memperkirakan masih ada 900 ribu pemilih yang belum terdaftar di DPT.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "VERB", "ADV", "VERB", "NUM", "NOUN", "NOUN", "PRON", "ADV", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "MON", "O", "O", "O", "O", "O", "GPE"]
+(k / kira
+      :ARG0 (p1 / person
+            :name (n / name
+                  :op1 "Ferdiman"
+                  :op1 "DPT"))
+      :ARG1 (p2 / pemilih
+            :ARG1-of (d / daftar
+                  :mod (o / organization
+                        :name n)
+                  :polarity -)
+            :quant 900000))
+
+# ::snt Silverius memperkirakan STTB JR Saragih hilang di Jakarta.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "VERB", "PROPN", "PROPN", "PROPN", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "ORG", "O", "PER", "O", "O", "LOC"]
+(k / kira
+      :ARG0 (p1 / person
+            :name (n / name
+                  :op1 "Silverius"
+                  :op1 "STTB"
+                  :op1 "JR"
+                  :op1 "Jakarta"
+                  :op2 "Saragih"))
+      :ARG1 (s / surat
+            :name n)
+      :ARG1-of (h / hilang
+            :location (c / city
+                  :name n))
+      :mod (p2 / person
+            :name n))
+
+# ::snt Timnas U-16 bawa pulang gelar juara Jenesys Cup ke tanah air.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "VERB", "VERB", "NOUN", "NOUN", "PROPN", "PROPN", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "O", "O"]
+(b / bawa
+      :ARG0 (o / organization
+            :name (n / name
+                  :op1 "Timnas"
+                  :op1 "Jenesys"
+                  :op2 "U-16"
+                  :op2 "Cup"))
+      :ARG1 (g / gelar
+            :location (t / tanah-air)
+            :mod (j / juara)
+            :name n))
+
+# ::snt Ketua Panwaslu Lamongan, Toni Wijaya membenarkan pihaknya akan memanggil Bupati Tuban.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "VERB", "NOUN", "ADV", "VERB", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "ORG", "PER", "O", "O", "O", "O", "GPE", "LOC"]
+(b / bupati
+      / benar
+      :ARG0 (p1 / person
+            :ARG0-of (j / jabat
+                  :ARG1 (o / organization
+                        :location (c / city
+                              :name (n / name
+                                    :op1 "Toni"
+                                    :op1 "Panwaslu"
+                                    :op1 "Lamongan"
+                                    :op1 "Tuban"
+                                    :op2 "Wijaya"))
+                        :name n)
+                  :ARG1 c
+                  :ARG3 (k / ketua
+                        :ARG1 (p2 / panggil
+                              :ARG1 (p / person
+                                    :ARG0-of j)))
+                  :ARG3 b)
+            :name n))
+
+# ::snt Deputi Statistik, Distribusi dan Jasa BPS Sasmito Hadi Wibowo membenarkan Pelantikan Pak Kecuk.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "PUNCT", "PROPN", "CCONJ", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "O", "ORG", "NOR", "O", "ORG", "PER", "O", "O", "LOC", "PER"]
+(b / benar
+      :ARG0 (p1 / person
+            :mod (j / jabat
+                  :ARG1 (o / organization
+                        :name (n / name
+                              :op1 "Sasmito"
+                              :op1 "BPS"
+                              :op1 "Kecuk"
+                              :op2 "Hadi"
+                              :op3 "Wibowo"))
+                  :ARG3 (d1 / deputi
+                        :mod (a / and
+                              :op1 (s / statistik)
+                              :op2 (d2 / distribusi)
+                              :op3 (j2 / jasa))))
+            :name n)
+      :ARG1 (l / lantik
+            :ARG1 (p2 / person
+                  :name n)))
+
+# ::snt Syaikhu melihat instalasi pengolah limbah yang dimiliki oleh PT GMP, usai meninjau pabrik.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "VERB", "NOUN", "NOUN", "NOUN", "PRON", "VERB", "ADP", "PROPN", "PROPN", "PUNCT", "SCONJ", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "O", "O"]
+(l / limbah
+      / lihat
+      :ARG0 (p / pabrik
+            / person
+            :name (n / name
+                  :op1 "Syaikhu"
+                  :op1 "PT"
+                  :op2 "GMP"))
+      :ARG1 (i / instalasi
+            :ARG1-of (m / milik
+                  :ARG0 (o1 / organization
+                        :name n)
+                  :mod (o2 / olah
+                        :mod l)))
+      :time (u / usai
+            :op1 (t / tinjau
+                  :ARG1 p)))
+
+# ::snt Nur juga melihat persoalan anggaran yang nantinya dapat menghambat kelanjutan program tersebut.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "NOUN", "PRON", "NOUN", "ADV", "VERB", "NOUN", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(l / lanjut
+      / lihat
+      :ARG0 (p / program
+            / person
+            :name (n / name
+                  :op1 "Nur"))
+      :ARG1 (s / soal
+            :mod (a / anggaran
+                  :ARG0-of (d / dapat
+                        :ARG1 (h / hambat
+                              :ARG1 l))))
+      :ARG1 p)
+
+# ::snt Panitia kemudian memanggil petugas keamanan dan mencoba menenangkan pendukung paslon nomor urut 1.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "NOUN", "CCONJ", "VERB", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD"]
+(a / aman
+      / and
+      :op1 (p / panggil
+            :ARG0 (p1 / panitia)
+            :ARG1 (p2 / petugas
+                  :mod a))
+      :op2 (c / coba
+            :ARG0 p1
+            :ARG1 (t / tenang
+                  :ARG1 (p3 / pendukung)
+                  :mod (p4 / paslon
+                        :mod (n / nomor)
+                        :mod (u / urut)
+                        :quant 1))))
+
+# ::snt Bawaslu juga akan memanggil orang yang diduga ada dalam rekaman tersebut setelah cukup bukti permulaan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "ADV", "ADV", "VERB", "NOUN", "PRON", "VERB", "VERB", "ADP", "NOUN", "DET", "ADP", "ADV", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(p / panggil
+      :ARG0 (o1 / organization
+            :name (n / name
+                  :op1 "Bawaslu"))
+      :ARG1 (o2 / orang
+            :ARG1-of (d / dalam
+                  / duga
+                  :ARG1 (a / ada
+                        :mod d)
+                  :mod (r / rekaman)))
+      :time (s / setelah
+            :mod (b / bukti
+                  :mod (m / mula))))
+
+# ::snt Ahmad juga pernah melaporkan LHKPN pada 19 April 2013.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "ADV", "ADV", "VERB", "PROPN", "ADP", "NUM", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "GPE", "O", "DAT", "O", "TIM"]
+(l / lapor
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Ahmad"
+                  :op1 "LKHPN"))
+      :ARG1 (o / organization
+            :name n)
+      :time (d / date-entity
+            :day 19
+            :month 3
+            :year 2013))
+
+# ::snt Meski demikian, Rommy yakin pasangan yang dicalonkannya bisa menang.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["SCONJ", "ADV", "PUNCT", "PROPN", "VERB", "NOUN", "PRON", "VERB", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "PER", "O", "O", "O", "O", "O", "O"]
+(c / calon
+      / contrast
+      :ARG2 (y / yakin
+            :ARG0 (p1 / person
+                  :name (n / name
+                        :op1 "Rommy"))
+            :ARG1 (b / bisa
+                  :ARG0 (p2 / pasangan
+                        :ARG0 p1
+                        :ARG1-of c)
+                  :ARG1 (m / menang))))
+
+# ::snt Saat SMP, Marianus Sae terpaksa putus sekolah selama empat tahun karena himpitan ekonomi.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["ADP", "PROPN", "PUNCT", "PROPN", "PROPN", "ADV", "VERB", "NOUN", "ADP", "NUM", "NOUN", "SCONJ", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "ORG", "O", "PER", "O", "O", "O", "O", "CRD", "O", "O", "O", "O"]
+(p / person
+      / putus
+      :ARG0 p
+      :ARG1 (s / sekolah)
+      :duration (t / temporal-quantity
+            :quant 4
+            :unit tahun)
+      :mod (h / ekonomi
+            :mod e)
+      :name (n / name
+            :op1 "Marianus"
+            :op2 "Sae"))
+
+# ::snt Anies-Sandi berada dibawahnya dengan 207 suara.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "VERB", "VERB", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "QTY"]
+(a / ada
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Anies"
+                  :op2 "Sandi"))
+      :mod (b / bawah)
+      :mod (s / suara
+            :quant 207))
+
+# ::snt Nasdem berada di posisi kedua dengan 47 kemenangan.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "VERB", "ADP", "NOUN", "NUM", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "CRD", "O", "CRD", "O"]
+(a / ada
+      :ARG0 (o1 / organization
+            :name (n / name
+                  :op1 "Nasdem"))
+      :ARG1 (p / posisi
+            :ord (o2 / ordinal-entity
+                  :value 2))
+      :mod (m / menang
+            :quant 47))
+
+# ::snt PDIP dan Demokat berada di urutan ketiga dengan raihan kemenangan masing-masing 45 daerah.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "CCONJ", "PROPN", "VERB", "ADP", "NOUN", "NUM", "ADP", "NOUN", "NOUN", "NOUN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "PER", "O", "O", "O", "CRD", "O", "O", "O", "O", "CRD", "QTY"]
+(a / and
+      / ada
+      :ARG0 a
+      :mod (u / urut
+            :quant 3)
+      :mod (r / raih
+            :ARG1 (t / temporal-quantity
+                  :quant 45
+                  :unit (d / daerah))
+            :mod (m / menang))
+      :op1 (o1 / organization
+            :name (n / name
+                  :op1 "PDIP"
+                  :op1 "Demokrat"))
+      :op2 (o2 / organization
+            :name n))
+
+# ::snt Termasuk Jumat malam berada di Kudus.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["VERB", "PROPN", "NOUN", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "DAT", "O", "O", "O", "LOC"]
+(a / ada
+      :location (c / city
+            :name (n / name
+                  :op1 "Kudus"))
+      :time (d / date-entity
+            :dayperiod (m / malam)
+            :weekday (j / jumat)))
+
+# ::snt PPP, Nasdem, Hanura dan PKB sudah saling berbagi saksi.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PUNCT", "PROPN", "PUNCT", "PROPN", "CCONJ", "PROPN", "ADV", "ADV", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "O", "PER", "O", "O", "O", "O"]
+(b / bagi
+      :ARG0 (a / and
+            :op1 (o1 / organization
+                  :name (n / name
+                        :op1 "PPP"
+                        :op1 "Nasdem"
+                        :op1 "Hanura"
+                        :op1 "PKB"))
+            :op2 (o2 / organization
+                  :name n)
+            :op3 (o3 / organization
+                  :name n)
+            :op4 (o4 / organization
+                  :name n))
+      :ARG1 (s / saksi))
+
+# ::snt Pemilih yang sudah melakukan rekam data tetapi KTP-el nya belum jadi, maka tetap bisa menggunakan hak pilih dengan membawa suket.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PRON", "ADV", "VERB", "NOUN", "NOUN", "SCONJ", "PROPN", "PRON", "ADV", "VERB", "PUNCT", "SCONJ", "ADV", "ADV", "VERB", "NOUN", "ADJ", "ADP", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(a / ada
+      :ARG1 (k1 / kabupaten
+            :ARG1-of (d / dari
+                  :ARG2 (o / or
+                        :ARG0-of (g / guna
+                              :mod (s / sistem
+                                    :mod (n / noken)))
+                        :op1 (k2 / kota)
+                        :op2 (k3 / kabupaten)))
+            :quant 13)
+      :time (j / jauh
+            :mod (i / ini)))
+
+# ::snt Dari total pemilih 301.367 orang, yang menggunakan suaranya sebanyak 214.262 orang atau 71,1%.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["ADP", "NOUN", "NOUN", "NUM", "NOUN", "PUNCT", "PRON", "VERB", "NOUN", "ADP", "NUM", "NOUN", "CCONJ", "NUM", "SYM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "CRD", "QTY", "O", "O", "O", "O", "CRD", "O", "O", "CRD"]
+(g / guna
+      :ARG0 (p1 / pemilih
+            :ARG1-of (d / dari
+                  :ARG2 (p2 / pemilih
+                        / percentage-entity
+                        :quant 301367
+                        :value 71.1))
+            :mod (o / orang
+                  / or
+                  :op1 (t1 / temporal-quantity
+                        :quant 214264
+                        :unit o)
+                  :op2 p2))
+      :ARG1 (s / suara))
+
+# ::snt JR Saragih akan menggunakan SKPI tersebut sebagai persyaratan pencalonan gubernur Sumut.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "NOUN", "DET", "ADP", "NOUN", "NOUN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "PER", "O", "O", "O", "O", "O", "LOC"]
+(g / gubernur
+      / guna
+      :ARG0 (p / province
+            / person
+            :name (n / name
+                  :op1 "JR"
+                  :op1 "SKPI"
+                  :op1 "Sumut"
+                  :op2 "Saragih"))
+      :ARG1 (s / syarat
+            / surat
+            :mod (c / calon
+                  :location p
+                  :mod g)
+            :name n)
+      :mod s)
+
+# ::snt Pasangan dari Cagub Deddy Mizwar ini, akan membuat sekolah khusus sepak bola setingkat SMA.
+# ::tokens []
+# ::lemmas []
+# ::pos_tags ["NOUN", "ADP", "PROPN", "PROPN", "PROPN", "DET", "PUNCT", "ADV", "VERB", "NOUN", "ADJ", "NOUN", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "ORG", "NOR", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "LOC"]
+(b / buat
+      :ARG0 (p / pasangan
+            / person
+            :mod p
+            :mod (p2 / person
+                  :mod (c / calon
+                        :mod (g / gubernur))
+                  :name (n / name
+                        :op1 "Deddy"
+                        :op2 "Mizwar")))
+      :ARG1 (s1 / sekolah
+            :mod (s2 / sepak-bola
+                  :mod (k / khusus
+                        :mod (t / tingkat
+                              :mod (s3 / SMA))))))
+

@@ -1,6 +1,6 @@
 import json
 
-from stog.data.dataset_readers.amr_parsing.amr import AMR, AMRGraph
+from utils.amr_parsing.amr import AMR, AMRGraph
 
 class AMRIO:
 
@@ -17,11 +17,17 @@ class AMRIO:
                 line = line.rstrip()
                 if line == '':
                     if len(graph_lines) != 0:
-                        amr.graph = AMRGraph.decode(' '.join(graph_lines))
-                        amr.graph.set_src_tokens(amr.get_src_tokens())
-                        amr.misc = misc_lines
-                        yield amr
-                        amr = AMR()
+                        try:
+                            amr.graph = AMRGraph.decode(' '.join(graph_lines))
+                            amr.graph.set_src_tokens(amr.get_src_tokens())
+                            amr.misc = misc_lines
+                            yield amr
+                            amr = AMR()
+                        except:
+                            print("ERR_START")
+                            print(amr.graph)
+                            print(graph_lines)
+                            print(' ')
                     graph_lines = []
                     misc_lines = []
                 elif line.startswith('# ::'):
@@ -45,10 +51,17 @@ class AMRIO:
                     graph_lines.append(line)
 
             if len(graph_lines) != 0:
-                amr.graph = AMRGraph.decode(' '.join(graph_lines))
-                amr.graph.set_src_tokens(amr.get_src_tokens())
-                amr.misc = misc_lines
-                yield amr
+                try:
+                    amr.graph = AMRGraph.decode(' '.join(graph_lines))
+                    amr.graph.set_src_tokens(amr.get_src_tokens())
+                    amr.misc = misc_lines
+                    yield amr
+                except:
+                    print("ERR_END")
+                    print(amr.graph)
+                    print(graph_lines)
+                    print(' ')
+                    
 
     @staticmethod
     def dump(amr_instances, f):

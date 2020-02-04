@@ -5,11 +5,15 @@ from collections import defaultdict, Counter
 import penman
 import networkx as nx
 
+from utils.amr_parsing.graph_repair import GraphRepair
 # from stog.data.vocabulary import DEFAULT_PADDING_TOKEN, DEFAULT_OOV_TOKEN
-# from stog.data.dataset_readers.amr_parsing.graph_repair import GraphRepair
 # from stog.utils.string import find_similar_token, is_abstract_token, is_english_punct
 # from stog.utils import logging
 
+DEFAULT_NON_PADDED_NAMESPACES = ("*tags", "*labels")
+DEFAULT_PADDING_TOKEN = "@@PADDING@@"
+DEFAULT_OOV_TOKEN = "@@UNKNOWN@@"
+NAMESPACE_PADDING_FILE = 'non_padded_namespaces.txt'
 
 # logger = logging.init_logger()
 
@@ -633,8 +637,12 @@ class AMRGraph(penman.Graph):
 
     @classmethod
     def decode(cls, raw_graph_string):
-        _graph = amr_codec.decode(raw_graph_string)
-        return cls(_graph)
+        try:
+            _graph = amr_codec.decode(raw_graph_string)
+            return cls(_graph)
+        except penman.DecodeError as e:
+            print(raw_graph_string)
+            print(e)
 
     @classmethod
     def from_lists(cls, all_list):
