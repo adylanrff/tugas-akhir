@@ -1,13 +1,15 @@
+# ::id 1
 # ::snt Sedangkan pasangan suami istri Syamsuar Syam-Misliza yang maju melalui jalur perseorangan kembali gagal. 
 
+# ::id 2
 # ::snt JR Saragih lalu menaiki podium yang disediakan para pendukungnya yang begitu setia menunggu di halaman gedung.
 
-(n / naik-01
+(n1 / naik-01
     :ARG0 ( p1 / person
-        :name (n / name
+        :name (n2 / name
             :op1 "JR Saragih"))
     :ARG1 ( p2 / podium
-        :ARG1-of (s / sedia)
+        :ARG1-of (s1 / sedia)
         :ARG0 (p3 / person
 :ARG0-of ( d / dukung ) 
 :mod ( s2 / setia )
@@ -16,6 +18,7 @@
         :mod (g / gedung))
 )))
 
+# ::id 3
 # ::snt Kapolri Jenderal Tito Karnavian akan terjun ke berbagai daerah, terutama daerah yang tengah melaksanakan proses Pilkada serentak 2018.
 
 (m / multi-sentence
@@ -23,17 +26,19 @@
         :ARG0 ( p1 / person 
             :name ( n / name
                 :op1 "Tito" 
-    :op2 "Karnavian" ))    
-        :ARG4 ( d / daerah 
-            :quant ( b / banyak )))
-    :snt2 ( d / daerah 
+        :op2 "Karnavian" ))    
+            :ARG4 ( d1 / daerah 
+                :quant ( b / banyak )))
+    :snt2 ( d2 / daerah 
         :ARG0-of ( l / laksana)
         :ARG1 ( p2 / pilkada
-                :time ( d / date-entity
+                :time ( d3 / date-entity
                     :year 2018 ))))
 
+# ::id 4
 # ::snt Sementara itu, keputusan hasil perolehan suara atau pemenang Pemilihan Bupati 2017 menunggu ketetapan resmi dari KPU Daerah Kabupaten Bekasi pada satu hingga dua pekan lagi.
 
+# ::id 5
 # ::snt Kader harus fokus untuk memenangkan Pilkada Jatim dan Pilkada serentak 2018.
 
 (f / fokus
@@ -48,10 +53,13 @@
                 :time ( d / date-entity
                     :year 2018 ))))
 
+# ::id 6
 # ::snt Gatot menimbulkan kontroversi lainnya dan dianggap tengah melancarkan manuver politik dengan menginstruksikan TNI menggelar nonton bareng film Penumpasan Pengkhianatan G30S/PKI bersama masyarakat di sejumlah daerah.
 
+# ::id 7
 # ::snt Marianus Sae yang saat itu menjabat Bupati Ngada memblokir bandara dengan penerjunan personel Satpol PP karena manajemen maskapai penerbangan yang dinilainya buruk.
 
+# ::id 8
 # ::snt Apalagi Prabowo berangkat belakangan dari Eropa.
 
 (b / berangkat
@@ -62,6 +70,7 @@
             :name (n2 / name
 :op1 "Eropa" )))
 
+# ::id 9
 # ::snt Amien Rais berangkat lebih dulu dari Indonesia.
 
 (b / berangkat
@@ -74,59 +83,62 @@
                 :op1 "Indonesia" )))
 
 
+# ::id 10
 # ::snt Ketum PDIP Megawati Soekarno Putri menandatangani Surat keputusan dari PDIP
 
 ( t / tanda-tangan
-    :ARG0 ( p / person
+    :ARG0 ( p1 / person
         :ARG0-of ( j / jabat
             :ARG1 ( o / organization 
-                :name ( n / name 
+                :name ( n1 / name 
                     :op1 "PDIP"))
             :ARG3 ( k / ketum))
-        :name ( n / name
+        :name ( n2 / name
             :op1 "Megawati"
             :op2 "Soekarno"
             :op3 "Putri" ))
     :ARG1 ( s / surat 
-:mod ( p / putus )
+        :mod ( p2 / putus )
         :mod ( d /dari 
             :op1 o )))    
 
+# ::id 11
 # ::snt Kepala Sudin bernama Subaedah menandatangani SKPI pada 9 Maret 2018.
 
 ( t / tanda-tangan
     :ARG0 ( p / person 
         :ARG0-of ( j / jabat
             :ARG1 ( o / organization 
-                :name ( n / name 
+                :name ( n1 / name 
                     :op1 "Sudin"))
             :ARG3 ( k / kepala )))
-        :name (n / name
+        :name (n2 / name
             :op1 "Subaedah")
     :ARG1 ( s / surat 
-        :name (n / name 
+        :name (n3 / name 
             :op1 "SKPI"))
     :time ( d / date-entity
         :month 3
         :day 9
         :year 2018 ))
 
+# ::id 12
 # ::snt Tiga orang berinisial CDR, MAX, dan YRN sudah dua kali mengedarkan uang palsu, dengan nilai transaksi pertama mencapai Rp 250 juta.
 
 ( e / edar 
     :ARG0 ( a / and 
         :op1 ( p1 / person 
-            :name ( n / name
+            :name ( n1 / name
                 :op1 "CDR" ))
         :op1 ( p2 / person 
-            :name ( n / name
+            :name ( n2 / name
                 :op1 "MAX" ))
         :op1 ( p3 / person 
-            :name ( n / name
+            :name ( n3 / name
                 :op1 "YRN" )))
     :ARG1 ( u / uang 
         :mod ( p4 / palsu ))
-    :mod ( n / nilai
+    :mod ( n4 / nilai
         :mod ( t / transaksi 
             :mod ( o / ordinal-entity 
             :value 1 )) 
@@ -135,6 +147,7 @@
     :quant 2 )
 
 
+# ::id 13
 # ::snt Sekitar awal pekan lalu, beredar sebuah rekaman yang diduga merupakan suara salah seorang pejabat di Dinas Pendidikan Sumatera Utara.
 
 ( e / edar 
@@ -143,110 +156,125 @@
             :mod ( p1 / person
                 :ARG0-of ( j / jabat
                     :ARG1 ( o / organization ))
-                :name ( n / name 
+                :name ( n1 / name 
                     :op1 "Dinas"
                     :op2 "Pendidikan" )
                 :location ( p2 / province 
-                    :name ( n / name
+                    :name ( n2 / name
                         :op1 "Sumatera"
                         :op2 "Utara" )))))
     :time ( p3 / pekan
         :mod ( a / awal
             :mod ( l / lalu ))))
 
+# ::id 14
 # ::snt Idrus mengakhiri, "Tapi saya tidak melihat JR Saragih menggerakkan Partai Demokrat secara paripurna dalam konteks pemenangan pilkada. Pasangan JR-Ance tidak serius, indikasinya, sampai hari ini tidak punya markas tim pemenangan. Bahkan, resistensi dari internal terhadap pencalonan JR Saragih masih kuat,"
 
+# ::id 15
 # ::snt Hasto mengakhiri, "Ya berbagai nama-nama memang disuarakan. Dan tentu saja PDIP ketika mencalonkan, kami mendengarkan suara partai, mendengarkan masukan tokoh. Tetapi juga mereka yang berpengalaman".
 
+# ::id 16
 # ::snt Slamet menuliskan, "PA 212 diamanahkan untuk terus mendorong agar terealisasinya deklarasi terbuka kolaisi keumatan Gerindra, PAN, PKS, dan PBB sebelum deklarasi capres-cawapres demgan tujuan persatuan umat Islam yang sudah terbangun dalam spirit 212 tetap terjaga dengan baik sehingga akan berdampak pada kemenangan di pilkada serentak 2018, pileg, dan pilpres 2019," Ahad 3 Juni.
 
+# ::id 17
 # ::snt KPU menuliskan dalam laman resminya, "Jika terdapat kesalahan dalam Model C1 akan dilakukan perbaikan pada proses rekapitulasi di tingkat atasnya".
 
+# ::id 18
 # ::snt Fajar menutup, "Faktanya ANS kebablasan, muncul simbol pasangan calon. Di Jepara, Magelang, Brebes, mereka kami direkomendasikan untuk disanksi".
 
+# ::id 19
 # ::snt Boedi menutup, "Pasangan Walikota dan Wakil Walikota yang telah resmi ditetapkan dan masih berstatus ASN maupun DPRD kota Pariaman harus mengurus pengunduran diri tertanggal 12 februari 2018 dengan paling lambat 5 hari sampai tanggal 17 februari 2018, disertai surat atau bukti tanda terima dari instansi, dan kemudian surat keteterangan pengunduran diri yang sudah diproses oleh instansi terkait".
 
+# ::id 20
 # ::snt pernyataan Komisi Pemberantasan Korupsi yang menyatakan ada beberapa calon peserta pilkada yang hampir menjadi tersangka dibahas dalam rapat koordinasi khusus Pilkada 2018.
 
+# ::id 21
 # ::snt Namun, Golkar belum membahas siapa calon wakil presiden pendamping Jokowi.
 
-( c / contrast
+( c1 / contrast
     :ARG2 (b / bahas)
     :polarity - 
     :ARG0 ( o / organization
-        :name ( n / name
+        :name ( n1 / name
             :op1 "Golkar" ))
     :ARG1 ( p1 / presiden
-        :mod ( c / calon )
+        :mod ( c2 / calon )
         :mod ( w / wakil )
         :mod ( p2 / person 
             :ARG0-of ( d / damping )
             :ARG1 (  p3 / person 
-                :name ( n / name 
+                :name ( n2 / name 
                     :op1 "Jokowi" ))))) 
 
+# ::id 22
 # ::snt Sekretaris Jenderal PDI Perjuangan Hasto Kristiyanto dan sejumlah kader PDIP menyambangi kantor Dewan Pimpinan Pusat Partai Golkar di Slipi, Jakarta Barat.
 
-( s / sambang 
+( s1 / sambang 
     :ARG0 ( a / and 
-        :op1 ( p / person 
-            :name ( n / name
+        :op1 ( p1 / person 
+            :name ( n1 / name
                 :op1 "Hasto"
                 :op2 "Kristiyanto"))
-            :ARG0-of ( j / jabat
+            :ARG0-of ( j1 / jabat
                 :ARG1 ( o / organization 
-                    :name ( n / name 
+                    :name ( n2 / name 
                         :op1 "PDI" ))
-                :ARG3 ( s / sekretaris
-                    :mod ( j / jendral )))
+                :ARG3 ( s2 / sekretaris
+                    :mod ( j2 / jendral )))
         :op2 ( p2 / person
             :mod ( k1 / kader )
-            :quant ( j / jumlah )))
+            :quant ( j3 / jumlah )))
     :ARG1 ( k2 / kantor 
-        :name ( n / name
+        :name ( n3 / name
             :op1 "Dewan"
             :op2 "Pimpinan"
             :op3 "Pusat"
             :op4 "Partai"
             :op5 "Golkar"
         :location ( c / city 
-            :name ( n / name
+            :name ( n4 / name
                 :op1 "Slipi"
                 :op2 "Jakarta"
                 :op3 "Barat" )))))
 
+# ::id 23
 # ::snt Syaikhu menyambangi pabrik pengolahan kulit mentah PT Garut Makmur Perkasa di kawasan Sukaregang dalam kunjungannya di Garut.
 
+# ::id 24
 # ::snt Instruksi Jokowi juga yang melatarbelakangi Menteri Keuangan Sri Mulyani menyambangi PP Muhammadiyah kemarin.
 
+# ::id 25
 # ::snt Dalam beberapa tahun terakhir, destinasi desa wisata di Lombok mengalami geliat yang cukup menggembirakan.
 
 ( a / alam 
-    :ARG0 ( d / destinasi 
-        :mod ( d / desa 
+    :ARG0 ( d1 / destinasi 
+        :mod ( d2 / desa 
             :mod ( w / wisata ))
             :location ( c1 / city
                 :name ( n / name
                     :op1 "Lombok"))
-                :ARG1 ( g / geliat 
-                    :mod ( g / gembira 
+                :ARG1 ( g1 / geliat 
+                    :mod ( g2 / gembira 
                         :mod ( c2 / cukup )))
                 :time ( t2/ tahun
                         :mod ( b / beberapa )))) 
 
+# ::id 26
 # ::snt Namun, jumlah data DPT yang saat ini tercatat masih mungkin mengalami perubahan.
 
-( c / contrast
+( c1 / contrast
     :ARG2 ( a / alam) 
     :ARG0 ( d / data
-        :ARG1-of ( c / catat )
+        :ARG1-of ( c2 / catat )
         :name ( n / name
             :op1 "DPT")
         :quant (j / jumlah))
     :ARG1 (p / perubahan)))
-        
+
+# ::id 27        
 # ::snt Jarak tingkat keterpilihan kedua pasangan pun mengalami perubahan, dari 0,5 persen di survei pertama, menjadi 3 persen di survei ini.
 
+# ::id 28
 # ::snt KPU DKI akan bekerja hingga 1 Mei 2017 untuk menyelesaikan rekapitulasi suara.
 
 ( k / kerja 
@@ -261,61 +289,64 @@
             :day 1
             :month 5
             :year 2017 )))
-    :purpose ( s / selesai
+    :purpose ( s1 / selesai
         :ARG1 ( r / rekapitulasi 
-            :ARG1 ( s / suara ))))
+            :ARG1 ( s2 / suara ))))
 
+# ::id 29
 # ::snt Selama itu, Marianus bekerja serabutan, mulai dari bertani, menjadi joki pacuan kuda, pekerja batu bata dan lain-lain.
 
-( k / kerja 
-    :ARG0 ( p / person
+( k1 / kerja 
+    :ARG0 ( p1 / person
         :name ( n / name 
             :op1 "Marianus" ))
     :mod ( s / serabut )
     :ARG1 ( e / example
         :op1 ( t / tani )
         :op2 ( j / jadi 
-            :ARG1 ( p / pacuan 
-            :mod ( k / kuda )))
-        :op3 ( k / kerja 
+            :ARG1 ( p2 / pacuan 
+            :mod ( k2 / kuda )))
+        :op3 ( k3 / kerja 
             :ARG1 ( b1 / batu
                 :mod ( b2 / bata )))))
-        
 
+# ::id 30
 # ::snt Masing-masing partai juga bekerja sesuai dengan konstitusinya.
 
-(k / kerja
+(k1 / kerja
     :ARG0 ( p / partai
         :mod ( m / masing-masing ))
     :ARG1 ( s / sesuai 
-        :mod ( k / konstitusi 
+        :mod ( k2 / konstitusi 
             :poss p )))
 
+# ::id 31
 # ::snt empat panelis yang terdiri dari tiga akademisi dan satu praktisi adalah Nunuk Nuswardani, Abdul Chalik, Fauzan, dan Lutfi Kurniawan.
 
 ( p1 / panelis
     :quant 4
-    :consist-of ( a / and
-        :op1 ( a / akademisi :quant 3)
+    :consist-of ( a1 / and
+        :op1 ( a2 / akademisi :quant 3)
         :op2 ( p2 / praktisi :quant 1) 
     )
-    :mod (a / and
-        :op1 ( p / person
-            :name ( n / name 
+    :mod (a3 / and
+        :op1 ( p3 / person
+            :name ( n1 / name 
                 :op1 "Nunuk"
                 :op2 "Nuswardani"))
-        :op2 ( p / person
-            :name ( n / name
+        :op2 ( p4 / person
+            :name ( n2 / name
                 :op1 "Abdul"
                 :op2 "Chalik" ))
-        :op3 ( p / person
-            :name ( n / name
+        :op3 ( p5 / person
+            :name ( n3 / name
                 :op1 "Fauzan" ))
-        :op4 ( p / person 
-            :name ( n / name
+        :op4 ( p6 / person 
+            :name ( n4 / name
                 :op1 "Lutfi"
                 :op2 "Kurniawan" ))))  
 
+# ::id 32
 # ::snt Jumlah tersebut terdiri dari 74.597.647 pemilih laki-laki dan 75.149.517 pemilih perempuan.
 
 ( j / jumlah 
@@ -327,6 +358,7 @@
             :mod ( p3 / perempuan )
             :quant 75149517 )))
 
+# ::id 33
 # ::snt Jumlah tersebut terdiri dari 76.348.813 pemilih laki-laki dan 76.520.478 pemilih perempuan.
 
 ( j / jumlah 
@@ -338,95 +370,105 @@
             :mod ( p3 / perempuan )
             :quant 76520478 )))
 
+# ::id 34
 # ::snt Ferdiman memperkirakan masih ada 900 ribu pemilih yang belum terdaftar di DPT.
 
 ( k / kira 
     :ARG0 ( p1 / person
-        :name ( n / name 
+        :name ( n1 / name 
             :op1 "Ferdiman" ))
     :ARG1 ( p2 / pemilih
         :quant 900000  
         :ARG1-of ( d / daftar
             :polarity - 
             :mod ( o / organization
-                :name ( n / name :op1 "DPT" )))))
+                :name ( n2 / name :op1 "DPT" )))))
 
+# ::id 35
 # ::snt Eko memperkirakan, toleransi kesalahan atau margin of error pada hitung cepat ini sekitar tiga persen pada tingkat kepercayaan 99 persen. Artinya, perolehan hasil suara dari calon kandidat pada penghitungan cepat ini bisa bergeser ke atas atau bergeser ke bawah sebesar 3 persen.
 
+# ::id 36
 # ::snt Silverius memperkirakan STTB JR Saragih hilang di Jakarta. 
 
 ( k / kira 
     :ARG0 ( p1 / person
-        :name ( n / name
+        :name ( n1 / name
             :op1 "Silverius" ))
     :ARG1 ( s / surat
-        :name ( n / name
+        :name ( n2 / name
             :op1 "STTB" ))
         :mod ( p2 / person 
-            :name ( n / name
+            :name ( n3 / name
                 :op1  "JR"
                 :op2 "Saragih"))
         :ARG1-of ( h / hilang
             :location ( c / city
-                :name ( n / name
+                :name ( n4 / name
                     :op1 "Jakarta" ))))
 
+# ::id 37
 # ::snt Kehilangan itu dilaporkan ke Polsek Kemayoran dengan nomor tanda lapor 1150/B/III/2018.
 
+# ::id 38
 # ::snt Timnas U-16 bawa pulang gelar juara Jenesys Cup ke tanah air.
 
 ( b / bawa 
     :ARG0 ( o / organization
-        :name ( n / name 
+        :name ( n1 / name 
             :op1 "Timnas" 
             :op2 "U-16" ))
     :ARG1 ( g / gelar 
         :mod ( j / juara )
-        :name ( n / name 
+        :name ( n2 / name 
             :op1 "Jenesys" 
             :op2 "Cup")
         :location ( t / tanah-air )))
 
+# ::id 39
 # ::snt Karena itu, Dedi akan membawa konsep sekolah khusus sepak bola ke tingkatan provinsi merujuk pada keberhasilan ASAD Jaya Perkasa ini. Supaya Pemprov Jabar punya sekolah khusus di bidang sepak bola.
 
+# ::id 40
 # ::snt Rupanya, saat berangkat kerja ke luar negeri, para TKI asal Madiun membawa brem sebagai oleh-oleh majikannya.
 
+# ::id 41
 # ::snt Ketua Panwaslu Lamongan, Toni Wijaya membenarkan pihaknya akan memanggil Bupati Tuban.
 
-( b / benar
+( b1 / benar
     :ARG0 ( p1 / person 
-        :name ( n / name 
+        :name ( n1 / name 
             :op1 "Toni"
             :op2 "Wijaya" )
-        :ARG0-of ( j / jabat
+        :ARG0-of ( j1 / jabat
             :ARG1 ( o / organization 
-                    :name ( n / name 
+                    :name ( n2 / name 
                         :op1 "Panwaslu" )
-                    :location ( c / city 
-                        :name ( n / name
+                    :location ( c1 / city 
+                        :name ( n3 / name
                             :op1 "Lamongan")))
             :ARG3 ( k / ketua
                 :ARG1 ( p2 / panggil 
-                    :ARG1 ( p / person 
-                        :ARG0-of ( j / jabat
-                            :ARG1 ( c / city 
-                                :name ( n / name
+                    :ARG1 ( p3 / person 
+                        :ARG0-of ( j2 / jabat
+                            :ARG1 ( c2 / city 
+                                :name ( n4 / name
                                     :op1 "Tuban"))
-                            :ARG3 ( b / bupati ))))))))
+                            :ARG3 ( b2 / bupati ))))))))
 
+# ::id 42
 # ::snt Mohamad Soleh, pendamping hukum pelapor, membenarkan ihwal klarifikasi yang akan dilakukan terhadap pelapor.
 
+# ::id 43
 # ::snt Deputi Statistik, Distribusi dan Jasa BPS Sasmito Hadi Wibowo membenarkan Pelantikan Pak Kecuk.
 
 ( b / benar 
     :ARG0 ( p1 / person 
-        :name ( n / name
+        :name ( n1 / name
             :op1 "Sasmito"
             :op2 "Hadi" 
             :op3 "Wibowo" )
-        :mod ( j / jabat
+        :mod ( j1 / jabat
             :ARG1 ( o / organization 
-                :name ( n / name 
+                :name ( n2 / name 
                     :op1 "BPS"))
             :ARG3 ( d1 / deputi 
                 :mod ( a / and 
@@ -435,66 +477,75 @@
                     :op3 ( j2 / jasa )))))
     :ARG1 ( l / lantik 
         :ARG1 ( p2 / person
-            :name ( n / name 
+            :name ( n3 / name 
                 :op1 "Kecuk" ))))
- 
+
+# ::id 44 
 # ::snt Dihubungi terpisah, Direktur Statistik Distribusi BPS Anggoro Dwitjahyono juga membenarkan mengenai pelantikan Kecuk siang ini.
 
+# ::id 45
 # ::snt Syaikhu melihat instalasi pengolah limbah yang dimiliki oleh PT GMP, usai meninjau pabrik.
 
-( l / lihat 
-    :ARG0 ( p / person
-        :name ( n / name
+( l1 / lihat 
+    :ARG0 ( p1 / person
+        :name ( n1 / name
             :op1 "Syaikhu" ))
     :ARG1 ( i / instalasi
         :ARG1-of ( m / milik 
             :ARG0 ( o1 / organization 
-                :name ( n / name 
+                :name ( n2 / name 
                     :op1 "PT"
                     :op2 "GMP" ))
         :mod ( o2 / olah
-                    :mod ( l / limbah ))))
+                    :mod ( l2 / limbah ))))
     :time ( u / usai
         :op1 ( t / tinjau 
-            :ARG1 ( p / pabrik ))))
+            :ARG1 ( p2 / pabrik ))))
 
+# ::id 46
 # ::snt Wakil Wali Kota Bekasi Syaikhu melihat, industri kulit di Garut telah menjadi salah satu ciri khas Garut di mata nasional hingga internasional.
 
+# ::id 47
 # ::snt Nur juga melihat persoalan anggaran yang nantinya dapat menghambat kelanjutan program tersebut.
 
-( l / lihat
-    :ARG0 ( p / person
+( l1 / lihat
+    :ARG0 ( p1 / person
         :name ( n / name 
             :op1 "Nur" ))
     :ARG1 ( s / soal 
         :mod ( a / anggaran 
             :ARG0-of ( d / dapat 
                 :ARG1 ( h / hambat 
-                    :ARG1 ( l / lanjut 
-                        :ARG1 ( p / program )))))))
+                    :ARG1 ( l2 / lanjut 
+                        :ARG1 ( p2 / program )))))))
 
+# ::id 48
 # ::snt Ketika melintasi perkebunan, puluhan pekerja yang memanen buah sawit terlihat memanggil nama Djarot Saiful Hidayat sambil mendatanginya untuk bersalaman. Ketika tiba di Desa PIR Tran Sosa Unit VI, Djarot Saiful Hidayat langsung disambut tari musik tradisional, permainan kuda kepang, dan salawat dari kelompok perwiritan.
 
+# ::id 49
 # ::snt Sebelum menyandang status tersangka, Bawaslu Sumut sudah pernah memanggil JR Saragih, KPU Sumut, dan para saksi terkait kasus dugaan penggunaan dokumen palsu.
 
+# ::id 50
 # ::snt Panitia Pengawas Pemilu Kota Padang memanggil dua orang aparatur sipil negara yang diduga memihak salah satu pasangan calon dalam Pilkada Padang 2018.
 
+# ::id 51
 # ::snt Panitia kemudian memanggil petugas keamanan dan mencoba menenangkan pendukung paslon nomor urut 1.
 
-( a / and 
-    :op1  ( p / panggil 
-        :ARG0 ( p1 / panitia )
-        :ARG1 ( p2 / petugas 
-            :mod ( a / aman )))
+( a1 / and 
+    :op1  ( p1 / panggil 
+        :ARG0 ( p2 / panitia )
+        :ARG1 ( p3 / petugas 
+            :mod ( a2 / aman )))
     :op2 ( c / coba 
-        :ARG0 p1
+        :ARG0 p2
         :ARG1 ( t / tenang 
-            :ARG1 ( p3 / pendukung )
-                :mod ( p4 / paslon
-                    :mod ( n / nomor )
-                    :mod ( u / urut )
-                    :quant 1 ))))
+            :ARG1 ( p4 / pendukung )
+                :mod ( p5 / paslon
+                    :mod ( n / nomor 
+                        :mod ( u / urut 
+                            :quant 1 ))))))
 
+# ::id 52
 # ::snt Bawaslu juga akan memanggil orang yang diduga ada dalam rekaman tersebut setelah cukup bukti permulaan.
 
 ( p / panggil 
@@ -502,77 +553,96 @@
         :name ( n / name 
             :op1 "Bawaslu" ))
     :ARG1 ( o2 / orang 
-        :ARG1-of ( d / duga 
+        :ARG1-of ( d1 / duga 
             :ARG1 ( a / ada 
-                :mod ( d / dalam 
+                :mod ( d2 / dalam 
                     :mod ( r / rekaman )))))
     :time ( s / setelah 
         :mod ( b / bukti 
             :mod ( m / mula ))))
 
+# ::id 53
 # ::snt Ketua KPU Kab Bandung Barat, Iing Nurdin mengimbau kepada seluruh pasangan calon Bupati dan Wakil Bupati Bandung Barat dan pendukung agar menjauhi kampanye negatif serta menciptakan pilkada berintegritas, damai dan nyaman.
 
+# ::id 54
 # ::snt Wakil Ketua Komisi Perlindungan Anak Indonesia Rita Pranawati mengimbau orang tua agar tidak mengajak anaknya yang belum memiliki hak pilih untuk mendatangi kampanye pilkada 2018.
 
+# ::id 55
 # ::snt Oleh karena itu, Ferdiman mengimbau pada semua warga yang belum terdaftar di DPT agar proaktif untuk melakukan rekam data KTP-elektronik.
 
+# ::id 56
 # ::snt Dalam kasus ini, Rusidi juga mengimbau masyarakat untuk berhati-hati dalam kegiatan politik praktis yang menggunakan cara politik uang. Karena dalam hal ini, baik pemberi dan penerima bisa dijerat dengan masalah hukum.
 
+# ::id 57
 # ::snt Zul mengimbau pelaksanaan pilkada dan pilpres mendatang tidak perlu lagi menghalalkan segala cara untuk mencapai kemenangan, apalagi memainkan isu SARA di tengah masyarakat yang bisa berakibat memecah belah umat.
 
+# ::id 58
 # ::snt Ahmad terakhir kali melaporkan kekayaannya pada 8 Januari 2018, berdasarkan data Laporan Harta Kekayaan Penyelenggara Negara yang dapat diakses melalui situs kpk.go.id. Pelaporan harta kekayaan merupakan kewajiban calon kepala daerah sebelum maju dalam kontestasi Pilkada sesuai Peraturan Komisi Pemilihan Umum Republik Indonesia Nomor 3 Tahun 2017.
 
+# ::id 59
 # ::snt Ahmad melaporkan jumlah kekayaannya mencapai Rp 52.241.112.194 atau lebih dari Rp 52 miliar, dalam laporan harta terbarunya.
 
+# ::id 60
 # ::snt Ahmad juga pernah melaporkan LHKPN pada 19 April 2013.
 
 ( l / lapor 
     :ARG0 ( p / person
-        :name ( n / name
+        :name ( n1 / name
             :op1 "Ahmad" ))
     :ARG1 ( o / organization
-        :name ( n / name
+        :name ( n2 / name
             :op1 "LKHPN" ))
     :time ( d / date-entity
         :day 19
         :month 3
         :year 2013 ))
 
+# ::id 61
 # ::snt Ahmad melaporkan Jumlah kekayaan pada saat itu mencapai Rp 35.212.963.348 dan 110.000 dollar AS. Kekayaan Ahmad didominasi harta tidak bergerak, berupa tanah dan bangunan senilai Rp 21.500.227.500 atau lebih dari Rp 21 miliar.
 
+# ::id 62
 # ::snt Komisi Pemilihan Umum akan melaporkan Ketua Komisi Independen Pemilihan Kota Lhokseumawe, Syahrir M. Daud, ke Dewan Kehormatan Penyelenggara Pemilu.
 
+# ::id 63
 # ::snt Masyarakat dapat melaporkan jurnalis yang menjadi tim sukses bagi pasangan calon peserta Pemilihan Kepala Daerah Serentak 2018 ke Dewan Pers.
 
+# ::id 64
 # ::snt KH Ahmad Mustofa Bisri atau Gus Mus meyakini gelaran Pilkada di Jawa Tengah akan berlangsung aman. Kekhawatiran panasnya situasi saat Pilkada DKI Jakarta akan merembet ke Jateng tidak perlu dikhawatirkan.
 
+# ::id 65
 # ::snt Gus Mus meyakini karakter dari masyarakat Jateng yang guyub, toleran itulah yang membuat suasana berbeda dengan DKI Jakarta. Oleh karena itu, kekhawatiran tidak perlu dilebih-lebihkan.
 
+# ::id 66
 # ::snt Gus Ipul meyakini brem berpeluang diekspor setelah dirinya mendapatkan informasi dari tenaga kerja Indonesia yang bekerja di luar negeri seperti Malaysia dan Hongkong.
 
+# ::id 67
 # ::snt Oleh karena itu, Haedar yakin, korupsi, penggarapan sumber daya alam yang belum maksimal dan persoalan politik dapat diselesaikan jika menggunakan spirit kolektif sesuai dengan posisi dan peran masing-masing elemen masyarakat.
 
+# ::id 68
 # ::snt Rommy yakin dukungan untuk Ridwan Kamil dan Uu semakin naik dengan adanya gerakan yang dilakukan selama sebulan ini hingga pencoblosan.
 
+# ::id 69
 # ::snt Meski demikian, Rommy yakin pasangan yang dicalonkannya bisa menang.
 
-( c / contrast 
+( c1 / contrast 
     :ARG2 ( y / yakin
             :ARG0 ( p1 / person
                 :name ( n / name 
                     :op1 "Rommy" ))
             :ARG1 ( b / bisa
                 :ARG0 ( p2 / pasangan
-                    :ARG1-of ( c / calon )
+                    :ARG1-of ( c2 / calon )
                     :ARG0 p1 )
                 :ARG1  ( m / menang ))))
 
+# ::id 70
 # ::snt JR Saragih tak melaksanakan putusan Bawaslu dan justru menyerahkan legalisir surat keterangan pengganti ijazah karena menyatakan ijazahnya hilang saat pergi ke Jakarta.
 
+# ::id 71
 # ::snt Saat SMP, Marianus Sae terpaksa putus sekolah selama empat tahun karena himpitan ekonomi.
 
-( p / putus
-    :ARG0 ( p / person
+( p1 / putus
+    :ARG0 ( p2 / person
         :name ( n / name
             :op1 "Marianus"
             :op2 "Sae" ))
@@ -583,18 +653,25 @@
     :mod ( h / himpit 
         :mod e / ekonomi ))
 
+# ::id 72
 # ::snt PT TUN Makassar memutuskan segera gugatan kedua paslon Pasangan Eltinus Omaleng-Johannes Rettob serta pasangan Maria Florida Kotorok-Yustus Way pada persidangan Selasa 27 Maret.
 
+# ::id 73
 # ::snt DKPP akan memutuskan segera nasib lima komisioner KPU Mimika dan tiga komisioner Panwaslu Mimika di Jakarta.
 
+# ::id 74
 # ::snt Jaksa Agung Muhammad Prasetyo memutuskan menunda proses hukum calon kepala daerah yang terlibat tindak pidana selama pemilihan kepala daerah. Prasetyo beralasan menunda proses hukum calon kepala daerah yang terlibat tindak pidana selama pemilihan kepala daerah akan memberikan manfaat di aspek politik dan hukum.
 
+# ::id 75
 # ::snt KPU Kota Parepare memutuskan bahwa Taufan Pawe telah melanggar UU Nomor 10 tahun 2016, pasal 71 ayat 3, junto peraturan KPU Nomor 3 tahun 2017 pasal 89 ayat 2.
 
+# ::id 76
 # ::snt Bawaslu Sumut sebelumnya memutuskan menerima sebagian dari gugatan sengketa hasil penetapan calon kepala daerah yang dilayangkan JR Saragih.
 
+# ::id 77
 # ::snt Di tempat cawagub petahana Djarot Saiful Hidayat, TPS 08 Setiabudi, Kuningan Timur, Jakarta Selatan, suara pasangan Ahok-Djarot berada di bawah suara pasangan calon Anies-Sandi.
 
+# ::id 78
 # ::snt Anies-Sandi berada dibawahnya dengan 207 suara.
 
 ( a / ada 
@@ -606,8 +683,10 @@
     :mod ( s / suara 
         :quant 207 ))
 
+# ::id 79
 # ::snt Pasangan nomor pemilihan 1 Agus Harimurti Yudhoyono- Sylviana Murni berada pada posisi buncit dengan 85 suara.
 
+# ::id 80
 # ::snt Nasdem berada di posisi kedua dengan 47 kemenangan.
 
 ( a / ada 
@@ -620,14 +699,15 @@
         :quant 47 ))
 
 
+# ::id 81
 # ::snt PDIP dan Demokat berada di urutan ketiga dengan raihan kemenangan masing-masing 45 daerah.
-( a / ada 
-    :ARG0 ( a / and
+( a1 / ada 
+    :ARG0 ( a2 / and
         :op1 ( o1 / organization
-            :name ( n / name 
+            :name ( n1 / name 
                 :op1 "PDIP" ))
         :op2 ( o2 / organization
-            :name ( n / name
+            :name ( n2 / name
                 :op1 "Demokrat" )))
     :mod ( u / urut
         :quant 3 )
@@ -637,10 +717,13 @@
             :unit ( d / daerah ))
         :mod ( m / menang )))
 
+# ::id 82
 # ::snt Kepala Kepolisian Indonesia Jenderal Polisi Tito Karnavian berharap ada kajian akademik untuk mengevaluasi kembali sistem pilkada langsung.
 
+# ::id 83
 # ::snt Sedangkan, elektabilitas cagub Jabar, Sudrajat berada di urutan paling bawah yakni 5,13 persen, dan responden yang menjawab tidak tahu/tidak menjawab 18,88 persen.
 
+# ::id 84
 # ::snt Termasuk Jumat malam berada di Kudus.
 
 ( a / ada
@@ -650,43 +733,54 @@
     :time ( d / date-entity
         :weekday ( j / jumat )
         :dayperiod ( m / malam )))
-        
+
+# ::id 85        
 # ::snt Taufan Pawe memang membagikan beras Rastra dan memutasi pejabat di Lingkup Kota Parepare, Sulawesi Selatan, namun tidak ada pelanggaran.
 
+# ::id 86
 # ::snt Taufan Pawe memang membagikan beras Rastra dan memutasi pejabat di Lingkup Kota Parepare, Sulawesi Selatan, namun tidak ada pelanggaran.
 
+# ::id 87
 # ::snt Di sela-sela acara reses tersebut, masyarakat dibagikan baju kaos berwarna biru bergambar Paslon nomor urut 3 yang bertuliskan Firdaus-Rusli Jadikan.
 
+# ::id 88
 # ::snt Pasangan calon kepala daerah dan tim pemenangan juga dilarang membagikan selebaran jadwal imsakiah yang bergambarkan pasangan calon.
 
+# ::id 89
 # ::snt Selanjutnya, calon kepala daerah maupun tim kampanye dilarang membagikan infak, sedekah Ramadan, dan bingkisan Lebaran yang bertujuan untuk kampanye.
 
+# ::id 90
 # ::snt PPP, Nasdem, Hanura dan PKB sudah saling berbagi saksi.
 
 ( b / bagi 
     :ARG0 ( a / and 
         :op1 ( o1/ organization 
-            :name ( n / name 
+            :name ( n1 / name 
                 :op1 "PPP" ))
         :op2 ( o2/ organization 
-            :name ( n / name 
+            :name ( n2 / name 
                 :op1 "Nasdem" ))
         :op3 ( o3/ organization 
-            :name ( n / name 
+            :name ( n3 / name 
                 :op1 "Hanura" ))
         :op4 ( o4/ organization 
-            :name ( n / name 
+            :name ( n4 / name 
                 :op1 "PKB" )))
     :ARG1 ( s / saksi ))
 
+# ::id 91
 # ::snt tim PPP juga turut membagikan takjil kepada para pengguna jalan, selain membagikan kalender dan kaus, di beberapa kota.
 
+# ::id 92
 # ::snt Pasangan calon Gubernur Lampung nomor 3, Arinal Junaidi-Chusnunia Chalim membagikan Kartu Petani Berjaya di Kecamatan Raman Utara, Kabupaten Lampung Timur.
 
+# ::id 93
 # ::snt Di tempat pemungutan suara 027, Pasar Minggu, Jakarta Selatan, Ketua Umum PDI Perjuangan Megawati Soekarnoputri menggunakan hak pilihnya.
 
+# ::id 94
 # ::snt Sebelumnya, diketahui, lawan politik Jokowi kerap menggunakan isu PKI dalam kampanye pemilu Presiden untuk menyerang mantan Wali Kota Solo Jokowi.
 
+# ::id 95
 # ::snt Sejauh ini, masih ada 13 kabupaten dari 29 kota/kabupaten di Papua yang menggunakan sistem noken.
 
 ( a / ada
@@ -701,50 +795,57 @@
                         :mod ( n / noken ))))))
     :time ( j / jauh 
         :mod ( i / ini )))
+
+# ::id 101
 # ::snt Pemilih yang sudah melakukan rekam data tetapi KTP-el nya belum jadi, maka tetap bisa menggunakan hak pilih dengan membawa suket.
 
+# ::id 96
 # ::snt Pendukung Jokowi menggunakan tagar #DiaSibukKerja di berbagai unggahan di media sosial, bahkan tagar tersebut dijadikan motif pada kaos.
 
+# ::id 97
 # ::snt Survei menggunakan metode multistage random sampling, dan memiliki toleransi kesalahan 3,5 persen pada tingkat kepercayaan 95 persen.
 
+# ::id 98
 # ::snt Dari total pemilih 301.367 orang, yang menggunakan suaranya sebanyak 214.262 orang atau 71,1%.
 
 ( g / guna 
     :ARG0 ( p1 / pemilih
-        :mod ( o / or 
+        :mod ( o1 / or 
             :op1 ( t1 / temporal-quantity
                 :quant 214264
-                :unit ( o / orang ))
+                :unit ( o2 / orang ))
             :op2 ( p2 / percentage-entity
                 :value 71.1 ))
         :ARG1-of ( d / dari
-            :ARG2 ( p2 / pemilih
+            :ARG2 ( p3 / pemilih
                 :quant 301367 )))
     :ARG1 ( s / suara ))
 
+# ::id 99
 # ::snt JR Saragih akan menggunakan SKPI tersebut sebagai persyaratan pencalonan gubernur Sumut.
 
-( g / guna 
-    :ARG0 ( p / person
-        :name ( n / name
+( g1 / guna 
+    :ARG0 ( p1 / person
+        :name ( n1 / name
             :op1 "JR"
             :op2 "Saragih"))
-    :ARG1 ( s / surat 
-        :name ( n / name
+    :ARG1 ( s1 / surat 
+        :name ( n2 / name
             :op1 "SKPI" ))
-    :mod ( s / syarat
+    :mod ( s2 / syarat
         :mod ( c / calon 
-            :mod ( g / gubernur )
-            :location ( p / province 
-                :name ( n / name
+            :mod ( g2 / gubernur )
+            :location ( p2 / province 
+                :name ( n3 / name
                     :op1 "Sumut" )))))
 
+# ::id 100
 # ::snt Pasangan dari Cagub Deddy Mizwar ini, akan membuat sekolah khusus sepak bola setingkat SMA.
 
 ( b / buat 
-    :ARG0 ( p / person
-        :mod ( p / pasangan 
-            :mod ( p2 / person
+    :ARG0 ( p1 / person
+        :mod ( p2 / pasangan 
+            :mod ( p3 / person
                 :name ( n / name 
                     :op1 "Deddy"
                     :op2 "Mizwar" )

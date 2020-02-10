@@ -7,7 +7,7 @@ import networkx as nx
 
 from utils.amr_parsing.graph_repair import GraphRepair
 # from stog.data.vocabulary import DEFAULT_PADDING_TOKEN, DEFAULT_OOV_TOKEN
-# from stog.utils.string import find_similar_token, is_abstract_token, is_english_punct
+from utils.strings import find_similar_token, is_abstract_token, is_english_punct
 # from stog.utils import logging
 
 DEFAULT_NON_PADDED_NAMESPACES = ("*tags", "*labels")
