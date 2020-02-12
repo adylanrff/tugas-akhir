@@ -1,2 +1,0 @@
-must_copy_tags
-coref_tags
