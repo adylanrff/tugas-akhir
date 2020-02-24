@@ -93,6 +93,7 @@ class Attention(Layer):
     def build(self, input_shape):
         # Declare attributes for easy access to dimension values
         if self.context == 'many-to-many':
+            print(self.name, input_shape[1])
             self.input_sequence_length, self.hidden_dim = input_shape[0][1], input_shape[0][2]
             self.target_sequence_length = input_shape[1][1]
         elif self.context == 'many-to-one':

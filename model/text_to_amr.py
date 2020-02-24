@@ -1,7 +1,11 @@
 import torch
-from keras.models import Model
-from keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten
+import numpy as np
+import tensorflow as tf
+
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape
 from .glove_embedding import GloveEmbedding
+from .attention import Attention
 
 class TextToAMR(Model):
     NUM_ENCODER_TOKENS = 25
@@ -36,29 +40,75 @@ class TextToAMR(Model):
         decoder_embedding = concatenate([token_decoder_embedding, pos_decoder_embedding])
 
         # Encoder
-        encoder_output, forward_h, forward_c, backward_h, backward_c = Bidirectional(LSTM(
+        encoder = Bidirectional(LSTM(
             TextToAMR.ENCODER_LATENT_DIM,
             return_sequences=True, 
-            return_state=True))(encoder_embedding)
+            return_state=True))
+
+        # Decoder
+        decoder = LSTM(
+            TextToAMR.DECODER_LATENT_DIM, 
+            return_state=True)
+        
+        # Source attention
+        source_attention = Attention(alignment_type='global', context='many-to-many', name="source_attention")
+
+        # Coref attention 
+        coref_attention = Attention(alignment_type='global', context='many-to-many', name="coref_attention")
+
+        # Build model
+        
+        # Encode
+        encoder_output, forward_h, forward_c, backward_h, backward_c = encoder(encoder_embedding)
         state_h = concatenate([forward_h, backward_h])
         state_c = concatenate([forward_c, backward_c])
         encoder_states = [state_h, state_c]
 
+        # Decoder initial states
+        rnn_hidden_states = []
+        decoder_hidden_states = []
+        source_copy_attentions = []
+        target_copy_attentions = []
+
+        current_decoder_hidden_state = encoder_states
+        memory_bank = encoder_output
+    
+        target_copy_hidden_states = []
+
         # Decoder
-        decoder_outputs, _, _ = LSTM(
-            TextToAMR.DECODER_LATENT_DIM,
-            return_sequences=True, 
-            return_state=True)(decoder_embedding, initial_state=encoder_states)
+        for timestep in range(decoder_embedding.shape[1]):
+            # decode per timestep
+            current_word = Lambda(lambda x: x[timestep: timestep+1, :, :])(decoder_embedding)
+
+            decoder_output, state_h, state_c = decoder(current_word, initial_state=current_decoder_hidden_state)
+            current_decoder_hidden_state = [state_h, state_c]
+            output = Reshape((1, decoder_output.shape[1]))(decoder_output)
+            
+            output, source_attention_weights = source_attention([encoder_output, decoder_output, timestep])
+            input_feed = output
         
-        flattened = Flatten()(decoder_outputs)
+            if (len(target_copy_hidden_states) == 0):
+                target_copy_attention = np.zeros(shape=(1, current_word.shape[1], current_word.shape[2]))
+            else:
+                if (len(target_copy_hidden_states) > 1):
+                    target_copy_memory = concatenate(target_copy_hidden_states)
+                else:
+                    target_copy_memory = target_copy_hidden_states
+
+                _, coref_attention_weights = coref_attention([output, decoder_output, timestep])
+
+            target_copy_attentions.append(target_copy_attention)
+            target_copy_hidden_states.append(output)
+            decoder_hidden_states.append(output)
+        
+        flattened = Flatten()(output)
         temp_output = Dense(1)(flattened)
         
-        # TODO: Add Source Attention layer
-        source_attention = []
-        # TODO: Add Coref Attention layer
-        coref_attention = []
         # TODO: Add Pointer generator model
         pointer_generator = []
+
+        # TODO: Add Deep Biaffine Decoder model
+        biaffine_decoder = []
 
         return Model([token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input], temp_output) 
 

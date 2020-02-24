@@ -1,4 +1,4 @@
-from keras.layers import Embedding
+from tensorflow.keras.layers import Embedding
 
 class GloveEmbedding(Embedding):
     EMBEDDING_DIM = 100
