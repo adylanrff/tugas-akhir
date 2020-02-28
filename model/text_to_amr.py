@@ -3,9 +3,11 @@ import numpy as np
 import tensorflow as tf
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape
+from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape, Attention
 from .glove_embedding import GloveEmbedding
-from .attention import Attention
+from .attention import BahdanauAttention
+from .pointer_generator import PointerGenerator
+from stog.utils.string import START_SYMBOL, END_SYMBOL, find_similar_token, is_abstract_token
 
 class TextToAMR(Model):
     NUM_ENCODER_TOKENS = 25
@@ -19,15 +21,23 @@ class TextToAMR(Model):
         self.encoder_token_vocab_size = self.vocab.get_vocab_size("encoder_token_ids")
         self.decoder_token_vocab_size = self.vocab.get_vocab_size("decoder_token_ids")
         self.encoder_pos_vocab_size = self.decoder_pos_vocab_size = self.vocab.get_vocab_size("pos_tags")
-        self.model = self.__generate_model_v1()
-
-    def __generate_model_v1(self):
+        self.is_prepared_input = False
+        
+    def generate_model(self):
+        if not self.is_prepared_input:
+            raise Exception("Please run .prepare_input() first!")
         # Inputs
-        token_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32', name="token_encoder_input")
-        pos_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32',name="pos_encoder_input")
+        ## Encoder input
+        token_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32', name="token_encoder_input", batch_size=40)
+        pos_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32',name="pos_encoder_input", batch_size=40)
+        ## Decoder input
         token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input")
         pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input")
         
+        ## Generator input
+        copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, 27, ),dtype='float32',name="copy_attention_maps_input")
+        coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, 29, ),dtype='float32',name="coref_attention_maps_input")
+
         # Embedding
         ## Encoder embedding
         token_encoder_embedding = GloveEmbedding(self.encoder_token_vocab_size, TextToAMR.NUM_ENCODER_TOKENS)(token_encoder_input)
@@ -51,11 +61,17 @@ class TextToAMR(Model):
             return_state=True)
         
         # Source attention
-        source_attention = Attention(alignment_type='global', context='many-to-many', name="source_attention")
+        source_attention = BahdanauAttention(400)
 
         # Coref attention 
-        coref_attention = Attention(alignment_type='global', context='many-to-many', name="coref_attention")
+        coref_attention = BahdanauAttention(400)
 
+        # TODO: Add Pointer generator model
+        pointer_generator = PointerGenerator(
+            TextToAMR.DECODER_LATENT_DIM, 
+            TextToAMR.ENCODER_LATENT_DIM*2, 
+            self.decoder_token_vocab_size)
+        
         # Build model
         
         # Encode
@@ -74,39 +90,60 @@ class TextToAMR(Model):
         memory_bank = encoder_output
     
         target_copy_hidden_states = []
-
-        # Decoder
+        print("ENCODER OUTPUT", encoder_output.shape)
+        # Decode
         for timestep in range(decoder_embedding.shape[1]):
             # decode per timestep
             current_word = Lambda(lambda x: x[timestep: timestep+1, :, :])(decoder_embedding)
-
             decoder_output, state_h, state_c = decoder(current_word, initial_state=current_decoder_hidden_state)
             current_decoder_hidden_state = [state_h, state_c]
+
             output = Reshape((1, decoder_output.shape[1]))(decoder_output)
-            
-            output, source_attention_weights = source_attention([encoder_output, decoder_output, timestep])
+            # print("OUTPUT: ", output.shape)
+            output, source_copy_attention = source_attention(memory_bank, output)
             input_feed = output
-        
+            
+            print("ATTENTION OUTPUT: ", output.shape)           # (?, 1, 400)
+            print("ATTENTION WEIGHT: ", source_copy_attention.shape)
+            source_copy_attentions.append(source_copy_attention)
+
             if (len(target_copy_hidden_states) == 0):
-                target_copy_attention = np.zeros(shape=(1, current_word.shape[1], current_word.shape[2]))
+                target_copy_attention = np.zeros(shape=(40, 1, 400))
             else:
                 if (len(target_copy_hidden_states) > 1):
                     target_copy_memory = concatenate(target_copy_hidden_states)
                 else:
                     target_copy_memory = target_copy_hidden_states
 
-                _, coref_attention_weights = coref_attention([output, decoder_output, timestep])
+                target_copy_attention = coref_attention(output, target_copy_attention)
 
             target_copy_attentions.append(target_copy_attention)
             target_copy_hidden_states.append(output)
             decoder_hidden_states.append(output)
+
+
+        decoder_hidden_states = tf.stack(decoder_hidden_states, axis=1)
+        decoder_hidden_states = Reshape((TextToAMR.NUM_DECODER_TOKENS, TextToAMR.DECODER_LATENT_DIM))(decoder_hidden_states)
+        print("decoder_hidden_states: ", decoder_hidden_states.shape)
         
-        flattened = Flatten()(output)
+        source_copy_attentions = tf.stack(source_copy_attentions)
+        print("SOURCE_COPY_ATTENTION: ", source_copy_attentions.shape)
+        target_copy_attentions = tf.stack(target_copy_attentions, axis=1)
+        target_copy_attentions = Reshape((TextToAMR.NUM_DECODER_TOKENS, TextToAMR.DECODER_LATENT_DIM))(target_copy_attentions)
+        print("TARGET_COPY_ATTENTION: ", target_copy_attentions.shape)
+
+        # Pass to pointer generator
+        probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size = pointer_generator.run(
+            decoder_hidden_states, 
+            source_copy_attentions, 
+            copy_attention_maps_input,
+            target_copy_attentions,
+            coref_attention_maps_input
+            )
+        
+        flattened = Flatten()(probs)
         temp_output = Dense(1)(flattened)
         
-        # TODO: Add Pointer generator model
-        pointer_generator = []
-
         # TODO: Add Deep Biaffine Decoder model
         biaffine_decoder = []
 
@@ -130,12 +167,12 @@ class TextToAMR(Model):
         # encoder_mask = get_text_field_mask(data['src_tokens'])
 
         encoder_inputs = dict(
-            bert_token=bert_token_inputs,
-            token_subword_index=encoder_token_subword_index,
-            token=encoder_token_inputs,
-            pos_tag=encoder_pos_tags,
-            must_copy_tag=encoder_must_copy_tags,
-            char=encoder_char_inputs,
+            bert_token=bert_token_inputs.numpy() if bert_token_inputs is not None else None,
+            token_subword_index=encoder_token_subword_index.numpy() if encoder_token_subword_index is not None else None,
+            token=encoder_token_inputs.numpy() if encoder_token_inputs is not None else None,
+            pos_tag=encoder_pos_tags.numpy() if encoder_pos_tags is not None else None,
+            must_copy_tag=encoder_must_copy_tags.numpy() if encoder_must_copy_tags is not None else None,
+            char=encoder_char_inputs.numpy() if encoder_char_inputs is not None else None,
             # mask=encoder_mask
         )
 
@@ -159,10 +196,73 @@ class TextToAMR(Model):
         decoder_coref_inputs = decoder_coref_inputs + raw_coref_inputs
 
         decoder_inputs = dict(
-            token=decoder_token_inputs,
-            pos_tag=decoder_pos_tags,
-            char=decoder_char_inputs,
-            coref=decoder_coref_inputs
+            token=decoder_token_inputs.numpy() if decoder_token_inputs is not None else None,
+            pos_tag=decoder_pos_tags.numpy() if decoder_pos_tags is not None else None,
+            char=decoder_char_inputs.numpy() if decoder_char_inputs is not None else None,
+            coref=decoder_coref_inputs.numpy() if decoder_coref_inputs is not None else None
         )
 
-        return (encoder_inputs, decoder_inputs)
+        # [batch, num_tokens]
+        vocab_targets = data['tgt_tokens']['decoder_tokens'][:, 1:].contiguous()
+        # [data, num_tokens]
+        coref_targets = data["tgt_copy_indices"][:, 1:]
+        # [data, num_tokens, num_tokens + coref_na]
+        coref_attention_maps = data['tgt_copy_map'][:, 1:]  # exclude BOS
+        # [data, num_tgt_tokens, num_src_tokens + unk]
+        copy_targets = data["src_copy_indices"][:, 1:]
+        # [data, num_src_tokens + unk, src_dynamic_vocab_size]
+        # Exclude the last pad.
+        copy_attention_maps = data['src_copy_map'][:, 1:-1]
+
+        generator_inputs = dict(
+            vocab_targets=vocab_targets.numpy() if vocab_targets is not None else None,
+            coref_targets=coref_targets.numpy() if coref_targets is not None else None,
+            coref_attention_maps=coref_attention_maps.numpy() if coref_attention_maps is not None else None,
+            copy_targets=copy_targets.numpy() if copy_targets is not None else None,
+            copy_attention_maps=copy_attention_maps.numpy() if copy_attention_maps is not None else None
+        )
+
+        # Remove the last two pads so that they have the same size of other inputs?
+        edge_heads = data['head_indices'][:, :-2]
+        edge_labels = data['head_tags'][:, :-2]
+        # TODO: The following computation can be done in amr.py.
+        # Get the parser mask.
+        parser_token_inputs = torch.zeros_like(decoder_token_inputs)
+        parser_token_inputs.copy_(decoder_token_inputs)
+        parser_token_inputs[
+            parser_token_inputs == self.vocab.get_token_index(END_SYMBOL, 'decoder_token_ids')
+        ] = 0
+        parser_mask = (parser_token_inputs != 0).float()
+
+        parser_inputs = dict(
+            edge_heads=edge_heads.numpy() if edge_heads is not None else None,
+            edge_labels=edge_labels.numpy() if edge_labels is not None else None,
+            corefs=decoder_coref_inputs.numpy() if decoder_coref_inputs is not None else None,
+            mask=parser_mask.numpy() if parser_mask is not None else None
+        )
+        
+        self.is_prepared_input = True
+
+
+        print("ENCODER_INPUT")
+        self.__print_tensor_dim(encoder_inputs)
+        
+        print("DECODER_INPUT")
+        self.__print_tensor_dim(decoder_inputs)
+
+        print("GENERATOR_INPUT")
+        self.__print_tensor_dim(generator_inputs)
+
+        print("PARSER_INPUT")
+        self.__print_tensor_dim(parser_inputs)
+
+        return (encoder_inputs, decoder_inputs, generator_inputs, parser_inputs)
+
+    def __print_tensor_dim(self, data):
+        for key in data:
+            print(key, end= ": ")
+            if data[key] is not None:
+                print(data[key].shape)
+            else:
+                print("None")
+        print("")
