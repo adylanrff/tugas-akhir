@@ -8,6 +8,8 @@ from .glove_embedding import GloveEmbedding
 from .attention import BahdanauAttention
 from .pointer_generator import PointerGenerator
 from stog.utils.string import START_SYMBOL, END_SYMBOL, find_similar_token, is_abstract_token
+from .encoder import Encoder
+from .decoder import Decoder
 
 class TextToAMR(Model):
     NUM_ENCODER_TOKENS = 25
@@ -38,110 +40,30 @@ class TextToAMR(Model):
         copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, 27, ),dtype='float32',name="copy_attention_maps_input")
         coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, 29, ),dtype='float32',name="coref_attention_maps_input")
 
-        # Embedding
-        ## Encoder embedding
-        token_encoder_embedding = GloveEmbedding(self.encoder_token_vocab_size, TextToAMR.NUM_ENCODER_TOKENS)(token_encoder_input)
-        pos_encoder_embedding = Embedding(input_dim=self.encoder_pos_vocab_size,output_dim=100, input_length=TextToAMR.NUM_ENCODER_TOKENS)(pos_encoder_input)
-        encoder_embedding = concatenate([token_encoder_embedding, pos_encoder_embedding])
-        
-        ## Decoder embedding
-        token_decoder_embedding = GloveEmbedding(self.decoder_token_vocab_size, TextToAMR.NUM_DECODER_TOKENS)(token_decoder_input)
-        pos_decoder_embedding = Embedding(input_dim=self.decoder_pos_vocab_size,output_dim=100, input_length=TextToAMR.NUM_DECODER_TOKENS)(pos_decoder_input)
-        decoder_embedding = concatenate([token_decoder_embedding, pos_decoder_embedding])
-
         # Encoder
-        encoder = Bidirectional(LSTM(
-            TextToAMR.ENCODER_LATENT_DIM,
-            return_sequences=True, 
-            return_state=True))
+        encoder = Encoder(self.encoder_token_vocab_size, self.encoder_pos_vocab_size, 100, TextToAMR.ENCODER_LATENT_DIM, 40)
+        decoder = Decoder(self.decoder_token_vocab_size, self.decoder_pos_vocab_size, 100, TextToAMR.DECODER_LATENT_DIM, 40)
 
-        # Decoder
-        decoder = LSTM(
-            TextToAMR.DECODER_LATENT_DIM, 
-            return_state=True)
+        sample_hidden = encoder.initialize_hidden_state()
+        enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
+        dec_output, dec_hidden, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
+
+        print("DECODER_OUTPUT: ", dec_output.shape)
+        print("DECODER_HIDDEN: ", dec_hidden.shape)
+        print("Source copy Attentions: ", source_copy_attentions.shape)
+        print("Target copy attentions: ", target_copy_attentions.shape)
+
+
+        # # Pass to pointer generator
+        # probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size = pointer_generator.run(
+        #     decoder_hidden_states, 
+        #     source_copy_attentions, 
+        #     copy_attention_maps_input,
+        #     target_copy_attentions,
+        #     coref_attention_maps_input
+        #     )
         
-        # Source attention
-        source_attention = BahdanauAttention(400)
-
-        # Coref attention 
-        coref_attention = BahdanauAttention(400)
-
-        # TODO: Add Pointer generator model
-        pointer_generator = PointerGenerator(
-            TextToAMR.DECODER_LATENT_DIM, 
-            TextToAMR.ENCODER_LATENT_DIM*2, 
-            self.decoder_token_vocab_size)
-        
-        # Build model
-        
-        # Encode
-        encoder_output, forward_h, forward_c, backward_h, backward_c = encoder(encoder_embedding)
-        state_h = concatenate([forward_h, backward_h])
-        state_c = concatenate([forward_c, backward_c])
-        encoder_states = [state_h, state_c]
-
-        # Decoder initial states
-        rnn_hidden_states = []
-        decoder_hidden_states = []
-        source_copy_attentions = []
-        target_copy_attentions = []
-
-        current_decoder_hidden_state = encoder_states
-        memory_bank = encoder_output
-    
-        target_copy_hidden_states = []
-        print("ENCODER OUTPUT", encoder_output.shape)
-        # Decode
-        for timestep in range(decoder_embedding.shape[1]):
-            # decode per timestep
-            current_word = Lambda(lambda x: x[timestep: timestep+1, :, :])(decoder_embedding)
-            decoder_output, state_h, state_c = decoder(current_word, initial_state=current_decoder_hidden_state)
-            current_decoder_hidden_state = [state_h, state_c]
-
-            output = Reshape((1, decoder_output.shape[1]))(decoder_output)
-            # print("OUTPUT: ", output.shape)
-            output, source_copy_attention = source_attention(memory_bank, output)
-            input_feed = output
-            
-            print("ATTENTION OUTPUT: ", output.shape)           # (?, 1, 400)
-            print("ATTENTION WEIGHT: ", source_copy_attention.shape)
-            source_copy_attentions.append(source_copy_attention)
-
-            if (len(target_copy_hidden_states) == 0):
-                target_copy_attention = np.zeros(shape=(40, 1, 400))
-            else:
-                if (len(target_copy_hidden_states) > 1):
-                    target_copy_memory = concatenate(target_copy_hidden_states)
-                else:
-                    target_copy_memory = target_copy_hidden_states
-
-                target_copy_attention = coref_attention(output, target_copy_attention)
-
-            target_copy_attentions.append(target_copy_attention)
-            target_copy_hidden_states.append(output)
-            decoder_hidden_states.append(output)
-
-
-        decoder_hidden_states = tf.stack(decoder_hidden_states, axis=1)
-        decoder_hidden_states = Reshape((TextToAMR.NUM_DECODER_TOKENS, TextToAMR.DECODER_LATENT_DIM))(decoder_hidden_states)
-        print("decoder_hidden_states: ", decoder_hidden_states.shape)
-        
-        source_copy_attentions = tf.stack(source_copy_attentions)
-        print("SOURCE_COPY_ATTENTION: ", source_copy_attentions.shape)
-        target_copy_attentions = tf.stack(target_copy_attentions, axis=1)
-        target_copy_attentions = Reshape((TextToAMR.NUM_DECODER_TOKENS, TextToAMR.DECODER_LATENT_DIM))(target_copy_attentions)
-        print("TARGET_COPY_ATTENTION: ", target_copy_attentions.shape)
-
-        # Pass to pointer generator
-        probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size = pointer_generator.run(
-            decoder_hidden_states, 
-            source_copy_attentions, 
-            copy_attention_maps_input,
-            target_copy_attentions,
-            coref_attention_maps_input
-            )
-        
-        flattened = Flatten()(probs)
+        flattened = Flatten()(dec_output)
         temp_output = Dense(1)(flattened)
         
         # TODO: Add Deep Biaffine Decoder model
@@ -179,7 +101,7 @@ class TextToAMR(Model):
         # Decoder
         decoder_token_inputs = data['tgt_tokens']['decoder_tokens'][:, :-1].contiguous()
         decoder_pos_tags = data['tgt_pos_tags'][:, :-1]
-        # [data, num_tokens, num_chars]
+        # [data, num_tokens, num_chars] 
         decoder_char_inputs = data['tgt_tokens']['decoder_characters'][:, :-1].contiguous()
         # TODO: The following change can be done in amr.py.
         # Initially, raw_coref_inputs has value like [0, 0, 0, 1, 0]

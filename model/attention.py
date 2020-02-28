@@ -26,6 +26,5 @@ class BahdanauAttention(tf.keras.layers.Layer):
     # context_vector shape after sum == (batch_size, hidden_size)
     context_vector = attention_weights * values
     context_vector = tf.reduce_sum(context_vector, axis=1)
-    print("CONTEXT_VECTOR: ", context_vector.shape)
     
     return context_vector, attention_weights
