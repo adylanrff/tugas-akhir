@@ -16,14 +16,18 @@ class TextToAMR(Model):
     NUM_DECODER_TOKENS = 28
     ENCODER_LATENT_DIM = 200
     DECODER_LATENT_DIM = ENCODER_LATENT_DIM*2
+    COPY_ATTENTION_MAPS = 27
+    COREF_ATTENTION_MAPS = 29
 
-    def __init__(self, vocab):
+    def __init__(self, vocab, debug=False):
         super().__init__()
         self.vocab = vocab
         self.encoder_token_vocab_size = self.vocab.get_vocab_size("encoder_token_ids")
         self.decoder_token_vocab_size = self.vocab.get_vocab_size("decoder_token_ids")
         self.encoder_pos_vocab_size = self.decoder_pos_vocab_size = self.vocab.get_vocab_size("pos_tags")
         self.is_prepared_input = False
+        print("ENCODER TOKEN VOCAB SIZE: ", self.encoder_token_vocab_size)
+        print("DECODER TOKEN VOCAB SIZE: ", self.decoder_token_vocab_size)
         
     def generate_model(self):
         if not self.is_prepared_input:
@@ -33,43 +37,56 @@ class TextToAMR(Model):
         token_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32', name="token_encoder_input", batch_size=40)
         pos_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32',name="pos_encoder_input", batch_size=40)
         ## Decoder input
-        token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input")
-        pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input")
+        token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input", batch_size=40)
+        pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input", batch_size=40)
         
         ## Generator input
-        copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, 27, ),dtype='float32',name="copy_attention_maps_input")
-        coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, 29, ),dtype='float32',name="coref_attention_maps_input")
+        copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, TextToAMR.COPY_ATTENTION_MAPS, ),dtype='float32',name="copy_attention_maps_input", batch_size=40)
+        coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, TextToAMR.COREF_ATTENTION_MAPS, ),dtype='float32',name="coref_attention_maps_input", batch_size=40)
 
-        # Encoder
+        # Encoder-Decoder
         encoder = Encoder(self.encoder_token_vocab_size, self.encoder_pos_vocab_size, 100, TextToAMR.ENCODER_LATENT_DIM, 40)
         decoder = Decoder(self.decoder_token_vocab_size, self.decoder_pos_vocab_size, 100, TextToAMR.DECODER_LATENT_DIM, 40)
+        
+        # Pointer Generator
+        pointer_generator = PointerGenerator(self.decoder_token_vocab_size)
+
+        # Training
 
         sample_hidden = encoder.initialize_hidden_state()
         enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
         dec_output, dec_hidden, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
-
+        
         print("DECODER_OUTPUT: ", dec_output.shape)
         print("DECODER_HIDDEN: ", dec_hidden.shape)
         print("Source copy Attentions: ", source_copy_attentions.shape)
         print("Target copy attentions: ", target_copy_attentions.shape)
 
-
         # # Pass to pointer generator
-        # probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size = pointer_generator.run(
-        #     decoder_hidden_states, 
-        #     source_copy_attentions, 
-        #     copy_attention_maps_input,
-        #     target_copy_attentions,
-        #     coref_attention_maps_input
-        #     )
+        probs, predictions = pointer_generator(
+            dec_output, 
+            source_copy_attentions, 
+            copy_attention_maps_input,
+            target_copy_attentions,
+            coref_attention_maps_input
+            )
+
+        source_dynamic_vocab_size, target_dynamic_vocab_size = copy_attention_maps_input.shape[2], coref_attention_maps_input.shape[2]
         
-        flattened = Flatten()(dec_output)
+        flattened = Flatten()(predictions)
         temp_output = Dense(1)(flattened)
         
         # TODO: Add Deep Biaffine Decoder model
         biaffine_decoder = []
 
-        return Model([token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input], temp_output) 
+        return Model([
+            token_encoder_input, 
+            pos_encoder_input, 
+            token_decoder_input, 
+            pos_decoder_input, 
+            copy_attention_maps_input, 
+            coref_attention_maps_input
+        ], temp_output) 
 
 
     def prepare_input(self, data):
@@ -164,7 +181,6 @@ class TextToAMR(Model):
         )
         
         self.is_prepared_input = True
-
 
         print("ENCODER_INPUT")
         self.__print_tensor_dim(encoder_inputs)

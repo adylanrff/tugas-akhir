@@ -30,8 +30,6 @@ class Decoder(tf.keras.Model):
         self.coref_attention = BahdanauAttention(100)
 
     def call(self, token_input, pos_input, hidden, enc_output):
-        # enc_output shape == (batch_size, max_length, hidden_size)
-        # print("HIDDEN: ", hidden.shape)
         print("enc_output: ", enc_output.shape)
         
         # x shape after passing through embedding == (batch_size, 1, embedding_dim)
@@ -39,9 +37,7 @@ class Decoder(tf.keras.Model):
         pos_decoder_embedding = self.pos_embedding(pos_input)
         dec_input = concatenate([token_decoder_embedding, pos_decoder_embedding])
         print("X: ", dec_input.shape)
-        # print("expanded_context_vector: ", expanded_context_vector.shape)
         # x shape after concatenation == (batch_size, 1, embedding_dim + hidden_size)
-
 
         outputs = []
         states = []
@@ -75,15 +71,10 @@ class Decoder(tf.keras.Model):
             source_copy_attentions.append(attention_weight)
             target_copy_attentions.append(target_copy_attention)
         
-        # output shape == (batch_size * 1, hidden_size)
-        # output = tf.reshape(output, (-1, output.shape[2]))
-        
-        # output shape == (batch_size, vocab)
-        # x = self.fc(output)
         x = tf.stack(outputs, axis=1)
         states = tf.stack(states, axis=0)
-        source_copy_attentions = tf.stack(source_copy_attentions, axis=1)
-        target_copy_attentions = tf.stack(target_copy_attentions, axis=1)
+        source_copy_attentions = tf.squeeze(tf.stack(source_copy_attentions, axis=1), axis=-1)
+        target_copy_attentions = tf.squeeze(tf.stack(target_copy_attentions, axis=1), axis=-1)
         print("X: ", x.shape)
         print("STATES: ", x.shape)
         print("source_copy_attentions: ", source_copy_attentions.shape)
