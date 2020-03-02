@@ -4,10 +4,11 @@ import tensorflow as tf
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape, Attention
+from stog.utils.string import START_SYMBOL, END_SYMBOL, find_similar_token, is_abstract_token
 from .glove_embedding import GloveEmbedding
 from .attention import BahdanauAttention
 from .pointer_generator import PointerGenerator
-from stog.utils.string import START_SYMBOL, END_SYMBOL, find_similar_token, is_abstract_token
+from .biaffine_decoder import DeepBiaffineDecoder
 from .encoder import Encoder
 from .decoder import Decoder
 
@@ -51,8 +52,10 @@ class TextToAMR(Model):
         # Pointer Generator
         pointer_generator = PointerGenerator(self.decoder_token_vocab_size)
 
-        # Training
+        # Deep Biaffine Decoder
+        biaffine_decoder = DeepBiaffineDecoder()
 
+        # Training
         sample_hidden = encoder.initialize_hidden_state()
         enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
         dec_output, dec_hidden, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
@@ -75,9 +78,7 @@ class TextToAMR(Model):
         
         flattened = Flatten()(predictions)
         temp_output = Dense(1)(flattened)
-        
-        # TODO: Add Deep Biaffine Decoder model
-        biaffine_decoder = []
+
 
         return Model([
             token_encoder_input, 
