@@ -2,7 +2,7 @@ import tensorflow as tf
 
 
 class BiaffineAttention(tf.keras.layers.Layer):
-    def __init__(self, input_size_encoder, input_size_decoder, num_labels):
+    def __init__(self, input_size_encoder, input_size_decoder, num_labels=1):
         super(BiaffineAttention, self).__init__()
         self.input_size_encoder = input_size_encoder
         self.input_size_decoder = input_size_decoder
@@ -49,21 +49,22 @@ class BiaffineAttention(tf.keras.layers.Layer):
 
         # compute decoder part: [num_label, input_size_decoder] * [batch, input_size_decoder, length_decoder]
         # the output shape is [batch, num_label, length_decoder]
-        out_d = tf.expand_dims(tf.matmul(self.W_d, tf.permute_dimensions(
-            input_d, [0, 1, 2])), axis=3)
+        out_d = tf.expand_dims(tf.matmul(self.W_d, tf.transpose(
+            input_d, perm=[0, 2, 1])), axis=3)
         print("OUT_D: ", out_d.shape)
 
         # compute decoder part: [num_label, input_size_encoder] * [batch, input_size_encoder, length_encoder]
         # the output shape is [batch, num_label, length_encoder]
-        out_e = tf.expand_dims(torch.matmul(self.W_e, tf.permute_dimensions(
-            input_d, [0, 1, 2])), axis=3)
+        out_e = tf.expand_dims(tf.matmul(self.W_e, tf.transpose(
+            input_d, perm=[0, 2, 1])), axis=3)
         print("OUT_E: ", out_d.shape)
 
         output = tf.matmul(tf.expand_dims(input_d, axis=1), self.U)
         # [batch, num_label, length_decoder, input_size_encoder] * [batch, 1, input_size_encoder, length_encoder]
         # output shape [batch, num_label, length_decoder, length_encoder]
-        output = tf.matmul(output, tf.permute_dimensions(tf.expand_dims(input_e, axis=1), [0,1,3,2]))
-
+        output = tf.matmul(output, tf.transpose(tf.expand_dims(input_e, axis=1), [0,1,3,2]))
+        
+        print("BIAFFINE OUTPUT: ", output.shape)
         return output + out_d + out_e + self.b
         
 

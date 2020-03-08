@@ -11,6 +11,7 @@ from .pointer_generator import PointerGenerator
 from .biaffine_decoder import DeepBiaffineDecoder
 from .encoder import Encoder
 from .decoder import Decoder
+from .util import get_text_field_mask
 
 class TextToAMR(Model):
     NUM_ENCODER_TOKENS = 25
@@ -40,10 +41,16 @@ class TextToAMR(Model):
         ## Decoder input
         token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input", batch_size=40)
         pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input", batch_size=40)
-        
         ## Generator input
         copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, TextToAMR.COPY_ATTENTION_MAPS, ),dtype='float32',name="copy_attention_maps_input", batch_size=40)
         coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, TextToAMR.COREF_ATTENTION_MAPS, ),dtype='float32',name="coref_attention_maps_input", batch_size=40)
+        ## Mask input
+        mask_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="mask_input", batch_size=40)
+        ## Parser input
+        edge_heads_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="edge_heads_input", batch_size=40)
+        edge_labels_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="edge_labels_input", batch_size=40)
+        corefs_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="corefs_input", batch_size=40)
+        
 
         # Encoder-Decoder
         encoder = Encoder(self.encoder_token_vocab_size, self.encoder_pos_vocab_size, 100, TextToAMR.ENCODER_LATENT_DIM, 40)
@@ -58,7 +65,7 @@ class TextToAMR(Model):
         # Training
         sample_hidden = encoder.initialize_hidden_state()
         enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
-        dec_output, dec_hidden, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
+        dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
         
         print("DECODER_OUTPUT: ", dec_output.shape)
         print("DECODER_HIDDEN: ", dec_hidden.shape)
@@ -76,8 +83,17 @@ class TextToAMR(Model):
 
         source_dynamic_vocab_size, target_dynamic_vocab_size = copy_attention_maps_input.shape[2], coref_attention_maps_input.shape[2]
         
-        flattened = Flatten()(predictions)
-        temp_output = Dense(1)(flattened)
+        # biaffine decoder
+        graph_decoder_outputs = biaffine_decoder(
+            rnn_hidden_states, 
+            edge_heads_input, 
+            edge_labels_input, 
+            corefs_input, 
+            mask_input
+        )
+
+        # flattened = Flatten()(predictions)
+        # temp_output = Dense(1)(flattened)
 
 
         return Model([
@@ -86,8 +102,12 @@ class TextToAMR(Model):
             token_decoder_input, 
             pos_decoder_input, 
             copy_attention_maps_input, 
-            coref_attention_maps_input
-        ], temp_output) 
+            coref_attention_maps_input,
+            mask_input,
+            edge_heads_input,
+            edge_labels_input,
+            corefs_input,
+        ], graph_decoder_outputs) 
 
 
     def prepare_input(self, data):
@@ -104,7 +124,7 @@ class TextToAMR(Model):
         # [data, num_tokens, num_chars]
         encoder_char_inputs = data['src_tokens']['encoder_characters']
         # [data, num_tokens]
-        # encoder_mask = get_text_field_mask(data['src_tokens'])
+        encoder_mask = get_text_field_mask(data['src_tokens'])
 
         encoder_inputs = dict(
             bert_token=bert_token_inputs.numpy() if bert_token_inputs is not None else None,
@@ -113,7 +133,7 @@ class TextToAMR(Model):
             pos_tag=encoder_pos_tags.numpy() if encoder_pos_tags is not None else None,
             must_copy_tag=encoder_must_copy_tags.numpy() if encoder_must_copy_tags is not None else None,
             char=encoder_char_inputs.numpy() if encoder_char_inputs is not None else None,
-            # mask=encoder_mask
+            mask=encoder_mask
         )
 
         # Decoder
