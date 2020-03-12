@@ -67,10 +67,4 @@ class PointerGenerator(tf.keras.Model):
         print(predictions.shape)
         
         return probs, predictions
-
-
-
-    
-
-
     

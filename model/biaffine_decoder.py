@@ -1,24 +1,32 @@
 import tensorflow as tf
+import torch
 import numpy as np
 from .biaffine_attention import BiaffineAttention
 from .head_sentinel import HeadSentinel
-from tensorflow.keras.layers import Dense, concatenate, Dropout
-
+from .bilinear import Bilinear
+from tensorflow.keras.layers import Dense, concatenate, Dropout, Lambda
+from .util import create_indices
 
 class DeepBiaffineDecoder(tf.keras.Model):
-    def __init__(self):
+    def __init__(self, vocab):
         super(DeepBiaffineDecoder, self).__init__()
         self.edge_node_h_linear = Dense(256, activation='elu')
         self.edge_node_m_linear = Dense(256, activation='elu')
 
-        self.edge_label_h_linear = Dense(128, activation='elu')
-        self.edge_label_m_linear = Dense(128, activation='elu')
+        edge_label_hidden_size = 128
+        self.edge_label_h_linear = Dense(edge_label_hidden_size, activation='elu')
+        self.edge_label_m_linear = Dense(edge_label_hidden_size, activation='elu')
 
         self.head_sentinel = HeadSentinel(400)
 
         self.encode_dropout = Dropout(0.33)
 
         self.biaffine_attention = BiaffineAttention(256, 256)
+
+        num_labels = vocab.get_vocab_size("head_tags")
+        self.edge_label_bilinear = Bilinear(edge_label_hidden_size, edge_label_hidden_size, num_labels)
+        
+        self.minus_inf = -1e8
 
     def call(self, memory_bank, edge_heads, edge_labels, corefs, mask):
         num_nodes = tf.keras.backend.sum(mask)
@@ -33,6 +41,9 @@ class DeepBiaffineDecoder(tf.keras.Model):
 
         edge_node_nll, edge_label_nll = self.get_loss(
             edge_label_h, edge_label_m, edge_node_scores, edge_heads, edge_labels, mask)
+
+        print("EDGE NODE NLL: ", edge_node_nll.shape)
+        print("EDGE LABEL NLL: ",edge_label_nll.shape)
 
         pred_edge_heads, pred_edge_labels = self.decode(
             edge_label_h, edge_label_m, edge_node_scores, corefs, mask)
@@ -49,14 +60,18 @@ class DeepBiaffineDecoder(tf.keras.Model):
         batch_size, _, hidden_size = memory_bank.shape
         memory_bank = self.head_sentinel(memory_bank, batch_size, hidden_size)
         print("MEMBANK AFTER SENTINEL: ", memory_bank.shape)
+        
+        print("EDGE_HEADS BEFORE SENTINEL: ", edge_heads.shape)
+        print("EDGE_LABELS BEFORE SENTINEL: ", edge_labels.shape)
         if edge_heads is not None:
             edge_heads = concatenate([tf.zeros((batch_size, 1), dtype='int32'), edge_heads], 1)
         if edge_labels is not None:
             edge_labels = concatenate([tf.zeros((batch_size, 1), dtype='int32'), edge_labels], 1)
         if corefs is not None:
             corefs = concatenate([tf.zeros((batch_size, 1), dtype='int32'), corefs], 1)
+        print("EDGE_HEADS AFTER SENTINEL: ", edge_heads.shape)
+        print("EDGE_LABELS AFTER SENTINEL: ", edge_labels.shape)
         mask = concatenate([tf.zeros((batch_size, 1), dtype='int32'), mask], 1)
-        
         return memory_bank, edge_heads, edge_labels, corefs, mask
 
 
@@ -89,29 +104,76 @@ class DeepBiaffineDecoder(tf.keras.Model):
             edge_node_h, edge_node_m),1)
         return edge_node_scores
 
+    def _get_edge_label_scores(self, edge_label_h, edge_label_m, edge_heads):
+        """
+        Compute the edge label scores.
+        :param edge_label_h: [batch, length, edge_label_hidden_size]
+        :param edge_label_m: [batch, length, edge_label_hidden_size]
+        :param heads: [batch, length] -- element at [i, j] means the head index of node_j at batch_i.
+        :return: [batch, length, num_labels]
+        """
+
+        indices = create_indices(edge_heads)
+        edge_label_h = tf.gather_nd(edge_label_h, indices)
+        # [batch, length, num_labels]
+        edge_label_scores = self.edge_label_bilinear(edge_label_h, edge_label_m)
+
+        return edge_label_scores
+
+    def masked_log_softmax(self, vector, mask, dim=-1):
+        if mask is not None:
+            mask = tf.cast(mask, dtype='float32')
+            while len(mask.shape) < len(vector.shape):
+                mask = tf.expand_dims(mask, 1)
+            # vector + mask.log() is an easy way to zero out masked elements in logspace, but it
+            # results in nans when the whole vector is masked.  We need a very small value instead of a
+            # zero in the mask for these cases.  log(1 + 1e-45) is still basically 0, so we can safely
+            # just add 1e-45 before calling mask.log().  We use 1e-45 because 1e-46 is so small it
+            # becomes 0 - this is just the smallest value we can actually use.
+            vector = vector + tf.keras.backend.log((mask + 1e-45))
+        return tf.nn.log_softmax(vector, axis=dim)
+
     def get_loss(self, edge_label_h, edge_label_m, edge_node_scores, edge_heads, edge_labels, mask):
         batch_size, max_len, _ = edge_node_scores.shape
 
-        edge_node_log_likelihood = masked_log_softmax(
-            edge_node_scores, mask.unsqueeze(2) + mask.unsqueeze(1), dim=1)
-
+        edge_node_log_likelihood = self.masked_log_softmax(
+            edge_node_scores, tf.expand_dims(mask, 2) + tf.expand_dims(mask, 1), dim=1)
         edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
-        edge_label_log_likelihood = torch.nn.functional.log_softmax(edge_label_scores, dim=2)
+        edge_label_log_likelihood = tf.nn.log_softmax(edge_label_scores, axis=2)
 
         # Create indexing matrix for batch: [batch, 1]
-        batch_index = torch.arange(0, batch_size).view(batch_size, 1).type_as(edge_heads)
+        batch_indices = create_indices(edge_heads)
         # Create indexing matrix for modifier: [batch, modifier_length]
-        modifier_index = torch.arange(0, max_len).view(1, max_len).expand(batch_size, max_len).type_as(edge_heads)
+        modifier_indices = create_indices(edge_labels)
         # Index the log likelihood of gold edges.
-        _edge_node_log_likelihood = edge_node_log_likelihood[
-            batch_index, edge_heads.data, modifier_index]
-        _edge_label_log_likelihood = edge_label_log_likelihood[
-            batch_index, modifier_index, edge_labels.data]
+        _edge_node_log_likelihood = tf.gather_nd(edge_node_log_likelihood, batch_indices)
+        _edge_label_log_likelihood = tf.gather_nd(edge_label_log_likelihood, modifier_indices)
 
         # Exclude the dummy root.
         # Output [batch, length - 1]
-        gold_edge_node_nll = - _edge_node_log_likelihood[:, 1:].sum()
-        gold_edge_label_nll = - _edge_label_log_likelihood[:, 1:].sum()
+        gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:], axis=1)
+        gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:], axis=1)
 
         return gold_edge_node_nll, gold_edge_label_nll
 
+    def decode(self,edge_label_h, edge_label_m, edge_node_scores, corefs, mask):
+
+        max_len = edge_node_scores.shape[1]
+
+        # Set diagonal elements to -inf
+        edge_node_scores = edge_node_scores + torch.diag(edge_node_scores.new(max_len).fill_(-np.inf))
+
+        # Set invalid positions to -inf
+        minus_mask = (1 - mask.float()) * self.minus_inf
+        edge_node_scores = edge_node_scores + minus_mask.unsqueeze(2) + minus_mask.unsqueeze(1)
+
+        # Compute naive predictions.
+        # prediction shape = [batch, length]
+        _, edge_heads = edge_node_scores.max(dim=1)
+
+        # Based on predicted heads, compute the edge label scores.
+        # [batch, length, num_labels]
+        edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
+        _, edge_labels = edge_label_scores.max(dim=2)
+
+        return edge_heads[:, 1:], edge_labels[:, 1:]

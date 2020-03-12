@@ -47,9 +47,9 @@ class TextToAMR(Model):
         ## Mask input
         mask_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="mask_input", batch_size=40)
         ## Parser input
-        edge_heads_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="edge_heads_input", batch_size=40)
-        edge_labels_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="edge_labels_input", batch_size=40)
-        corefs_input = Input(shape=(TextToAMR.COPY_ATTENTION_MAPS, ), dtype='int32', name="corefs_input", batch_size=40)
+        edge_heads_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_heads_input", batch_size=40)
+        edge_labels_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_labels_input", batch_size=40)
+        corefs_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="corefs_input", batch_size=40)
         
 
         # Encoder-Decoder
@@ -60,7 +60,7 @@ class TextToAMR(Model):
         pointer_generator = PointerGenerator(self.decoder_token_vocab_size)
 
         # Deep Biaffine Decoder
-        biaffine_decoder = DeepBiaffineDecoder()
+        biaffine_decoder = DeepBiaffineDecoder(self.vocab)
 
         # Training
         sample_hidden = encoder.initialize_hidden_state()
@@ -73,17 +73,18 @@ class TextToAMR(Model):
         print("Target copy attentions: ", target_copy_attentions.shape)
 
         # # Pass to pointer generator
-        probs, predictions = pointer_generator(
+        # output: [probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size]
+        generator_output = pointer_generator(
             dec_output, 
             source_copy_attentions, 
             copy_attention_maps_input,
             target_copy_attentions,
             coref_attention_maps_input
             )
-
-        source_dynamic_vocab_size, target_dynamic_vocab_size = copy_attention_maps_input.shape[2], coref_attention_maps_input.shape[2]
         
-        # biaffine decoder
+        source_dynamic_vocab_size, target_dynamic_vocab_size = copy_attention_maps_input.shape[2], coref_attention_maps_input.shape[2]
+        # pass to biaffine decoder
+        # output: [edge_heads, edge_labels, loss, total_loss, num_nodes]
         graph_decoder_outputs = biaffine_decoder(
             rnn_hidden_states, 
             edge_heads_input, 
@@ -183,8 +184,8 @@ class TextToAMR(Model):
         )
 
         # Remove the last two pads so that they have the same size of other inputs?
-        edge_heads = data['head_indices'][:, :-2]
-        edge_labels = data['head_tags'][:, :-2]
+        edge_heads = data['head_indices'][:, :-1]
+        edge_labels = data['head_tags'][:, :-1]
         # TODO: The following computation can be done in amr.py.
         # Get the parser mask.
         parser_token_inputs = torch.zeros_like(decoder_token_inputs)

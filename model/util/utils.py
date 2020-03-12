@@ -1,4 +1,4 @@
-
+import tensorflow as tf
 
 def get_text_field_mask(text_field_tensors,
                         num_wrapping_dims=0):
@@ -45,3 +45,17 @@ def get_text_field_mask(text_field_tensors,
     else:
         raise ValueError(
             "Expected a tensor with dimension 2 or 3, found {}".format(smallest_dim))
+
+def create_indices(label):
+    batch_size = label.shape[0]
+    label_length = label.shape[1]
+    batch_index = tf.range(batch_size)
+    tile = tf.transpose(tf.reshape(tf.tile(batch_index, [label_length]), shape=[label_length, batch_size]))
+    tile = tf.split(tile, batch_size, 0)
+    splitted_label = tf.split(label, batch_size, 0)
+    indices = []
+    for idx,head in enumerate(splitted_label):
+        matrix_idx = tf.cast(tf.transpose(tile[idx]), dtype='int32')
+        head = tf.cast(tf.transpose(head), dtype='int32')    
+        indices.append(tf.reshape(tf.stack([matrix_idx,head], axis=-1), shape=[label_length,2]))
+    return tf.stack(indices)
