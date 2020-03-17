@@ -34,77 +34,78 @@ class TextToAMR(Model):
             raise Exception("Please run .prepare_input() first!")
         # Inputs
         ## Encoder input
-        token_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32', name="token_encoder_input", batch_size=40)
-        pos_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32',name="pos_encoder_input", batch_size=40)
+        self.token_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32', name="token_encoder_input", batch_size=40)
+        self.pos_encoder_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, ), dtype='int32',name="pos_encoder_input", batch_size=40)
         ## Decoder input
-        token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input", batch_size=40)
-        pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input", batch_size=40)
+        self.token_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="token_decoder_input", batch_size=40)
+        self.pos_decoder_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="pos_decoder_input", batch_size=40)
         ## Generator input
-        copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, TextToAMR.COPY_ATTENTION_MAPS, ),dtype='float32',name="copy_attention_maps_input", batch_size=40)
-        coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, TextToAMR.COREF_ATTENTION_MAPS, ),dtype='float32',name="coref_attention_maps_input", batch_size=40)
+        self.copy_attention_maps_input = Input(shape=(TextToAMR.NUM_ENCODER_TOKENS, TextToAMR.COPY_ATTENTION_MAPS, ),dtype='float32',name="copy_attention_maps_input", batch_size=40)
+        self.coref_attention_maps_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, TextToAMR.COREF_ATTENTION_MAPS, ),dtype='float32',name="coref_attention_maps_input", batch_size=40)
         ## Mask input
-        mask_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="mask_input", batch_size=40)
+        self.mask_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32',name="mask_input", batch_size=40)
         ## Parser input
-        edge_heads_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_heads_input", batch_size=40)
-        edge_labels_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_labels_input", batch_size=40)
-        corefs_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="corefs_input", batch_size=40)
+        self.edge_heads_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_heads_input", batch_size=40)
+        self.edge_labels_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="edge_labels_input", batch_size=40)
+        self.corefs_input = Input(shape=(TextToAMR.NUM_DECODER_TOKENS, ), dtype='int32', name="corefs_input", batch_size=40)
         
 
         # Encoder-Decoder
-        encoder = Encoder(self.encoder_token_vocab_size, self.encoder_pos_vocab_size, 100, TextToAMR.ENCODER_LATENT_DIM, 40)
-        decoder = Decoder(self.decoder_token_vocab_size, self.decoder_pos_vocab_size, 100, TextToAMR.DECODER_LATENT_DIM, 40)
+        self.encoder = Encoder(self.encoder_token_vocab_size, self.encoder_pos_vocab_size, 100, TextToAMR.ENCODER_LATENT_DIM, 40)
+        self.decoder = Decoder(self.decoder_token_vocab_size, self.decoder_pos_vocab_size, 100, TextToAMR.DECODER_LATENT_DIM, 40)
         
         # Pointer Generator
-        pointer_generator = PointerGenerator(self.decoder_token_vocab_size)
+        self.pointer_generator = PointerGenerator(self.decoder_token_vocab_size)
 
         # Deep Biaffine Decoder
-        biaffine_decoder = DeepBiaffineDecoder(self.vocab)
+        self.biaffine_decoder = DeepBiaffineDecoder(self.vocab)
         
         #########################################
         ## TRAINING                             #
         #########################################
-        sample_hidden = encoder.initialize_hidden_state()
-        enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
-        dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
+        sample_hidden = self.encoder.initialize_hidden_state()
+        enc_output, enc_hidden = self.encoder(self.token_encoder_input, self.pos_encoder_input, sample_hidden)
+        dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = self.decoder(self.token_decoder_input, self.pos_decoder_input, enc_hidden, enc_output)
         
 
         # # Pass to pointer generator
         # output: [probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size]
-        generator_output = pointer_generator(
+        generator_output = self.pointer_generator(
             dec_output, 
             source_copy_attentions, 
-            copy_attention_maps_input,
+            self.copy_attention_maps_input,
             target_copy_attentions,
-            coref_attention_maps_input
+            self.coref_attention_maps_input
             )
         
-        source_dynamic_vocab_size, target_dynamic_vocab_size = copy_attention_maps_input.shape[2], coref_attention_maps_input.shape[2]
+        source_dynamic_vocab_size, target_dynamic_vocab_size = self.copy_attention_maps_input.shape[2], self.coref_attention_maps_input.shape[2]
         # pass to biaffine decoder
         # output: [edge_heads, edge_labels, loss, total_loss, num_nodes]
-        graph_decoder_outputs = biaffine_decoder(
+        graph_decoder_outputs = self.biaffine_decoder(
             rnn_hidden_states, 
-            edge_heads_input, 
-            edge_labels_input, 
-            corefs_input, 
-            mask_input
+            self.edge_heads_input, 
+            self.edge_labels_input, 
+            self.corefs_input, 
+            self.mask_input
         )
 
         flattened = Flatten()(graph_decoder_outputs[0])
         temp_output = Dense(1)(flattened)
 
-
-        return Model([
-            token_encoder_input, 
-            pos_encoder_input, 
-            token_decoder_input, 
-            pos_decoder_input, 
-            copy_attention_maps_input, 
-            coref_attention_maps_input,
-            mask_input,
-            edge_heads_input,
-            edge_labels_input,
-            corefs_input,
+        self.model = Model([
+            self.token_encoder_input, 
+            self.pos_encoder_input, 
+            self.token_decoder_input, 
+            self.pos_decoder_input, 
+            self.copy_attention_maps_input, 
+            self.coref_attention_maps_input,
+            self.mask_input,
+            self.edge_heads_input,
+            self.edge_labels_input,
+            self.corefs_input,
         ], temp_output) 
+
+        return self.model 
 
 
     def prepare_input(self, data):
