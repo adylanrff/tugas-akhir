@@ -28,9 +28,7 @@ class TextToAMR(Model):
         self.decoder_token_vocab_size = self.vocab.get_vocab_size("decoder_token_ids")
         self.encoder_pos_vocab_size = self.decoder_pos_vocab_size = self.vocab.get_vocab_size("pos_tags")
         self.is_prepared_input = False
-        print("ENCODER TOKEN VOCAB SIZE: ", self.encoder_token_vocab_size)
-        print("DECODER TOKEN VOCAB SIZE: ", self.decoder_token_vocab_size)
-        
+
     def generate_model(self):
         if not self.is_prepared_input:
             raise Exception("Please run .prepare_input() first!")
@@ -61,16 +59,14 @@ class TextToAMR(Model):
 
         # Deep Biaffine Decoder
         biaffine_decoder = DeepBiaffineDecoder(self.vocab)
-
-        # Training
+        
+        #########################################
+        ## TRAINING                             #
+        #########################################
         sample_hidden = encoder.initialize_hidden_state()
         enc_output, enc_hidden = encoder(token_encoder_input, pos_encoder_input, sample_hidden)
         dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
         
-        print("DECODER_OUTPUT: ", dec_output.shape)
-        print("DECODER_HIDDEN: ", dec_hidden.shape)
-        print("Source copy Attentions: ", source_copy_attentions.shape)
-        print("Target copy attentions: ", target_copy_attentions.shape)
 
         # # Pass to pointer generator
         # output: [probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size]
@@ -93,8 +89,8 @@ class TextToAMR(Model):
             mask_input
         )
 
-        # flattened = Flatten()(predictions)
-        # temp_output = Dense(1)(flattened)
+        flattened = Flatten()(graph_decoder_outputs[0])
+        temp_output = Dense(1)(flattened)
 
 
         return Model([
@@ -108,7 +104,7 @@ class TextToAMR(Model):
             edge_heads_input,
             edge_labels_input,
             corefs_input,
-        ], graph_decoder_outputs) 
+        ], temp_output) 
 
 
     def prepare_input(self, data):

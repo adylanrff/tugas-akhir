@@ -59,3 +59,13 @@ def create_indices(label):
         head = tf.cast(tf.transpose(head), dtype='int32')    
         indices.append(tf.reshape(tf.stack([matrix_idx,head], axis=-1), shape=[label_length,2]))
     return tf.stack(indices)
+
+def create_edge_node_index(batch_index, edge_heads, modifier_index):   
+    batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(edge_heads.shape[0], edge_heads.shape[1]))             
+    modifier_index = tf.broadcast_to(tf.transpose(tf.expand_dims(modifier_index, -1)), shape=(edge_heads.shape[0], edge_heads.shape[1]))             
+    return tf.stack([batch_index, edge_heads, modifier_index], axis=-1)
+
+def create_edge_label_index(batch_index, modifier_index, edge_labels):
+    batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(edge_labels.shape[0], edge_labels.shape[1]))             
+    modifier_index = tf.broadcast_to(tf.transpose(tf.expand_dims(modifier_index, -1)), shape=(edge_labels.shape[0], edge_labels.shape[1]))
+    return tf.stack([batch_index, modifier_index, edge_labels], axis=-1)

@@ -30,13 +30,11 @@ class Decoder(tf.keras.Model):
         self.coref_attention = BahdanauAttention(100)
 
     def call(self, token_input, pos_input, hidden, enc_output):
-        print("enc_output: ", enc_output.shape)
         
         # x shape after passing through embedding == (batch_size, 1, embedding_dim)
         token_decoder_embedding = self.token_embedding(token_input)
         pos_decoder_embedding = self.pos_embedding(pos_input)
         dec_input = concatenate([token_decoder_embedding, pos_decoder_embedding])
-        print("X: ", dec_input.shape)
         # x shape after concatenation == (batch_size, 1, embedding_dim + hidden_size)
 
         outputs = []
@@ -78,10 +76,5 @@ class Decoder(tf.keras.Model):
         rnn_hidden_states = tf.stack(rnn_hidden_states, axis=1)
         source_copy_attentions = tf.squeeze(tf.stack(source_copy_attentions, axis=1), axis=-1)
         target_copy_attentions = tf.squeeze(tf.stack(target_copy_attentions, axis=1), axis=-1)
-        print("X: ", x.shape)
-        print("STATES: ", x.shape)
-        print("rnn_hidden_states: ", rnn_hidden_states.shape)
-        print("source_copy_attentions: ", source_copy_attentions.shape)
-        print("target_copy_attentions: ", target_copy_attentions.shape)
 
         return x, states, rnn_hidden_states, source_copy_attentions, target_copy_attentions

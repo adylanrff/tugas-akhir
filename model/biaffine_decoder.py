@@ -5,7 +5,7 @@ from .biaffine_attention import BiaffineAttention
 from .head_sentinel import HeadSentinel
 from .bilinear import Bilinear
 from tensorflow.keras.layers import Dense, concatenate, Dropout, Lambda
-from .util import create_indices
+from .util import create_indices, create_edge_label_index, create_edge_node_index
 
 class DeepBiaffineDecoder(tf.keras.Model):
     def __init__(self, vocab):
@@ -42,9 +42,6 @@ class DeepBiaffineDecoder(tf.keras.Model):
         edge_node_nll, edge_label_nll = self.get_loss(
             edge_label_h, edge_label_m, edge_node_scores, edge_heads, edge_labels, mask)
 
-        print("EDGE NODE NLL: ", edge_node_nll.shape)
-        print("EDGE LABEL NLL: ",edge_label_nll.shape)
-
         pred_edge_heads, pred_edge_labels = self.decode(
             edge_label_h, edge_label_m, edge_node_scores, corefs, mask)
 
@@ -57,21 +54,14 @@ class DeepBiaffineDecoder(tf.keras.Model):
             # num_nodes)
 
     def _add_head_sentinel(self, memory_bank, edge_heads, edge_labels, corefs, mask):
-        print("MB SHAPE: ", memory_bank.shape)
         batch_size, _, hidden_size = memory_bank.shape
         memory_bank = self.head_sentinel(memory_bank, batch_size, hidden_size)
-        print("MEMBANK AFTER SENTINEL: ", memory_bank.shape)
-        
-        print("EDGE_HEADS BEFORE SENTINEL: ", edge_heads.shape)
-        print("EDGE_LABELS BEFORE SENTINEL: ", edge_labels.shape)
         if edge_heads is not None:
             edge_heads = concatenate([tf.zeros((batch_size, 1), dtype='int32'), edge_heads], 1)
         if edge_labels is not None:
             edge_labels = concatenate([tf.zeros((batch_size, 1), dtype='int32'), edge_labels], 1)
         if corefs is not None:
             corefs = concatenate([tf.zeros((batch_size, 1), dtype='int32'), corefs], 1)
-        print("EDGE_HEADS AFTER SENTINEL: ", edge_heads.shape)
-        print("EDGE_LABELS AFTER SENTINEL: ", edge_labels.shape)
         mask = concatenate([tf.zeros((batch_size, 1), dtype='int32'), mask], 1)
         return memory_bank, edge_heads, edge_labels, corefs, mask
 
@@ -94,9 +84,6 @@ class DeepBiaffineDecoder(tf.keras.Model):
         edge_node_h, edge_node_m = tf.split(edge_node, 2, 1)
         edge_label_h, edge_label_m = tf.split(edge_label, 2, 1)
 
-        print("EDGE_NODE_H: ", edge_node_h.shape)
-        print("EDGE_LABEL_h: ", edge_label_h.shape)
-        
         return (edge_node_h, edge_node_m), (edge_label_h, edge_label_m)
 
     def _get_edge_node_scores(self, edge_node_h, edge_node_m, mask):
@@ -143,21 +130,23 @@ class DeepBiaffineDecoder(tf.keras.Model):
         edge_label_log_likelihood = tf.nn.log_softmax(edge_label_scores, axis=2)
 
         # Create indexing matrix for batch: [batch, 1]
-        batch_indices = create_indices(edge_heads)
+        batch_index = tf.range(batch_size)
+        modifier_index = tf.range(max_len)
+
+        edge_node_indices = create_edge_node_index(batch_index, edge_heads, modifier_index)
+        edge_label_indices = create_edge_label_index(batch_index, modifier_index, edge_labels)
         # Create indexing matrix for modifier: [batch, modifier_length]
-        modifier_indices = create_indices(edge_labels)
         # Index the log likelihood of gold edges.
-        _edge_node_log_likelihood = tf.gather_nd(edge_node_log_likelihood, batch_indices)
-        _edge_label_log_likelihood = tf.gather_nd(edge_label_log_likelihood, modifier_indices)
+
+        _edge_node_log_likelihood = tf.gather_nd(edge_node_log_likelihood, edge_node_indices)
+        _edge_label_log_likelihood = tf.gather_nd(edge_label_log_likelihood, edge_label_indices)
 
         # Exclude the dummy root.
         # Output [batch, length - 1]
         gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:])
         gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:])
-        
         return gold_edge_node_nll, gold_edge_label_nll
 
-    @tf.function
     def decode(self,edge_label_h, edge_label_m, edge_node_scores, corefs, mask):
 
         max_len = edge_node_scores.shape[1]
@@ -171,8 +160,7 @@ class DeepBiaffineDecoder(tf.keras.Model):
 
         # Compute naive predictions.
         # prediction shape = [batch, length]
-        edge_heads = tf.keras.backend.max(edge_node_scores, axis=1)
-
+        edge_heads = tf.keras.backend.argmax(edge_node_scores, axis=1)
         # Based on predicted heads, compute the edge label scores.
         # [batch, length, num_labels]
         edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
