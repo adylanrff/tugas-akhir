@@ -27,7 +27,7 @@ class DeepBiaffineDecoder(tf.keras.Model):
         self.edge_label_bilinear = Bilinear(edge_label_hidden_size, edge_label_hidden_size, num_labels)
         
         self.minus_inf = -1e8
-
+        
     def call(self, memory_bank, edge_heads, edge_labels, corefs, mask):
         num_nodes = tf.keras.backend.sum(mask)
         memory_bank, edge_heads, edge_labels, corefs, mask = self._add_head_sentinel(
@@ -49,11 +49,12 @@ class DeepBiaffineDecoder(tf.keras.Model):
             edge_label_h, edge_label_m, edge_node_scores, corefs, mask)
 
         return ( 
-            pred_edge_heads, 
-            edge_labels, 
-            (edge_node_nll + edge_label_nll) / num_nodes, 
-            edge_node_nll + edge_label_nll,
-            num_nodes)
+            tf.cast(pred_edge_heads, dtype='float32'), 
+            tf.cast(edge_labels, dtype='float32'),
+        ) 
+            # (edge_node_nll + edge_label_nll) / num_nodes, 
+            # edge_node_nll + edge_label_nll,
+            # num_nodes)
 
     def _add_head_sentinel(self, memory_bank, edge_heads, edge_labels, corefs, mask):
         print("MB SHAPE: ", memory_bank.shape)
@@ -151,29 +152,30 @@ class DeepBiaffineDecoder(tf.keras.Model):
 
         # Exclude the dummy root.
         # Output [batch, length - 1]
-        gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:], axis=1)
-        gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:], axis=1)
-
+        gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:])
+        gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:])
+        
         return gold_edge_node_nll, gold_edge_label_nll
 
+    @tf.function
     def decode(self,edge_label_h, edge_label_m, edge_node_scores, corefs, mask):
 
         max_len = edge_node_scores.shape[1]
 
         # Set diagonal elements to -inf
-        edge_node_scores = edge_node_scores + torch.diag(edge_node_scores.new(max_len).fill_(-np.inf))
+        edge_node_scores = edge_node_scores + tf.linalg.diag(tf.fill([max_len], -np.inf))
 
         # Set invalid positions to -inf
-        minus_mask = (1 - mask.float()) * self.minus_inf
-        edge_node_scores = edge_node_scores + minus_mask.unsqueeze(2) + minus_mask.unsqueeze(1)
+        minus_mask = (1 - tf.cast(mask, dtype='float32')) * self.minus_inf
+        edge_node_scores = edge_node_scores + tf.expand_dims(minus_mask, 2) + tf.expand_dims(minus_mask, 1)
 
         # Compute naive predictions.
         # prediction shape = [batch, length]
-        _, edge_heads = edge_node_scores.max(dim=1)
+        edge_heads = tf.keras.backend.max(edge_node_scores, axis=1)
 
         # Based on predicted heads, compute the edge label scores.
         # [batch, length, num_labels]
         edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
-        _, edge_labels = edge_label_scores.max(dim=2)
+        edge_labels = tf.keras.backend.max(edge_label_scores, axis=2)
 
         return edge_heads[:, 1:], edge_labels[:, 1:]
