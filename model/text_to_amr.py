@@ -114,7 +114,7 @@ class TextToAMR():
         gradients = tape.gradient(loss, variables)
         self.optimizer.apply_gradients(zip(gradients, variables))
 
-        return loss
+        return loss, generator_loss['loss'], biaffine_decoder_loss
 
 
     def prepare_input(self, data):

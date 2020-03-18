@@ -61,7 +61,6 @@ class PointerGenerator(tf.keras.Model):
 
         return probs, predictions
 
-    @tf.function
     def compute_loss(self, probs, predictions, generate_targets,
                      source_copy_targets, source_dynamic_vocab_size,
                      target_copy_targets, target_dynamic_vocab_size, copy_attentions):

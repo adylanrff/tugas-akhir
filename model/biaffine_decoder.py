@@ -144,7 +144,7 @@ class DeepBiaffineDecoder(tf.keras.Model):
         # Output [batch, length - 1]
         gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:])
         gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:])
-        
+
         return gold_edge_node_nll, gold_edge_label_nll
 
     def decode(self,edge_label_h, edge_label_m, edge_node_scores, corefs, mask):
