@@ -69,3 +69,9 @@ def create_edge_label_index(batch_index, modifier_index, edge_labels):
     batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(edge_labels.shape[0], edge_labels.shape[1]))             
     modifier_index = tf.broadcast_to(tf.transpose(tf.expand_dims(modifier_index, -1)), shape=(edge_labels.shape[0], edge_labels.shape[1]))
     return tf.stack([batch_index, modifier_index, edge_labels], axis=-1)
+
+def create_generator_indices(target_copy_targets):
+    batch_index = tf.range(target_copy_targets.shape[0])
+    batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(target_copy_targets.shape[0], target_copy_targets.shape[1]))
+    modifier_index = tf.broadcast_to(tf.transpose(tf.expand_dims(tf.range(target_copy_targets.shape[1]), -1)), shape=(target_copy_targets.shape[0], target_copy_targets.shape[1]))  
+    return tf.stack([batch_index, modifier_index, target_copy_targets], axis=-1)

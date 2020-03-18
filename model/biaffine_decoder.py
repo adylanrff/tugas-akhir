@@ -29,7 +29,7 @@ class DeepBiaffineDecoder(tf.keras.Model):
         self.minus_inf = -1e8
         
     def call(self, memory_bank, edge_heads, edge_labels, corefs, mask):
-        num_nodes = tf.keras.backend.sum(mask)
+        num_nodes = tf.cast(tf.keras.backend.sum(mask), dtype='float32')
         memory_bank, edge_heads, edge_labels, corefs, mask = self._add_head_sentinel(
             memory_bank, edge_heads, edge_labels, corefs, mask)
 
@@ -47,11 +47,11 @@ class DeepBiaffineDecoder(tf.keras.Model):
 
         return ( 
             tf.cast(pred_edge_heads, dtype='float32'), 
-            tf.cast(edge_labels, dtype='float32'),
+            tf.cast(pred_edge_labels, dtype='float32'),
+            (edge_node_nll + edge_label_nll) / num_nodes, 
+            edge_node_nll + edge_label_nll,
+            num_nodes
         ) 
-            # (edge_node_nll + edge_label_nll) / num_nodes, 
-            # edge_node_nll + edge_label_nll,
-            # num_nodes)
 
     def _add_head_sentinel(self, memory_bank, edge_heads, edge_labels, corefs, mask):
         batch_size, _, hidden_size = memory_bank.shape
@@ -118,12 +118,11 @@ class DeepBiaffineDecoder(tf.keras.Model):
             # zero in the mask for these cases.  log(1 + 1e-45) is still basically 0, so we can safely
             # just add 1e-45 before calling mask.log().  We use 1e-45 because 1e-46 is so small it
             # becomes 0 - this is just the smallest value we can actually use.
-            vector = vector + tf.keras.backend.log((mask + 1e-45))
+            vector = vector + tf.keras.backend.log((mask + 1e-25))
         return tf.nn.log_softmax(vector, axis=dim)
 
     def get_loss(self, edge_label_h, edge_label_m, edge_node_scores, edge_heads, edge_labels, mask):
         batch_size, max_len, _ = edge_node_scores.shape
-
         edge_node_log_likelihood = self.masked_log_softmax(
             edge_node_scores, tf.expand_dims(mask, 2) + tf.expand_dims(mask, 1), dim=1)
         edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
@@ -145,6 +144,7 @@ class DeepBiaffineDecoder(tf.keras.Model):
         # Output [batch, length - 1]
         gold_edge_node_nll = - tf.math.reduce_sum(_edge_node_log_likelihood[:, 1:])
         gold_edge_label_nll = - tf.math.reduce_sum(_edge_label_log_likelihood[:, 1:])
+        
         return gold_edge_node_nll, gold_edge_label_nll
 
     def decode(self,edge_label_h, edge_label_m, edge_node_scores, corefs, mask):
