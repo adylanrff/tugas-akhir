@@ -5,6 +5,8 @@ import tensorflow as tf
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape, Attention
 from stog.utils.string import START_SYMBOL, END_SYMBOL, find_similar_token, is_abstract_token
+from stog.data.vocabulary import DEFAULT_PADDING_TOKEN, DEFAULT_OOV_TOKEN
+
 from .glove_embedding import GloveEmbedding
 from .attention import BahdanauAttention
 from .pointer_generator import PointerGenerator
@@ -28,7 +30,7 @@ class TextToAMR():
         self.decoder_token_vocab_size = self.vocab.get_vocab_size("decoder_token_ids")
         self.encoder_pos_vocab_size = self.decoder_pos_vocab_size = self.vocab.get_vocab_size("pos_tags")
         self.is_prepared_input = False
-        self.max_decode_length = 50
+        self.max_decode_length = TextToAMR.NUM_DECODER_TOKENS
 
         punctuation_ids = []
         oov_id = vocab.get_token_index(DEFAULT_OOV_TOKEN, 'decoder_token_ids')
@@ -49,8 +51,8 @@ class TextToAMR():
         self.biaffine_decoder = DeepBiaffineDecoder(self.vocab)
 
         self.models = [self.encoder, self.decoder, self.pointer_generator, self.biaffine_decoder]
+
         self.optimizer = tf.keras.optimizers.Adam()
-        self.trainable_variables = sum([model.trainable_variables for model in self.models], [])
 
     def train(self, model_input): 
         if not self.is_prepared_input:
@@ -99,7 +101,7 @@ class TextToAMR():
 
             loss += generator_loss['loss'] + biaffine_decoder_loss
 
-        variables = self.trainable_variables
+        variables = sum([model.trainable_variables for model in self.models], [])
         gradients = tape.gradient(loss, variables)
         self.optimizer.apply_gradients(zip(gradients, variables))
 
@@ -168,10 +170,10 @@ class TextToAMR():
         # A sparse indicator matrix mapping each node to its index in the dynamic vocab.
         # Here the maximum size of the dynamic vocab is just max_decode_length.
         coref_attention_maps = tf.zeros(
-            shape(batch_size, self.max_decode_length, self.max_decode_length + 1))
+            shape=(batch_size, self.max_decode_length, self.max_decode_length + 1))
         # A matrix D where the element D_{ij} is for instance i the real vocab index of
         # the generated node at the decoding step `i'.
-        coref_vocab_maps = tf.zeros(batch_size, self.max_decode_length + 1)
+        coref_vocab_maps = tf.zeros(shape=(batch_size, self.max_decode_length + 1))
 
         coverage = None
 
@@ -186,12 +188,7 @@ class TextToAMR():
             # decoder_inputs = self.decoder_embedding_dropout(decoder_inputs)
 
             # 2. Decode one step.
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = self.decoder(token_decoder_input, pos_decoder_input, states, memory_bank)
-            
-            
-            states = decoder_output_dict['last_hidden_state']
-            input_feed = decoder_output_dict['input_feed']
-            coverage = decoder_output_dict['coverage']
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(token_decoder_input, pos_decoder_input, states, memory_bank)
 
             # 3. Run pointer/generator.
             if step_i == 0:

@@ -10,9 +10,11 @@ SWITCH_OUTPUT_SIZE = 3
 class PointerGenerator(tf.keras.Model):
     def __init__(self, vocab_size):
         super(PointerGenerator, self).__init__()
-        self.linear = Dense(vocab_size)
+        linear_pointer = TimeDistributed(Dense(SWITCH_OUTPUT_SIZE))
+        linear = Dense(vocab_size)
         self.softmax = softmax
-        self.linear_pointer = TimeDistributed(Dense(SWITCH_OUTPUT_SIZE))
+        self.linear = linear
+        self.linear_pointer = linear_pointer
         self.vocab_size = vocab_size
         self.eps = 1e-20
         self.vocab_pad_idx = 0
@@ -24,7 +26,7 @@ class PointerGenerator(tf.keras.Model):
         target_dynamic_vocab_size = target_attention_maps.shape[2]
 
         # Pointer probability.
-        p = self.softmax(self.linear_pointer(hiddens), axis=1)
+        p = self.linear_pointer(hiddens)
         p_copy_source = p[:, :, 0]
         p_copy_target = p[:, :, 1]
         p_generate = p[:, :, 2]
