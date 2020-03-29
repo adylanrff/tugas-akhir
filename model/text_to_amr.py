@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 import tensorflow as tf
+from tqdm import tqdm
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM, Bidirectional, concatenate, Flatten, Lambda, Reshape, Attention
@@ -14,6 +15,7 @@ from .biaffine_decoder import DeepBiaffineDecoder
 from .encoder import Encoder
 from .decoder import Decoder
 from .util import get_text_field_mask
+from .util.utils import create_coref_maps_index
 
 class TextToAMR():
     NUM_ENCODER_TOKENS = 25
@@ -65,7 +67,7 @@ class TextToAMR():
             token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input, copy_attention_maps_input, coref_attention_maps_input, parser_mask_input, edge_heads_input, edge_labels_input, corefs_input, vocab_target_input, coref_target_input, copy_target_input = model_input
             sample_hidden = self.encoder.initialize_hidden_state()
             enc_output, enc_hidden = self.encoder(token_encoder_input, pos_encoder_input, sample_hidden)
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions = self.decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, last_hidden_state = self.decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
 
             # # Pass to pointer generator
             # output: [probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size]
@@ -105,28 +107,30 @@ class TextToAMR():
         gradients = tape.gradient(loss, variables)
         self.optimizer.apply_gradients(zip(gradients, variables))
 
+        print(predictions)
+        print(edge_heads_output)
+        print(edge_labels_output)
+
         return loss, generator_loss['loss'], biaffine_decoder_loss
 
     def predict(self, model_input):
         token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input, copy_attention_maps_input, coref_attention_maps_input, parser_mask_input, edge_heads_input, edge_labels_input, corefs_input, vocab_target_input, coref_target_input, copy_target_input, mask_encoder_input, src_copy_vocab,tag_lut,source_copy_invalid_ids   = model_input
         sample_hidden = self.encoder.initialize_hidden_state()
         enc_output, enc_hidden = self.encoder(token_encoder_input, pos_encoder_input, sample_hidden)
-        
         invalid_indexes = dict(
             source_copy= source_copy_invalid_ids,
             vocab=[set(self.punctuation_ids) for _ in range(len(tag_lut))]
         )
-
         encoder_memory_bank=enc_output
-        encoder_mask=mask_encoder_input,
-        encoder_final_states=enc_hidden,
-        copy_attention_maps=copy_attention_maps_input,
-        copy_vocabs=src_copy_vocab,
-        tag_luts=tag_lut,
+        encoder_mask=mask_encoder_input
+        encoder_final_states=enc_hidden
+        copy_attention_maps=copy_attention_maps_input
+        copy_vocabs=src_copy_vocab
+        tag_luts=tag_lut
         invalid_indexes=invalid_indexes
 
         generator_outputs = self.decode_with_pointer_generator(
-                encoder_memory_bank, mask_encoder_input, encoder_final_states, copy_attention_maps, copy_vocabs, tag_luts, invalid_indexes)
+                encoder_memory_bank, encoder_mask, encoder_final_states, copy_attention_maps, copy_vocabs, tag_luts, invalid_indexes)
     
         parser_outputs = self.decode_with_graph_parser(
             generator_outputs['decoder_inputs'],
@@ -146,13 +150,11 @@ class TextToAMR():
             self, memory_bank, mask, states, copy_attention_maps, copy_vocabs,
             tag_luts, invalid_indexes):
         # [batch_size, 1]
-        batch_size = memory_bank.size(0)
-
+        batch_size = memory_bank.shape[0]
         tokens = tf.ones(shape=(batch_size, 1)) * self.vocab.get_token_index(
             START_SYMBOL, "decoder_token_ids")
         pos_tags = tf.ones(shape=(batch_size, 1)) * self.vocab.get_token_index(
             DEFAULT_OOV_TOKEN, "pos_tags")
-        tokens = tokens
         corefs = tf.zeros(shape=(batch_size, 1))
 
         decoder_input_history = []
@@ -177,37 +179,44 @@ class TextToAMR():
 
         coverage = None
 
-        for step_i in range(self.max_decode_length):
+        for step_i in tqdm(range(self.max_decode_length)):
             # 1. Get the decoder inputs.
             # token_embeddings = self.decoder_token_embedding(tokens)
             # pos_tag_embeddings = self.decoder_pos_embedding(pos_tags)
             # coref_embeddings = self.decoder_coref_embedding(corefs)
             
+            decoder_inputs = [tokens, pos_tags, corefs]
             # decoder_inputs = torch.cat(
             #     [token_embeddings, pos_tag_embeddings, coref_embeddings], 2)
             # decoder_inputs = self.decoder_embedding_dropout(decoder_inputs)
 
             # 2. Decode one step.
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(token_decoder_input, pos_decoder_input, states, memory_bank)
-
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(tokens, pos_tags, states, memory_bank)
+            
+            _decoder_outputs = dec_output
+            _rnn_outputs = rnn_hidden_states
+            _copy_attentions = source_copy_attentions
+            _coref_attentions = target_copy_attentions
+            
             # 3. Run pointer/generator.
             if step_i == 0:
                 _coref_attention_maps = coref_attention_maps[:, :step_i + 1]
             else:
-                _coref_attention_maps = coref_attention_maps[:, :step_i]
+                _coref_attention_maps = coref_attention_maps[:, step_i:step_i+1]
 
-            generator_output = self.generator(
-                _decoder_outputs, _copy_attentions, copy_attention_maps,
+            _probs, _predictions = self.pointer_generator(
+                dec_output, _copy_attentions, copy_attention_maps,
                 _coref_attentions, _coref_attention_maps, invalid_indexes)
-            _predictions = generator_output['predictions']
-
+            
+            source_dynamic_vocab_size, target_dynamic_vocab_size = _copy_attentions.shape[2], _coref_attentions.shape[2]
             # 4. Update maps and get the next token input.
+            
             tokens, _predictions, pos_tags, corefs, _mask = self._update_maps_and_get_next_input(
                 step_i,
-                generator_output['predictions'].squeeze(1),
-                generator_output['source_dynamic_vocab_size'],
+                tf.squeeze(_predictions, axis=1),
+                source_dynamic_vocab_size,
                 coref_attention_maps,
-                coref_vocab_maps,
+                coref_vocab_maps.numpy(),
                 copy_vocabs,
                 decoder_mask,
                 tag_luts,
@@ -230,14 +239,14 @@ class TextToAMR():
 
         # 6. Do the following chunking for the graph decoding input.
         # Exclude the hidden state for BOS.
-        decoder_input_history = torch.cat(decoder_input_history[1:], dim=1)
-        decoder_outputs = torch.cat(decoder_outputs[1:], dim=1)
-        rnn_outputs = torch.cat(rnn_outputs[1:], dim=1)
+        decoder_input_history = tf.concat(decoder_input_history[1:], axis=1)
+        decoder_outputs = tf.concat(decoder_outputs[1:], axis=1)
+        rnn_outputs = tf.concat(rnn_outputs[1:], axis=1)
         # Exclude coref/mask for EOS.
         # TODO: Answer "What if the last one is not EOS?"
-        predictions = torch.cat(predictions[:-1], dim=1)
-        coref_indexes = torch.cat(coref_indexes[:-1], dim=1)
-        decoder_mask = 1 - torch.cat(decoder_mask[:-1], dim=1)
+        predictions = tf.concat(predictions[:-1], axis=1)
+        coref_indexes = tf.concat(coref_indexes[:-1], axis=1)
+        decoder_mask = 1 - tf.concat(decoder_mask[:-1], axis=1)
 
         return dict(
             # [batch_size, max_decode_length]
@@ -253,6 +262,105 @@ class TextToAMR():
             coref_attentions=coref_attentions
         )
 
+    def _update_maps_and_get_next_input(
+            self, step, predictions, copy_vocab_size, coref_attention_maps, coref_vocab_maps,
+            copy_vocabs, masks, tag_luts, invalid_indexes):
+        """Dynamically update/build the maps needed for copying.
+
+        :param step: the decoding step, int.
+        :param predictions: [batch_size]
+        :param copy_vocab_size: int.
+        :param coref_attention_maps: [batch_size, max_decode_length, max_decode_length]
+        :param coref_vocab_maps:  [batch_size, max_decode_length]
+        :param copy_vocabs: a list of dynamic vocabs.
+        :param masks: a list of [batch_size] tensors indicating whether EOS has been generated.
+            if EOS has has been generated, then the mask is `1`.
+        :param tag_luts: a dict mapping key to a list of dicts mapping a source token to a POS tag.
+        :param invalid_indexes: a dict storing invalid indexes for copying and generation.
+        :return:
+        """
+        vocab_size = self.pointer_generator.vocab_size
+        batch_size = predictions.shape[0]
+        batch_index = tf.range(batch_size)
+        step_index = tf.fill(predictions.shape, step)
+
+        gen_mask = tf.cast(predictions < vocab_size, dtype='int64')
+        copy_mask = tf.cast(predictions > vocab_size, dtype='int64') * tf.cast(predictions < (vocab_size + copy_vocab_size), dtype='int64')
+        coref_mask = tf.cast(predictions >= (vocab_size + copy_vocab_size), dtype='int64')
+        # 1. Update coref_attention_maps
+        # Get the coref index.
+        coref_index = (predictions - vocab_size - copy_vocab_size)
+        # Fill the place where copy didn't happen with the current step,
+        # which means that the node doesn't refer to any precedent, it refers to itself.
+        # coref_index.masked_fill_(1 - coref_mask, step + 1)
+        coref_index = tf.where(tf.cast(1-coref_mask, dtype='bool'), step+1, coref_index) 
+
+        coref_attention_maps_mask = np.zeros(shape=coref_attention_maps.shape)
+
+        for b_idx in batch_index:
+            for s_idx in step_index:
+                for c_idx in coref_index:
+                    coref_attention_maps_mask[b_idx,s_idx,c_idx] = 1
+
+        coref_attention_maps = tf.cast(tf.cast(coref_attention_maps, dtype='bool') | tf.cast(coref_attention_maps_mask, dtype='bool'), dtype='int64') 
+
+        # 2. Compute the next input.
+        # coref_predictions have the dynamic vocabulary index, and OOVs are set to zero.
+        coref_predictions = (predictions - vocab_size - copy_vocab_size) * coref_mask
+        # Get the actual coreferred token's index in the gen vocab.
+
+        coref_maps_index = create_coref_maps_index(coref_predictions)
+        coref_predictions = tf.gather_nd(coref_vocab_maps, coref_maps_index)
+
+        # If a token is copied from the source side, we look up its index in the gen vocab.
+        copy_predictions = (predictions - vocab_size) * copy_mask
+        copy_predictions = copy_predictions.numpy()
+        pos_tags = np.full(predictions.shape, self.vocab.get_token_index(DEFAULT_OOV_TOKEN, 'pos_tags'))
+        for i, index in enumerate(copy_predictions):
+            copied_token = copy_vocabs[i].get_token_from_idx(index)
+            if index != 0:
+                pos_tags[i] = self.vocab.get_token_index(
+                    tag_luts[i]['pos'][copied_token], 'pos_tags')
+                if False: # is_abstract_token(copied_token):
+                    invalid_indexes['source_copy'][i].add(index)
+            copy_predictions[i] = self.vocab.get_token_index(copied_token, 'decoder_token_ids')
+
+        for i, index in enumerate(
+                (tf.cast(predictions, dtype='int64') * gen_mask + tf.cast(coref_predictions, dtype='int64') * coref_mask).numpy()):
+            if index != 0:
+                token = self.vocab.get_token_from_index(index, 'decoder_token_ids')
+                src_token = find_similar_token(token, list(tag_luts[i]['pos'].keys()))
+                if src_token is not None:
+                    pos_tags[i] = self.vocab.get_token_index(
+                        tag_luts[i]['pos'][src_token], 'pos_tag')
+                if False: # is_abstract_token(token):
+                    invalid_indexes['vocab'][i].add(index)
+
+        next_input = tf.cast(coref_predictions, dtype='int64') * coref_mask + \
+                     tf.cast(copy_predictions, dtype='int64') * copy_mask + \
+                     predictions * gen_mask
+
+        # 3. Update dynamic_vocab_maps
+        # Here we update D_{step} to the index in the standard vocab.
+        coref_vocab_maps[batch_index, step_index + 1] = next_input
+
+        # 4. Get the coref-resolved predictions.
+        coref_resolved_preds = tf.cast(coref_predictions, dtype='int64') * coref_mask + tf.cast(predictions, dtype='int64') * (1 - coref_mask)
+
+        # 5. Get the mask for the current generation.
+        has_eos = tf.zeros(gen_mask.shape)
+        if len(masks) != 0:
+            has_eos = tf.math.reduce_sum(tf.concat(masks, 1), axis=1) > 0
+            
+        mask = tf.cast((next_input == (self.vocab.get_token_index(END_SYMBOL, 'decoder_token_ids'))) | tf.cast(has_eos, dtype='bool'), dtype='int64')
+        
+        return (tf.expand_dims(next_input, 1),
+                tf.expand_dims(coref_resolved_preds, 1),
+                tf.expand_dims(pos_tags, 1),
+                tf.expand_dims(coref_index, 1),
+                tf.expand_dims(mask, 1))
+
+
     def decode_with_graph_parser(self, decoder_inputs, memory_bank, corefs, mask):
         """Predict edges and edge labels between nodes.
         :param decoder_inputs: [batch_size, node_length, embedding_size]
@@ -263,17 +371,12 @@ class TextToAMR():
             edge_heads: [batch_size, node_length]
             edge_labels: [batch_size, node_length]
         """
-        if self.use_aux_encoder:
-            aux_encoder_outputs = self.aux_encoder(decoder_inputs, mask)
-            self.aux_encoder.reset_states()
-            memory_bank = torch.cat([memory_bank, aux_encoder_outputs], 2)
-
-        memory_bank, _, _, corefs, mask = self.graph_decoder._add_head_sentinel(
-            memory_bank, None, None, corefs, mask)
-        (edge_node_h, edge_node_m), (edge_label_h, edge_label_m) = self.graph_decoder.encode(memory_bank)
-        edge_node_scores = self.graph_decoder._get_edge_node_scores(edge_node_h, edge_node_m, mask.float())
-        edge_heads, edge_labels = self.graph_decoder.mst_decode(
-            edge_label_h, edge_label_m, edge_node_scores, corefs, mask)
+        memory_bank, _, _, corefs, mask = self.biaffine_decoder._add_head_sentinel(
+            memory_bank, None, None, tf.cast(corefs, dtype='int32'), tf.cast(mask, dtype='int32'))
+        (edge_node_h, edge_node_m), (edge_label_h, edge_label_m) = self.biaffine_decoder.encode(memory_bank)
+        edge_node_scores = self.biaffine_decoder._get_edge_node_scores(edge_node_h, edge_node_m, tf.cast(mask, dtype='int32'))
+        edge_heads, edge_labels = self.biaffine_decoder.decode(
+            edge_label_h, edge_label_m, edge_node_scores, corefs, tf.cast(mask, dtype='int32'))
         return dict(
             edge_heads=edge_heads,
             edge_labels=edge_labels

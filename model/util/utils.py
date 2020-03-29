@@ -75,3 +75,11 @@ def create_generator_indices(target_copy_targets):
     batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(target_copy_targets.shape[0], target_copy_targets.shape[1]))
     modifier_index = tf.broadcast_to(tf.transpose(tf.expand_dims(tf.range(target_copy_targets.shape[1]), -1)), shape=(target_copy_targets.shape[0], target_copy_targets.shape[1]))  
     return tf.stack([batch_index, modifier_index, target_copy_targets], axis=-1)
+
+def create_coref_attention_maps_index(coref_index):
+    batch_index = tf.range(target_copy_targets.shape[0])
+    batch_index = tf.broadcast_to(tf.expand_dims(batch_index, -1), shape=(coref_index.shape[0], coref_index.shape[1]))
+
+def create_coref_maps_index(coref_predictions):
+    batch_index = tf.range(coref_predictions.shape[0], dtype='int32')
+    return tf.stack([batch_index, tf.cast(coref_predictions, dtype='int32')], axis=-1)

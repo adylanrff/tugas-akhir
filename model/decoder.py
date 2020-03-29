@@ -44,13 +44,15 @@ class Decoder(tf.keras.Model):
         target_copy_attentions = []
         rnn_hidden_states = []
 
-        for timestep in range(Decoder.NUM_DECODER_TOKENS):
+        last_hidden_state = hidden
+        for timestep in range(token_input.shape[1]):
             current_word = Lambda(lambda x: x[:, timestep: timestep+1, :])(dec_input)
             # x = tf.concat([expanded_context_vector, current_word], axis=-1)
             x = current_word
             # passing the concatenated vector to the LSTM
-            output, state_h, state_c  = self.lstm(x, initial_state=hidden)
+            output, state_h, state_c  = self.lstm(x, initial_state=last_hidden_state)
             hidden_state = concatenate([state_h, state_c])
+            last_hidden_state = [state_h, state_c]
             rnn_hidden_states.append(output)
             output, attention_weight = self.source_attention(output, enc_output)
             # expanded_context_vector = tf.expand_dims(context_vector, 1)
@@ -77,4 +79,4 @@ class Decoder(tf.keras.Model):
         source_copy_attentions = tf.squeeze(tf.stack(source_copy_attentions, axis=1), axis=-1)
         target_copy_attentions = tf.squeeze(tf.stack(target_copy_attentions, axis=1), axis=-1)
 
-        return x, states, rnn_hidden_states, source_copy_attentions, target_copy_attentions
+        return x, states, rnn_hidden_states, source_copy_attentions, target_copy_attentions, last_hidden_state

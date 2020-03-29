@@ -164,6 +164,6 @@ class DeepBiaffineDecoder(tf.keras.Model):
         # Based on predicted heads, compute the edge label scores.
         # [batch, length, num_labels]
         edge_label_scores = self._get_edge_label_scores(edge_label_h, edge_label_m, edge_heads)
-        edge_labels = tf.keras.backend.max(edge_label_scores, axis=2)
+        edge_labels = tf.keras.backend.argmax(edge_label_scores, axis=2)
 
         return edge_heads[:, 1:], edge_labels[:, 1:]

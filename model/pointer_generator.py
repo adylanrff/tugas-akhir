@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Activation, multiply, concatenate, Reshape, Flatten, TimeDistributed, Lambda
 from tensorflow.keras.activations import softmax
@@ -16,15 +17,14 @@ class PointerGenerator(tf.keras.Model):
         self.linear = linear
         self.linear_pointer = linear_pointer
         self.vocab_size = vocab_size
-        self.eps = 1e-20
+        self.eps = 1e-3
         self.vocab_pad_idx = 0
 
-    def call(self, hiddens, source_attentions, source_attention_maps, target_attentions, target_attention_maps):
+    def call(self, hiddens, source_attentions, source_attention_maps, target_attentions, target_attention_maps, invalid_indexes=None):
 
         batch_size, num_target_nodes, hidden_size = K.int_shape(hiddens)
         source_dynamic_vocab_size = source_attention_maps.shape[2]
         target_dynamic_vocab_size = target_attention_maps.shape[2]
-
         # Pointer probability.
         p = self.linear_pointer(hiddens)
         p_copy_source = p[:, :, 0]
@@ -52,6 +52,23 @@ class PointerGenerator(tf.keras.Model):
         # [batch_size, num_target_nodes, dymanic_vocab_size]
         scaled_copy_target_probs = tf.matmul(
             scaled_target_attentions, tf.cast(target_attention_maps, dtype='float32'))
+
+        if invalid_indexes:
+            if invalid_indexes.get('vocab', None) is not None:
+                vocab_invalid_indexes = invalid_indexes['vocab']
+                vocab_invalid_indexes_mask = np.ones(shape=scaled_vocab_probs.shape)
+                for i, indexes in enumerate(vocab_invalid_indexes):
+                    for index in indexes:
+                        vocab_invalid_indexes_mask[i, :, index] = 0
+                scaled_vocab_probs = scaled_vocab_probs * vocab_invalid_indexes_mask
+                
+            if invalid_indexes.get('source_copy', None) is not None:
+                source_copy_invalid_indexes = invalid_indexes['source_copy']
+                source_copy_invalid_indexes_mask = np.ones(shape=scaled_copy_source_probs.shape)
+                for i, indexes in enumerate(source_copy_invalid_indexes):
+                    for index in indexes:
+                        source_copy_invalid_indexes_mask[i, :, index] = 0
+                scaled_copy_source_probs = scaled_copy_source_probs * source_copy_invalid_indexes_mask
 
         probs = concatenate([
             scaled_vocab_probs,
