@@ -14,6 +14,7 @@ class GloveEmbedding(Embedding):
             vocab_size,
             GloveEmbedding.EMBEDDING_DIM,
             input_length=input_length,
-            trainable=False
+            trainable=False,
+            mask_zero=True
         )
     

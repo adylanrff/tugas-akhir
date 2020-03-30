@@ -15,7 +15,7 @@ class Encoder(tf.keras.Model):
         self.token_encoder_embedding = GloveEmbedding(
             token_vocab_size, Encoder.NUM_ENCODER_TOKENS)
         self.pos_encoder_embedding = Embedding(
-            input_dim=pos_vocab_size, output_dim=Encoder.OUTPUT_DIM, input_length=Encoder.NUM_ENCODER_TOKENS)
+            input_dim=pos_vocab_size, output_dim=Encoder.OUTPUT_DIM, input_length=Encoder.NUM_ENCODER_TOKENS, mask_zero=True)
         self.bilstm = Bidirectional(LSTM(
             Encoder.ENCODER_LATENT_DIM,
             return_sequences=True,
@@ -31,7 +31,6 @@ class Encoder(tf.keras.Model):
         state_h = concatenate([forward_h, backward_h])
         state_c = concatenate([forward_c, backward_c])
         states = (state_h, state_c)
-
         return output, states
 
     def initialize_hidden_state(self):

@@ -64,10 +64,10 @@ class TextToAMR():
         #########################################
         loss = 0
         with tf.GradientTape() as tape:
-            token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input, copy_attention_maps_input, coref_attention_maps_input, parser_mask_input, edge_heads_input, edge_labels_input, corefs_input, vocab_target_input, coref_target_input, copy_target_input = model_input
+            token_encoder_input, pos_encoder_input, token_decoder_input, pos_decoder_input, copy_attention_maps_input, coref_attention_maps_input, parser_mask_input, edge_heads_input, edge_labels_input, corefs_input, vocab_target_input, coref_target_input, copy_target_input, mask_encoder_input = model_input
             sample_hidden = self.encoder.initialize_hidden_state()
             enc_output, enc_hidden = self.encoder(token_encoder_input, pos_encoder_input, sample_hidden)
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, last_hidden_state = self.decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output)
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, last_hidden_state = self.decoder(token_decoder_input, pos_decoder_input, enc_hidden, enc_output, mask_encoder_input)
 
             # # Pass to pointer generator
             # output: [probs, predictions, source_dynamic_vocab_size, target_dynamic_vocab_size]
@@ -107,10 +107,6 @@ class TextToAMR():
         gradients = tape.gradient(loss, variables)
         self.optimizer.apply_gradients(zip(gradients, variables))
 
-        print(predictions)
-        print(edge_heads_output)
-        print(edge_labels_output)
-
         return loss, generator_loss['loss'], biaffine_decoder_loss
 
     def predict(self, model_input):
@@ -131,7 +127,7 @@ class TextToAMR():
 
         generator_outputs = self.decode_with_pointer_generator(
                 encoder_memory_bank, encoder_mask, encoder_final_states, copy_attention_maps, copy_vocabs, tag_luts, invalid_indexes)
-    
+        print(generator_outputs)
         parser_outputs = self.decode_with_graph_parser(
             generator_outputs['decoder_inputs'],
             generator_outputs['decoder_rnn_memory_bank'],
@@ -191,7 +187,7 @@ class TextToAMR():
             # decoder_inputs = self.decoder_embedding_dropout(decoder_inputs)
 
             # 2. Decode one step.
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(tokens, pos_tags, states, memory_bank)
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(tokens, pos_tags, states, memory_bank, decoder_mask)
             
             _decoder_outputs = dec_output
             _rnn_outputs = rnn_hidden_states
@@ -405,7 +401,7 @@ class TextToAMR():
             pos_tag=encoder_pos_tags.numpy() if encoder_pos_tags is not None else None,
             must_copy_tag=encoder_must_copy_tags.numpy() if encoder_must_copy_tags is not None else None,
             char=encoder_char_inputs.numpy() if encoder_char_inputs is not None else None,
-            mask=encoder_mask
+            mask=encoder_mask.numpy() if encoder_mask is not None else None
         )
 
         # Decoder

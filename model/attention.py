@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 
 class BahdanauAttention(tf.keras.layers.Layer):
@@ -7,7 +8,7 @@ class BahdanauAttention(tf.keras.layers.Layer):
     self.W2 = tf.keras.layers.Dense(units)
     self.V = tf.keras.layers.Dense(1)
 
-  def call(self, query, values):
+  def call(self, query, values, mask=None):
     # query hidden state shape == (batch_size, hidden size)
     # query_with_time_axis shape == (batch_size, 1, hidden size)
     # values shape == (batch_size, max_len, hidden size)
@@ -21,8 +22,12 @@ class BahdanauAttention(tf.keras.layers.Layer):
         self.W1(query_with_time_axis) + self.W2(values)))
 
     # attention_weights shape == (batch_size, max_length, 1)
-    attention_weights = tf.nn.softmax(score, axis=1)
+    if mask is not None and len(mask) > 0:
+      attention_weights = tf.where(tf.expand_dims(tf.cast(mask, dtype='bool'), axis=-1), score, -np.inf)
+    else:
+      attention_weights = score
 
+    attention_weights = tf.nn.softmax(attention_weights, axis=1)
     # context_vector shape after sum == (batch_size, hidden_size)
     context_vector = attention_weights * values
     context_vector = tf.reduce_sum(context_vector, axis=1)

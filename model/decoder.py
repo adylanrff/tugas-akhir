@@ -19,7 +19,7 @@ class Decoder(tf.keras.Model):
         self.token_embedding = GloveEmbedding(
             token_vocab_size, Decoder.NUM_DECODER_TOKENS)
         self.pos_embedding = Embedding(
-            pos_vocab_size, output_dim=Decoder.OUTPUT_DIM)
+            pos_vocab_size, output_dim=Decoder.OUTPUT_DIM, mask_zero=True)
         self.lstm = LSTM(
                 Decoder.DECODER_LATENT_DIM,
                 return_state=True)
@@ -29,7 +29,7 @@ class Decoder(tf.keras.Model):
         self.source_attention = BahdanauAttention(100)
         self.coref_attention = BahdanauAttention(100)
 
-    def call(self, token_input, pos_input, hidden, enc_output):
+    def call(self, token_input, pos_input, hidden, enc_output, mask):
         
         # x shape after passing through embedding == (batch_size, 1, embedding_dim)
         token_decoder_embedding = self.token_embedding(token_input)
@@ -54,7 +54,7 @@ class Decoder(tf.keras.Model):
             hidden_state = concatenate([state_h, state_c])
             last_hidden_state = [state_h, state_c]
             rnn_hidden_states.append(output)
-            output, attention_weight = self.source_attention(output, enc_output)
+            output, attention_weight = self.source_attention(output, enc_output, mask)
             # expanded_context_vector = tf.expand_dims(context_vector, 1)
             
             if len(target_copy_hidden_states) == 0:

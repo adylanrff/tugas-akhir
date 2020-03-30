@@ -17,7 +17,7 @@ class PointerGenerator(tf.keras.Model):
         self.linear = linear
         self.linear_pointer = linear_pointer
         self.vocab_size = vocab_size
-        self.eps = 1e-3
+        self.eps = 1e-15
         self.vocab_pad_idx = 0
 
     def call(self, hiddens, source_attentions, source_attention_maps, target_attentions, target_attention_maps, invalid_indexes=None):
@@ -34,7 +34,6 @@ class PointerGenerator(tf.keras.Model):
         # Probability distribution over the vocabulary.
         scores = self.linear(hiddens)
         vocab_probs = self.softmax(scores)
-
         # [batch_size, num_target_nodes, vocab_size]
         scaled_vocab_probs = Lambda(
             lambda x: x[0] * tf.expand_dims(x[1], axis=-1))([vocab_probs, p_generate])
@@ -77,7 +76,6 @@ class PointerGenerator(tf.keras.Model):
         ], axis=2)
 
         predictions = K.argmax(probs, 2)
-
         return probs, predictions
 
     def compute_loss(self, probs, predictions, generate_targets,
