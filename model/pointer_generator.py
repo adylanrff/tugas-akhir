@@ -11,7 +11,7 @@ SWITCH_OUTPUT_SIZE = 3
 class PointerGenerator(tf.keras.Model):
     def __init__(self, vocab_size):
         super(PointerGenerator, self).__init__()
-        linear_pointer = TimeDistributed(Dense(SWITCH_OUTPUT_SIZE))
+        linear_pointer = Dense(SWITCH_OUTPUT_SIZE)
         linear = Dense(vocab_size)
         self.softmax = softmax
         self.linear = linear
@@ -25,29 +25,30 @@ class PointerGenerator(tf.keras.Model):
         batch_size, num_target_nodes, hidden_size = K.int_shape(hiddens)
         source_dynamic_vocab_size = source_attention_maps.shape[2]
         target_dynamic_vocab_size = target_attention_maps.shape[2]
+
         # Pointer probability.
-        p = self.linear_pointer(hiddens)
-        p_copy_source = p[:, :, 0]
-        p_copy_target = p[:, :, 1]
-        p_generate = p[:, :, 2]
+        hiddens = tf.reshape(hiddens, (batch_size*num_target_nodes, -1))
+        p = self.softmax(self.linear_pointer(hiddens), axis=1)
+        p_copy_source = tf.reshape(tf.expand_dims(p[:, 0], axis=1), (batch_size, num_target_nodes, 1))
+        p_copy_target = tf.reshape(tf.expand_dims(p[:, 1], axis=1), (batch_size, num_target_nodes, 1))
+        p_generate = tf.reshape(tf.expand_dims(p[:, 2], axis=1), (batch_size, num_target_nodes, 1))
 
         # Probability distribution over the vocabulary.
-        scores = self.linear(hiddens)
+        scores = self.linear(hiddens).numpy()
+        scores[:, self.vocab_pad_idx] = -float('inf')
+        scores = tf.reshape(scores, shape=(batch_size, num_target_nodes, -1))
         vocab_probs = self.softmax(scores)
         # [batch_size, num_target_nodes, vocab_size]
-        scaled_vocab_probs = Lambda(
-            lambda x: x[0] * tf.expand_dims(x[1], axis=-1))([vocab_probs, p_generate])
+        scaled_vocab_probs = tf.cast(vocab_probs, dtype='float32') * tf.cast(tf.broadcast_to(p_generate, vocab_probs.shape), dtype='float32')
 
         # [batch_size, num_target_nodes, num_source_nodes]
-        scaled_source_attentions = Lambda(
-            lambda x: x[0] * tf.expand_dims(x[1], axis=-1))([source_attentions, p_copy_source])
+        scaled_source_attentions = tf.cast(source_attentions, dtype='float32') *  tf.cast(tf.broadcast_to(p_copy_source, source_attentions.shape), dtype='float32')
         # [batch_size, num_target_nodes, dynamic_vocab_size]
         scaled_copy_source_probs = tf.matmul(
             scaled_source_attentions, tf.cast(source_attention_maps, dtype='float32'))
 
         # [batch_size, num_target_nodes, dynamic_vocab_size]
-        scaled_target_attentions = Lambda(
-            lambda x: x[0] * tf.expand_dims(x[1], axis=-1))([target_attentions, p_copy_target])
+        scaled_target_attentions = tf.cast(target_attentions, dtype='float32') * tf.broadcast_to(p_copy_target, target_attentions.shape)
         # [batch_size, num_target_nodes, dymanic_vocab_size]
         scaled_copy_target_probs = tf.matmul(
             scaled_target_attentions, tf.cast(target_attention_maps, dtype='float32'))

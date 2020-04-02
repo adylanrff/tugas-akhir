@@ -127,7 +127,7 @@ class TextToAMR():
 
         generator_outputs = self.decode_with_pointer_generator(
                 encoder_memory_bank, encoder_mask, encoder_final_states, copy_attention_maps, copy_vocabs, tag_luts, invalid_indexes)
-        print(generator_outputs)
+
         parser_outputs = self.decode_with_graph_parser(
             generator_outputs['decoder_inputs'],
             generator_outputs['decoder_rnn_memory_bank'],
@@ -185,9 +185,8 @@ class TextToAMR():
             # decoder_inputs = torch.cat(
             #     [token_embeddings, pos_tag_embeddings, coref_embeddings], 2)
             # decoder_inputs = self.decoder_embedding_dropout(decoder_inputs)
-
             # 2. Decode one step.
-            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(tokens, pos_tags, states, memory_bank, decoder_mask)
+            dec_output, dec_hidden, rnn_hidden_states, source_copy_attentions, target_copy_attentions, states = self.decoder(tokens, pos_tags, states, memory_bank, mask)
             
             _decoder_outputs = dec_output
             _rnn_outputs = rnn_hidden_states
@@ -201,7 +200,7 @@ class TextToAMR():
                 _coref_attention_maps = coref_attention_maps[:, step_i:step_i+1]
 
             _probs, _predictions = self.pointer_generator(
-                dec_output, _copy_attentions, copy_attention_maps,
+                _decoder_outputs, _copy_attentions, copy_attention_maps,
                 _coref_attentions, _coref_attention_maps, invalid_indexes)
             
             source_dynamic_vocab_size, target_dynamic_vocab_size = _copy_attentions.shape[2], _coref_attentions.shape[2]
@@ -350,11 +349,11 @@ class TextToAMR():
             
         mask = tf.cast((next_input == (self.vocab.get_token_index(END_SYMBOL, 'decoder_token_ids'))) | tf.cast(has_eos, dtype='bool'), dtype='int64')
         
-        return (tf.expand_dims(next_input, 1),
-                tf.expand_dims(coref_resolved_preds, 1),
-                tf.expand_dims(pos_tags, 1),
-                tf.expand_dims(coref_index, 1),
-                tf.expand_dims(mask, 1))
+        return (tf.expand_dims(next_input, -1),
+                tf.expand_dims(coref_resolved_preds, -1),
+                tf.expand_dims(pos_tags, -1),
+                tf.expand_dims(coref_index, -1),
+                tf.expand_dims(mask, -1))
 
 
     def decode_with_graph_parser(self, decoder_inputs, memory_bank, corefs, mask):

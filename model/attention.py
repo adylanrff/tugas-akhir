@@ -26,7 +26,6 @@ class BahdanauAttention(tf.keras.layers.Layer):
       attention_weights = tf.where(tf.expand_dims(tf.cast(mask, dtype='bool'), axis=-1), score, -np.inf)
     else:
       attention_weights = score
-
     attention_weights = tf.nn.softmax(attention_weights, axis=1)
     # context_vector shape after sum == (batch_size, hidden_size)
     context_vector = attention_weights * values

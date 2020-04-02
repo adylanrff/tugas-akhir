@@ -30,7 +30,6 @@ class Decoder(tf.keras.Model):
         self.coref_attention = BahdanauAttention(100)
 
     def call(self, token_input, pos_input, hidden, enc_output, mask):
-        
         # x shape after passing through embedding == (batch_size, 1, embedding_dim)
         token_decoder_embedding = self.token_embedding(token_input)
         pos_decoder_embedding = self.pos_embedding(pos_input)
@@ -44,6 +43,7 @@ class Decoder(tf.keras.Model):
         target_copy_attentions = []
         rnn_hidden_states = []
 
+        print(enc_output.shape)
         last_hidden_state = hidden
         for timestep in range(token_input.shape[1]):
             current_word = Lambda(lambda x: x[:, timestep: timestep+1, :])(dec_input)
@@ -51,9 +51,11 @@ class Decoder(tf.keras.Model):
             x = current_word
             # passing the concatenated vector to the LSTM
             output, state_h, state_c  = self.lstm(x, initial_state=last_hidden_state)
+
             hidden_state = concatenate([state_h, state_c])
             last_hidden_state = [state_h, state_c]
             rnn_hidden_states.append(output)
+
             output, attention_weight = self.source_attention(output, enc_output, mask)
             # expanded_context_vector = tf.expand_dims(context_vector, 1)
             
