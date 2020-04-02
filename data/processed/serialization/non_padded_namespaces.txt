@@ -1,2 +1,2 @@
-coref_tags
 must_copy_tags
+coref_tags

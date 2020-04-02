@@ -1,0 +1,618 @@
+﻿Cak Imin juga menuturkan, situasi tersebut masih relevan dengan menjelang Pilpres 2019 mendatang.
+
+(t/tutur
+	:ARG0 (o/orang
+		: nama (n/nama
+			:op1 “Cak”
+			:op2 “Imin”
+	:ARG1 (r/relevan
+		:ARG0 (s/situasi
+		:ARG1 (j/jelang
+			:mod (p/pilpres
+	:time ( d / date-entity
+                		:year 2019 ))))
+:mod (d/datang)
+--------------------
+Kepala Polsek Bogor Timur Komisaris Polisi Marsudi Widodo menuturkan "Saat kita tangkap, pelaku ini masih pada tidur".
+
+(t/tutur
+	:ARG0 (k/kepala
+:location ( p / polsek
+	:name ( n / name 
+		:op1 “Bogor”
+		:op2 “Timur” ))))
+		:mod (k.komisaris)
+		:mod (p/polisi
+			: (o/orang
+				:nama (n/nama
+					:op1 “Marsudi”
+					:op2 “Widodo”
+	:ARG1 (t/tangkap
+		:ARG0 (k/kita
+		:ARG1 (p/pelaku
+			:mod (m/masih
+			:mod (t/tidur)))
+--------------------
+Dian bertutur, "Kalau terkait pemilu kami bawa ke Badan Pengawas Pemilu, korupsi ke Komisi Pemberantasan Korupsi, kalau hanya pidana biasa ke kepolisian".
+
+--------------------
+Padahal, Titi menuturkan, para pemilih masih punya pilihan berbeda jika tidak setuju dengan si calon tunggal tersebut. Pilihan yang dimaksud adalah mencoblos kolom kosong pada surat suara.
+
+--------------------
+Idrus menuturkan permasalahan di Sumut sangat kompleks sehingga membutuhkan kepemimpinan tegas dan berkualitas.
+
+--------------------
+Oded bertutur, "Gini ratio itu kan ketimpangan. Nah Saya kira di Kota Bandung walaupun dari sisi transaksi jual beli ekonomi sangat tinggi tapi tidak dinikmati oleh orang Nandung. Berarti ini adalah sesungguhnya ada hal yang harus kita selesaikan".
+
+--------------------
+Hilwan menuturkan, dari data yang ada di KPU, jumlah pemilih pada Pilkada Garut yang ada dalam daftar pemilih sementara ada 1,8 juta pemilih.
+
+--------------------
+Wahyu menuturkan ada beberapa daerah, yang setelah dievaluasi KPU dari pilkada ke pilkada, masalahnya tidak pernah berubah dan justru menjadi tidak demokratis.
+
+--------------------
+Pakar tata negara, Mahfud Md., menuturkan kepala daerah bisa dimungkinkan untuk dipilih Dewan Perwakilan Rakyat Daerah.
+
+(t/tutur
+	:ARG0 (p/pakar
+		:mod (t/tata
+		:mod (n/negara
+			: (o/orang
+				: nama (n/nama
+					:op1 “Mahfud”
+					:op2 “MD”))))))
+	:ARG1 (p/pilih
+		:ARG0 (k/kepala
+			:mod (d/daerah
+		:ARG1 (d/dewan
+			:mod (w/wakil
+			:mod (r/rakyat
+			:mod (d/daerah)))))
+
+--------------------
+Iing menuturkan, keunikan pada debat calon bupati dan wakil bupati KBB akan ada sesi penayangan testimoni warga yang akan ditanggapi masing-masing calon.
+
+(t1/tutur
+	:ARG0 (l/ling
+	:ARG1 ( d/debat
+		:ARG0 (u/unik
+		:ARG1 (d/dan
+			:op1 (c/calon
+				:mod (b/bupati))
+			:op2 (w/wakil
+				:mod (b/bupati
+				:mod (k/kbb)))
+			:mod (s/sesi
+			:mod (t2/tayang
+			:mod (t3/testimoni
+			:mod (w/warga
+			:mod (t4/tanggap
+			:mod (m/masing
+			:mod (c/calon)))))				
+--------------------
+Anggota Badan Pengawas Pemilu Mochammad Afifuddin bertutur, "Kami berikan rekomendasi sanksi baik lewat pemerintah, maupun Komisi Aparatur Sipil Negara. Sejauh ini, respons pemerintah cukup baik dalam penertiban ASN yang tidak netral".
+
+--------------------
+Ade menuturkan, untuk simulasi dukungan terhadap calon wakil gubernur, Musa Rajekshah pun mengungguli Sihar Sitorus.
+
+--------------------
+Perwakilan DKM Yassiin Al Ma'ruf, Syukran, menuturkan, jelang Pilpres, masjid semakin kerap dijadikan sebagai arena dalam perpolitikan praktis.
+
+--------------------
+Hikmat bertutur, “Mereka kami undang untuk dapat berinteraksi dan menyampaikan langsung pesannya kepada calon gubernur Jabar”.
+
+(t/tutur
+	:ARG0 (h/hikmat
+	:ARG1 (u/undang
+		:ARG0 (m/mereka
+			:mod (k/kami
+		:ARG1 (d/dan
+			:op1 (i/interaksi)
+			:op2 (s/sampai
+				:mod (l/langsung
+				:mod (p/pesan
+	:mod (k/kepada
+	:mod (c/calon
+	:mod (g/gubernur
+				:location ( p / province
+					:name ( n / name 
+						:op1 “Jabar”))))
+--------------------
+Pigai bertutur, "Saya kasih pesan ke Jokowi bahwa jangan dengar orang-orang yang tidak berkualitas, tidak kompeten untuk menyelesaikan berbagai persoalan di Papua".
+
+--------------------
+Pigai bertutur, "Saya ini juga pernah jadi penyelidik Komnas HAM yang menjabat selama lima tahun. Semua kritik saya itu profesional, terukur, dalam rangka mengisi ruang-ruang kosong yang tidak pernah diisi oleh negara".
+
+--------------------
+Taufan Pawe bertutur, "Kalau toh ada mutasi setelah tanggal pelarangan, itu tidak ada kaitannya dengan mutasi. Sebab mutasi itu untuk mengisi jabatan yang kosong, agar tidak ada kevakuman dalam pemerintah kota".
+
+--------------------
+Asrar bertutur, "Apabila KPU Makassar melaksanakan putusan MA, maka akan menjadi satu paslon saja. Aturan yang berlaku untuk kasus ini tetap mengacu pada aturan satu paslon".
+
+--------------------
+Asrar bertutur, "Jumlah 50 persen+1 dari perolehan suara sah saat pemilihan nantinya. Jika tidak tercapai, maka Pilkada Makassar akan kembali digelar pada tahun 2020 mendatang".
+
+--------------------
+Asrar bertutur, "Aturannya kembali pada aturan Pilkada".
+
+(t/tutur
+	:ARG0 (a1/asrar
+	:ARG1 (k/kembali
+		:ARG0 (a2/aturan
+		:ARG1 (a3/aturan
+			:mod (p/pilkada)))))
+--------------------
+Nina menuturkan, materi dirancang oleh tim panelis yang berisi 18 orang pakar dan guru besar dari berbagai perguruan tinggi di Jawa Barat.
+
+(t/tutur
+	:ARG0 (n/nina
+	:ARG1 (r/rancang
+		:ARG0 (t/tim
+			:mod (p/panelis))))
+			:mod (m/materi)
+			:mod (i/isi)
+			:mod ( t / temporal-quantity
+				:quant 18 
+				:unit ( o / orang )))
+		:ARG1 (d/dan
+			:op1 (p/pakar)
+			:op2 (g/guru
+				:mod (b/besar))
+					:mod (b/bagai
+			:location ( p / perguruan tinggi
+				:name ( n / name 
+					:op1 “Jawa”
+					:op2 “Barat”))))
+--------------------
+Nina bertutur, "Sehingga secara keseluruhan kami akan mengeksplor kemampuan para calon. Kenapa tidak banyak pertanyaan? Kalau sedikit pertanyaan akan lebih fokus, mendalam, dan lebih interaktif".
+
+--------------------
+Taufan Pawe bertutur, "Kalau toh ada mutasi setelah tanggal pelarangan, itu tidak ada kaitannya dengan mutasi. Sebab mutasi itu jabatan yang kosong, agar tidak ada kevakuman dalam pemerintah kota".
+
+--------------------
+Amin menuturkan Panwaslu mendapat laporan masyarakat pada Senin, 21 Mei 2018.
+
+(t/tutur
+	:ARG0 (a/amin
+	:ARG1 (d/dapat
+		:ARG0 (p/panwaslu
+		:ARG1 (l/laporan
+			:mod (m/masyarakat
+			:mod (s/senin
+		:time ( d / date-entity 
+			:tahun 2018
+			:bulan 5
+			:hari 21))
+--------------------
+Amin bertutur, "Akan dibahas di Gakkumdu".
+
+(t/tutur
+	:ARG0 (a/amin
+	:ARG1 (b/bahas
+		:ARG1 (g/gakkumdu))))
+--------------------
+Anggota Bawaslu Sumatera Utara, Herdi Munte, menuturkan, penyelidikan sudah dibahas bersama di Sentra Penegakan Hukum Terpadu.
+
+(t/tutur
+	:ARG0 (a/anggota
+		:mod (b/bawaslu
+	:location ( p / province
+		:name ( n / name 
+			:op1 “Sumatera”
+			:op2 “Utara” ))))
+	: (o/orang
+		:nama (n/nama
+			:op1 “Herdi”
+			:op2 “Munte”)))
+	:ARG1 (b/bahas
+		:ARG1 (s/selidik
+			:mod (s/sama
+		:location ( t / tempat
+			:name ( n / name 
+				:op1 “Sentra”
+				:op2 “Penegakan” 
+:op3 “Hukum”
+:op4 “Terpadu”))))
+--------------------
+Syafridah bertutur, “Untuk sanksi dari KASN, mereka yang akan proses”.
+
+(t/tutur
+	:ARG0 (s/syafridah
+	:ARG1 (s/sanksi
+		:ARG0 (k/kasn
+		:ARG1 (m / mereka
+			:mod (p/proses))))
+--------------------
+Pria yang menjabat sebagai Wakil Gubernur DKI Jakarta bertutur, "Kan sebagian dari ulama mengutip bahwa keberkahannya utamanya bulan suci Ramadan diisi dengan ibadah dan umrah di bulan suci sama saja berhaji bersama Rasulullah".
+
+--------------------
+Ketua Bawaslu DKI Jakarta Mimah Susanti menuturkan bahwa seluruh catatan mengenai penyelenggaraan pemilu, sifatnya administratif dan bukan penyimpangan.
+
+--------------------
+Bahagia Idris, Ketua KIP Aceh Barat menuturkan, “Setelah selesai kami lakukan rekapitulasi, tinggal menunggu gugatan atau protes dari pihak lain samapai awal Maret mendatang. Kalau tidak ada gugatan, tanggal 8 Maret, kami umumkan”.
+
+--------------------
+Mantan gubernur DKI itu, Jokowi, menuturkan, "Ke mana-mana selalu tersenyum, makanya saya berani bilang saya bukan pemimpin otoriter, saya ini seorang demokrat".
+
+--------------------
+Dalam pertemuan itu, Muhammad Syarif juga menuturkan bagaimana saat Nabi Muhammad berhijrah ke Madinah yang memiliki banyak suku dan golongan. Bahkan, Nabi Muhammad tak menghindari kaum yang memusuhinya saat itu, yakni kaum Yahudi.
+
+--------------------
+Benget menuturkan, "Kemarin sudah selesai sidangnya dan kami dengar akan ada pembacaan putusan pada Selasa 20 Maret, jadi kami menanti saja proses peradilan yang berlangsung. Kami menanti putusan PT TUN".
+
+--------------------
+Ketua Komisi Pemberantasan Korupsi Agus Rahardjo menuturkan, proses hukum calon kepala daerah harus tetap jalan meskipun pihak yang tersangkut kasus hukum itu maju sebagai peserta Pilkada 2018.
+
+--------------------
+Rabu 19 April 2017, pasangan Ahok-Djarot mendapatkan 107 suara.
+
+(d/dapat
+:mod (r/rabu
+:time ( d / date-entity 
+	:tahun 2017
+	:bulan 4
+	:hari 19))
+	:ARG0 (p/pasangan
+		: (o/orang
+			:nama (n/nama
+				:op1 “Ahok-Djarot”)))
+	:mod ( t / temporal-quantity
+				:quant 107 
+				:unit ( s / suara )))
+--------------------
+Direktur Eksekutif Instrat, Jalu Pradhono Priambodo berpendapat, Golkar menunjukkan kepiawannya menggalang pasangan calon di daerah. Khususnya, yang mendekat kepada calon pejawat.
+
+--------------------
+Viva berpendapat, pilkada adalah jelmaan kedaulatan rakyat dalam demokrasi.
+
+(d1/dapat
+	:ARG0 (v/viva
+	:ARG1 (j/jelmaan
+		:ARG1 (p/pilkada
+			:mod (d2/daulat
+			:mod (r/rakyat
+			:mod (d3/dalam
+			:mod (d4/demokrasi)))))
+--------------------
+Prabowo berpendapat, Gerindra tidak akan mati hanya gara-gara tidak punya televisi dan media cetak seperti partai lain.
+
+(d/dapat
+	:ARG0 (p/Prabowo
+	:ARG1 (m/mati
+	:polarity -)
+		:ARG0 (g/gerindra
+		:ARG1 (d/dan
+			:op1 (p/punya
+				:polarity -)
+				:mod (t/televisi)
+			:op2 (m/media
+				:mod (c/cetak
+				:mod (s/seperti
+				:mod (p/partai
+				:mod (l/lain))))
+--------------------
+pemerintah berpendapat, penetapan pasangan calon kepala daerah sebagai tersangka justru akan berpengaruh kepada pelaksanaan pilkada. 
+
+--------------------
+Direktur Eksekutif Poltracking Indonesia Hanta Yuda berpendapat, pasangan Khofifah-Emil unggul di dua kategori. Yakni, kategori top of mind atau pasangan yang pertama kali muncul dalam benak atau pikiran pemilih dan simulasi berdasarkan kategori suara secara langsung.
+
+--------------------
+Sandiaga berpendapat ke depan, kerjasama DKI Jakarta dan Jawa Barat harus lebih baik dan lebih sinergi, terutama dalam hal penciptaan lapangan kerja berkualitas, kewirausahaan dan pemberdayaan masyarakat.
+
+--------------------
+Harjono berpendapat, pihak JR Saragih, Bawaslu, dan KPU perlu bersama-sama datang ke pejabat yang berwenang melakukan legalisasi ijazah untuk membuktikan apakah proses legalisasinya benar.
+
+--------------------
+Harjono berpendapat, jika telah diklarifikasi ke Jakarta, maka Bawaslu dan KPU dapat mengetahui apakah dokumen legalisir ijazah milik JR Saragih betul-betul ada atau tidak.
+
+--------------------
+Harjono berpendapat, bisa saja JR Saragih memiliki ijazah, namun legalisirnya tidak sah.
+
+(d/dapat
+	:ARG0 (h/harjono
+	:ARG1 (m/milik
+		:ARG0 (o/orang
+				:nama (n/nama
+					:op1 “JR”
+					:op2 “Saragih”
+		:ARG1 (i/ijazah
+			:mod (l/legalisir
+			:mod (sah
+				:polarity -))))
+--------------------
+Harjono berpendapat, ada beberapa hal yang harus ditelusuri Bawaslu, soal pernyataan JR Saragih yang mengaku telah kehilangan ijazahnya. Pertama, soal kapan waktu hilangnya ijazah itu.
+
+--------------------
+Idrus berpendapat, Partai Demokrat mencalonkan JR untuk memanaskan mesin partai jelang pilpres mendatang.
+
+(d/dapat
+	:ARG0 (i/idrus
+	:ARG1 (c/calon
+		:ARG0 (p/partai
+			:mod (d/democrat
+		:ARG1 (m/mesin
+			: mod (p/partai
+			:mod (j/jelang
+			:mod (p/pilpres
+			:mod (d/datang))))
+--------------------
+Airlangga berpendapat, pertemuan ini juga untuk mengukuhkan kerja sama dengan PDIP menjelang pemilu.
+(d/dapat
+	:ARG0 (a/airlangga
+	:ARG1 (k/kukuh
+		:ARG1 (t/temu
+			:mod (k/kerja
+			:mod (s/sama
+			:mod (d/dengan
+			:mod (p/pdip
+			:mod (j/jelang
+			:mod (p/pemilu)))))
+--------------------
+Airlangga berpendapat, Partai Golkar tidak akan mengajukan nama-nama untuk disandingkan dengan Jokowi.
+
+(d/dapat
+	:ARG0 (a/airlangga
+	:ARG1 (a/aju
+		:polarity -)
+			:ARG0 (p/partai
+				:mod (g.golkar
+			:ARG1 (n/nama
+				:mod (s/sanding 
+				:mod (d/dengan
+					: (o/orang
+						: nama(n/nama
+							:op1 “Jokowi”))))
+--------------------
+Pasangan Elin S Abubakar-Maman Sunjaya mendapatkan nomor urut satu, pasangan Doddy Imron Cholid-Pupu Sari Rahayati nomor urut dua dan pasangan Aa Umbara-Hengky Kurniawan mendapatkan nomor urut tiga.
+
+--------------------
+Dedi berpendapat, Purwakarta punya sekolah sepak bola, yakni ASAD Jaya Perkasa.
+
+(d/dapat
+	:ARG0 (d/dedi
+	:ARG1 (p/punya
+:ARG 1 :location ( t / tempat
+		:name ( n / name 
+			:op1 “Purwakarta”))))
+	:mod (s/sekolah
+		:mod (s/sepak
+		:mod (b/bola
+			:mod (a/asad 
+			:mod (j/jaya
+			:mod (p/perkasa))))
+--------------------
+Dedi berpendapat, masyarakat Jabar ini merupakan penggemar olah raga sepak bola. Bahkan, olah raga ini punya kans yang sangat kuat dan fanatik. Salah satunya, klub sepak bola Persib. Klub sepak bola Persib, punya tempat tersendiri di hati masyarakat Jabar.
+
+--------------------
+Komisioner KPAI bidang Pengasuhan, Rita berpendapat kampanye umumnya digelar saat anak sedang tidak tidur atau ketika beraktivitas. Terkadang terjadi dilema pada orang tua yang ingin berpartisipasi dalam kampanye sedangkan anaknya masih terjaga.
+
+--------------------
+Yaqut berpendapat tidak menutup kemungkinan terjadi tarik-menarik terhadap kader Ansor dalam konstelasi politik di Jawa Tengah menjelang pilkada 2018.
+
+--------------------
+Ridwan berpendapat, jumlah pemilih dari kalangan milenial hampir setengah dari total pemilih yang ada di Jawa Barat.
+
+--------------------
+Margiono berpendapat pemerintah daerah perlu membuat kebijakan strategis dan berani melawan regulasi pemerintah pusat tentang distribusi pupuk.
+
+--------------------
+Andrean Sunaryo berpendapat Margiono terlalu beretorika dalam menjawab pertanyaan panelis hingga kadang tidak implementatif. Sedangkan Syahri Mulyo cenderung berkutat pada statistik atas apa yang sudah dilakukan selama lima tahun pemerintahannya.
+
+--------------------
+Syaikhu berpendapat, pengolahan limbah kulit ternyata cukup murah jika dibandingkan dampak yang ditimbulkan jika dibuang ke saluran air begitu saja. Sebab, dari penjelasan pemilik pabrik, biaya pengolahan limbah bisa dimasukan dalam harga jual kulit siap olah.
+
+--------------------
+Dodi berpendapat, pihaknya memang memiliki Instalasi Pengolahan Air Limbah sendiri. Biaya pengelolaan IPAL sendiri, tiap tahunnya rata-rata mencapai Rp 1,2 miliar, dengan kapasitas sebesar 7 ton.
+
+--------------------
+Dodi berpendapat, dengan IPAL yang ada, tidak ada air buangan dari pabriknya yang keluar. Air limbah, diproses hingga bisa digunakan kembali untuk pengolahan kulit mentah.
+
+--------------------
+Sandiaga berpendapat, sosialisasi pasangan calon gubernur dan wakil gubernur Jawa Tengah, Sudirman Said-Ida Fauziah penting agar sosok Sudirman Said dan Ida Fauziah lebih dikenal masyarakat secara luar khususnya di Jawa Tengah.
+
+--------------------
+Arief berpendapat, keadaan darurat bisa saja ditafsirkan berbeda-beda oleh sejumlah pihak.
+
+(d/dapat
+	:ARG0 (a/arief
+	:ARG1 (d/darurat
+		:mod (t/tafsir
+		:mod (b/beda
+		:mod (j/jumlah
+		:mod (p/pihak))))
+--------------------
+Arief berpendapat, kondisi darurat itu bisa saja dimaknai apabila calon kepala daerah berstatus tersangka jumlahnya banyak, lebih dari separuhnya.
+
+--------------------
+Abdul berpendapat sejak muda Cak Imin merupakan aktivis yang punya peran menggulingkan Orde Baru.
+
+(d/dapat
+	:ARG0 (a/abdul
+	:ARG1 (a/aktivis
+		:ARG0 (o/orang
+			: nama (n/nama
+				:op1 “Cak”
+				:op2 “Imin”))))
+		:ARG1 (p/peran
+			:mod (g/guling
+			:mod (o/orde
+			:mod (b/baru))))
+--------------------
+PKB berpendapat, penting Jokowi memilih tokoh Islam sebab sejak Pilkada DKI 2017, Jokowi kerap diserang dengan isu-isu yang terkait dengan agama.
+
+--------------------
+Masing-masing kandidat mendapat kesempatan berdebat secara terbuka untuk mempertajam visi misi mereka serta memantapkan solusi terbaik yang mereka miliki untuk pembangunan Sulsel.
+
+--------------------
+Tito berpendapat, jika tidak ditunda saat ada laporan yang masuk, mesin hukum akan berjalan. Dan kondisi ini bisa saja dimanfaatkan oleh pihak tertentu.
+
+--------------------
+Wakil Ketua PPATK, Dian Adiana Rae berpendapat, aliran dana mencurigakan itu sudah mulai muncul pada akhir tahun lalu hingga tiga bulan pertama tahun ini.
+
+--------------------
+Sementara itu, Viryan berpendapat usulan Kemendagri untuk merevisi PKPU pencalonan pilkada juga mesti melihat dasar pembuatannya.
+
+--------------------
+Priyo berpendapat apa yang terjadi sekarang pada pilkada langsung bila dibiarkan kebablasan merebaknya berita-berita kosong atau bohong, maka akan merusak sendi-sendi dan nilai-nilai bangsa, yang akan tergerus. Untuk itu, dampak tersebut harus diantisipasi segera.
+
+--------------------
+Dian berpendapat laporan-laporan tersebut akan diidentifikasi PPATK, agar bisa dilaporkan kepada pihak yang berwenang.
+
+--------------------
+Padahal, Titi berpendapat, proses yang dilakukan KPK tentu tidak berurusan dengan status mereka sebagai calon, tetapi murni penegakan hukum.
+
+--------------------
+Tito berpendapat, sistem pilkada langsung terbukti memuat banyak dampak negatif selain aspek positif.
+
+--------------------
+Tito berpendapat, masyarakat secara langsung maupun tidak akan terbelah mengikuti pilihan politik masing-masing.
+
+(d/dapat
+	:ARG0 (t/tito
+	:ARG1 (b/belah
+		:polarity -)
+			:ARG0 (m1/masyarakat
+			:ARG1 (i/ikut
+				:mod (p1/pilihan
+				:mod (p2/politik
+				:mod (m2/masing)))
+--------------------
+Tito berpendapat, lebih dari itu, pilkada langsung juga berkontribusi besar terhadap munculnya demokrasi biaya tinggi yang pada akhirnya juga memicu tindak pidana korupsi.
+
+--------------------
+Selain itu, Nurul berpendapat perbaikan sistem drainase, penguatan tanggul dan pembangunan danau untuk dijadikan penampungan air mutlak harus dilakukan. Sehingga, akan memberikan dampak positif tidak hanya bagi kota Bandung tapi juga wilayah disekitarnya. Daerah yang dijadikan penampungan air pun disebutnya bisa dikembangkan menjadi tempat wisata.
+
+--------------------
+Arief berpendapat, jika DKPP akhirnya menyatakan Syahrir melanggar etika dan dijatuhi sanksi, KPU baru akan menindaklanjutinya.
+
+--------------------
+Oded berpendapat persoalan kemiskinan Kota Bandung memang masih menjadi salah satu masalah besar. Pertumbuhan ekonomi di Kota Bandung yang berada di angka 7 persen, tetapi angka gini rationya berada di angka 0,42.
+
+--------------------
+Komisioner KPU Kota Bekasi Syafrudin berpendapat jumlah itu masih di bawah target yang ditetapkan pada awalnya sebanyak 1,8 juta jiwa.
+
+--------------------
+Gatot berpendapat, dengan mengenakan kopiah putih, peserta aksi akan merasa petugas keamanan yang terdiri dari Polri dan TNI juga bagian dari peserta aksi.
+
+--------------------
+Hilwan berpendapat, pihaknya telah berupaya agar mereka bisa tetap menyalurkan hak pilihnya dengan cara berkoordinasi dengan Dinas Kependudukan dan Catatan Sipil Kabupaten Garut dan Panitia Pemilih Kecamatan supaya mereka bisa segera memiliki KTP elektronik.
+
+--------------------
+Hilwan berpendapat, jika ada warga yang tidak mempunyai KTP elektronik akan menyalurkan hak politiknya pada pilkada nanti, satu-satunya cara adalah melengkapi dokumen kependudukan agar bisa segera mendapatkan KTP elektronik. Sebab, syarat memilih adalah harus memiliki KTP elektronik.
+
+--------------------
+Hilwan berpendapat, dari hasil coklit, awalnya pihaknya menemukan ada sekitar 300.000 pemilih yang ada dalam DPS yang tidak bisa masuk DPT karena berbagai hal, mulai dari pindah domisili, meninggal, hingga KTP ganda.
+
+--------------------
+Evip berpendapat, hingga Senin 2 April 2018, dari data yang telah masuk, ada sekitar 114.000 data yang belum tercetak.
+
+--------------------
+Fajar berpendapat, seorang kades itu diduga melanggar netralitas karena memfasilitasi salah satu pasangan calon, Ganjar Pranowo-Taj Yasin.
+
+--------------------
+Wahyu berpendapat minimnya minat pemantau dalam Pilkada 2018 ini memprihatinkan. Alasannya, menjadi pemantau termasuk dalam partisipasi pemilu. Sehingga, berkurangnya minat pemantau ini menandakan kemunduran bagi partisipasi politik warga.
+
+--------------------
+Wahyu berpendapat, sistem noken semestinya memudahkan, tapi tetap demokratis dan aspiratif, bukan dipukul rata seperti sekarang.
+
+--------------------
+Selain itu, terdapat suku-suku yang suaranya tidak terwakili karena dominasi suku tertentu.
+
+(d/dapat
+	:ARG1 (s/suku
+		:mod (w/wakil
+			:polarity -)
+		:mod (d/dominasi
+		:mod (s/suku
+		:mod (t/tentu))))
+--------------------
+Namun Mahfud berpendapat, pilkada harus dikembalikan ke DPRD tidak bisa langsung diterapkan waktu itu.
+
+--------------------
+Ratna berpendapat, pelanggaran oleh ASN dilakukan oleh camat, lurah, PNS di dinas-dinas, sekretaris daerah, dosen hingga guru besar di perguruan tinggi.
+
+--------------------
+Selain itu, Bambang berpendapat, pilkada langsung juga mengotak-ngotakan publik dalam identitas masing-masing golongan sehingga berpotensi memecah belah masyarakat.
+
+--------------------
+Ace berpendapat, jika target elektabilitas sebesar 18 persen tercapai, maka Golkar akan mampu mendukung pemenangan Jokowi.
+
+--------------------
+Rohmi berpendapat, segmentasi pariwisata halal sudah menjadi brand image bagi sektor pariwisata NTB.
+
+(d/dapat
+	:ARG0 (r/rohmi
+	:ARG1 (p/pariwisata
+		:ARG1 (s/segmentasi
+			:mod (h/halal
+			:mod (j/jadi
+			:mod (b/brand
+			:mod (i/image
+			:mod (s/sector
+			:mod (p/pariwisata))))))
+		:location ( p / province
+			:name ( n / name 
+				:op1 “NTB”))))
+--------------------
+Rektor Universitas Hamzanwadi Rohmi berpendapat, segmentasi pariwisata halal memberikan diferensiasi dan juga menjadi daya tarik pariwisata NTB kepada wisatawan.
+
+--------------------
+Edy mendapat dukungan 37,2 persen, pada pertanyaan terbuka.
+
+(d/dapat
+	:ARG0 (e/edy
+	:ARG1 (d/dukung
+:mod (  p / percentage-entity 
+	:value 37.2 ))
+: mod (t/tanya
+: mod (b/buka)))
+--------------------
+Adapun Djarot mendapat 33,4 persen.
+
+(d/dapat
+	:ARG0 (d/djarot
+:mod (  p / percentage-entity 
+	:value 33.4 ))
+--------------------
+Musa mendapat dukungan 30,2 persen, pada pertanyaan terbuka.
+
+(d/dapat
+	:ARG0 (m/musa
+	:ARG1 (d/dukung
+:mod (  p / percentage-entity 
+	:value 30.2 ))
+:mod (t/tanya)
+:mod (b/buka)
+--------------------
+Sedangkan Sihar mendapat dukungan 24,2 persen.
+
+(d/dapat
+	:ARG0 (s/sihar
+	:ARG1 (d/dukung
+:mod (  p / percentage-entity 
+	:value 24.2 ))
+--------------------
+Sedangkan Sihar mendapat dukungan 30,1 persen.
+
+(d/dapat
+	:ARG0 (s/sihar
+	:ARG1 (d/dukung
+:mod (  p / percentage-entity 
+	:value 30.1 ))
+--------------------
+Pasangan Eramas mendapat dukungan 43,3 persen, bila disimulasikan secara berpasangan.
+
+(d/dapat
+	:ARG0 (p1/pasang
+		:mod (e/eramas
+	:ARG1 (d/dukung
+:mod (  p / percentage-entity 
+	:value 43.3 ))
+		:mod (s1/simulasi
+		:mod (s2/secara
+		:mod (p2/pasanga)))
+--------------------
+Ade berpendapat, tingkat pengenalan cagub, perolehan tertinggi diraih Djarot 89,6 persen, disusul Edy 86,3 persen.
+
+--------------------
+

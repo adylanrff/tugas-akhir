@@ -1,0 +1,757 @@
+﻿Cak Imin mengungkapkan, "Saya 6 bulan tidak pulang. Saya jadi Bang Toyib. Saya hanya pesan pada istri, 'jangan tanya kemana aku pergi. Yang penting aku kembali'," saat memberi sambutan.
+
+--------------------
+Fadli mengungkapkan, "Saya kira nanti akan bisa dikomunikasikan dengan baik, enggak ada masalah".
+
+( u / ungkap)
+	:ARG0 (f / fadli)
+	:ARG1 (k / komunikasi)
+		:ARG0 ( s/ saya
+			:mod (b /baik
+			:mod (m / masalah)))
+			:polarity - )
+
+Fadli mengungkapkan, koalisi saat ini dinilai masih sangat dinamis, bahkan secara resmi Partai Gerindra duduk bersama dengan PKS dan PAN pun belum dilakukan.
+
+--------------------
+Jokowi mengungkapkan masih ingin terlebih dahulu mengetahui secara lengkap mengenai proses pengurusannya.
+
+(u / ungkap)
+	:ARG0 (j / Jokowi
+	:ARG1 (u / urusan))
+
+Sumarno mengungkapkan, partisipasi pemilih pada putaran kedua menunjukkan peningkatan partisipasi pemilih dibandingkan putaran pertama.
+
+(u/ungkap
+	:ARG0 (s/sumarno
+	:ARG1 (b/banding
+:op1 (p1/partisipasi
+			:mod (p2/pemilih
+			:mod (p3/putaran
+				:mod (k/kedua
+			:mod (t/tunjuk
+			:mod (t/tingkat
+			:mod (p4/partisipasi
+			:mod (p5/pemilih)))
+		:op2 (p/putaran
+			:mod (p/pertama))
+			
+
+--------------------
+Ketua Divisi Teknis KPU Kota Padang, Chandra Eka Putra, mengungkapkan, "Setelah registrasi, persyaratan pencalonan dicek oleh semua komisioner secara bergantian. Tujuannya, untuk meneliti keabsahan. Kedua memiliki persyaratan yang cukup dan disahkan maju dalam Pilkada".
+
+--------------------
+Namun, Elmahmudi mengungkapkan terkait dengan suami atau istri pasangan calon yang merupakan ASN sudah diberi kelonggaran boleh ikut kampanye tetapi harus memiliki syarat yaitu wajib mengajukan cuti.
+
+--------------------
+Komisi Independen Pemilihan, KIP, Aceh, dalam laman resminya menyatakan, pihaknya baru akan memberikan keterangan resmi perihal antara lain perolehan suara ini pada Kamis 16 Februari pagi.
+
+--------------------
+Tetapi karena syarat dukungan yang diminta, yakni sebanyak 272.300 pendukung dan tersebar di 12 kabupaten/kota, tidak terpenuhi, maka KPUD Provinsi NTT menyatakan pasangan AKBP Christofel Bagaisar dan Blasius Bobsen Nahak gugur.
+
+--------------------
+Sementara Dorri menyatakan, untuk kasus Camat Nanggalo yang juga memajang foto dirinya dengan salah satu petahana di kantor camat, Panwaslu masih melakukan kajian.
+
+--------------------
+Lembaga survey Charta Politika menyatakan, keterpilihan Ridho berdasarkan survey popularitas dan kesukaan masyarakat. Hasilnya, Ridho paling populer di masyarakat dibandingkan calon lain dengan tingkat kesukaan sebesar 93,3 persen.
+
+--------------------
+Ridwan Kamil menyatakan dalam deklarasinya menolak kabar bohong atau hoax yang berbau sara, ujaran kebencian yang provokatif, dan mendukung pihak kepolisian untuk menindak tegas pelakunya.
+
+--------------------
+Cak Imin menyatakan kesiapan dan keyakinannya akan dipilih sebagai cawapres Jokowi.
+
+(n / nyata)
+	:ARG0 ( o / orang
+                        :name ( n / nama 
+                                 :op1 "Cak"
+		          :op2 “Imin”))))
+	:ARG1 (d / dan
+		:op1 (s / siap
+		:op2 (y / yakin)))
+			:mod (p / pilih)
+			:mod (c / cawapres)
+				: ( o / orang
+                     			   :name ( n / nama 
+                                 			:op1 “Jokowi")))     			
+
+Majelis hakim PTTUN Medan Bambang Edi Soetanto menyatakan, gugatan yang diajukan pasangan JR Saragih-Ance prematur sehingga tidak dapat diterima.
+
+(n/nyata
+	:ARG0 (m/majelis
+		:mod (h/hakim
+		:mod (p/pttun
+	:location ( k / kota
+		:name ( n / name 
+			:op1 “Medan”))))
+	:o/orang
+		:nama (n/nama)
+			:op1 “Bambang”
+			:op2 “Edi”
+			:op3 “Soetanto”)))
+	:ARG1 (g/gugatan
+		:mod (a/aju
+		:mod (p/pasangan
+			:o/orang
+				:nama (n/nama
+					:op1 “JR Saragih-Ance”))
+							:mod (p/premature)
+								:mod (t/terima)
+								:polarity -)
+--------------------
+Bakal cawagub Ance Selian menyatakan bahwa pihaknya masih tetap bertekad untuk maju menjadi pasangan cagub dan cawagub, setelah putusan PTTUN Medan tersebut dibacakan.
+
+--------------------
+Komisi Pemilihan Umum menyatakan sejauh ini belum ada rencana untuk merevisi peraturan KPU soal pencalonan dalam pilkada 2018, terutama berkaitan dengan penggantian calon kepala daerah.
+
+--------------------
+Megawati menyatakan, "seribu kali pejabat gubernur di Papua diganti, Papua tetap di sana, seribu kali pejabat daerah dan bupati Papua diganti, Papua tetap di sana, tetapi satu kali TNI ditarik dari tanah Papua, besok Papua merdeka" ketika tahun 2014.
+
+--------------------
+Saksi ahli dari Undip Semarang dan Universitas Pancasakti Tegal menyatakan perbuatan sang kades melanggar ketentuan.
+
+--------------------
+Calon Gubernur Jawa Timur, Saifullah Yusuf yang akrab disapa Gus Ipul menyatakan, brem, makanan khas Madiun bisa diekspor ke luar negeri.
+
+--------------------
+Komisioner Komisi Pemilihan Umum Wahyu Setiawan menyatakan minat lembaga pemantau pemilu untuk memantau pemilihan kepala daerah 2018 sangat rendah.
+
+(n/nyata
+	:ARG0 (k/komisioner
+		:mod (k/komisi
+		:mod (p/pemilihan
+		:mod (u/umum
+			:o/orang
+				:nama (n/nama
+					:op1 “Wahyu”
+					:op2 “Setiawan”
+	:ARG1 (l/Lembaga)
+		:mod (p1/pemantau)
+		:mod (p2/pemilu)
+			:mod (p3/pantau)
+			:mod (p4/pilih)
+				:mod (k/kepala
+				:mod (d/daerah
+			:time ( d / date-entity 
+				:tahun 2018))
+						:mod (r/rendah)))
+--------------------
+Komisi Pemilihan Umum menyatakan, berdasarkan evaluasi, ada beberapa daerah yang sebaiknya tidak melakukan pemilihan kepala daerah atau pilkada secara langsung.
+
+(n/nyata
+	:ARG0 (k /komisi
+		:mod (p/pemilihan
+		:mod (u/umum)))
+	:ARG1 (e/evaluasi
+		:mod (d/daerah
+		:mod (l/laku
+		:polarity - ))))
+			:ARG1 (a/atau
+				:op1 (p1/pemilihan
+					:mod (k/kepala
+					:mod (d/daerah
+				:op2 (p2/pilkada
+					:mod (l/langsung
+
+--------------------
+Komisi Pemilihan Umum Daerah Jawa Timur menyatakan kesiapannya menggelar debat publik pertama pada kontestasi Pilgub Jatim 2018.
+
+(n/nyata)
+	:ARG0 (k/komisi
+		:mod (p/pemilihan
+		:mod (u/umum
+	:location ( d / daerah
+		:name ( n / name 
+			:op1 “Jawa”
+			:op2 “Timur” ))))
+	:ARG1 (d/debat
+		:mod (p/public
+		:mod (p/pertama
+		:mod (k/kontestasi
+		:mod (p/pilgub
+	:location ( p / province
+		:name ( n / name 
+			:op1 “Jatim”))))
+:time ( d / date-entity 
+		:tahun 2018))
+--------------------
+Sebelumnya, PKPI sempat dinyatakan tidak memenuhi syarat dalam kepengurusan dan keanggotaan di mana sekurang-kurangnya di 75 persen di Kabupaten/Kota.
+
+--------------------
+Ace menyatakan pembicaraan cawapres di koalisi Jokowi akan dilakukan seusai Pilkada 2018.
+
+(n / nyata)
+	:ARG0 (a / ace)
+	:ARG1 (b/ bicara
+		:mod (c / cawapres
+		:mod (k / koalisi
+			: (o/ orang
+				nama( n/ name
+					:op1 “Jokowi”))
+						:mod (l / laku
+						:mod (u / usai
+						:mod (p / pilkada
+						:time ( d / date-entity
+                		                                               :year 2018 ))))
+
+Rohmi juga menyatakan komitmennya untuk memfasilitasi pelatihan pembangunan SDM berkelanjutan di lingkar wisata mutlak dilakukan.
+
+(n / nyata
+	:ARG0 (r/ rohmi
+	:ARG1 (k / komitmen
+		:mod (f/ fasilitas
+		:mod (l/ latih
+		:mod (b/bangun
+			:mod (s/sdm)))))
+		:mod (l/lanjut
+			:mod (l/lingkar
+			:mod (w/wisata
+			:mod (m/mutlak))))
+
+Ketua DPP PDI Perjuangan Puan Maharani menyatakan, partainya kemungkinan akan kembali menggunakan slogan "Indonesia Hebat" pada Pemilu 2019.
+
+--------------------
+Badan Pengawas Pemilihan Umum Riau menyatakan anggota DPRD Bengkalis Nur Azmi Hasyim dan ajudannya Adi Purnawan telah ditetapkan sebagai tersangka.
+
+(n/nyata
+	:ARG0 (b/badan
+		:mod (p1/pengawas
+		:mod (p2/pemilihan
+		:mod (u/umum
+	:location ( k / kota
+		:name ( n / name 
+			:op1 “Riau”))))
+	:ARG1 (d/dan
+		:op1 (a/anggota
+			:mod (d/dprd
+				:o/orang
+					:nama (n/nama
+						:op1 “Bengkalis”
+						:op2 “Nur”
+						:op3 “Azmi”)))
+		:op2 (a/ajudan
+			:o/orang
+				:nama (n/nama
+					:op1 “Adi”
+					:op2 “Purnawan”)))
+		:mod (t1/tetap
+		:mod (t2/tersangka
+--------------------
+Ketua Badan Pengawas Pemilu RI Abhan Misbah menyatakan Pemilihan Kepala Daerah 2018 rawan pelanggaran saat kampanye. Sebab, pelaksanaan kampanye bertepatan dengan Ramadhan dan Idul Fitri 1439 Hijriyah.
+
+--------------------
+Sebanyak 82,9 persen responden menyatakan puas terhadap kinerja Joko Widodo.
+
+(n / nyata
+	:ARG0 (o / orang
+		:nama (n/name
+			:op1 “Joko”
+			:op2 “Widodo”))
+	:ARG1 (p/ puas
+	:mod (  p / percentage-entity 
+		:value 82.9 ))
+			:mod (r/ responden)
+
+
+Di bagian indikator kepuasan terhadap kinerja, sebanyak 81 persen respon menyatakan puas terhadap kinerja Ganjar, dengan rincian 71 persen cukup puas, 10 persen sangat puas.
+
+--------------------
+Sekjen PDIP Hasto Kristiyanto menyatakan, sebenarnya nama-nama calon cubernur dan wakil gubernur untuk seluruh daerah yang akan menggelar Pilkada sudah dikerucutkan saat rapat di kantor DPP PDIP pada Jumat 5 Januari 2018.
+
+--------------------
+Diketahui, Presiden Joko Widodo menyatakan belum mengetahui secara detail laporan kembali didapatnya status warga negara Indonesia oleh Arcandra Tahar.
+
+--------------------
+Sementara PKS Sumatera Barat menyatakan akan mengusung kembali Wali Kota Padang Mahyeldi pada pilkada setempat yang akan dilaksanakan pada 2018.
+
+--------------------
+Ketua MPR RI Zulkifli Hasan menyatakan dirinya ingin pelaksanaan pemilihan presiden 2019 dan pemilihan kepala daerah tahun ini berjalan aman, damai, dan berkualitas.
+
+(n/nyata
+	:ARG0 (k/ketua
+		:mod (m/mpr
+		:mod (r/ri
+			: o/orang
+			    :nama (n/nama
+				:op1 “Zulkifli”
+				:op2 “Hasan”))))
+	:ARG1 (d/dirinya
+		:mod (p1/pelaksanaan
+			:ARG1 (d/dan
+				:op1 (p2/pemilihan
+					:mod (p3/presiden
+				:time ( d / date-entity 
+					:tahun 2019))
+		:op2 (p4/pemilihan
+			:mod (k/kepala
+			:mod (d/daerah
+			:mod (t/tahun ini
+				:ARG1 (d/dan
+						:op1 (a/aman
+						:op2 (d/damai
+						:op3 k/kualitas))))
+--------------------
+Calon gubernur Riau di Pilkada 2018 Syamsuar menyatakan bakal menghibahkan aset tanah milik Pemerintah Riau untuk pembangunan pasar tradisional Cik Puan, Pekanbaru, jika terpilih dalam pemilihan gubernur Riau. Hal ini diungkapkan Syamsuar saat menggelar kampanye dialogis bersama pedagang Pasar Cik Puan, Pekanbaru.
+
+--------------------
+Komisi Pemilihan Umum Sumatra Utara menyatakan JR Saragih tetap tidak memenuhi syarat sebagai calon gubernur Pilkada Sumut.
+
+(n/nyata
+	:ARG0 (k/komisi
+		:mod (p/pemilihan
+		:mod (u/umum
+	:location ( o / province
+		:name ( n / name 
+			:op1 “Sumatra”
+			:op2 “Utara” ))))
+	:ARG1 (o/orang
+		:nama (n/nama)
+			:op1 “JR
+			:op2 “Saragih”))
+
+		:mod (p/penuh
+		:mod (s/syarat
+		:polarity -)
+			:mod (c/calon
+			:mod (g/gubernur
+			:mod (p/pilkada))))
+	     : location ( p / province
+		:name ( n / name 
+			:op1 “Sumut”)))
+--------------------
+KPU tetap menyatakan paslon JR Saragih-Ance tidak memenuhi syarat. Sebab, hasil legalisasi terhadap fotokopi ijazah SMA JR Saragih tidak dilaksanakan sebagaimana amar putusan Bawaslu Sumut.
+
+--------------------
+Politikus golkar Bamsoet menambahkan, "Pelantikan sudah sesuai dengan UU MD3 yang resmi berlaku pada tanggal 15 Maret lalu. Tidak ada alasan bagi Pimpinan Dewan untuk tidak segera melakukan pelantikan," imbuh politikus Golkar itu.
+
+--------------------
+Sementara itu, Kapolrestabes Medan Kombes Dadang Hartanto menambahkan, banyaknya personel yang diturunkan untuk memastikan proses pemeriksaan JR Saragih berlangsung aman.
+
+--------------------
+Faisal menambahkan, "SBY harus memberi teguran atau sanksi. Apalagi komando satgas adalah AHY. Bagaimana dia mensupervisi ini?" 
+
+--------------------
+Zaenudin menambahkan, "Jadi status tersangka tidak bisa dijadikan alasan untuk proses penggantian calon. Dan, penggantian calon selambat-lambatnya bisa dilakukan 30 hari sebelum coblosan".
+
+--------------------
+Yaqut menambahkan, secara personal, kadernya memiliki hak politik untuk menentukan pilihannya.
+
+--------------------
+Pasangan Syahri Mulyo yakni Maryoto Birowo menambahkan sedikit pernyataan koleganya.
+
+(t / tambah
+        :ARG0 (s / syahri mulyo
+        :ARG1 (o / orang
+                   : name (n / name
+                             :op1 “Maryoto”
+                             :op2 “Birowo”))
+                    :mod ( p / pernyataan koleganya)))
+
+--------------------
+Anggota tim advokasi pasangan Hasanah, Tugu Hutagalung menambahkan, kampanye yang oleh pasangan Asyik di RSUD Sekarwangi Sukabumi melanggar PKPU Nomor 4 tahun 2017 pasal 69.
+
+--------------------
+Kepala PPATK Kiagus Ahmad Badaruddin menambahkan dari temuan itu akan diperdalam atau dibagi-bagi lagi mana yang benar-benar tindak pidana.
+
+(t/tambah
+	:ARG0 (k/kepala
+		:mod (p/ppatk
+			: o/orang
+			      : nama(n/nama
+					:op1 “Kiagus”
+					:op2 “Ahmad”
+					:op3 “Badaruddin”))))
+	:ARG1 (a/atau)
+		:op1 (t/temuan
+			:mod (d/dalam
+		:op2 (b/bagi
+			:mod (b/benar
+			:mod (t/tindak
+			:mod (p/pidana))))
+--------------------
+Wakil Kepala PPATK Dian Ediana Rae menambahkan dari total 1.119 laporan aliran dana mencurigakan itu, ada beberapa transaksi yang jumlahnya mencapai puluhan miliar rupiah.
+
+--------------------
+Kapolri Jenderal Tito Karnavian menambahkan, pihaknya bersama TNI akan melakukan sosialisasi secara berkesinambungan untuk mempersiapkan pesta demokrasi.
+
+(t/tambah)
+	:ARG0 (k/kapolri
+		:mod (J/jendera;
+			:o/orang
+				:nama (n/nama
+					:op1 “Tito”
+					:op2 “Karnavian”))))
+	:ARG1 (t/tni
+		:mod (l/laku
+		:mod (s1/sosialisasi
+		:mod (s2/sinambung
+		:mod (s3/siap
+			:mod (p/pesta
+			:mod (d/demokrasi)))))
+--------------------
+Oded menambahkan masyarakat akan didorong belanja ke warung tersebut. Untuk memotivasi warga, harga barang di warung itu akan lebih murah.
+
+--------------------
+Syafrudin menambahkan, proyeksi daftar pemilih tetap akan menurun dari target 1,8 juta jiwa.
+
+( t1/ tambah
+	:ARG0 (s/ syafrudin
+	:ARG1 (p1 / proyeksi
+		:mod (d /daftar
+		:mod ( p2/ pemilih
+		:mod ( t2 / tetap
+		:mod ( t3 / target
+			:mod ( t / temporal-quantity
+				:quant 1.8 juta 
+				:unit ( j / jiwa )))
+
+Gus Ipul menambahkan, untuk mengekspor brem, butuh inovasi kemasan dan varian rasa brem. Dengan demikian brem dengan berbagai aneka rasa dan kemasan bagus dapat diterima di pasar luar negeri.
+
+--------------------
+Gogot menambahkan, pada debat kali ini, KPUD Jatim menyediakan waktu 90 menit untuk kedua pasangan calon yang berkompetisi di Pilgub Jatim 2018 mengemukakan gagasan masing-masing.
+
+--------------------
+Gogot menambahkan, materi debat publik pertama pada kontestasi Pilgub Jatim 2018 disusun oleh empat panelis yang terdiri dari tiga akademisi dan satu praktisi.
+
+--------------------
+Syukran menambahkan, Yayasan Al Ma'ruf didirikan dengan semangat dan dasar pendidikan Islam. Karena itu, yayasan ini bukan untuk kepentingan politik maupun wadah saling melempar fitnah dan ujaran kebencian di antara sesama.
+
+--------------------
+Zudan menambahkan, untuk memudahkan pemilih,
+
+( t / tambah)
+	:ARG0 (z/ zudan
+	:ARG1 (m/ mudah
+		:mod (p / pemilih)))
+
+
+Dinas Dukcapil akan melakukan pelayanan rekam data KTP-el pada akhir pekan dan hari libur.
+
+(l / laku)
+	:ARG0 (d / dinas dukcapil)
+	:ARG1 (l/ layan)
+		:mod ( r/ rekam
+		:mod (d / data
+			:mod (k / ktp-el)))
+				ARG1 (d/ dan
+					:op1 (a /akhir pekan
+					:op2 (h / hari libur)))
+
+
+Viryan menambahkan jumlah tersebut masih bisa bertambah.
+
+(t / tambah
+        :ARG0 (v / viryan
+        :ARG1 (j / jumlah)
+                 :mod ( b / bertambah)))
+
+Ketua IKA Unpad Hikmat Kurnia menambahkan, diskusi interaktif itu mengusung tema “Ngaruwat Kandidat Keur Ngarawat Jawa Barat”.
+
+--------------------
+Nina menambahkan, "Kemarin kami membuat bank pertanyaan dan kita intisarikan jadi empat pertanyaan yang bisa mengakomodir seluruh pertanyaan. Semua hasil rumusan panelis".
+
+(t/tambah)
+	:ARG0 (n/nina
+	:ARG1 (b/buat
+		:ARG0 (k/kami
+		:ARG1 (d/dan
+			:op1 (b/bank
+				:mod (p/pertanyaan
+			:op2 (i/intisari
+				:mod (e/empat
+				:mod (p/pertanyaan)))))
+		:mod (a/akomodir)
+			:mod (p/pertanyaan)
+		:mod (r/rumus)
+			:mod (p/panelis)))
+
+
+Hevy menambahkan, “Nanti setelah mendaftar, keluarga yang mengantar atau anggota TPS akan menuntun menuju bilik suara. Tapi meeka tidak boleh berada di situ. Tugas mereka hanya mengantar”.
+
+--------------------
+Penyandang tuna netra lain, Lilik menambahkan, “Tadi diberi petunjuk, nanti ada kolomnya. Yang kiri nomor satu, yang kanan nomor dua”.
+
+--------------------
+Syafridah menambahkan, lembaganya juga menyerahkan kasus tersebut kepada KASN. Sebab, kata dia, mekanisme penjatuhan rekomendasi sanksi bagi ASN yang tidak netral menjadi kewenangan Komisi.
+
+--------------------
+Sementara itu Ketua DPW PKB Jawa Tengah, KH Yusuf Chudlori menambahkan, kemenangan PKB adalah langkah melindungi madrasah diniyah, dan juga pondok pesantren.
+
+--------------------
+Pramono menambahkan, "Orang yang parkir dananya dan aset di luar negeri itu? segera bisa dimanfaatkan untuk pembangunan di Indonesia".
+
+--------------------
+Boedi menambahkan, "Kemudian, disusul pasangan kedua Mahyuddin-M. Ridwan dengan partai pengusung Gerindra, dan PKS, dan pasangan ketiga Dewi-Pabrisal dengan partai pengusung Nasdem dan Hanura".
+
+--------------------
+Panwaslu Kota Pariaman, Elmahmudi, menambahkan, "Kemudian terkait dengan teknis dan mekanisme penerimaan verifikasi dan penelitian berkas oleh panwaslu dan KPU kota Pariaman akan selalu berkoordinasi secara berkelanjutan".
+
+--------------------
+Waketum Gerindra Sufmi Dasco Ahmad menambahkan, "Karena dia secara internal tahu ini bahwa ini sedang dukungan-dukungan lalu kemudian kita sedang menunggu juga pak Prabowo".
+
+--------------------
+Girindra menambahkan, kesulitan akan bertambah, jika suara parpol-parpol tersebut tersedot oleh parpol baru di sejumlah 'basis teritorial'. Partai Garuda, Perindo dan Partai Berkarya berpotensi menarik suara Partai Golkar, Demokrat dan Gerindra. Demikian pula halnya PBB yang dimungkinkan menggaet massa PKB atau PPP. Sementara Partai Solidaritas Indonesia yang juga tidak mustahil berpengaruh terhadap suara PDIP.
+
+--------------------
+Oleh karena itu, Girindra menambahkan, parpol yang sudah mempunyai atau yang akan mengajukan calon presiden untuk membangun koalisi sesegera mungkin.
+
+--------------------
+Syapril menjelaskan, berdasarkan hasil pleno rekapitulasi di tingkat provinsi diperoleh data pemilih Pilkada 2018, yakni 166 kecamatan, 1.859 desa, 12.054 TPS, 1.868.003 pemilih laki-laki, 1.808.323 pemilih perempuan, dan jumlah 3.676.326 pemilih di dalam DPS.
+
+--------------------
+Margiono menjelaskan bahwa distribusi pupuk memang menjadi persoalan utama para petani di Tulungagung.
+
+( j / jelas)
+	:ARG0 (m / margiono
+	:ARG1 (d/ distribusi
+		:mod (p / pupuk
+		:mod (j /jadi
+			:mod (s / soal
+			:mod (u / utama
+			:mod ( p / petani
+				:location ( t / tempat
+					:name ( n / name 
+						:op1 “Tulungagung”))))
+-------------------------------------------------------------------------------------------------------------------------------
+Sandiaga menjelaskan selama beberapa hari ke depan akan melakukan kampanye bersama pasangan calon Sudirman Said dan Ida Fauziah karena Sandiaga ditugaskan secara langsung oleh Ketua Umum Partai Gerindra, Prabowo Subianto.
+
+--------------------
+Sama seperti Jaksa Agung, Tito menjelaskan proses hukum tetap akan dilaksanakan setelah pemungutan suara dan hasil pemilu diketahui.
+
+--------------------
+Priyo menjelaskan "Hari ini hancur itu, masyarakat kita gampang tersulut amarah karena persoalan gesekan politik dan sosial. Antarpemimpin harus bertanggung jawab, pemimpinlah yang harus merubahnya".
+
+--------------------
+Kepala PPATK Kiagus Ahmad Badaruddin menjelaskan transaksi mencurigakan lainnya, yakni diduga mendapatkan uang itu dari hasil kejahatan atau upaya dari hasil kejahatan. Serta, ada upaya memecah transaksi hingga masuk dalam kategori keuangan bisa.
+
+--------------------
+Ketua Badan Pengawas Pemilu Jawa Tengah, Fajar Saka menjelaskan, dalam ketentuan, kepala desa dilarang ikut kampanye, seperti halnya TNI, Polri, dan Aparatur Sipil Negara.
+
+--------------------
+Airlangga enggan menjelaskan maksud pernyataannya "Yang namanya di politik semuanya boleh saja muncul. Tapi yang paling penting, salam empat jari. Yang penting 'pat gulipat, siapa cepat, dia dapat".
+
+--------------------
+Gus Ipul menjelaskan, "Ternyata brem ini diminati orang di sana. Dan tentunya ini menjadi peluang bagi Madiun untuk mengekspor ke luar negeri".
+
+( j / jelas
+	:ARG0 (o/orang
+			:nama (n/nama
+				:op1 “gus”
+				:op2 “ipul”)))
+	:ARG1 (m/minat
+		:ARG0 (b/brem
+		:ARG1 (d/dan
+			:op1 (m/minat
+			:op2 (p/peluang
+	      :location ( k / kota
+		:name ( n / name 
+			:op1 “Madiun”)))
+				:mod (e/ekspor
+					:mod (l/luar
+					:mod (n/negeri)))))
+
+
+Iing menjelaskan, acara debat akan dilaksanakan sebanyak tiga kali.
+
+( j / jelas)
+	:ARG0 ( l / ling
+	:ARG1 ( a / acara
+		:mod ( d / debat
+		: mod ( l / laksana
+		: mod ( t / tiga kali)))))
+-------------------------------------------------------------------------------------------------------------------------------
+Ridlo menjelaskan, cara melaporkannya pun mudah.
+( j/ jelas
+	:ARG0 ( r /ridlo)
+	:ARG1 (l / lapor
+		:mod (m / mudah)
+
+
+Pelapor cukup membuka situs resmi Dewan Pers yakni www.dewanpers.or.id.
+
+( b / buka)
+	:ARG0 (p / pelapor
+	:ARG1 ( s /situs
+		:mod (d/ dewan
+		:mod (p /pers
+			:ARG1 (w / www.dewanpers.or.id)))))
+-------------------------------------------------------------------------------------------------------------------------------
+Bin menjelaskan, bahwa responden asal Pantura sebanyak 21,3 persen, meliputi Kabupaten Cirebon, Kota Cirebon, Kabupaten Indramayu dan Kabupaten Kuningan.
+
+( j / jelas
+	:ARG0 (b / bin
+	:ARG1 ( r/ respon
+		:ARG1 (p / pantura
+	 :mod (  p / percentage-entity 
+	:value 21.3 ))
+		:location ( k1 / kabupaten
+			:name ( n / name 
+				:op1 “Cirebon”)))
+:location ( k2 / kota
+			:name ( n / name 
+				:op1 “Cirebon”)))
+:location ( k3 / kabupaten
+			:name ( n / name 
+				:op1 “Indramayu”)))
+:location ( k4 / kabupaten
+			:name ( n / name 
+				:op1 “Kuningan”)))
+-------------------------------------------------------------------------------------------------------------------------------
+Kiai Amirudin menjelaskan, NU hadir berfungsi sebagai penengah dalam negara ini.
+
+( j / jelas)
+	:ARG0 ( k / kiai amirudin)
+	:ARG1 ( h / hadir)
+		:ARG0 ( n1/ nu)
+		:ARG1 (f/ fungsi)
+			:mod (t / tengah
+			:mod ( n2/ negara
+			:mid (i / ini)))
+----------------------------------------------------------------------------------------------------------------------------
+Zudan menjelaskan, hak memilih dalam Pilkada merupakan sepenuhnya milik masyarakat.
+
+( j /jelas
+	:ARG0 (z /zudan)
+	:ARG1 (p1 / pilih)
+		:ARG1 (h / hak)
+			:mod (p2 / pilkada
+				:mod (r / rupa
+				:mod (p3 / penuh
+				:mod ( m1 / milik
+				:mod ( m2 / masyarakat)))))
+------------------------------------------------------------------------------------------------------------------------------
+Hikmat menjelaskan, MIMPI merupakan kerja sama antara IKA Unpad dan KPU Provinsi Jawa Barat.
+
+( j/ jelas
+	:ARG0 (h / hikmat)
+	:ARG1 (r / rupa
+		:ARG0 (m / mimpi
+		:ARG1 ( d/ dan
+			:op1 ( i/ ika
+				:mod (u / unpad))
+			:op2 (k / kpu
+	     :location ( p / province
+		 :name ( n / name 
+			:op1 “Jawa”
+			:op2 “barat” ))))
+-------------------------------------------------------------------------------------------------------------------------------
+Sementara itu, Ketua KPU Kabupaten Magelang Afiffudin menjelaskan, debat publik ini merupakan fasilitas kampanye dari KPU kepada dua paslon untuk menyampaikan program, visi, dan misi supaya diketahui masyarakat.
+
+--------------------
+Afif menjelaskan, "Dari debat publik ini diharapkan masyarakat akan bisa mencerna, mencermati program, visi dan misi paslon, sehingga pada saat pencoblosan nanti dapat menentukan pilihannya sesuai dengan harapan dan hati nurani".
+
+--------------------
+Asrar menjelaskan, paslon tunggal yang ikut Pilkada harus memperoleh suara 50 persen+1 saat pemilihan.
+
+--------------------
+Ketua KPU Arif Budiman menjelaskan, nantinya setiap peserta pemilu, baik calon legislator, calon presiden dan calon wakil presiden harus mendaftarkan satu akunnya di satu media sosial kepada KPU.
+
+--------------------
+Hudri menjelaskan, “Misalnya Komisioner divisi program dan data, ya agak kelabakan mengurusi administrasi karena tidak ada Kasubbagnya. Kondisi ini membuat kinerja kami kurang maksimal, namun kami tetap bekerja semaksimal mungkin”.
+
+--------------------
+Rusidi menjelaskan kasus ini berawal dari temuan Panitia Pengawas Lapangan.
+
+(j / jelas
+	:ARG0 ( r/ rusidi)
+	:ARG1 (k / kasus)
+		:mod (t /temu
+		:mod ( p1 / panitia
+		:mod (p2 / pengawas
+		:mod (l / lapangan)))
+-------------------------------------------------------------------------------------------------------------------------------
+Rusidi menjelaskan, "Fokus kami saat ini adalah kepada kedua tersangka".
+
+( j / jelas)
+	:ARG0 ( r / rusidi
+	:ARG1 ( f / focus
+		:ARG0 ( k/ kami
+		:ARG1 ( t / tersangka))))
+------------------------------------------------------------------------------------------------------------------------------
+Yandri Susanto menjelaskan, "Bisa saja mereka bertemu dan banyak membicarakan banyak hal. Serta mendoakan Indonesia yang terbaik untuk Indonesia".
+
+( j / jelas)
+	:ARG0 (o / orang
+		Name (n / name
+			:op1 “Yandri”
+			:op2 “Susanto”))
+	:ARG1 (b / bisa
+		:ARG0 (m / mereka
+		:ARG1 (d/dan
+			:op1 (t/ temu
+			:op2 (b/bicara
+				:mod (b/banyak
+				:mod (h/hal)))
+			:mod (d/ doa)
+			:mod (I / Indonesia
+			:mod (b/ baik
+				:mod (I/Indonesia))))
+
+Fadli juga menjelaskan hubungan yang dibangun PAN dan PKS selama ini sudah cukup solid.
+
+(j / jelas
+	:ARG0 (f/ fadli
+	:ARG1 ( h / hubungan
+		:mod (b / bangun)))
+			:ARG1 (d /dan
+				:op1 (p/pan)
+				:op2 (p/pks)
+					:mod (s / solid)
+
+
+Eko menjelaskan, metode yang digunakan dalam survei ini adalah random sampling atau sampel acak. Lembaganya menempatkan 47 relawan yang bertugas di 47 tempat pemungutan suara yang tersebar pada 23 kecamatan di Kabupaten Bekasi.
+
+--------------------
+Andi menjelaskan, keunggulan calon petahana itu terjadi pada hampir seluruh kecamatan di Maluku Tengah.
+
+(j / jelas
+	:ARG0 (a/ andi)
+	:ARG1 ( u /unggul)
+		:mod (c/calon
+		:mod (p/ petahana
+:location ( k / kecamatan
+		:name ( n / name 
+			:op1 “Maluku”
+			:op2 “Tengah” ))))
+
+
+Yatarullah menjelaskan, Surat Keputusan Penetapan pasangan Aziz-Catur ini akan segera diteruskan kepada DPRD Kampar untuk diusulkan kepada Mendagri untuk Pengangkatan Bupati dan Wakil Bupati Kampar periode 2017 - 2022.
+
+--------------------
+Setelah itu, Ketua KPU menjelaskan dengan ditetapkannya para balon tersebut menjadi calon, maka semua aturan yang berhubungan dengan calon harus sama-sama dipatuhi.
+
+--------------------
+Komisioner KPU Sumatra Utara Benget Silitonga menjelaskan dokumen yang diserahkan oleh JR Saragih merupakan dokumen Surat Keterangan Pengganti Ijazah sehingga KPU Sumut menilai itu tidak sesuai sebagaimana amar putusan Bawaslu.
+
+--------------------
+Benget menjelaskan, “Amar putusannya kan sudah jelas, dan tidak perlu diutafsirkan lagi sehingga kami melihat bahwa dokumen atau fotokopi SKPI itu bukanlah pelaksanaan putusan Bawaslu. Kami kemudian menyampaikan bahwa yang bersangkutan tak memenuhi syarat sebagai calon kepala daerah”.
+
+--------------------
+Quality control dilakukan terhadap hasil wawancara, yang dipilih secara random sebesar 20 persen dari total sampel.
+
+(l/ laku)
+	:ARG0 (q / quality control
+	:ARG1 (w /wawancara
+		:mod (p / pilih
+		:mod (r/random)))
+	:mod (  p / percentage-entity 
+	      :value 20 ))
+			:mod (s/ sampel)
+
+pasangan Ridwan-Uu Ruzhanul melakukan Strategi kampanye guna menggaet pemilih milenial terbilang cukup beragam.
+
+--------------------
+Margiono dan Syahri Mulyo melakukan hampir semua komunikasi.
+
+(l / laku
+        :ARG0 (d / dan
+                :op1 ( o / orang
+                        :name ( n / nama 
+                                 :op1 "Margiono"))
+                :op2 (o / orang 
+                        :name ( n / nama
+                                  :op1 "Syahri"
+                                  :op2 "Mulyo" ) )
+        :ARG1 ( k / komunikasi ))
+-------------------------------------------------------------------------------------------------------------------------------
+

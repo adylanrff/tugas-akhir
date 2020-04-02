@@ -1,0 +1,2767 @@
+# ::id 2
+# ::snt JR Saragih lalu menaiki podium yang disediakan para pendukungnya yang begitu setia menunggu di halaman gedung.
+# ::tokens ["JR", "Saragih", "lalu", "menaiki", "podium", "yang", "disediakan", "para", "pendukungnya", "yang", "begitu", "setia", "menunggu", "di", "halaman", "gedung", "."]
+# ::lemmas ["jr", "saragih", "lalu", "naik", "podium", "yang", "sedia", "para", "dukung", "yang", "begitu", "setia", "tunggu", "di", "halaman", "gedung", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "PROPN", "PRON", "VERB", "DET", "NOUN", "PRON", "ADV", "ADJ", "VERB", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(n1 / naik
+      :ARG0 (p1 / person
+            :name (n2 / nama
+                  :op1 "JR Saragih"))
+      :ARG1 (p2 / podium
+            :ARG0 (p3 / person
+                  :ARG0-of (d / dukung)
+                  :ARG1-of (t / tunggu)
+                  :location (h / halaman
+                        :mod (g / gedung))
+                  :mod (s2 / setia))
+            :ARG1-of (s1 / sedia)))
+
+# ::id 3
+# ::snt Kapolri Jenderal Tito Karnavian akan terjun ke berbagai daerah, terutama daerah yang tengah melaksanakan proses Pilkada serentak 2018.
+# ::tokens ["Kapolri", "Jenderal", "Tito", "Karnavian", "akan", "terjun", "ke", "berbagai", "daerah", ",", "terutama", "daerah", "yang", "tengah", "melaksanakan", "proses", "Pilkada", "serentak", "2018", "."]
+# ::lemmas ["kapolri", "jenderal", "tito", "karnavian", "akan", "terjun", "ke", "bagai", "daerah", "", "utama", "daerah", "yang", "tengah", "laksana", "proses", "pilkada", "serentak", "2018", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "ADV", "VERB", "ADP", "DET", "NOUN", "PUNCT", "ADV", "NOUN", "PRON", "ADJ", "VERB", "NOUN", "PROPN", "ADP", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "EVT"]
+(m / multi-sentence
+      :snt1 (t / terjun
+            :ARG0 (p1 / person
+                  :name (n / nama
+                        :op1 "Tito"
+                        :op2 "Karnavian"))
+            :ARG4 (d1 / daerah
+                  :quant (b / banyak)))
+      :snt2 (d2 / daerah
+            :ARG0-of (l / laksana)
+            :ARG1 (p2 / pilkada
+                  :time (d3 / date-entity
+                        :year 2018))))
+
+# ::id 5
+# ::snt Kader harus fokus untuk memenangkan Pilkada Jatim dan Pilkada serentak 2018.
+# ::tokens ["Kader", "harus", "fokus", "untuk", "memenangkan", "Pilkada", "Jatim", "dan", "Pilkada", "serentak", "2018", "."]
+# ::lemmas ["kader", "harus", "fokus", "untuk", "menang", "pilkada", "jatim", "dan", "pilkada", "serentak", "2018", ""]
+# ::pos_tags ["PROPN", "ADV", "VERB", "ADP", "VERB", "PROPN", "PROPN", "CCONJ", "PROPN", "ADP", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "ORG", "NOR", "O", "ORG", "LOC", "EVT"]
+(f / fokus
+      :ARG0 (k / kader)
+      :ARG1 (m / menang
+            :ARG1 (a / and
+                  :op1 (p1 / Pilkada
+                        :location (p2 / provinsi
+                              :name (n / nama
+                                    :op1 "Jatim"))))
+            :op2 (p3 / Pilkada
+                  :time (d / date-entity
+                        :year 2018))))
+
+# ::id 8
+# ::snt Apalagi Prabowo berangkat belakangan dari Eropa.
+# ::tokens ["Apalagi", "Prabowo", "berangkat", "belakangan", "dari", "Eropa", "."]
+# ::lemmas ["apalagi", "prabowo", "berangkat", "belakang", "dari", "eropa", ""]
+# ::pos_tags ["SCONJ", "PROPN", "VERB", "NOUN", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "PER", "O", "O", "O", "LOC"]
+(b / berangkat
+      :ARG0 (p / person
+            :name (n1 / nama
+                  :op1 "Prabowo"))
+      :ARG3 (c / continent
+            :name (n2 / nama
+                  :op1 "Eropa")))
+
+# ::id 9
+# ::snt Amien Rais berangkat lebih dulu dari Indonesia.
+# ::tokens ["Amien", "Rais", "berangkat", "lebih", "dulu", "dari", "Indonesia", "."]
+# ::lemmas ["amien", "rais", "berangkat", "lebih", "dulu", "dari", "indonesia", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "ADV", "ADV", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O"]
+(b / berangkat
+      :ARG0 (p / person
+            :name (n1 / nama
+                  :op1 "Amien"
+                  :op2 "Rais"))
+      :ARG3 (c / country
+            :name (n2 / nama
+                  :op1 "Indonesia")))
+
+# ::id 10
+# ::snt Ketum PDIP Megawati Soekarno Putri menandatangani Surat keputusan dari PDIP
+# ::tokens ["Ketum", "PDIP", "Megawati", "Soekarno", "Putri", "menandatangani", "Surat", "keputusan", "dari", "PDIP"]
+# ::lemmas ["tum", "pdip", "megawati", "soekarno", "putri", "menandatangani", "surat", "putus", "dari", "pdip"]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "ADP", "PROPN"]
+# ::ner_tags ["ORG", "NOR", "O", "PER", "O", "O", "O", "O", "O", "GPE"]
+(t / tanda-tangan
+      :ARG0 (p1 / person
+            :ARG0-of (j / jabat
+                  :ARG1 (o / organization
+                        :name (n1 / nama
+                              :op1 "PDIP"))
+                  :ARG3 (k / ketum))
+            :name (n2 / nama
+                  :op1 "Megawati"
+                  :op2 "Soekarno"
+                  :op3 "Putri"))
+      :ARG1 (s / surat
+            :mod (p2 / putus)
+            :mod (d / dari
+                  :op1 o)))
+
+# ::id 11
+# ::snt Kepala Sudin bernama Subaedah menandatangani SKPI pada 9 Maret 2018.
+# ::tokens ["Kepala", "Sudin", "bernama", "Subaedah", "menandatangani", "SKPI", "pada", "9", "Maret", "2018", "."]
+# ::lemmas ["kepala", "sudin", "nama", "subaedah", "menandatangani", "skpi", "pada", "9", "maret", "2018", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PROPN", "VERB", "PROPN", "ADP", "NUM", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "PER", "O", "ORG", "O", "DAT", "O", "TIM"]
+(t / tanda-tangan
+      :ARG0 (p / person
+            :ARG0-of (j / jabat
+                  :ARG1 (o / organization
+                        :name (n1 / nama
+                              :op1 "Sudin"))
+                  :ARG3 (k / kepala)))
+      :ARG1 (s / surat
+            :name (n3 / nama
+                  :op1 "SKPI"))
+      :name (n2 / nama
+            :op1 "Subaedah")
+      :time (d / date-entity
+            :day 9
+            :month 3
+            :year 2018))
+
+# ::id 12
+# ::snt Tiga orang berinisial CDR, MAX, dan YRN sudah dua kali mengedarkan uang palsu, dengan nilai transaksi pertama mencapai Rp 250 juta.
+# ::tokens ["Tiga", "orang", "berinisial", "CDR", ",", "MAX", ",", "dan", "YRN", "sudah", "dua", "kali", "mengedarkan", "uang", "palsu", ",", "dengan", "nilai", "transaksi", "pertama", "mencapai", "Rp", "250", "juta", "."]
+# ::lemmas ["tiga", "orang", "inisial", "cdr", "", "max", "", "dan", "yrn", "sudah", "dua", "kali", "edar", "uang", "palsu", "", "dengan", "nilai", "transaksi", "pertama", "capai", "rp", "250", "juta", ""]
+# ::pos_tags ["NUM", "NOUN", "VERB", "PROPN", "PUNCT", "PROPN", "PUNCT", "CCONJ", "PROPN", "ADV", "NUM", "NOUN", "VERB", "NOUN", "NOUN", "PUNCT", "ADP", "NOUN", "NOUN", "ADJ", "VERB", "PROPN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["CRD", "O", "O", "ORG", "O", "O", "PER", "O", "CRD", "O", "O", "O", "O", "O", "O", "O", "CRD", "O", "MON", "O", "QTY"]
+(e / edar
+      :ARG0 (a / and
+            :op1 (p1 / person
+                  :name (n1 / nama
+                        :op1 "CDR"))
+            :op1 (p2 / person
+                  :name (n2 / nama
+                        :op1 "MAX"))
+            :op1 (p3 / person
+                  :name (n3 / nama
+                        :op1 "YRN")))
+      :ARG1 (u / uang
+            :mod (p4 / palsu))
+      :mod (n4 / nilai
+            :mod (t / transaksi
+                  :mod (o / ordinal-entity
+                        :value 1))
+            :quant 250000000
+            :unit (r / rupiah))
+      :quant 2)
+
+# ::id 13
+# ::snt Sekitar awal pekan lalu, beredar sebuah rekaman yang diduga merupakan suara salah seorang pejabat di Dinas Pendidikan Sumatera Utara.
+# ::tokens ["Sekitar", "awal", "pekan", "lalu", ",", "beredar", "sebuah", "rekaman", "yang", "diduga", "merupakan", "suara", "salah", "seorang", "pejabat", "di", "Dinas", "Pendidikan", "Sumatera", "Utara", "."]
+# ::lemmas ["sekitar", "awal", "pekan", "lalu", "", "edar", "buah", "rekam", "yang", "duga", "rupa", "suara", "salah", "orang", "jabat", "di", "dinas", "didik", "sumatera", "utara", ""]
+# ::pos_tags ["ADP", "ADJ", "NOUN", "ADJ", "PUNCT", "VERB", "DET", "NOUN", "PRON", "VERB", "VERB", "NOUN", "DET", "DET", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NOR", "O", "O", "LOC"]
+(e / edar
+      :ARG1 (r / rekaman
+            :mod (s / suara
+                  :mod (p1 / person
+                        :ARG0-of (j / jabat
+                              :ARG1 (o / organization))
+                        :location (p2 / provinsi
+                              :name (n2 / nama
+                                    :op1 "Sumatera"
+                                    :op2 "Utara"))
+                        :name (n1 / nama
+                              :op1 "Dinas"
+                              :op2 "Pendidikan"))))
+      :time (p3 / pekan
+            :mod (a / awal
+                  :mod (l / lalu))))
+
+# ::id 21
+# ::snt Namun, Golkar belum membahas siapa calon wakil presiden pendamping Jokowi.
+# ::tokens ["Namun", ",", "Golkar", "belum", "membahas", "siapa", "calon", "wakil", "presiden", "pendamping", "Jokowi", "."]
+# ::lemmas ["namun", "", "golkar", "belum", "bahas", "siapa", "calon", "wakil", "presiden", "damping", "jokowi", ""]
+# ::pos_tags ["SCONJ", "PUNCT", "PROPN", "ADV", "VERB", "PRON", "NOUN", "NOUN", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "ORG"]
+(c1 / contrast
+      :ARG0 (o / organization
+            :name (n1 / nama
+                  :op1 "Golkar"))
+      :ARG1 (p1 / presiden
+            :mod (c2 / calon)
+            :mod (w / wakil)
+            :mod (p2 / person
+                  :ARG0-of (d / damping)
+                  :ARG1 (p3 / person
+                        :name (n2 / nama
+                              :op1 "Jokowi"))))
+      :ARG2 (b / bahas)
+      :polarity -)
+
+# ::id 22
+# ::snt Sekretaris Jenderal PDI Perjuangan Hasto Kristiyanto dan sejumlah kader PDIP menyambangi kantor Dewan Pimpinan Pusat Partai Golkar di Slipi, Jakarta Barat.
+# ::tokens ["Sekretaris", "Jenderal", "PDI", "Perjuangan", "Hasto", "Kristiyanto", "dan", "sejumlah", "kader", "PDIP", "menyambangi", "kantor", "Dewan", "Pimpinan", "Pusat", "Partai", "Golkar", "di", "Slipi", ",", "Jakarta", "Barat", "."]
+# ::lemmas ["sekretaris", "jenderal", "pdi", "juang", "hasto", "kristiyanto", "dan", "jumlah", "kader", "pdip", "sambang", "kantor", "dewan", "pimpin", "pusat", "partai", "golkar", "di", "slip", "", "jakarta", "barat", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "CCONJ", "DET", "NOUN", "PROPN", "VERB", "NOUN", "PROPN", "NOUN", "PROPN", "PROPN", "PROPN", "ADP", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "O", "PER", "O", "O", "O", "ORG", "O", "O", "NOR", "O", "O", "O", "PER", "O", "ORG", "NOR", "PER"]
+(s1 / sambang
+      :ARG0 (a / and
+            :ARG0-of (j1 / jabat
+                  :ARG1 (o / organization
+                        :name (n2 / nama
+                              :op1 "PDI"))
+                  :ARG3 (s2 / sekretaris
+                        :mod (j2 / jendral)))
+            :op1 (p1 / person
+                  :name (n1 / nama
+                        :op1 "Hasto"
+                        :op2 "Kristiyanto"))
+            :op2 (p2 / person
+                  :mod (k1 / kader)
+                  :quant (j3 / jumlah)))
+      :ARG1 (k2 / kantor
+            :name (n3 / nama
+                  :location (c / city
+                        :name (n4 / nama
+                              :op1 "Slipi"
+                              :op2 "Jakarta"
+                              :op3 "Barat"))
+                  :op1 "Dewan"
+                  :op2 "Pimpinan"
+                  :op3 "Pusat"
+                  :op4 "Partai"
+                  :op5 "Golkar")))
+
+# ::id 25
+# ::snt Dalam beberapa tahun terakhir, destinasi desa wisata di Lombok mengalami geliat yang cukup menggembirakan.
+# ::tokens ["Dalam", "beberapa", "tahun", "terakhir", ",", "destinasi", "desa", "wisata", "di", "Lombok", "mengalami", "geliat", "yang", "cukup", "menggembirakan", "."]
+# ::lemmas ["dalam", "beberapa", "tahun", "akhir", "", "destinasi", "desa", "wisata", "di", "lombok", "alami", "geliat", "yang", "cukup", "gembira", ""]
+# ::pos_tags ["ADP", "DET", "NOUN", "ADJ", "PUNCT", "NOUN", "NOUN", "NOUN", "ADP", "PROPN", "VERB", "NOUN", "PRON", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "PRD", "O", "O", "GPE", "O", "O", "O", "O", "O"]
+(a / alam
+      :ARG0 (d1 / destinasi
+            :ARG1 (g1 / geliat
+                  :mod (g2 / gembira
+                        :mod (c2 / cukup)))
+            :location (c1 / city
+                  :name (n / nama
+                        :op1 "Lombok"))
+            :mod (d2 / desa
+                  :mod (w / wisata))
+            :time (t2 / tahun
+                  :mod (b / beberapa))))
+
+# ::id 26
+# ::snt Namun, jumlah data DPT yang saat ini tercatat masih mungkin mengalami perubahan.
+# ::tokens ["Namun", ",", "jumlah", "data", "DPT", "yang", "saat", "ini", "tercatat", "masih", "mungkin", "mengalami", "perubahan", "."]
+# ::lemmas ["namun", "", "jumlah", "data", "dpt", "yang", "saat", "ini", "catat", "masih", "mungkin", "alami", "ubah", ""]
+# ::pos_tags ["SCONJ", "PUNCT", "NOUN", "NOUN", "PROPN", "PRON", "NOUN", "DET", "VERB", "ADV", "ADV", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(c1 / contrast
+      :ARG0 (d / data
+            :ARG1-of (c2 / catat)
+            :name (n / nama
+                  :op1 "DPT")
+            :quant (j / jumlah))
+      :ARG1 (p / perubahan)
+      :ARG2 (a / alam))
+
+# ::id 28
+# ::snt KPU DKI akan bekerja hingga 1 Mei 2017 untuk menyelesaikan rekapitulasi suara.
+# ::tokens ["KPU", "DKI", "akan", "bekerja", "hingga", "1", "Mei", "2017", "untuk", "menyelesaikan", "rekapitulasi", "suara", "."]
+# ::lemmas ["kpu", "dki", "akan", "kerja", "hingga", "1", "mei", "2017", "untuk", "selesai", "rekapitulasi", "suara", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "ADP", "NUM", "PROPN", "NUM", "ADP", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "GPE", "O", "O", "O", "DAT", "O", "O", "O", "O", "O", "O"]
+(k / kerja
+      :ARG0 (o / organization
+            :location (c / city
+                  :name (n2 / nama
+                        :op1 "DKI"))
+            :name (n1 / nama
+                  :op1 "KPU")
+            :time (h / hingga
+                  :op1 (d / date-entity
+                        :day 1
+                        :month 5
+                        :year 2017)))
+      :purpose (s1 / selesai
+            :ARG1 (r / rekapitulasi
+                  :ARG1 (s2 / suara))))
+
+# ::id 29
+# ::snt Selama itu, Marianus bekerja serabutan, mulai dari bertani, menjadi joki pacuan kuda, pekerja batu bata dan lain-lain.
+# ::tokens ["Selama", "itu", ",", "Marianus", "bekerja", "serabutan", ",", "mulai", "dari", "bertani", ",", "menjadi", "joki", "pacuan", "kuda", ",", "pekerja", "batu", "bata", "dan", "lain-lain", "."]
+# ::lemmas ["lama", "itu", "", "marianus", "kerja", "serabutan", "", "mulai", "dari", "tan", "", "jadi", "joki", "pacu", "kuda", "", "kerja", "batu", "bata", "dan", "lain", ""]
+# ::pos_tags ["ADP", "DET", "PUNCT", "PROPN", "VERB", "NOUN", "PUNCT", "VERB", "ADP", "NOUN", "PUNCT", "VERB", "NOUN", "NOUN", "NOUN", "PUNCT", "NOUN", "NOUN", "NOUN", "CCONJ", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "LOC", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(k1 / kerja
+      :ARG0 (p1 / person
+            :name (n / nama
+                  :op1 "Marianus"))
+      :ARG1 (e / example
+            :op1 (t / tani)
+            :op2 (j / jadi
+                  :ARG1 (p2 / pacuan
+                        :mod (k2 / kuda)))
+            :op3 (k3 / kerja
+                  :ARG1 (b1 / batu
+                        :mod (b2 / bata))))
+      :mod (s / serabut))
+
+# ::id 30
+# ::snt Masing-masing partai juga bekerja sesuai dengan konstitusinya.
+# ::tokens ["Masing-masing", "partai", "juga", "bekerja", "sesuai", "dengan", "konstitusinya", "."]
+# ::lemmas ["masing-masing", "partai", "juga", "kerja", "sesuai", "dengan", "konstitusi", ""]
+# ::pos_tags ["NOUN", "NOUN", "ADV", "VERB", "ADJ", "ADP", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+(k1 / kerja
+      :ARG0 (p / partai
+            :mod (m / masing-masing))
+      :ARG1 (s / sesuai
+            :mod (k2 / konstitusi
+                  :poss p)))
+
+# ::id 31
+# ::snt empat panelis yang terdiri dari tiga akademisi dan satu praktisi adalah Nunuk Nuswardani, Abdul Chalik, Fauzan, dan Lutfi Kurniawan.
+# ::tokens ["empat", "panelis", "yang", "terdiri", "dari", "tiga", "akademisi", "dan", "satu", "praktisi", "adalah", "Nunuk", "Nuswardani", ",", "Abdul", "Chalik", ",", "Fauzan", ",", "dan", "Lutfi", "Kurniawan", "."]
+# ::lemmas ["empat", "panelis", "yang", "diri", "dari", "tiga", "akademisi", "dan", "satu", "praktisi", "adalah", "nunuk", "nuswardani", "", "abdul", "chalik", "", "fauzan", "", "dan", "lutfi", "kurniawan", ""]
+# ::pos_tags ["NUM", "NOUN", "PRON", "VERB", "ADP", "NUM", "NOUN", "CCONJ", "DET", "NOUN", "AUX", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT", "PROPN", "PUNCT", "CCONJ", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["CRD", "O", "O", "O", "O", "CRD", "O", "O", "CRD", "O", "O", "ORG", "NOR", "O", "PER", "O", "O", "ORG", "PER"]
+(p1 / panelis
+      :consist-of (a1 / and
+            :op1 (a2 / akademisi
+                  :quant 3)
+            :op2 (p2 / praktisi
+                  :quant 1))
+      :mod (a3 / and
+            :op1 (p3 / person
+                  :name (n1 / nama
+                        :op1 "Nunuk"
+                        :op2 "Nuswardani"))
+            :op2 (p4 / person
+                  :name (n2 / nama
+                        :op1 "Abdul"
+                        :op2 "Chalik"))
+            :op3 (p5 / person
+                  :name (n3 / nama
+                        :op1 "Fauzan"))
+            :op4 (p6 / person
+                  :name (n4 / nama
+                        :op1 "Lutfi"
+                        :op2 "Kurniawan")))
+      :quant 4)
+
+# ::id 32
+# ::snt Jumlah tersebut terdiri dari 74.597.647 pemilih laki-laki dan 75.149.517 pemilih perempuan.
+# ::tokens ["Jumlah", "tersebut", "terdiri", "dari", "74.597.647", "pemilih", "laki-laki", "dan", "75.149.517", "pemilih", "perempuan", "."]
+# ::lemmas ["jumlah", "sebut", "diri", "dari", "74 597 647", "pilih", "laki", "dan", "75 149 517", "pilih", "perempuan", ""]
+# ::pos_tags ["NOUN", "DET", "VERB", "ADP", "NUM", "NOUN", "NOUN", "CCONJ", "NUM", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "O", "O", "O", "CRD", "O", "O"]
+(j / jumlah
+      :consist-of (a / and
+            :op1 (p1 / pemilih
+                  :mod (l / laki-laki)
+                  :quant 74597647)
+            :op2 (p2 / pemilih
+                  :mod (p3 / perempuan)
+                  :quant 75149517)))
+
+# ::id 33
+# ::snt Jumlah tersebut terdiri dari 76.348.813 pemilih laki-laki dan 76.520.478 pemilih perempuan.
+# ::tokens ["Jumlah", "tersebut", "terdiri", "dari", "76.348.813", "pemilih", "laki-laki", "dan", "76.520.478", "pemilih", "perempuan", "."]
+# ::lemmas ["jumlah", "sebut", "diri", "dari", "76 348 813", "pilih", "laki", "dan", "76 520 478", "pilih", "perempuan", ""]
+# ::pos_tags ["NOUN", "DET", "VERB", "ADP", "NUM", "NOUN", "NOUN", "CCONJ", "NUM", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "O", "O", "O", "CRD", "O", "O"]
+(j / jumlah
+      :consist-of (a / and
+            :op1 (p1 / pemilih
+                  :mod (l / laki-laki)
+                  :quant 76348813)
+            :op2 (p2 / pemilih
+                  :mod (p3 / perempuan)
+                  :quant 76520478)))
+
+# ::id 34
+# ::snt Ferdiman memperkirakan masih ada 900 ribu pemilih yang belum terdaftar di DPT.
+# ::tokens ["Ferdiman", "memperkirakan", "masih", "ada", "900", "ribu", "pemilih", "yang", "belum", "terdaftar", "di", "DPT", "."]
+# ::lemmas ["ferdiman", "kira", "masih", "ada", "900", "ribu", "pilih", "yang", "belum", "daftar", "di", "dpt", ""]
+# ::pos_tags ["PROPN", "VERB", "ADV", "VERB", "NUM", "NOUN", "NOUN", "PRON", "ADV", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "MON", "O", "O", "O", "O", "O", "GPE"]
+(k / kira
+      :ARG0 (p1 / person
+            :name (n1 / nama
+                  :op1 "Ferdiman"))
+      :ARG1 (p2 / pemilih
+            :ARG1-of (d / daftar
+                  :mod (o / organization
+                        :name (n2 / nama
+                              :op1 "DPT"))
+                  :polarity -)
+            :quant 900000))
+
+# ::id 36
+# ::snt Silverius memperkirakan STTB JR Saragih hilang di Jakarta. Kehilangan itu dilaporkan ke Polsek Kemayoran dengan nomor tanda lapor 1150/B/III/2018.
+# ::tokens ["Silverius", "memperkirakan", "STTB", "JR", "Saragih", "hilang", "di", "Jakarta", ".", "Kehilangan", "itu", "dilaporkan", "ke", "Polsek", "Kemayoran", "dengan", "nomor", "tanda", "lapor", "1150/B/III/2018", "."]
+# ::lemmas ["silverius", "kira", "sttb", "jr", "saragih", "hilang", "di", "jakarta", "", "hilang", "itu", "lapor", "ke", "polsek", "mayor", "dengan", "nomor", "tanda", "lapor", "1150 b iii 2018", ""]
+# ::pos_tags ["PROPN", "VERB", "PROPN", "PROPN", "PROPN", "VERB", "ADP", "PROPN", "PUNCT", "NOUN", "DET", "VERB", "ADP", "PROPN", "PROPN", "ADP", "NOUN", "NOUN", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "O", "ORG", "O", "PER", "O", "O", "PER", "O", "O", "O", "O", "ORG", "PER", "O", "O", "O", "O", "CRD"]
+(k / kira
+      :ARG0 (p1 / person
+            :name (n1 / nama
+                  :op1 "Silverius"))
+      :ARG1 (s / surat
+            :name (n2 / nama
+                  :op1 "STTB"))
+      :ARG1-of (h / hilang
+            :location (c / city
+                  :name (n4 / nama
+                        :op1 "Jakarta")))
+      :mod (p2 / person
+            :name (n3 / nama
+                  :op1 "JR"
+                  :op2 "Saragih")))
+
+# ::id 37
+# ::snt Timnas U-16 bawa pulang gelar juara Jenesys Cup ke tanah air.
+# ::tokens ["Timnas", "U-16", "bawa", "pulang", "gelar", "juara", "Jenesys", "Cup", "ke", "tanah", "air", "."]
+# ::lemmas ["timnas", "u-16", "bawa", "pulang", "gelar", "juara", "jenesys", "cup", "ke", "tanah", "air", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "VERB", "NOUN", "NOUN", "PROPN", "PROPN", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "O", "O"]
+(b / bawa
+      :ARG0 (o / organization
+            :name (n1 / nama
+                  :op1 "Timnas"
+                  :op2 "U-16"))
+      :ARG1 (g / gelar
+            :location (t / tanah-air)
+            :mod (j / juara)
+            :name (n2 / nama
+                  :op1 "Jenesys"
+                  :op2 "Cup")))
+
+# ::id 40
+# ::snt Ketua Panwaslu Lamongan, Toni Wijaya membenarkan pihaknya akan memanggil Bupati Tuban.
+# ::tokens ["Ketua", "Panwaslu", "Lamongan", ",", "Toni", "Wijaya", "membenarkan", "pihaknya", "akan", "memanggil", "Bupati", "Tuban", "."]
+# ::lemmas ["ketua", "panwaslu", "lamongan", "", "ton", "wijaya", "benar", "pihak", "akan", "panggil", "bupati", "tuban", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "VERB", "NOUN", "ADV", "VERB", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "ORG", "PER", "O", "O", "O", "O", "GPE", "LOC"]
+(b1 / benar
+      :ARG0 (p1 / person
+            :ARG0-of (j1 / jabat
+                  :ARG1 (o / organization
+                        :location (c1 / city
+                              :name (n3 / nama
+                                    :op1 "Lamongan"))
+                        :name (n2 / nama
+                              :op1 "Panwaslu"))
+                  :ARG3 (k / ketua
+                        :ARG1 (p2 / panggil
+                              :ARG1 (p3 / person
+                                    :ARG0-of (j2 / jabat
+                                          :ARG1 (c2 / city
+                                                :name (n4 / nama
+                                                      :op1 "Tuban"))
+                                          :ARG3 (b2 / bupati))))))
+            :name (n1 / nama
+                  :op1 "Toni"
+                  :op2 "Wijaya")))
+
+# ::id 42
+# ::snt Deputi Statistik, Distribusi dan Jasa BPS Sasmito Hadi Wibowo membenarkan Pelantikan Pak Kecuk.
+# ::tokens ["Deputi", "Statistik", ",", "Distribusi", "dan", "Jasa", "BPS", "Sasmito", "Hadi", "Wibowo", "membenarkan", "Pelantikan", "Pak", "Kecuk", "."]
+# ::lemmas ["deputi", "statistik", "", "distribusi", "dan", "jasa", "bps", "sasmito", "had", "wibowo", "benar", "lantik", "pak", "cuk", ""]
+# ::pos_tags ["PROPN", "PROPN", "PUNCT", "PROPN", "CCONJ", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "O", "ORG", "NOR", "O", "ORG", "PER", "O", "O", "LOC", "PER"]
+(b / benar
+      :ARG0 (p1 / person
+            :mod (j1 / jabat
+                  :ARG1 (o / organization
+                        :name (n2 / nama
+                              :op1 "BPS"))
+                  :ARG3 (d1 / deputi
+                        :mod (a / and
+                              :op1 (s / statistik)
+                              :op2 (d2 / distribusi)
+                              :op3 (j2 / jasa))))
+            :name (n1 / nama
+                  :op1 "Sasmito"
+                  :op2 "Hadi"
+                  :op3 "Wibowo"))
+      :ARG1 (l / lantik
+            :ARG1 (p2 / person
+                  :name (n3 / nama
+                        :op1 "Kecuk"))))
+
+# ::id 44
+# ::snt Syaikhu melihat instalasi pengolah limbah yang dimiliki oleh PT GMP, usai meninjau pabrik.
+# ::tokens ["Syaikhu", "melihat", "instalasi", "pengolah", "limbah", "yang", "dimiliki", "oleh", "PT", "GMP", ",", "usai", "meninjau", "pabrik", "."]
+# ::lemmas ["syaikhu", "lihat", "instalasi", "olah", "limbah", "yang", "milik", "oleh", "pt", "gmp", "", "usai", "tinjau", "pabrik", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "NOUN", "NOUN", "PRON", "VERB", "ADP", "PROPN", "PROPN", "PUNCT", "SCONJ", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "O", "O"]
+(l1 / lihat
+      :ARG0 (p1 / person
+            :name (n1 / nama
+                  :op1 "Syaikhu"))
+      :ARG1 (i / instalasi
+            :ARG1-of (m / milik
+                  :ARG0 (o1 / organization
+                        :name (n2 / nama
+                              :op1 "PT"
+                              :op2 "GMP"))
+                  :mod (o2 / olah
+                        :mod (l2 / limbah))))
+      :time (u / usai
+            :op1 (t / tinjau
+                  :ARG1 (p2 / pabrik))))
+
+# ::id 46
+# ::snt Nur juga melihat persoalan anggaran yang nantinya dapat menghambat kelanjutan program tersebut.
+# ::tokens ["Nur", "juga", "melihat", "persoalan", "anggaran", "yang", "nantinya", "dapat", "menghambat", "kelanjutan", "program", "tersebut", "."]
+# ::lemmas ["nur", "juga", "lihat", "soal", "anggar", "yang", "nanti", "dapat", "hambat", "lanjut", "program", "sebut", ""]
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "NOUN", "PRON", "NOUN", "ADV", "VERB", "NOUN", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(l1 / lihat
+      :ARG0 (p1 / person
+            :name (n / nama
+                  :op1 "Nur"))
+      :ARG1 (s / soal
+            :mod (a / anggaran
+                  :ARG0-of (d / dapat
+                        :ARG1 (h / hambat
+                              :ARG1 (l2 / lanjut
+                                    :ARG1 (p2 / program)))))))
+
+# ::id 50
+# ::snt Panitia kemudian memanggil petugas keamanan dan mencoba menenangkan pendukung paslon nomor urut 1.
+# ::tokens ["Panitia", "kemudian", "memanggil", "petugas", "keamanan", "dan", "mencoba", "menenangkan", "pendukung", "paslon", "nomor", "urut", "1", "."]
+# ::lemmas ["panitia", "kemudian", "panggil", "tugas", "aman", "dan", "coba", "tenang", "dukung", "paslon", "nomor", "urut", "1", ""]
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "NOUN", "CCONJ", "VERB", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD"]
+(a1 / and
+      :op1 (p1 / panggil
+            :ARG0 (p2 / panitia)
+            :ARG1 (p3 / petugas
+                  :mod (a2 / aman)))
+      :op2 (c / coba
+            :ARG0 p2
+            :ARG1 (t / tenang
+                  :ARG1 (p4 / pendukung)
+                  :mod (p5 / paslon
+                        :mod (n / nomor
+                              :mod (u / urut
+                                    :quant 1))))))
+
+# ::id 51
+# ::snt Bawaslu juga akan memanggil orang yang diduga ada dalam rekaman tersebut setelah cukup bukti permulaan.
+# ::tokens ["Bawaslu", "juga", "akan", "memanggil", "orang", "yang", "diduga", "ada", "dalam", "rekaman", "tersebut", "setelah", "cukup", "bukti", "permulaan", "."]
+# ::lemmas ["bawaslu", "juga", "akan", "panggil", "orang", "yang", "duga", "ada", "dalam", "rekam", "sebut", "telah", "cukup", "bukti", "mula", ""]
+# ::pos_tags ["PROPN", "ADV", "ADV", "VERB", "NOUN", "PRON", "VERB", "VERB", "ADP", "NOUN", "DET", "ADP", "ADV", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(p / panggil
+      :ARG0 (o1 / organization
+            :name (n / nama
+                  :op1 "Bawaslu"))
+      :ARG1 (o2 / orang
+            :ARG1-of (d1 / duga
+                  :ARG1 (a / ada
+                        :mod (d2 / dalam
+                              :mod (r / rekaman)))))
+      :time (s / setelah
+            :mod (b / bukti
+                  :mod (m / mula))))
+
+# ::id 59
+# ::snt Ahmad juga pernah melaporkan LHKPN pada 19 April 2013.
+# ::tokens ["Ahmad", "juga", "pernah", "melaporkan", "LHKPN", "pada", "19", "April", "2013", "."]
+# ::lemmas ["ahmad", "juga", "pernah", "lapor", "lhkpn", "pada", "19", "april", "2013", ""]
+# ::pos_tags ["PROPN", "ADV", "ADV", "VERB", "PROPN", "ADP", "NUM", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "GPE", "O", "DAT", "O", "TIM"]
+(l / lapor
+      :ARG0 (p / person
+            :name (n1 / nama
+                  :op1 "Ahmad"))
+      :ARG1 (o / organization
+            :name (n2 / nama
+                  :op1 "LKHPN"))
+      :time (d / date-entity
+            :day 19
+            :month 3
+            :year 2013))
+
+# ::id 68
+# ::snt Meski demikian, Rommy yakin pasangan yang dicalonkannya bisa menang.
+# ::tokens ["Meski", "demikian", ",", "Rommy", "yakin", "pasangan", "yang", "dicalonkannya", "bisa", "menang", "."]
+# ::lemmas ["meski", "demikian", "", "rommy", "yakin", "pasang", "yang", "calon", "bisa", "menang", ""]
+# ::pos_tags ["SCONJ", "ADV", "PUNCT", "PROPN", "VERB", "NOUN", "PRON", "VERB", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "PER", "O", "O", "O", "O", "O", "O"]
+(c1 / contrast
+      :ARG2 (y / yakin
+            :ARG0 (p1 / person
+                  :name (n / nama
+                        :op1 "Rommy"))
+            :ARG1 (b / bisa
+                  :ARG0 (p2 / pasangan
+                        :ARG0 p1
+                        :ARG1-of (c2 / calon))
+                  :ARG1 (m / menang))))
+
+# ::id 70
+# ::snt Saat SMP, Marianus Sae terpaksa putus sekolah selama empat tahun karena himpitan ekonomi.
+# ::tokens ["Saat", "SMP", ",", "Marianus", "Sae", "terpaksa", "putus", "sekolah", "selama", "empat", "tahun", "karena", "himpitan", "ekonomi", "."]
+# ::lemmas ["saat", "smp", "", "marianus", "sae", "paksa", "putus", "sekolah", "lama", "empat", "tahun", "karena", "himpitan", "ekonomi", ""]
+# ::pos_tags ["ADP", "PROPN", "PUNCT", "PROPN", "PROPN", "ADV", "VERB", "NOUN", "ADP", "NUM", "NOUN", "SCONJ", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "ORG", "O", "PER", "O", "O", "O", "O", "CRD", "O", "O", "O", "O"]
+(p1 / putus
+      :ARG0 (p2 / person
+            :name (n / nama
+                  :op1 "Marianus"
+                  :op2 "Sae"))
+      :ARG1 (s / sekolah)
+      :duration (t / temporal-quantity
+            :quant 4
+            :unit tahun)
+      :mod (h / ekonomi
+            :mod e))
+
+# ::id 77
+# ::snt Anies-Sandi berada dibawahnya dengan 207 suara.
+# ::tokens ["Anies-Sandi", "berada", "dibawahnya", "dengan", "207", "suara", "."]
+# ::lemmas ["anies-sandi", "ada", "bawah", "dengan", "207", "suara", ""]
+# ::pos_tags ["NOUN", "VERB", "VERB", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "QTY"]
+(a / ada
+      :ARG0 (p / person
+            :name (n / nama
+                  :op1 "Anies"
+                  :op2 "Sandi"))
+      :mod (b / bawah)
+      :mod (s / suara
+            :quant 207))
+
+# ::id 79
+# ::snt Nasdem berada di posisi kedua dengan 47 kemenangan.
+# ::tokens ["Nasdem", "berada", "di", "posisi", "kedua", "dengan", "47", "kemenangan", "."]
+# ::lemmas ["nasdem", "ada", "di", "posisi", "dua", "dengan", "47", "menang", ""]
+# ::pos_tags ["PROPN", "VERB", "ADP", "NOUN", "NUM", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "CRD", "O", "CRD", "O"]
+(a / ada
+      :ARG0 (o1 / organization
+            :name (n / nama
+                  :op1 "Nasdem"))
+      :ARG1 (p / posisi
+            :ord (o2 / ordinal-entity
+                  :value 2))
+      :mod (m / menang
+            :quant 47))
+
+# ::id 80
+# ::snt PDIP dan Demokat berada di urutan ketiga dengan raihan kemenangan masing-masing 45 daerah.
+# ::tokens ["PDIP", "dan", "Demokat", "berada", "di", "urutan", "ketiga", "dengan", "raihan", "kemenangan", "masing-masing", "45", "daerah", "."]
+# ::lemmas ["pdip", "dan", "demokat", "ada", "di", "urut", "tiga", "dengan", "raih", "menang", "masing-masing", "45", "daerah", ""]
+# ::pos_tags ["PROPN", "CCONJ", "PROPN", "VERB", "ADP", "NOUN", "NUM", "ADP", "NOUN", "NOUN", "NOUN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "PER", "O", "O", "O", "CRD", "O", "O", "O", "O", "CRD", "QTY"]
+(a1 / ada
+      :ARG0 (a2 / and
+            :op1 (o1 / organization
+                  :name (n1 / nama
+                        :op1 "PDIP"))
+            :op2 (o2 / organization
+                  :name (n2 / nama
+                        :op1 "Demokrat")))
+      :mod (u / urut
+            :quant 3)
+      :mod (r / raih
+            :ARG1 (t / temporal-quantity
+                  :quant 45
+                  :unit (d / daerah))
+            :mod (m / menang)))
+
+# ::id 83
+# ::snt Termasuk Jumat malam berada di Kudus.
+# ::tokens ["Termasuk", "Jumat", "malam", "berada", "di", "Kudus", "."]
+# ::lemmas ["masuk", "jumat", "malam", "ada", "di", "kudus", ""]
+# ::pos_tags ["VERB", "PROPN", "NOUN", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "DAT", "O", "O", "O", "LOC"]
+(a / ada
+      :location (c / city
+            :name (n / nama
+                  :op1 "Kudus"))
+      :time (d / date-entity
+            :dayperiod (m / malam)
+            :weekday (j / jumat)))
+
+# ::id 89
+# ::snt PPP, Nasdem, Hanura dan PKB sudah saling berbagi saksi.
+# ::tokens ["PPP", ",", "Nasdem", ",", "Hanura", "dan", "PKB", "sudah", "saling", "berbagi", "saksi", "."]
+# ::lemmas ["ppp", "", "nasdem", "", "hanura", "dan", "pkb", "sudah", "saling", "bagi", "saksi", ""]
+# ::pos_tags ["PROPN", "PUNCT", "PROPN", "PUNCT", "PROPN", "CCONJ", "PROPN", "ADV", "ADV", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "O", "PER", "O", "O", "O", "O"]
+(b / bagi
+      :ARG0 (a / and
+            :op1 (o1 / organization
+                  :name (n1 / nama
+                        :op1 "PPP"))
+            :op2 (o2 / organization
+                  :name (n2 / nama
+                        :op1 "Nasdem"))
+            :op3 (o3 / organization
+                  :name (n3 / nama
+                        :op1 "Hanura"))
+            :op4 (o4 / organization
+                  :name (n4 / nama
+                        :op1 "PKB")))
+      :ARG1 (s / saksi))
+
+# ::id 94
+# ::snt Sejauh ini, masih ada 13 kabupaten dari 29 kota/kabupaten di Papua yang menggunakan sistem noken.
+# ::tokens ["Sejauh", "ini", ",", "masih", "ada", "13", "kabupaten", "dari", "29", "kota/kabupaten", "di", "Papua", "yang", "menggunakan", "sistem", "noken", "."]
+# ::lemmas ["jauh", "ini", "", "masih", "ada", "13", "kabupaten", "dari", "29", "kota kabupaten", "di", "papua", "yang", "guna", "sistem", "noken", ""]
+# ::pos_tags ["NOUN", "DET", "PUNCT", "ADV", "VERB", "NUM", "NOUN", "ADP", "NUM", "NOUN", "ADP", "PROPN", "PRON", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "PRC", "MON", "O", "CRD", "O", "O", "GPE", "O", "O", "O", "O"]
+(a / ada
+      :ARG1 (k1 / kabupaten
+            :ARG1-of (d / dari
+                  :ARG2 (o / or
+                        :ARG0-of (g / guna
+                              :mod (s / sistem
+                                    :mod (n / noken)))
+                        :op1 (k2 / kota)
+                        :op2 (k3 / kabupaten)))
+            :quant 13)
+      :time (j / jauh
+            :mod (i / ini)))
+
+# ::id 98
+# ::snt Dari total pemilih 301.367 orang, yang menggunakan suaranya sebanyak 214.262 orang atau 71,1%.
+# ::tokens ["Dari", "total", "pemilih", "301.367", "orang", ",", "yang", "menggunakan", "suaranya", "sebanyak", "214.262", "orang", "atau", "71,1", "%", "."]
+# ::lemmas ["dari", "total", "pilih", "301 367", "orang", "", "yang", "guna", "suara", "banyak", "214 262", "orang", "atau", "71 1", "", ""]
+# ::pos_tags ["ADP", "NOUN", "NOUN", "NUM", "NOUN", "PUNCT", "PRON", "VERB", "NOUN", "ADP", "NUM", "NOUN", "CCONJ", "NUM", "SYM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "CRD", "QTY", "O", "O", "O", "O", "CRD", "O", "O", "CRD"]
+(g / guna
+      :ARG0 (p1 / pemilih
+            :ARG1-of (d / dari
+                  :ARG2 (p3 / pemilih
+                        :quant 301367))
+            :mod (o1 / or
+                  :op1 (t1 / temporal-quantity
+                        :quant 214264
+                        :unit (o2 / orang))
+                  :op2 (p2 / percentage-entity
+                        :value 71.1)))
+      :ARG1 (s / suara))
+
+# ::id 99
+# ::snt JR Saragih akan menggunakan SKPI tersebut sebagai persyaratan pencalonan gubernur Sumut.
+# ::tokens ["JR", "Saragih", "akan", "menggunakan", "SKPI", "tersebut", "sebagai", "persyaratan", "pencalonan", "gubernur", "Sumut", "."]
+# ::lemmas ["jr", "saragih", "akan", "guna", "skpi", "sebut", "bagai", "syarat", "calon", "gubernur", "sumut", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "NOUN", "DET", "ADP", "NOUN", "NOUN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "PER", "O", "O", "O", "O", "O", "LOC"]
+(g1 / guna
+      :ARG0 (p1 / person
+            :name (n1 / nama
+                  :op1 "JR"
+                  :op2 "Saragih"))
+      :ARG1 (s1 / surat
+            :name (n2 / nama
+                  :op1 "SKPI"))
+      :mod (s2 / syarat
+            :mod (c / calon
+                  :location (p2 / provinsi
+                        :name (n3 / nama
+                              :op1 "Sumut"))
+                  :mod (g2 / gubernur))))
+
+# ::id 100
+# ::snt Pasangan dari Cagub Deddy Mizwar ini, akan membuat sekolah khusus sepak bola setingkat SMA.
+# ::tokens ["Pasangan", "dari", "Cagub", "Deddy", "Mizwar", "ini", ",", "akan", "membuat", "sekolah", "khusus", "sepak", "bola", "setingkat", "SMA", "."]
+# ::lemmas ["pasang", "dari", "cagub", "deddy", "mizwar", "ini", "", "akan", "buat", "sekolah", "khusus", "sepak", "bola", "tingkat", "sma", ""]
+# ::pos_tags ["NOUN", "ADP", "PROPN", "PROPN", "PROPN", "DET", "PUNCT", "ADV", "VERB", "NOUN", "ADJ", "NOUN", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "ORG", "NOR", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "LOC"]
+(b / buat
+      :ARG0 (p1 / person
+            :mod (p2 / pasangan
+                  :mod (p3 / person
+                        :mod (c / calon
+                              :mod (g / gubernur))
+                        :name (n / nama
+                              :op1 "Deddy"
+                              :op2 "Mizwar"))))
+      :ARG1 (s1 / sekolah
+            :mod (s2 / sepak-bola
+                  :mod (k / khusus
+                        :mod (t / tingkat
+                              :mod (s3 / SMA))))))
+
+# ::id 101
+# ::snt ﻿KPU membuat surat keputusan penetapan peserta, setelah pembacaan rekapitulasi nasional penetapan peserta pemilu.
+# ::tokens ["\ufeffKPU", "membuat", "surat", "keputusan", "penetapan", "peserta", ",", "setelah", "pembacaan", "rekapitulasi", "nasional", "penetapan", "peserta", "pemilu", "."]
+# ::lemmas ["kpu", "buat", "surat", "putus", "tetap", "serta", "", "telah", "baca", "rekapitulasi", "nasional", "tetap", "serta", "milu", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "PUNCT", "ADP", "NOUN", "NOUN", "ADJ", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(b1 / buat
+      :ARG0 (k1 / kpu)
+      :ARG1 (k2 / keputusan
+            :time (s / setelah
+                  :mod (b2 / baca
+                        :mod (r / rekapitulasi
+                              :mod (n / nasional))
+                        :mod (p1 / peserta
+                              :mod (p2 / pemilu))))))
+
+# ::id 102
+# ::snt KPU membuat aturan itu juga untuk mempermudah pemberian sanksi apabila akun peserta pemilu melanggar ketentuan kampanye.
+# ::tokens ["KPU", "membuat", "aturan", "itu", "juga", "untuk", "mempermudah", "pemberian", "sanksi", "apabila", "akun", "peserta", "pemilu", "melanggar", "ketentuan", "kampanye", "."]
+# ::lemmas ["kpu", "buat", "atur", "itu", "juga", "untuk", "mudah", "beri", "sanksi", "apabila", "akun", "serta", "milu", "langgar", "tentu", "kampanye", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "DET", "ADV", "ADP", "VERB", "NOUN", "NOUN", "SCONJ", "NOUN", "NOUN", "NOUN", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(b / buat
+      :ARG0 (k / kpu)
+      :ARG1 (a / aturan
+            :mod (m / mudah
+                  :mod (p1 / pemberian
+                        :mod (s / sanksi
+                              :mod (p2 / peserta
+                                    :mod (p3 / pemilu
+                                          :mod (k1 / ketentuan
+                                                :mod (k2 / kampanye)))))))))
+
+# ::id 103
+# ::snt Hal itu membuat kinerja KPU kurang maksimal.
+# ::tokens ["Hal", "itu", "membuat", "kinerja", "KPU", "kurang", "maksimal", "."]
+# ::lemmas ["hal", "itu", "buat", "kerja", "kpu", "kurang", "maksimal", ""]
+# ::pos_tags ["NOUN", "DET", "VERB", "NOUN", "PROPN", "ADV", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "PER", "O", "O"]
+(b / buat
+      :ARG0 (k1 / kpu)
+      :ARG1 (k2 / kinerja
+            :mod (m / maksimal)))
+
+# ::id 105
+# ::snt Jawaban Sudirman Said sontak membuat penonton riuh bahkan Ganjar turun dari kursinya dan menyalami Sudirman.
+# ::tokens ["Jawaban", "Sudirman", "Said", "sontak", "membuat", "penonton", "riuh", "bahkan", "Ganjar", "turun", "dari", "kursinya", "dan", "menyalami", "Sudirman", "."]
+# ::lemmas ["jawab", "sudirman", "said", "sontak", "buat", "tonton", "riuh", "bahkan", "ganjar", "turun", "dari", "kursi", "dan", "salam", "sudirman", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "ADV", "VERB", "NOUN", "NOUN", "SCONJ", "PROPN", "VERB", "ADP", "NOUN", "CCONJ", "VERB", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "PER", "O", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O"]
+(b / buat
+      :ARG0 (j / jawaban
+            :mod (o1 / orang
+                  :name (n / nama
+                        :op1 "Sudirman"
+                        :op1 "Ganjar"
+                        :op2 "Said")))
+      :ARG1 (p / penonton
+            :mod (r / riuh
+                  :mod (a / and
+                        :op1 (t / turun
+                              :ARG0 (o2 / orang
+                                    :name n))
+                        :op2 (s / salam
+                              :ARG1 (o3 / orang
+                                    :name n))))))
+
+# ::id 106
+# ::snt Hal tersebut lantaran Sudirman di Pilgub Jateng diusung oleh Gerindra dan sejauh ini diketahui dekat dengan Prabowo.
+# ::tokens ["Hal", "tersebut", "lantaran", "Sudirman", "di", "Pilgub", "Jateng", "diusung", "oleh", "Gerindra", "dan", "sejauh", "ini", "diketahui", "dekat", "dengan", "Prabowo", "."]
+# ::lemmas ["hal", "sebut", "lantar", "sudirman", "di", "pilgub", "jateng", "usung", "oleh", "gerindra", "dan", "jauh", "ini", "tahu", "dekat", "dengan", "prabowo", ""]
+# ::pos_tags ["NOUN", "DET", "SCONJ", "PROPN", "ADP", "PROPN", "PROPN", "VERB", "ADP", "PROPN", "CCONJ", "NOUN", "DET", "VERB", "ADJ", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "PER", "O", "LOC", "PER", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "LOC"]
+(d / dekat
+      / dan
+      :mod (o / orang
+            :mod (p / Pilgub
+                  :location (p2 / provinsi
+                        :name (n / nama
+                              :op1 "Sudirman"
+                              :op1 "Jateng"
+                              :op1 "Prabowo")))
+            :name n)
+      :op1 (u / usung
+            :ARG0 (g / gerindra)
+            :ARG1 o)
+      :op2 d)
+
+# ::id 108
+# ::snt Hal tersebut lantaran Sudirman di Pilgub Jateng diusung oleh Gerindra dan sejauh ini diketahui dekat dengan Prabowo.
+# ::tokens ["Hal", "tersebut", "lantaran", "Sudirman", "di", "Pilgub", "Jateng", "diusung", "oleh", "Gerindra", "dan", "sejauh", "ini", "diketahui", "dekat", "dengan", "Prabowo", "."]
+# ::lemmas ["hal", "sebut", "lantar", "sudirman", "di", "pilgub", "jateng", "usung", "oleh", "gerindra", "dan", "jauh", "ini", "tahu", "dekat", "dengan", "prabowo", ""]
+# ::pos_tags ["NOUN", "DET", "SCONJ", "PROPN", "ADP", "PROPN", "PROPN", "VERB", "ADP", "PROPN", "CCONJ", "NOUN", "DET", "VERB", "ADJ", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "PER", "O", "LOC", "PER", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "LOC"]
+(b / buat
+      :ARG0 (j / jawaban
+            :mod (o1 / orang
+                  :name (n / nama
+                        :op1 "Sudirman"
+                        :op1 "Ganjar"
+                        :op2 "Said")))
+      :ARG1 (p / penonton
+            :mod (r / riuh
+                  :mod (a / and
+                        :op1 (t / turun
+                              :ARG0 (o2 / orang
+                                    :name n))
+                        :op2 (s / salam
+                              :ARG1 (o3 / orang
+                                    :name n))))))
+
+# ::id 109
+# ::snt Konflik kepemilikian aset tanah pasar antara Pemerintah Kota Pekanbaru dengan Pemerintah Provinsi Riau membuat pembangunan pasar rakyat itu terbengkalai selama 17 tahun.
+# ::tokens ["Konflik", "kepemilikian", "aset", "tanah", "pasar", "antara", "Pemerintah", "Kota", "Pekanbaru", "dengan", "Pemerintah", "Provinsi", "Riau", "membuat", "pembangunan", "pasar", "rakyat", "itu", "terbengkalai", "selama", "17", "tahun", "."]
+# ::lemmas ["konflik", "kepemilikian", "aset", "tanah", "pasar", "antara", "perintah", "kota", "pekanbaru", "dengan", "perintah", "provinsi", "riau", "buat", "bangun", "pasar", "rakyat", "itu", "bengkalai", "lama", "17", "tahun", ""]
+# ::pos_tags ["PROPN", "NOUN", "NOUN", "NOUN", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "ADP", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "NOUN", "DET", "VERB", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "NOR", "O", "PER", "O", "NOR", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "CRD", "QTY"]
+(b / bangun
+      / buat
+      :ARG0 (k1 / konflik
+            :mod (m / milik))
+      :ARG1 b
+      :mod (a / antara
+            :op1 (p1 / pemerintah
+                  :location (k2 / kota
+                        :name (n / nama
+                              :op1 "Pekanbaru"
+                              :op1 "Riau")))
+            :op2 (p2 / pemerintah
+                  :location (p3 / provinsi
+                        :name n))))
+
+# ::id 111
+# ::snt Kecenderungan Golkar ini sama dengan Partai Nasdem,
+# ::tokens ["Kecenderungan", "Golkar", "ini", "sama", "dengan", "Partai", "Nasdem", ","]
+# ::lemmas ["cenderung", "golkar", "ini", "sama", "dengan", "partai", "nasdem", ""]
+# ::pos_tags ["NOUN", "PROPN", "DET", "ADJ", "ADP", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "PER", "O", "O", "O", "LOC", "O"]
+(c / cenderung
+      :ARG0 (g / golkar)
+      :ARG1 (o / organisasi
+            :name (n / name
+                  :op1 "Partai"
+                  :op2 "Nasdem")))
+
+# ::id 112
+# ::snt tetapi kebanyakan kader dan pengurus Nasdem adalah mantan politikus Golkar,
+# ::tokens ["tetapi", "kebanyakan", "kader", "dan", "pengurus", "Nasdem", "adalah", "mantan", "politikus", "Golkar", ","]
+# ::lemmas ["tetapi", "banyak", "kader", "dan", "urus", "nasdem", "adalah", "mantan", "politikus", "golkar", ""]
+# ::pos_tags ["SCONJ", "DET", "NOUN", "CCONJ", "NOUN", "PROPN", "AUX", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "PER", "O", "O", "O", "O"]
+(b / banyak
+      :ARG0 (d / dan
+            :op1 (k / kader)
+            :op2 (p / politikus
+                  / pengurus
+                  :mod (n / nasdem)
+                  :mod (g / golkar)))
+      :mod (m / mantan
+            :mod p))
+
+# ::id 113
+# ::snt meskipun belum tercatat sebagai partai besar.
+# ::tokens ["meskipun", "belum", "tercatat", "sebagai", "partai", "besar", "."]
+# ::lemmas ["meski", "belum", "catat", "bagai", "partai", "besar", ""]
+# ::pos_tags ["SCONJ", "PART", "VERB", "ADP", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+(c / catat
+      :ARG1 (p / partai
+            :mod (b / besar))
+      :polarity -)
+
+# ::id 114
+# ::snt Josef tercatat sebagai pengurus DPP Partai Golkar dari tahun 1998 hingga pada tahun 2005.
+# ::tokens ["Josef", "tercatat", "sebagai", "pengurus", "DPP", "Partai", "Golkar", "dari", "tahun", "1998", "hingga", "pada", "tahun", "2005", "."]
+# ::lemmas ["josef", "catat", "bagai", "urus", "dpp", "partai", "golkar", "dari", "tahun", "1998", "hingga", "pada", "tahun", "2005", ""]
+# ::pos_tags ["PROPN", "VERB", "ADP", "NOUN", "PROPN", "PROPN", "PROPN", "ADP", "NOUN", "NUM", "ADP", "ADP", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "ORG", "NOR", "ORG", "O", "O", "CRD", "O", "O", "O", "CRD"]
+(c / catat
+      :ARG1 (o / organisasi
+            / orang
+            :name (n / nama
+                  :op1 "Josef"
+                  :op1 "Partai"
+                  :op2 "Golkar"))
+      :mod (p / pengurus
+            :mod (d / DPP
+                  :mod o)
+            :time (d1 / date-entity
+                  :tahun 1998)))
+
+# ::id 115
+# ::snt Komisi Pemilihan Umum mencatat ada 15 daerah pelaksana Pilkada 2018 yang masih memiliki satu pasangan calon kepala daerah.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "mencatat", "ada", "15", "daerah", "pelaksana", "Pilkada", "2018", "yang", "masih", "memiliki", "satu", "pasangan", "calon", "kepala", "daerah", "."]
+# ::lemmas ["komisi", "pilih", "umum", "catat", "ada", "15", "daerah", "laksana", "pilkada", "2018", "yang", "masih", "milik", "satu", "pasang", "calon", "kepala", "daerah", ""]
+# ::pos_tags ["PROPN", "NOUN", "PROPN", "VERB", "VERB", "NUM", "NOUN", "NOUN", "PROPN", "NUM", "PRON", "ADV", "VERB", "DET", "NOUN", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "PER", "O", "O", "CRD", "O", "O", "EVT", "DAT", "O", "O", "O", "CRD", "O", "O", "O", "O"]
+(c / calon
+      / catat
+      :ARG0 (o / organisasi
+            :name (n / nama
+                  :op1 "Komisi"
+                  :op2 "Pemilihan"
+                  :op3 "Umum"))
+      :ARG1 (a / ada
+            :mod (t / temporal-quantity
+                  :quant 15
+                  :unit (d / date-entity
+                        / daerah
+                        :mod (p / pilkada
+                              :mod c)
+                        :tahun 2018
+                        :time d)))
+      :mod (k / kepala
+            :mod d))
+
+# ::id 117
+# ::snt Bulan lalu, paslon tunggal tercatat ada di 13 daerah penyelenggara Pilkada 2018.
+# ::tokens ["Bulan", "lalu", ",", "paslon", "tunggal", "tercatat", "ada", "di", "13", "daerah", "penyelenggara", "Pilkada", "2018", "."]
+# ::lemmas ["bulan", "lalu", "", "paslon", "tunggal", "catat", "ada", "di", "13", "daerah", "selenggara", "pilkada", "2018", ""]
+# ::pos_tags ["NOUN", "ADJ", "PUNCT", "NOUN", "ADJ", "VERB", "VERB", "ADP", "NUM", "NOUN", "NOUN", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "CRD", "O", "O", "GPE", "EVT"]
+(c / catat
+      :ARG1 (p1 / paslon
+            :mod (t / temporal-quantity
+                  / tunggal
+                  :quant 13
+                  :unit (d / date-entity
+                        / daerah
+                        :mod (p3 / penyelenggara
+                              :mod (p2 / Pilkada
+                                    :time d))
+                        :year 2018)))
+      :mod t)
+
+# ::id 118
+# ::snt Komisi Pemilihan Umum mencatat ada 15 daerah pelaksana Pilkada 2018 yang masih memiliki satu pasangan calon kepala daerah.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "mencatat", "ada", "15", "daerah", "pelaksana", "Pilkada", "2018", "yang", "masih", "memiliki", "satu", "pasangan", "calon", "kepala", "daerah", "."]
+# ::lemmas ["komisi", "pilih", "umum", "catat", "ada", "15", "daerah", "laksana", "pilkada", "2018", "yang", "masih", "milik", "satu", "pasang", "calon", "kepala", "daerah", ""]
+# ::pos_tags ["PROPN", "NOUN", "PROPN", "VERB", "VERB", "NUM", "NOUN", "NOUN", "PROPN", "NUM", "PRON", "ADV", "VERB", "DET", "NOUN", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "PER", "O", "O", "CRD", "O", "O", "EVT", "DAT", "O", "O", "O", "CRD", "O", "O", "O", "O"]
+(c / catat
+      :ARG0 (k / kpu)
+      :mod (t / temporal-quantity
+            :quant 15
+            :unit (d / daerah)))
+
+# ::id 120
+# ::snt Komisi Pemilihan Umum Kota Bekasi, Jawa Barat mencatat sebanyak 1,3 juta lebih warga setempat masuk dalam Daftar Pemilih Sementara Pilkada 2018.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "Kota", "Bekasi", ",", "Jawa", "Barat", "mencatat", "sebanyak", "1,3", "juta", "lebih", "warga", "setempat", "masuk", "dalam", "Daftar", "Pemilih", "Sementara", "Pilkada", "2018", "."]
+# ::lemmas ["komisi", "pilih", "umum", "kota", "bekas", "", "jawa", "barat", "catat", "banyak", "1 3", "juta", "lebih", "warga", "tempat", "masuk", "dalam", "daftar", "pilih", "sementara", "pilkada", "2018", ""]
+# ::pos_tags ["PROPN", "NOUN", "PROPN", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "VERB", "ADP", "NUM", "NOUN", "ADV", "NOUN", "ADJ", "VERB", "ADP", "PROPN", "PROPN", "SCONJ", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "O", "O", "PER", "O", "O", "CRD", "MON", "O", "O", "O", "O", "O", "O", "O", "O", "ORG", "EVT"]
+(c / catat
+      :ARG0 (k / kpu)
+      :mod (t / temporal-quantity
+            :quant 1300000
+            :unit (w / warga
+                  :mod (d / date-entity
+                        / daftar
+                        :mod (p / pilkada
+                              / pemilih
+                              :mod (s / sementara
+                                    :mod p)
+                              :time d)
+                        :tahun 2018))))
+
+# ::id 122
+# ::snt Bawaslu mencatat sudah ada lebih dari 400 dugaan pelanggaran aparatur sipil negara dalam Pilkada 2018.
+# ::tokens ["Bawaslu", "mencatat", "sudah", "ada", "lebih", "dari", "400", "dugaan", "pelanggaran", "aparatur", "sipil", "negara", "dalam", "Pilkada", "2018", "."]
+# ::lemmas ["bawaslu", "catat", "sudah", "ada", "lebih", "dari", "400", "duga", "langgar", "aparatur", "sipil", "negara", "dalam", "pilkada", "2018", ""]
+# ::pos_tags ["PROPN", "VERB", "ADV", "VERB", "ADV", "ADP", "NUM", "NOUN", "NOUN", "NOUN", "NOUN", "NOUN", "ADP", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "CRD", "O", "O", "PRD", "O", "O", "O", "GPE", "EVT"]
+(c / catat
+      :ARG0 (k / kpu)
+      :mod (t / temporal-quantity
+            :quant 15
+            :unit (d / daerah)))
+
+# ::id 123
+# ::snt Sebelumnya, berdasarkan data yang dihimpun oleh KPU, jumlah data pemilih sementara dari 31 provinsi dengan kabupaten/kota penyelenggara Pilkada 2018 tercatat sebanyak 152.869.291 pemilih.
+# ::tokens ["Sebelumnya", ",", "berdasarkan", "data", "yang", "dihimpun", "oleh", "KPU", ",", "jumlah", "data", "pemilih", "sementara", "dari", "31", "provinsi", "dengan", "kabupaten/kota", "penyelenggara", "Pilkada", "2018", "tercatat", "sebanyak", "152.869.291", "pemilih", "."]
+# ::lemmas ["belum", "", "dasar", "data", "yang", "himpun", "oleh", "kpu", "", "jumlah", "data", "pilih", "sementara", "dari", "31", "provinsi", "dengan", "kabupaten kota", "selenggara", "pilkada", "2018", "catat", "banyak", "152 869 291", "pilih", ""]
+# ::pos_tags ["ADV", "PUNCT", "VERB", "NOUN", "PRON", "VERB", "ADP", "PROPN", "PUNCT", "NOUN", "NOUN", "NOUN", "ADJ", "ADP", "NUM", "NOUN", "ADP", "NOUN", "NOUN", "PROPN", "NUM", "VERB", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "CRD", "QTY", "O", "O", "O", "EVT", "DAT", "O", "O", "CRD", "QTY"]
+(d / date-entity
+      / data
+      / dasar
+      :ARG0 (k / kpu)
+      :ARG1 d
+      :mod (t / temporal-quantity
+            :quant 31
+            :quant 152.869.291
+            :unit (p1 / provinsi)
+            :unit (p3 / pemilih))
+      :op1 (p2 / pilkada
+            :time d)
+      :tahun 2018)
+
+# ::id 124
+# ::snt Data tersebut juga mencatat pemilih dari kaum penyandang disabilitas sebanyak 51.514.
+# ::tokens ["Data", "tersebut", "juga", "mencatat", "pemilih", "dari", "kaum", "penyandang", "disabilitas", "sebanyak", "51.514", "."]
+# ::lemmas ["data", "sebut", "juga", "catat", "pilih", "dari", "kaum", "sandang", "disabilitas", "banyak", "51 514", ""]
+# ::pos_tags ["NOUN", "DET", "ADV", "VERB", "NOUN", "ADP", "NOUN", "NOUN", "ADJ", "ADP", "NUM", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD"]
+(c / catat
+      :ARG1 (p / pemilih)
+      :mod (t / temporal-quantity
+            :quant 51.514
+            :unit (o / orang)))
+
+# ::id 125
+# ::snt Mereka semua tersebar di 5.957 desa yang terbagi ke dalam 74.944 tempat pemungutan suara.
+# ::tokens ["Mereka", "semua", "tersebar", "di", "5.957", "desa", "yang", "terbagi", "ke", "dalam", "74.944", "tempat", "pemungutan", "suara", "."]
+# ::lemmas ["mereka", "semua", "sebar", "di", "5 957", "desa", "yang", "bagi", "ke", "dalam", "74 944", "tempat", "mungut", "suara", ""]
+# ::pos_tags ["PRON", "DET", "VERB", "ADP", "NUM", "NOUN", "PRON", "VERB", "ADP", "ADP", "NUM", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "CRD", "QTY", "O", "O", "O", "O", "CRD", "O", "O", "O"]
+(s / sebar
+      :ARG0 (m / mereka
+            :mod (t / tps
+                  / temporal-quantity
+                  :quant 5957
+                  :quant 74.944
+                  :unit (d / desa)
+                  :unit t))
+      :mod t)
+
+# ::id 126
+# ::snt  Sementara itu untuk remitansi pada 2016 secara keseluruhan tercatat Rp 1,7 triliun.
+# ::tokens ["Sementara", "itu", "untuk", "remitansi", "pada", "2016", "secara", "keseluruhan", "tercatat", "Rp", "1,7", "triliun", "."]
+# ::lemmas ["sementara", "itu", "untuk", "remitansi", "pada", "2016", "cara", "seluruh", "catat", "rp", "1 7", "triliun", ""]
+# ::pos_tags ["SCONJ", "DET", "ADP", "NOUN", "ADP", "NUM", "ADP", "PRON", "VERB", "PROPN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "DAT", "O", "O", "O", "MON", "O", "QTY"]
+(c / catat
+      :ARG1 (r / rupiah
+            / remintansi
+            :time (d / date-entity
+                  :tahun 2016))
+      :mod (t / temporal-quantity
+            :quant 1700000000000
+            :unit r))
+
+# ::id 127
+# ::snt Rakata Institute mencatat, Neneng-Eka unggul atas empat pasangan calon lainnya dalam ajang Pilkada Bekasi 2017.
+# ::tokens ["Rakata", "Institute", "mencatat", ",", "Neneng-Eka", "unggul", "atas", "empat", "pasangan", "calon", "lainnya", "dalam", "ajang", "Pilkada", "Bekasi", "2017", "."]
+# ::lemmas ["rakata", "institute", "catat", "", "neneng-eka", "unggul", "atas", "empat", "pasang", "calon", "lain", "dalam", "ajang", "pilkada", "bekas", "2017", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PUNCT", "PROPN", "VERB", "ADP", "NUM", "NOUN", "NOUN", "ADJ", "ADP", "NOUN", "PROPN", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "ORG", "O", "O", "CRD", "O", "O", "O", "O", "O", "ORG", "GPE", "O"]
+(c / calon
+      / catat
+      :ARG0 (o1 / organisasi
+            :name (n / nama
+                  :op1 "rakata"
+                  :op1 "Neneng"
+                  :op1 "Bekasi"
+                  :op2 "institute"
+                  :op2 "Eka"))
+      :ARG1 (o2 / orang
+            :name n)
+      :mod (u / unggul
+            :mod (t / temporal-quantity
+                  :quant 4
+                  :unit (p / pasangan
+                        :mod c)))
+      :mod (p1 / Pilkada
+            :location (k / kota
+                  :name n)
+            :time (d / date-entity
+                  :year 2017)))
+
+# ::id 128
+# ::snt Wiranto meminta KPK menunda sementara penegakan hukum terhadap calon kepala daerah.
+# ::tokens ["Wiranto", "meminta", "KPK", "menunda", "sementara", "penegakan", "hukum", "terhadap", "calon", "kepala", "daerah", "."]
+# ::lemmas ["wiranto", "minta", "kpk", "tunda", "sementara", "tega", "hukum", "hadap", "calon", "kepala", "daerah", ""]
+# ::pos_tags ["PROPN", "VERB", "PROPN", "VERB", "SCONJ", "NOUN", "NOUN", "ADP", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "ORG", "O", "O", "O", "O", "O", "O", "O", "O"]
+(m / minta
+      :ARG0 (w / wirnato)
+      :ARG1 (k1 / kpk
+            :mod (t1 / tunda
+                  :mod (s1 / sementara
+                        :mod (t2 / terhadap
+                              / tegak
+                              :mod (h / hukum
+                                    :mod t2)
+                              :mod (c / calon
+                                    :mod (k2 / kepala
+                                          :mod (d / daerah))))))))
+
+# ::id 129
+# ::snt Syapril meminta kepada Bawaslu serta seluruh tim pasangan calon untuk ikut bersama-sama pada masa pengumuman dan tanggapan masyarakat agar mendorong para pemilih yang telah memenuhi syarat untuk memilih.
+# ::tokens ["Syapril", "meminta", "kepada", "Bawaslu", "serta", "seluruh", "tim", "pasangan", "calon", "untuk", "ikut", "bersama-sama", "pada", "masa", "pengumuman", "dan", "tanggapan", "masyarakat", "agar", "mendorong", "para", "pemilih", "yang", "telah", "memenuhi", "syarat", "untuk", "memilih", "."]
+# ::lemmas ["syapril", "minta", "kepada", "bawaslu", "serta", "seluruh", "tim", "pasang", "calon", "untuk", "ikut", "sama", "pada", "masa", "umum", "dan", "tanggap", "masyarakat", "agar", "dorong", "para", "pilih", "yang", "telah", "penuh", "syarat", "untuk", "pilih", ""]
+# ::pos_tags ["PROPN", "VERB", "ADP", "PROPN", "CCONJ", "DET", "NOUN", "NOUN", "NOUN", "ADP", "VERB", "VERB", "ADP", "NOUN", "NOUN", "CCONJ", "NOUN", "NOUN", "SCONJ", "VERB", "DET", "NOUN", "PRON", "ADV", "VERB", "NOUN", "ADP", "VERB", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(m / masyarakat
+      / masa
+      / minta
+      :ARG0 (s / syapril)
+      :ARG1 (b / bawaslu
+            :ARG1 (a / and
+                  :op1 m)
+            :op2 (t / tanggap
+                  :mod m))
+      :mod (u / umum))
+
+# ::id 130
+# ::snt Warga yang datanya belum masuk dalam DPS untuk aktif melapor kepada RT, RW dan PPS setempat.
+# ::tokens ["Warga", "yang", "datanya", "belum", "masuk", "dalam", "DPS", "untuk", "aktif", "melapor", "kepada", "RT", ",", "RW", "dan", "PPS", "setempat", "."]
+# ::lemmas ["warga", "yang", "data", "belum", "masuk", "dalam", "dps", "untuk", "aktif", "lapor", "kepada", "rt", "", "rw", "dan", "pps", "tempat", ""]
+# ::pos_tags ["PROPN", "PRON", "NOUN", "ADV", "VERB", "ADP", "PROPN", "ADP", "ADJ", "VERB", "ADP", "PROPN", "PUNCT", "PROPN", "CCONJ", "PROPN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "ORG", "O"]
+(d / dps
+      / data
+      :ARG0 (w / warga)
+      :ARG1 d
+      :mod (a / aktif
+            :mod (l / lapor)))
+
+# ::id 131
+# ::snt Moderator debat dari Universitas Brawijaya Malang meminta kembali Margiono untuk mengkritisi paparan yang telah disampaikan Syahri Mulyo terkait visi misi pembangunan Tulungagung.
+# ::tokens ["Moderator", "debat", "dari", "Universitas", "Brawijaya", "Malang", "meminta", "kembali", "Margiono", "untuk", "mengkritisi", "paparan", "yang", "telah", "disampaikan", "Syahri", "Mulyo", "terkait", "visi", "misi", "pembangunan", "Tulungagung", "."]
+# ::lemmas ["moderator", "debat", "dari", "universitas", "brawijaya", "malang", "minta", "kembali", "margiono", "untuk", "kritisi", "papar", "yang", "telah", "sampai", "syahri", "mulyo", "kait", "visi", "misi", "bangun", "tulungagung", ""]
+# ::pos_tags ["PROPN", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "VERB", "ADV", "PROPN", "ADP", "VERB", "NOUN", "PRON", "ADV", "VERB", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "ORG", "NOR", "PER", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "ORG", "PER", "O", "O", "O", "O", "O"]
+(m1 / minta
+      :ARG0 (m2 / moderator)
+      :ARG1 (m3 / margiono
+            :mod (k / kritis
+                  :mod (p / papar))))
+
+# ::id 132
+# ::snt Kapolri Jenderal Tito Karnavian meminta pasangan calon kepala daerah dan tim suksesnya sportif dalam mengikuti kontestasi politik.
+# ::tokens ["Kapolri", "Jenderal", "Tito", "Karnavian", "meminta", "pasangan", "calon", "kepala", "daerah", "dan", "tim", "suksesnya", "sportif", "dalam", "mengikuti", "kontestasi", "politik", "."]
+# ::lemmas ["kapolri", "jenderal", "tito", "karnavian", "minta", "pasang", "calon", "kepala", "daerah", "dan", "tim", "sukses", "sportif", "dalam", "ikut", "kontestasi", "politik", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "CCONJ", "NOUN", "NOUN", "ADJ", "ADP", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(m / minta
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Tito"
+                  :op2 "Karnavian"))
+      :ARG1 (a / and
+            :op1 (p / pasangan
+                  :mod (c / calon
+                        :mod (k / kepala
+                              :mod (d / daerah))))
+            :op2 (t / tim
+                  :mod (s1 / sukses
+                        :mod (s2 / sportif)))))
+
+# ::id 133
+# ::snt Jangan sampai mengambil jalan pintas yang berpotensi melanggar hukum.
+# ::tokens ["Jangan", "sampai", "mengambil", "jalan", "pintas", "yang", "berpotensi", "melanggar", "hukum", "."]
+# ::lemmas ["jangan", "sampai", "ambil", "jalan", "pintas", "yang", "potensi", "langgar", "hukum", ""]
+# ::pos_tags ["ADV", "ADP", "VERB", "NOUN", "NOUN", "PRON", "VERB", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(a / ambil
+      :ARG1 (j / jalan
+            :mod (p1 / pintas
+                  :mod (p2 / potensi
+                        :mod (l / langgar
+                              :ARG1 (h / hukum)))))
+      :polarity -)
+
+# ::id 134
+# ::snt Kontestan Pemilihan Gubernur Sumatra Utara 2018 diminta bertarung dengan mengedepankan konsep alih-alih memakai sentimen primordial untuk mendulang suara.
+# ::tokens ["Kontestan", "Pemilihan", "Gubernur", "Sumatra", "Utara", "2018", "diminta", "bertarung", "dengan", "mengedepankan", "konsep", "alih-alih", "memakai", "sentimen", "primordial", "untuk", "mendulang", "suara", "."]
+# ::lemmas ["kontestan", "pilih", "gubernur", "sumatra", "utara", "2018", "minta", "tarung", "dengan", "depan", "konsep", "alih", "pakai", "sentimen", "primordial", "untuk", "dulang", "suara", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "NUM", "VERB", "VERB", "ADP", "VERB", "NOUN", "NOUN", "VERB", "NOUN", "ADJ", "ADP", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "NOR", "ORG", "GPE", "EVT", "DAT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(m / minta
+      :ARG1 (k / konsep
+            / kontestan
+            :mod (p / primordial
+                  / pakai
+                  / provinsi
+                  / pemilihan
+                  :ARG1 (g / gubernur
+                        :location p
+                        :time (d / dulang
+                              / depan
+                              / date-entity
+                              :mod k
+                              :mod (s / suara
+                                    / sentiment
+                                    :mod p)
+                              :year 2018))
+                  :mod s
+                  :mod d
+                  :name (n / nama
+                        :op1 "Sumatra"
+                        :op2 "Utara")))
+      :mod (b / bertarung
+            :mod d))
+
+# ::id 143
+# ::snt Anak-anak yang jadi pelajar di sekolah khusus sepak bola akan diberi kurikulum yang berbeda.
+# ::tokens ["Anak-anak", "yang", "jadi", "pelajar", "di", "sekolah", "khusus", "sepak", "bola", "akan", "diberi", "kurikulum", "yang", "berbeda", "."]
+# ::lemmas ["anak", "yang", "jadi", "ajar", "di", "sekolah", "khusus", "sepak", "bola", "akan", "beri", "kurikulum", "yang", "beda", ""]
+# ::pos_tags ["NOUN", "PRON", "VERB", "NOUN", "ADP", "NOUN", "ADJ", "NOUN", "NOUN", "ADV", "VERB", "NOUN", "PRON", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(a / anak-anak
+      / ajar
+      :ARG0 a
+      :location (s / sekolah
+            :name (n / nama
+                  :op1 "khusus"
+                  :op2 "sepak"
+                  :op3 "bola")))
+
+# ::id 146
+# ::snt Oleh karena itu, Bawaslu memberikan rekomendasi sanksi.
+# ::tokens ["Oleh", "karena", "itu", ",", "Bawaslu", "memberikan", "rekomendasi", "sanksi", "."]
+# ::lemmas ["oleh", "karena", "itu", "", "bawaslu", "beri", "rekomendasi", "sanksi", ""]
+# ::pos_tags ["ADP", "SCONJ", "DET", "PUNCT", "PROPN", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "LOC", "O", "O", "O"]
+(b / bawaslu
+      / beri
+      :ARG0 b
+      :ARG1 (r / rekomendasi
+            :mod (s / sanksi)))
+
+# ::id 147
+# ::snt Bawaslu hingga saat ini terus memberikan penindakan berupa rekomendasi sanksi atas dugaan pelanggaran yang ada.
+# ::tokens ["Bawaslu", "hingga", "saat", "ini", "terus", "memberikan", "penindakan", "berupa", "rekomendasi", "sanksi", "atas", "dugaan", "pelanggaran", "yang", "ada", "."]
+# ::lemmas ["bawaslu", "hingga", "saat", "ini", "terus", "beri", "tindak", "upa", "rekomendasi", "sanksi", "atas", "duga", "langgar", "yang", "ada", ""]
+# ::pos_tags ["PROPN", "ADP", "NOUN", "DET", "ADV", "VERB", "NOUN", "VERB", "NOUN", "NOUN", "ADP", "NOUN", "NOUN", "PRON", "VERB", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(b / bawaslu
+      / beri
+      :ARG0 b
+      :ARG1 (p / penindakan
+            :mod (r / rekomendasi
+                  :mod (s / sanksi
+                        :mod (d / dugaan
+                              :mod (l / langgar))))))
+
+# ::id 148
+# ::snt Cak Imin juga memberikan pernyataan tegas bahwa dirinya siap mendampingi Jokowi pada Pilpres 2019 mendatang.
+# ::tokens ["Cak", "Imin", "juga", "memberikan", "pernyataan", "tegas", "bahwa", "dirinya", "siap", "mendampingi", "Jokowi", "pada", "Pilpres", "2019", "mendatang", "."]
+# ::lemmas ["cak", "imin", "juga", "beri", "nyata", "tegas", "bahwa", "diri", "siap", "damping", "jokowi", "pada", "pilpres", "2019", "datang", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "NOUN", "ADJ", "SCONJ", "PRON", "ADJ", "VERB", "PROPN", "ADP", "PROPN", "NUM", "ADJ", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "PER", "O", "ORG", "EVT", "O"]
+(b / beri
+      :ARG0 (o / orang
+            :nama (n / nama
+                  :op1 "Cak"
+                  :op1 "Jokowi"
+                  :op2 "Imin")
+            :name n)
+      :ARG1 (p1 / pernyataan
+            :mod (d1 / dirinya
+                  :mod (s / siap
+                        :mod (d2 / damping
+                              :ARG1 o))))
+      :mod (p2 / Pilpres
+            :time (d / date-entity
+                  :year 2019)))
+
+# ::id 149
+# ::snt Mantan Ketua MPR Amien Rais sebelumnya memberikan tausyiah dalam acara tasyakuran satu tahun Ustadzah Peduli Negeri di Balai Kota, Selasa.
+# ::tokens ["Mantan", "Ketua", "MPR", "Amien", "Rais", "sebelumnya", "memberikan", "tausyiah", "dalam", "acara", "tasyakuran", "satu", "tahun", "Ustadzah", "Peduli", "Negeri", "di", "Balai", "Kota", ",", "Selasa", "."]
+# ::lemmas ["mantan", "ketua", "mpr", "amien", "rais", "belum", "beri", "tausyiah", "dalam", "acara", "tasyakur", "satu", "tahun", "ustadzah", "peduli", "negeri", "di", "balai", "kota", "", "selasa", ""]
+# ::pos_tags ["PROPN", "NOUN", "PROPN", "PROPN", "PROPN", "ADV", "VERB", "NOUN", "ADP", "NOUN", "NOUN", "NUM", "NOUN", "PROPN", "PROPN", "PROPN", "ADP", "PROPN", "PROPN", "PUNCT", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "NOR", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "LOC", "O", "NOR", "LOC", "PER", "O", "ORG", "LOC", "PER"]
+(b / beri
+      :ARG0 (m / mpr
+            / mantan
+            :mod (k / ketua
+                  :mod m)
+            :mod (o / orang
+                  :name (n / nama
+                        :op1 "Amien"
+                        :op1 "Balai"
+                        :op2 "Rais"
+                        :op2 "kota")))
+      :ARG1 (t / tempat
+            / tasyakuran
+            / tausyiah
+            :location t
+            :mod (a / acara
+                  :mod t)
+            :name n
+            :time (d / date-entity
+                  :hari 2)))
+
+# ::id 151
+# ::snt Anggoro Dwitjahyono juga memberikan harapan agar BPS di bawah kepemimpinan Kecuk bisa lebih baik.
+# ::tokens ["Anggoro", "Dwitjahyono", "juga", "memberikan", "harapan", "agar", "BPS", "di", "bawah", "kepemimpinan", "Kecuk", "bisa", "lebih", "baik", "."]
+# ::lemmas ["anggoro", "dwitjahyono", "juga", "beri", "harap", "agar", "bps", "di", "bawah", "pimpin", "cuk", "bisa", "lebih", "baik", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "NOUN", "SCONJ", "PROPN", "ADP", "NOUN", "NOUN", "PROPN", "ADV", "ADV", "ADJ", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "PER", "O", "O", "O"]
+(b / baik
+      / beri
+      :ARG0 (o / orang
+            :mod b
+            :name (n / nama
+                  :op1 "Anggoro"
+                  :op1 "Kecuk"
+                  :op2 "Dwitjahyono"))
+      :ARG1 (h / harapan
+            :mod (b1 / bpjs
+                  :mod (b2 / bawah
+                        :mod (p / pimpin
+                              :mod o)))))
+
+# ::id 154
+# ::snt Ketua MPR Zulkifli Hasan memastikan pelantikan tambahan pimpinan di MPR digelar dalam pekan yang sama.
+# ::tokens ["Ketua", "MPR", "Zulkifli", "Hasan", "memastikan", "pelantikan", "tambahan", "pimpinan", "di", "MPR", "digelar", "dalam", "pekan", "yang", "sama", "."]
+# ::lemmas ["ketua", "mpr", "zulkifli", "hasan", "pasti", "lantik", "tambah", "pimpin", "di", "mpr", "gelar", "dalam", "pekan", "yang", "sama", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "ADJ", "NOUN", "ADP", "PROPN", "VERB", "ADP", "NOUN", "PRON", "ADJ", "PUNCT"]
+# ::ner_tags ["ORG", "O", "NOR", "PER", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O"]
+(p / pasti
+      :ARG0 (k / ketua
+            :ARG1 (l / lantik
+                  :mod (t / tambah
+                        :mod (p1 / pimpin
+                              :ARG1 (m / mpr
+                                    :name (n / nama
+                                          :op1 "Zulkifli"
+                                          :op2 "Hasan"))
+                              :mod (g / gelar
+                                    :mod (p2 / pekan
+                                          :mod (s / sama))))))
+            :mod m))
+
+# ::id 155
+# ::snt Agus memastikan, pesannya itu tidak bermuatan politis untuk mendukung salah satu kandidat.
+# ::tokens ["Agus", "memastikan", ",", "pesannya", "itu", "tidak", "bermuatan", "politis", "untuk", "mendukung", "salah", "satu", "kandidat", "."]
+# ::lemmas ["agus", "pasti", "", "pesan", "itu", "tidak", "muat", "politis", "untuk", "dukung", "salah", "satu", "kandidat", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "DET", "PART", "VERB", "ADJ", "ADP", "VERB", "DET", "DET", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD", "O"]
+(p / politis
+      / pesan
+      / pasti
+      :ARG0 (a / agus)
+      :ARG0-of (m / muat
+            :mod p
+            :polarity -)
+      :ARG1 p
+      :mod (d / dukung
+            :mod (k / kandidat)))
+
+# ::id 158
+# ::snt menindaklanjuti rencana meningkatkan kesejahteraan anak anak buruh migran tersebut.
+# ::tokens ["menindaklanjuti", "rencana", "meningkatkan", "kesejahteraan", "anak", "anak", "buruh", "migran", "tersebut", "."]
+# ::lemmas ["menindaklanjuti", "rencana", "tingkat", "sejahtera", "anak", "anak", "buruh", "migran", "sebut", ""]
+# ::pos_tags ["VERB", "NOUN", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(t / tingkat
+      / tindaklanjut
+      :ARG1 (r / rencana
+            :mod t)
+      :mod (s / sejahtera
+            :mod (a / anak
+                  :mod (b / buruh
+                        :mod (m / migran)))))
+
+# ::id 159
+# ::snt Meski begitu, Nuraida memastikan segera memproses penjatuhan sanksi ketika pengaduan diterima.
+# ::tokens ["Meski", "begitu", ",", "Nuraida", "memastikan", "segera", "memproses", "penjatuhan", "sanksi", "ketika", "pengaduan", "diterima", "."]
+# ::lemmas ["meski", "begitu", "", "nuraida", "pasti", "segera", "proses", "jatuh", "sanksi", "ketika", "adu", "terima", ""]
+# ::pos_tags ["SCONJ", "ADV", "PUNCT", "PROPN", "VERB", "ADV", "VERB", "NOUN", "NOUN", "SCONJ", "NOUN", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O"]
+(p / proses
+      / pasti
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "nuraida"))
+      :ARG1 p
+      :mod (j / jatuh
+            :mod (s / sanksi
+                  :mod (a / adu
+                        :mod (t / terima)))))
+
+# ::id 160
+# ::snt Badan Pengawas Pemilu Sumatera Utara memastikan terus menyelidiki dugaan pelanggaran pemilu yang melibatkan pejabat di Dinas Pendidikan Sumatera Utara tersebut.
+# ::tokens ["Badan", "Pengawas", "Pemilu", "Sumatera", "Utara", "memastikan", "terus", "menyelidiki", "dugaan", "pelanggaran", "pemilu", "yang", "melibatkan", "pejabat", "di", "Dinas", "Pendidikan", "Sumatera", "Utara", "tersebut", "."]
+# ::lemmas ["badan", "awas", "milu", "sumatera", "utara", "pasti", "terus", "selidik", "duga", "langgar", "milu", "yang", "libat", "jabat", "di", "dinas", "didik", "sumatera", "utara", "sebut", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "ADV", "VERB", "NOUN", "NOUN", "NOUN", "PRON", "VERB", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "PROPN", "DET", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NOR", "O", "O", "PER", "O"]
+(p / pejabat
+      / pemilu
+      / provinsi
+      / pasti
+      :ARG0 (o / organisasi
+            :location p
+            :name (n / nama
+                  :op1 "badan"
+                  :op1 "Sumatra"
+                  :op1 "dinas"
+                  :op2 "pengawas"
+                  :op2 "Utara"
+                  :op2 "pendidikan"
+                  :op3 "pemilu"
+                  :op3 "Sumatera"
+                  :op4 "Utara"))
+      :ARG1 (s / selidik
+            :location (g / gedung
+                  :name n)
+            :mod (l / libat
+                  / langar
+                  :mod p))
+      :mod l
+      :name n)
+
+# ::id 163
+# ::snt Dua calon inkumben dipastikan bertarung di pilkada Kota Padang 2018.
+# ::tokens ["Dua", "calon", "inkumben", "dipastikan", "bertarung", "di", "pilkada", "Kota", "Padang", "2018", "."]
+# ::lemmas ["dua", "calon", "inkumben", "pasti", "tarung", "di", "pilkada", "kota", "padang", "2018", ""]
+# ::pos_tags ["NUM", "NOUN", "NOUN", "VERB", "VERB", "ADP", "NOUN", "PROPN", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["CRD", "O", "O", "O", "O", "O", "O", "LOC", "GPE", "LOC"]
+(p / pilkada
+      / pasti
+      :ARG0 (c / calon)
+      :ARG1 (b / bertarung
+            :mod p)
+      :location (k / kota
+            :name (n / nama
+                  :op1 "Padang"))
+      :time (d / date-entity
+            :tahun 2018))
+
+# ::id 164
+# ::snt Syamsuar memastikan pasar akan dibangun oleh pemerintah bila persoalan aset tuntas.
+# ::tokens ["Syamsuar", "memastikan", "pasar", "akan", "dibangun", "oleh", "pemerintah", "bila", "persoalan", "aset", "tuntas", "."]
+# ::lemmas ["syamsuar", "pasti", "pasar", "akan", "bangun", "oleh", "perintah", "bila", "soal", "aset", "tuntas", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "ADV", "VERB", "ADP", "NOUN", "SCONJ", "NOUN", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O"]
+(p1 / pasti
+      :ARG0 (s / syamsuar)
+      :ARG1 (p2 / pasar
+            :mod (p3 / pemerintah
+                  :mod (p4 / persoalan
+                        :mod (a / asset
+                              :mod (t / tuntas))))))
+
+# ::id 166
+# ::snt Anies jadi juara di TPS 28, Lebak Bulus, Jakarta Selatan.
+# ::tokens ["Anies", "jadi", "juara", "di", "TPS", "28", ",", "Lebak", "Bulus", ",", "Jakarta", "Selatan", "."]
+# ::lemmas ["anies", "jadi", "juara", "di", "tps", "28", "", "lebak", "bulus", "", "jakarta", "selatan", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "ADP", "PROPN", "NUM", "PUNCT", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "LOC", "NOR", "O", "O", "O", "PER"]
+(j1 / jadi
+      :ARG0 (a / anies)
+      :ARG1 (j2 / menang
+            :location (p / provinsi
+                  :name (n / nama
+                        :op1 "jakarta"
+                        :op2 "selatan"))))
+
+# ::id 170
+# ::snt Emelia Julia Nomleni tercatat pernah menjadi anggota DPRD NTT periode 2009-2014.
+# ::tokens ["Emelia", "Julia", "Nomleni", "tercatat", "pernah", "menjadi", "anggota", "DPRD", "NTT", "periode", "2009-2014", "."]
+# ::lemmas ["emelia", "julia", "nomleni", "catat", "pernah", "jadi", "anggota", "dprd", "ntt", "periode", "2009-2014", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "VERB", "ADV", "VERB", "NOUN", "PROPN", "PROPN", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["ORG", "O", "PER", "O", "O", "O", "O", "ORG", "LOC", "O", "CRD"]
+(c / catat
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Emelia"
+                  :op1 "DPRD"
+                  :op2 "Julia"
+                  :op2 "NTT"
+                  :op3 "Nomleni"))
+      :ARG1 (a / anggota
+            :location (g / gedung
+                  :name n)
+            :time (d / date-entity
+                  :tahun 2009-2014)))
+
+# ::id 171
+# ::snt Namun, Viktor juga pernah menjadi anggota DPR RI dari Partai Golkar, yakni pada periode 2004 - 2009.
+# ::tokens ["Namun", ",", "Viktor", "juga", "pernah", "menjadi", "anggota", "DPR", "RI", "dari", "Partai", "Golkar", ",", "yakni", "pada", "periode", "2004", "-", "2009", "."]
+# ::lemmas ["namun", "", "viktor", "juga", "pernah", "jadi", "anggota", "dpr", "ri", "dari", "partai", "golkar", "", "yakni", "pada", "periode", "2004", "-", "2009", ""]
+# ::pos_tags ["SCONJ", "PUNCT", "PROPN", "ADV", "ADV", "VERB", "NOUN", "PROPN", "PROPN", "ADP", "PROPN", "PROPN", "PUNCT", "ADV", "ADP", "NOUN", "NUM", "PUNCT", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "ORG", "NOR", "O", "ORG", "PER", "O", "O", "O", "CRD", "O", "TIM"]
+(j / jadi
+      :ARG0 (v / viktor)
+      :ARG1 (a / anggota
+            :mod (d / date-entity
+                  / dpr
+                  :mod (r / ri
+                        :mod (p / partai
+                              :mod (g / golkar)))
+                  :tahun 2004))
+      :time d)
+
+# ::id 172
+# ::snt Setelah itu, Josef menjadi dosen Altri Kehakiman Jakarta.
+# ::tokens ["Setelah", "itu", ",", "Josef", "menjadi", "dosen", "Altri", "Kehakiman", "Jakarta", "."]
+# ::lemmas ["telah", "itu", "", "josef", "jadi", "dosen", "altri", "hakim", "jakarta", ""]
+# ::pos_tags ["ADP", "DET", "PUNCT", "PROPN", "VERB", "NOUN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "LOC", "O", "O", "ORG", "LOC", "PER"]
+(j / josef
+      / jadi
+      :ARG0 j
+      :ARG1 (d / dosen
+            :location (t / tempat
+                  :name (n / nama
+                        :op1 "Altri"
+                        :op2 "Kehakiman"
+                        :op3 "Jakarta"))))
+
+# ::id 173
+# ::snt Setelah itu Josef menjadi Pokja DPP Partai Golkar.
+# ::tokens ["Setelah", "itu", "Josef", "menjadi", "Pokja", "DPP", "Partai", "Golkar", "."]
+# ::lemmas ["telah", "itu", "josef", "jadi", "pokja", "dpp", "partai", "golkar", ""]
+# ::pos_tags ["ADP", "DET", "PROPN", "VERB", "PROPN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "PER", "O", "ORG", "NOR", "O", "PER"]
+(j / jadi
+      :ARG0 (j2 / josef)
+      :ARG1 (p1 / pokja
+            :mod (d / dpp
+                  :mod (p2 / partai
+                        :mod (g / golkar)))))
+
+# ::id 177
+# ::snt Tito tidak ingin lembaganya dijadikan alat politik untuk menjatuhkan lawan politik calon kepala daerah di pilkada.
+# ::tokens ["Tito", "tidak", "ingin", "lembaganya", "dijadikan", "alat", "politik", "untuk", "menjatuhkan", "lawan", "politik", "calon", "kepala", "daerah", "di", "pilkada", "."]
+# ::lemmas ["tito", "tidak", "ingin", "lembaga", "jadi", "alat", "politik", "untuk", "jatuh", "lawan", "politik", "calon", "kepala", "daerah", "di", "pilkada", ""]
+# ::pos_tags ["PROPN", "PART", "ADV", "NOUN", "VERB", "NOUN", "NOUN", "ADP", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "NOUN", "ADP", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(i / ingin
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Tito"))
+      :ARG1 (l1 / lembaga
+            :ARG1-of (j / jadi
+                  :mod (l2 / lawan
+                        :mod (p1 / politik
+                              :mod (c / calon
+                                    :mod (k / kepala
+                                          :mod (d / daerah
+                                                :mod (p / pilkada))))))))
+      :polarity -)
+
+# ::id 178
+# ::snt Di situlah praktik kecurangan seperti politik uang terjadi.
+# ::tokens ["Di", "situlah", "praktik", "kecurangan", "seperti", "politik", "uang", "terjadi", "."]
+# ::lemmas ["di", "situ", "praktik", "curang", "seperti", "politik", "uang", "jadi", ""]
+# ::pos_tags ["ADP", "NOUN", "NOUN", "NOUN", "ADP", "NOUN", "NOUN", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+(c / curang
+      :ARG1 (p / politik
+            / praktik
+            :mod c
+            :mod (u / uang))
+      :mod p)
+
+# ::id 192
+# ::snt Pungutan liar jadi perhatian khalayak luas.
+# ::tokens ["Pungutan", "liar", "jadi", "perhatian", "khalayak", "luas", "."]
+# ::lemmas ["pungut", "liar", "jadi", "perhati", "khalayak", "luas", ""]
+# ::pos_tags ["NOUN", "ADJ", "VERB", "NOUN", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O"]
+(j / jadi
+      :ARG1 (p / pungut
+            :mod (l1 / liar
+                  :mod (h / hati
+                        :mod (k / khalayak
+                              :mod (l2 / luas))))))
+
+# ::id 196
+# ::snt Jadi, tipis sekali".
+# ::tokens ["Jadi", ",", "tipis", "sekali", "\"", "."]
+# ::lemmas ["jadi", "", "tipis", "sekali", "", ""]
+# ::pos_tags ["SCONJ", "PUNCT", "ADJ", "ADV", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O"]
+(j / jadi
+      :ARG1 (t / tipis
+            :mod (s / sekali)))
+
+# ::id 206
+# ::snt Diduga terkait pelaksanaan pilkada serentak tahun ini.
+# ::tokens ["Diduga", "terkait", "pelaksanaan", "pilkada", "serentak", "tahun", "ini", "."]
+# ::lemmas ["duga", "kait", "laksana", "pilkada", "serentak", "tahun", "ini", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "NOUN", "ADP", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+(k / kait
+      :ARG1 (p1 / pelaksanaan
+            :mod (p2 / pilkada
+                  :mod (s / serentak
+                        :mod (t / tahun
+                              :mod (i / ini))))))
+
+# ::id 211
+# ::snt Gogot mengungkapkan, rincian yang akan disampaikan kedua pasangan calon dalam keenam segmen debat publik pertama.
+# ::tokens ["Gogot", "mengungkapkan", ",", "rincian", "yang", "akan", "disampaikan", "kedua", "pasangan", "calon", "dalam", "keenam", "segmen", "debat", "publik", "pertama", "."]
+# ::lemmas ["gogot", "ungkap", "", "rincian", "yang", "akan", "sampai", "dua", "pasang", "calon", "dalam", "enam", "segmen", "debat", "publik", "pertama", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "PRON", "ADV", "VERB", "NUM", "NOUN", "NOUN", "ADP", "NUM", "NOUN", "NOUN", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "CRD", "O", "O", "O", "GPE", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o / orang
+            :nama (n / name
+                  :op1 "Gogot"))
+      :ARG1 (r / rincian
+            :mod (s1 / sampai
+                  :ARG0 (d1 / dua
+                        :mod (p3 / pasangan
+                              :mod (c / calon
+                                    :mod (e / enam
+                                          :mod (s2 / segmen
+                                                :mod (d2 / debat
+                                                      :mod (p1 / publik
+                                                            :mod (p2 / pertama)))))))))))
+
+# ::id 212
+# ::snt Iing mengungkapkan, sebab KBB merupakan daerah yang rawan bencana.
+# ::tokens ["Iing", "mengungkapkan", ",", "sebab", "KBB", "merupakan", "daerah", "yang", "rawan", "bencana", "."]
+# ::lemmas ["iing", "ungkap", "", "sebab", "kbb", "rupa", "daerah", "yang", "rawan", "bencana", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "SCONJ", "PROPN", "VERB", "NOUN", "PRON", "ADJ", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "PER", "O", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Iing"))
+      :ARG1 (k / kbb
+            :mod (d / daerah
+                  :mod (r / rawan
+                        :mod (b / bencana)))))
+
+# ::id 213
+# ::snt Iing mengungkapkan, format acara debat, relatif sama dengan acara debat lainnya.
+# ::tokens ["Iing", "mengungkapkan", ",", "format", "acara", "debat", ",", "relatif", "sama", "dengan", "acara", "debat", "lainnya", "."]
+# ::lemmas ["iing", "ungkap", "", "format", "acara", "debat", "", "relatif", "sama", "dengan", "acara", "debat", "lain", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "NOUN", "NOUN", "PUNCT", "ADV", "ADJ", "ADP", "NOUN", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Iing"))
+      :ARG1 (f / format
+            :mod (a / acara
+                  :mod (d / debat
+                        :mod (r / relatif)
+                        :mod (s / sama)))))
+
+# ::id 214
+# ::snt Ketua KPU RI Arief Budiman mengungkapkan hal itu di Kantor KPU, Jakarta, Kamis 12 April 2018 malam.
+# ::tokens ["Ketua", "KPU", "RI", "Arief", "Budiman", "mengungkapkan", "hal", "itu", "di", "Kantor", "KPU", ",", "Jakarta", ",", "Kamis", "12", "April", "2018", "malam", "."]
+# ::lemmas ["ketua", "kpu", "ri", "arief", "budiman", "ungkap", "hal", "itu", "di", "kantor", "kpu", "", "jakarta", "", "kamis", "12", "april", "2018", "malam", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "DET", "ADP", "PROPN", "PROPN", "PUNCT", "PROPN", "PUNCT", "PROPN", "NUM", "PROPN", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "PER", "O", "O", "O", "O", "ORG", "LOC", "GPE", "DAT", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (k / kamis
+            / kota
+            / kpu
+            / ketua
+            :mod k
+            :mod (r / ri
+                  :mod (o / orang
+                        :name (n / nama
+                              :op1 "Arief"
+                              :op1 "Kantor"
+                              :op1 "Jakarta"
+                              :op2 "Budiman"
+                              :op2 "KPU")))
+            :name n)
+      :ARG1 (h / hal)
+      :location (t / tempat
+            :location k
+            :name n)
+      :mod k
+      :time (d / date-entity
+            :bulan 4
+            :hari 12
+            :tahun 2018))
+
+# ::id 216
+# ::snt Mantan Komisioner Komnas HAM Natalius Pigai mengungkapkan alasan kenapa dirinya selalu mengkritik kebijakan pemerintahan Presiden Joko Widodo.
+# ::tokens ["Mantan", "Komisioner", "Komnas", "HAM", "Natalius", "Pigai", "mengungkapkan", "alasan", "kenapa", "dirinya", "selalu", "mengkritik", "kebijakan", "pemerintahan", "Presiden", "Joko", "Widodo", "."]
+# ::lemmas ["mantan", "komisioner", "komnas", "ham", "natalius", "pigai", "ungkap", "alas", "kenapa", "diri", "selalu", "kritik", "bijak", "perintah", "presiden", "joko", "widodo", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "ADV", "PRON", "ADV", "VERB", "NOUN", "NOUN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "NOR", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "NOR", "LOC"]
+(u / ungkap
+      :ARG0 (m / mantan
+            :mod (k1 / komisioner
+                  :mod (k2 / komnas
+                        :mod (h / ham
+                              :mod (o / orang
+                                    :name (n / nama
+                                          :op1 "Natalius"
+                                          :op1 "Joko"
+                                          :op2 "Pigai"
+                                          :op2 "Widodo"))))))
+      :ARG1 (a / alasan
+            :mod (d / dirinya
+                  :mod (k3 / kritik
+                        :mod (k4 / kebijakan
+                              :mod (p / pemerintahan)
+                              :mod o)))))
+
+# ::id 218
+# ::snt Zainal mengungkapkan, "Taufan Pawe datang mengklarifikasi tudingan dugaan dua item pelanggaran yang dilaporkan warga".
+# ::tokens ["Zainal", "mengungkapkan", ",", "\"", "Taufan", "Pawe", "datang", "mengklarifikasi", "tudingan", "dugaan", "dua", "item", "pelanggaran", "yang", "dilaporkan", "warga", "\"", "."]
+# ::lemmas ["zainal", "ungkap", "", "", "taufan", "pawe", "datang", "klarifikasi", "tuding", "duga", "dua", "item", "langgar", "yang", "lapor", "warga", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "PROPN", "PROPN", "VERB", "VERB", "NOUN", "NOUN", "NUM", "NOUN", "NOUN", "PRON", "VERB", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "PER", "O", "O", "O", "O", "CRD", "QTY", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o1 / orang
+            :name (n / nama
+                  :op1 "zainal"
+                  :op1 "taufan"
+                  :op2 "pawe"))
+      :ARG1 (d3 / datang
+            :ARG0 (o2 / orang
+                  :name n)
+            :mod (k / klarifikasi
+                  :mod (t / tudingan
+                        :mod (d1 / dugaan
+                              :mod (d2 / dua
+                                    :mod (i / item
+                                          :mod (l1 / langgar
+                                                :mod (l2 / lapor
+                                                      :mod (w / warga))))))))))
+
+# ::id 219
+# ::snt Rohmi mengungkapkan, "Zul-Rohmi mengajak para pegiat sosial dan aktivis yang concern kepada buruh migran agar bahu membahu untuk merealisasikan ide dan gagasan mulia ini".
+# ::tokens ["Rohmi", "mengungkapkan", ",", "\"", "Zul-Rohmi", "mengajak", "para", "pegiat", "sosial", "dan", "aktivis", "yang", "concern", "kepada", "buruh", "migran", "agar", "bahu", "membahu", "untuk", "merealisasikan", "ide", "dan", "gagasan", "mulia", "ini", "\"", "."]
+# ::lemmas ["rohmi", "ungkap", "", "", "zul-rohmi", "ajak", "para", "giat", "sosial", "dan", "aktivis", "yang", "concern", "kepada", "buruh", "migran", "agar", "bahu", "bahu", "untuk", "realisasi", "ide", "dan", "gagas", "mulia", "ini", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "PROPN", "VERB", "DET", "NOUN", "NOUN", "CCONJ", "NOUN", "PRON", "ADJ", "ADP", "NOUN", "NOUN", "SCONJ", "NOUN", "VERB", "ADP", "VERB", "NOUN", "CCONJ", "NOUN", "ADJ", "DET", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o / orang
+            :ARG1 (d / dan
+                  :mod (c / concern
+                        :mod (b / bahu
+                              / buruh
+                              :mod (m / mulia
+                                    / migran)
+                              :mod (r / realisasi
+                                    :ARG1 d)))
+                  :op1 (p / pegiat
+                        :mod (s / sosial))
+                  :op1 (i / ide)
+                  :op2 (a / aktivis
+                        / ajak
+                        :ARG0 o)
+                  :op2 (g / gagasan
+                        :mod m))
+            :mod b
+            :name (n / nama
+                  :op1 "rohmi"
+                  :op1 "Zul-Rohmi"))
+      :ARG1 a)
+
+# ::id 221
+# ::snt Fadli mengungkapkan, "Saya kira nanti akan bisa dikomunikasikan dengan baik, enggak ada masalah".
+# ::tokens ["Fadli", "mengungkapkan", ",", "\"", "Saya", "kira", "nanti", "akan", "bisa", "dikomunikasikan", "dengan", "baik", ",", "enggak", "ada", "masalah", "\"", "."]
+# ::lemmas ["fadli", "ungkap", "", "", "saya", "kira", "nanti", "akan", "bisa", "komunikasi", "dengan", "baik", "", "enggak", "ada", "masalah", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "PRON", "ADV", "ADV", "ADV", "ADV", "VERB", "ADP", "ADJ", "PUNCT", "PART", "VERB", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (f / fadli)
+      :ARG1 (m / masalah
+            / multi-sentence
+            :op1 (k / komunikasi
+                  / kira
+                  :ARG0 (s / saya
+                        :ARG1 (b / baik
+                              / bisa
+                              :mod k))
+                  :mod b)
+            :op2 (a / ada
+                  :ARG1 m
+                  :polarity -)))
+
+# ::id 222
+# ::snt Jokowi mengungkapkan masih ingin terlebih dahulu mengetahui secara lengkap mengenai proses pengurusannya.
+# ::tokens ["Jokowi", "mengungkapkan", "masih", "ingin", "terlebih", "dahulu", "mengetahui", "secara", "lengkap", "mengenai", "proses", "pengurusannya", "."]
+# ::lemmas ["jokowi", "ungkap", "masih", "ingin", "lebih", "dahulu", "tahu", "cara", "lengkap", "kena", "proses", "urus", ""]
+# ::pos_tags ["PROPN", "VERB", "ADV", "ADV", "ADV", "ADV", "VERB", "ADP", "ADJ", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(u / urus
+      / ungkap
+      :ARG0 (j / Jokowi
+            :ARG1 (t / tahu
+                  :mod (l / lengkap
+                        :mod (p / proses
+                              :mod u)))))
+
+# ::id 230
+# ::snt Cak Imin menyatakan kesiapan dan keyakinannya akan dipilih sebagai cawapres Jokowi.
+# ::tokens ["Cak", "Imin", "menyatakan", "kesiapan", "dan", "keyakinannya", "akan", "dipilih", "sebagai", "cawapres", "Jokowi", "."]
+# ::lemmas ["cak", "imin", "nyata", "kesiap", "dan", "yakin", "akan", "pilih", "bagai", "cawapres", "jokowi", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "NOUN", "CCONJ", "NOUN", "ADV", "VERB", "ADP", "NOUN", "PROPN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "ORG"]
+(n / nama
+      / nyata
+      :ARG0 (o / orang
+            :name n)
+      :ARG1 (d / dan
+            :mod (p / pilih
+                  :mod (c / cawapres
+                        :mod o))
+            :op1 (s / siap)
+            :op2 (y / yakin))
+      :op1 "Cak"
+      :op1 "Jokowi"
+      :op2 "Imin")
+
+# ::id 236
+# ::snt Komisioner Komisi Pemilihan Umum Wahyu Setiawan menyatakan minat lembaga pemantau pemilu untuk memantau pemilihan kepala daerah 2018 sangat rendah.
+# ::tokens ["Komisioner", "Komisi", "Pemilihan", "Umum", "Wahyu", "Setiawan", "menyatakan", "minat", "lembaga", "pemantau", "pemilu", "untuk", "memantau", "pemilihan", "kepala", "daerah", "2018", "sangat", "rendah", "."]
+# ::lemmas ["komisioner", "komisi", "pilih", "umum", "wahyu", "setiawan", "nyata", "minat", "lembaga", "pantau", "milu", "untuk", "pantau", "pilih", "kepala", "daerah", "2018", "sangat", "rendah", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "NOUN", "NOUN", "ADP", "VERB", "NOUN", "NOUN", "NOUN", "NUM", "ADV", "ADJ", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "PRD", "O", "DAT", "O", "O"]
+(n / nama
+      / nyata
+      :ARG0 (o / orang
+            :mod (k1 / komisioner
+                  :mod (k2 / komisi
+                        :mod (p5 / pemilihan
+                              :mod (u / umum))))
+            :name n)
+      :ARG1 (m / minat
+            :mod (l / Lembaga
+                  :mod (p1 / pantau
+                        :mod (p2 / pemilu
+                              :mod (p3 / pantau
+                                    :ARG1 (p4 / pilih
+                                          :ARG1 (k3 / kepala
+                                                :mod (d / date-entity
+                                                      / daerah
+                                                      :tahun 2018
+                                                      :time d))
+                                          :mod (r / rendah)))))))
+      :op1 "Wahyu"
+      :op2 "Setiawan")
+
+# ::id 237
+# ::snt Komisi Pemilihan Umum menyatakan, berdasarkan evaluasi, ada beberapa daerah yang sebaiknya tidak melakukan pemilihan kepala daerah atau pilkada secara langsung.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "menyatakan", ",", "berdasarkan", "evaluasi", ",", "ada", "beberapa", "daerah", "yang", "sebaiknya", "tidak", "melakukan", "pemilihan", "kepala", "daerah", "atau", "pilkada", "secara", "langsung", "."]
+# ::lemmas ["komisi", "pilih", "umum", "nyata", "", "dasar", "evaluasi", "", "ada", "beberapa", "daerah", "yang", "baik", "tidak", "laku", "pilih", "kepala", "daerah", "atau", "pilkada", "cara", "langsung", ""]
+# ::pos_tags ["PROPN", "NOUN", "PROPN", "VERB", "PUNCT", "VERB", "NOUN", "PUNCT", "VERB", "DET", "NOUN", "PRON", "ADV", "PART", "VERB", "NOUN", "NOUN", "NOUN", "CCONJ", "NOUN", "ADP", "ADJ", "PUNCT"]
+# ::ner_tags ["NOR", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(n / nyata
+      :ARG0 (k / komisi
+            :mod (p / pemilihan
+                  :mod (u / umum)))
+      :ARG1 (e / evaluasi
+            :mod (d / daerah
+                  :mod (l / laku
+                        :polarity -))))
+
+# ::id 238
+# ::snt Komisi Pemilihan Umum Daerah Jawa Timur menyatakan kesiapannya menggelar debat publik pertama pada kontestasi Pilgub Jatim 2018.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "Daerah", "Jawa", "Timur", "menyatakan", "kesiapannya", "menggelar", "debat", "publik", "pertama", "pada", "kontestasi", "Pilgub", "Jatim", "2018", "."]
+# ::lemmas ["komisi", "pilih", "umum", "daerah", "jawa", "timur", "nyata", "kesiap", "gelar", "debat", "publik", "pertama", "pada", "kontestasi", "pilgub", "jatim", "2018", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "VERB", "NOUN", "NOUN", "ADJ", "ADP", "NOUN", "PROPN", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "ORD", "O", "O", "ORG", "NOR", "GPE"]
+(n / nama
+      / nyata
+      :ARG0 (k / kontestasi
+            / komisi
+            :location (p / pilgub
+                  / pertama
+                  / public
+                  / provinsi
+                  / pemilihan
+                  :location p
+                  :mod (u / umum)
+                  :mod p
+                  :mod k
+                  :name n
+                  :time (d / date-entity
+                        / debat
+                        :mod p
+                        :tahun 2018))
+            :mod p)
+      :ARG1 (s / siap
+            :mod d)
+      :op1 "Jawa"
+      :op1 "Jatim"
+      :op2 "Timur")
+
+# ::id 240
+# ::snt Ace menyatakan pembicaraan cawapres di koalisi Jokowi akan dilakukan seusai Pilkada 2018.
+# ::tokens ["Ace", "menyatakan", "pembicaraan", "cawapres", "di", "koalisi", "Jokowi", "akan", "dilakukan", "seusai", "Pilkada", "2018", "."]
+# ::lemmas ["ace", "nyata", "bicara", "cawapres", "di", "koalisi", "jokowi", "akan", "laku", "usai", "pilkada", "2018", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "NOUN", "ADP", "NOUN", "PROPN", "ADV", "VERB", "ADP", "PROPN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "GPE", "EVT"]
+(n / nyata)
+
+# ::id 241
+# ::snt Badan Pengawas Pemilihan Umum Riau menyatakan anggota DPRD Bengkalis Nur Azmi Hasyim dan ajudannya Adi Purnawan telah ditetapkan sebagai tersangka.
+# ::tokens ["Badan", "Pengawas", "Pemilihan", "Umum", "Riau", "menyatakan", "anggota", "DPRD", "Bengkalis", "Nur", "Azmi", "Hasyim", "dan", "ajudannya", "Adi", "Purnawan", "telah", "ditetapkan", "sebagai", "tersangka."]
+# ::lemmas ["badan", "awas", "pilih", "umum", "riau", "nyata", "anggota", "dprd", "bengkal", "nur", "azmi", "hasyim", "dan", "ajudan", "adi", "purnawan", "telah", "tetap", "bagai", "sangka"]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "CCONJ", "NOUN", "PROPN", "PROPN", "ADV", "VERB", "ADP", "NOUN"]
+# ::ner_tags ["ORG", "NOR", "O", "ORG", "PER", "O", "O", "ORG", "NOR", "ORG", "O", "PER", "O", "O", "ORG", "PER", "O", "O", "O", "O"]
+(n / nama
+      / nyata
+      :ARG0 (b / badan
+            :mod (p1 / pengawas
+                  :mod (p2 / pemilihan
+                        :mod (u / umum
+                              :location (k / kota
+                                    :name n)))))
+      :ARG1 (t / tetap
+            :ARG1 (d / dprd
+                  / dan
+                  :mod (o / orang
+                        :name n)
+                  :op1 (a / ajudan
+                        / anggota
+                        :mod d
+                        :mod o)
+                  :op2 a)
+            :mod (t2 / tersangka))
+      :op1 "Riau"
+      :op1 "Bengkalis"
+      :op1 "Adi"
+      :op2 "Nur"
+      :op2 "Purnawan"
+      :op3 "Azmi")
+
+# ::id 243
+# ::snt Sebanyak 82,9 persen responden menyatakan puas terhadap kinerja Joko Widodo.
+# ::tokens ["Sebanyak", "82,9", "persen", "responden", "menyatakan", "puas", "terhadap", "kinerja", "Joko", "Widodo", "."]
+# ::lemmas ["banyak", "82 9", "persen", "responden", "nyata", "puas", "hadap", "kerja", "joko", "widodo", ""]
+# ::pos_tags ["ADP", "NUM", "NOUN", "NOUN", "VERB", "ADJ", "ADP", "NOUN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "PRC", "O", "O", "O", "O", "O", "O", "ORG", "LOC"]
+(n / nama
+      / nyata
+      :ARG0 (o / orang
+            :name n)
+      :ARG1 (p / percentage-entity
+            / puas
+            :ARG1 p
+            :mod (k / kinerja
+                  :mod o)
+            :unit (r / responden)
+            :value 82.9)
+      :op1 "Joko"
+      :op2 "Widodo")
+
+# ::id 247
+# ::snt Ketua MPR RI Zulkifli Hasan menyatakan dirinya ingin pelaksanaan pemilihan presiden 2019 dan pemilihan kepala daerah tahun ini berjalan aman, damai, dan berkualitas.
+# ::tokens ["Ketua", "MPR", "RI", "Zulkifli", "Hasan", "menyatakan", "dirinya", "ingin", "pelaksanaan", "pemilihan", "presiden", "2019", "dan", "pemilihan", "kepala", "daerah", "tahun", "ini", "berjalan", "aman", ",", "damai", ",", "dan", "berkualitas", "."]
+# ::lemmas ["ketua", "mpr", "ri", "zulkifli", "hasan", "nyata", "diri", "ingin", "laksana", "pilih", "presiden", "2019", "dan", "pilih", "kepala", "daerah", "tahun", "ini", "jalan", "aman", "", "damai", "", "dan", "kualitas", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PRON", "VERB", "NOUN", "NOUN", "NOUN", "NUM", "CCONJ", "NOUN", "NOUN", "NOUN", "NOUN", "DET", "VERB", "ADJ", "PUNCT", "ADJ", "PUNCT", "CCONJ", "VERB", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "CRD", "O", "O", "PRD", "O", "O", "O", "O", "O", "O", "O", "O"]
+(n / nama
+      / nyata
+      :ARG0 (k / kualitas
+            / kepala
+            / ketua
+            :mod (m / mpr
+                  :mod (r / ri))
+            :mod (d / damai
+                  / daerah
+                  / date-entity
+                  / dan
+                  :mod (j / jalan
+                        :mod d)
+                  :op1 (p2 / pemilihan
+                        :mod (p3 / presiden
+                              :time d))
+                  :op1 (a / aman)
+                  :op2 (p4 / pemilihan
+                        :mod k)
+                  :op2 d
+                  :op3 k
+                  :tahun 2019
+                  :time (t / tahun
+                        :mod (i / ini
+                              / ingin
+                              :ARG0 k
+                              :ARG1 (l / laksana
+                                    :ARG1 d))))
+            :name n)
+      :ARG1 i
+      :op1 "Zulkifli"
+      :op2 "Hasan")
+
+# ::id 249
+# ::snt Komisi Pemilihan Umum Sumatra Utara menyatakan JR Saragih tetap tidak memenuhi syarat sebagai calon gubernur Pilkada Sumut.
+# ::tokens ["Komisi", "Pemilihan", "Umum", "Sumatra", "Utara", "menyatakan", "JR", "Saragih", "tetap", "tidak", "memenuhi", "syarat", "sebagai", "calon", "gubernur", "Pilkada", "Sumut", "."]
+# ::lemmas ["komisi", "pilih", "umum", "sumatra", "utara", "nyata", "jr", "saragih", "tetap", "tidak", "penuh", "syarat", "bagai", "calon", "gubernur", "pilkada", "sumut", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PROPN", "PROPN", "ADV", "PART", "VERB", "NOUN", "ADP", "NOUN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "PER", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "NOR", "LOC"]
+(n / nama
+      / nyata
+      :ARG0 (k / komisi
+            :location (p3 / provinsi
+                  :name n)
+            :mod (p1 / pemilihan
+                  :mod (u / umum)))
+      :ARG1 (p2 / penuh
+            :ARG0 (o / orang
+                  :name n)
+            :ARG1 (s / syarat
+                  :mod (c / calon
+                        :mod (g / gubernur
+                              :mod (p / provinsi
+                                    / pilkada
+                                    :location p
+                                    :name n))))
+            :polarity -)
+      :op1 "Sumatra"
+      :op1 "JR"
+      :op1 "Sumut"
+      :op2 "Utara"
+      :op2 "Saragih")
+
+# ::id 256
+# ::snt Pasangan Syahri Mulyo yakni Maryoto Birowo menambahkan sedikit pernyataan koleganya.
+# ::tokens ["Pasangan", "Syahri", "Mulyo", "yakni", "Maryoto", "Birowo", "menambahkan", "sedikit", "pernyataan", "koleganya", "."]
+# ::lemmas ["pasang", "syahri", "mulyo", "yakni", "maryoto", "birowo", "tambah", "sedikit", "nyata", "kolega", ""]
+# ::pos_tags ["NOUN", "PROPN", "PROPN", "ADV", "PROPN", "PROPN", "VERB", "ADV", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "ORG", "PER", "O", "ORG", "PER", "O", "O", "O", "O"]
+(t / tambah
+      :ARG0 (p / pasang
+            :ARG0 (o / orang
+                  :nama (n / nyata
+                        / nama
+                        :mod (k / kolega
+                              :mod (s / sedikit))
+                        :op1 "Syahri"
+                        :op1 "Mulyo"
+                        :op1 "Maryoto"
+                        :op2 "Birowo")
+                  :name n)
+            :ARG1 o)
+      :ARG1 n)
+
+# ::id 258
+# ::snt Kepala PPATK Kiagus Ahmad Badaruddin menambahkan dari temuan itu akan diperdalam atau dibagi-bagi lagi mana yang benar-benar tindak pidana.
+# ::tokens ["Kepala", "PPATK", "Kiagus", "Ahmad", "Badaruddin", "menambahkan", "dari", "temuan", "itu", "akan", "diperdalam", "atau", "dibagi-bagi", "lagi", "mana", "yang", "benar-benar", "tindak", "pidana", "."]
+# ::lemmas ["kepala", "ppatk", "kiagus", "ahmad", "badaruddin", "tambah", "dari", "temu", "itu", "akan", "dalam", "atau", "bagi", "lagi", "mana", "yang", "benar", "tindak", "pidana", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "ADP", "NOUN", "DET", "ADV", "VERB", "CCONJ", "VERB", "ADV", "ADP", "PRON", "ADV", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(t / tindak
+      / temuan
+      / tambah
+      :ARG0 (o / organisasi
+            / orang
+            :mod (k / kepala
+                  :mod o)
+            :name (n / nama
+                  :op1 "ppatk"
+                  :op1 "Kiagus"
+                  :op2 "Ahmad"
+                  :op3 "Badaruddin"))
+      :ARG1 (a / atau
+            :op1 t
+            :op2 (b / benar
+                  / bagi
+                  :mod (m / mana
+                        :mod b)
+                  :mod t))
+      :mod (d / dalam)
+      :mod (p / pidana))
+
+# ::id 260
+# ::snt Kapolri Jenderal Tito Karnavian menambahkan, pihaknya bersama TNI akan melakukan sosialisasi secara berkesinambungan untuk mempersiapkan pesta demokrasi.
+# ::tokens ["Kapolri", "Jenderal", "Tito", "Karnavian", "menambahkan", ",", "pihaknya", "bersama", "TNI", "akan", "melakukan", "sosialisasi", "secara", "berkesinambungan", "untuk", "mempersiapkan", "pesta", "demokrasi", "."]
+# ::lemmas ["kapolri", "jenderal", "tito", "karnavian", "tambah", "", "pihak", "sama", "tni", "akan", "laku", "sosialisasi", "cara", "sambung", "untuk", "siap", "pesta", "demokrasi", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PUNCT", "NOUN", "ADP", "NOUN", "ADV", "VERB", "NOUN", "ADP", "VERB", "ADP", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "NOR", "O", "PER", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(t / tni
+      / tambah
+      :ARG0 (o / orang
+            :mod (k / kapolri
+                  :mod (j / jenderal))
+            :name (n / nama
+                  :op1 "Tito"
+                  :op2 "Karnavian"))
+      :ARG0-of (l / laku
+            :mod (s1 / sosialisasi
+                  :mod (s2 / sinambung
+                        :mod (s3 / siap
+                              :mod (p / pesta
+                                    :mod (d / demokrasi))))))
+      :ARG1 t)
+
+# ::id 262
+# ::snt Syafrudin menambahkan, proyeksi daftar pemilih tetap akan menurun dari target 1,8 juta jiwa.
+# ::tokens ["Syafrudin", "menambahkan", ",", "proyeksi", "daftar", "pemilih", "tetap", "akan", "menurun", "dari", "target", "1,8", "juta", "jiwa", "."]
+# ::lemmas ["syafrudin", "tambah", "", "proyeksi", "daftar", "pilih", "tetap", "akan", "turun", "dari", "target", "1 8", "juta", "jiwa", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "NOUN", "NOUN", "ADV", "ADV", "VERB", "ADP", "NOUN", "NUM", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD", "MON", "O"]
+(t1 / turun
+      / tambah
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Syafrudin"))
+      :ARG1 (p1 / proyeksi
+            :ARG1 t1
+            :mod (d / daftar
+                  :mod (p2 / pemilih
+                        :mod (t2 / tetap
+                              / target
+                              :mod (t3 / temporal-quantity
+                                    :quant 1800000
+                                    :unit (j / jiwa))))))
+      :mod t2)
+
+# ::id 266
+# ::snt Zudan menambahkan, untuk memudahkan pemilih,
+# ::tokens ["Zudan", "menambahkan", ",", "untuk", "memudahkan", "pemilih", ","]
+# ::lemmas ["zudan", "tambah", "", "untuk", "mudah", "pilih", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "ADP", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O"]
+(t / tambah
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Zudan"))
+      :ARG1 (m / mudah
+            :mod (p / pemilih)))
+
+# ::id 267
+# ::snt Nina menambahkan, "Kemarin kami membuat bank pertanyaan dan kita intisarikan jadi empat pertanyaan yang bisa mengakomodir seluruh pertanyaan. Semua hasil rumusan panelis".
+# ::tokens ["Nina", "menambahkan", ",", "\"", "Kemarin", "kami", "membuat", "bank", "pertanyaan", "dan", "kita", "intisarikan", "jadi", "empat", "pertanyaan", "yang", "bisa", "mengakomodir", "seluruh", "pertanyaan", ".", "Semua", "hasil", "rumusan", "panelis", "\"", "."]
+# ::lemmas ["nina", "tambah", "", "", "kemarin", "kami", "buat", "bank", "tanya", "dan", "kita", "intisari", "jadi", "empat", "tanya", "yang", "bisa", "mengakomodir", "seluruh", "tanya", "", "semua", "hasil", "rumus", "panelis", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "PROPN", "PRON", "VERB", "NOUN", "NOUN", "CCONJ", "PRON", "VERB", "VERB", "NUM", "NOUN", "PRON", "ADV", "VERB", "DET", "NOUN", "PUNCT", "DET", "NOUN", "NOUN", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CRD", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(t / tambah)
+
+# ::id 278
+# ::snt Margiono menjelaskan bahwa distribusi pupuk memang menjadi persoalan utama para petani di Tulungagung.
+# ::tokens ["Margiono", "menjelaskan", "bahwa", "distribusi", "pupuk", "memang", "menjadi", "persoalan", "utama", "para", "petani", "di", "Tulungagung", "."]
+# ::lemmas ["margiono", "jelas", "bahwa", "distribusi", "pupuk", "memang", "jadi", "soal", "utama", "para", "tani", "di", "tulungagung", ""]
+# ::pos_tags ["PROPN", "VERB", "SCONJ", "NOUN", "NOUN", "ADV", "VERB", "NOUN", "ADJ", "DET", "NOUN", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LOC"]
+(j / jelas)
+
+# ::id 285
+# ::snt Gus Ipul menjelaskan, "Ternyata brem ini diminati orang di sana. Dan tentunya ini menjadi peluang bagi Madiun untuk mengekspor ke luar negeri".
+# ::tokens ["Gus", "Ipul", "menjelaskan", ",", "\"", "Ternyata", "brem", "ini", "diminati", "orang", "di", "sana", ".", "Dan", "tentunya", "ini", "menjadi", "peluang", "bagi", "Madiun", "untuk", "mengekspor", "ke", "luar", "negeri", "\"", "."]
+# ::lemmas ["gus", "ipul", "jelas", "", "", "nyata", "brem", "ini", "mati", "orang", "di", "sana", "", "dan", "tentu", "ini", "jadi", "peluang", "bagi", "madiun", "untuk", "ekspor", "ke", "luar", "negeri", "", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PUNCT", "PUNCT", "ADV", "NOUN", "DET", "VERB", "NOUN", "ADP", "NOUN", "PUNCT", "CCONJ", "ADV", "DET", "VERB", "NOUN", "ADP", "PROPN", "ADP", "VERB", "ADP", "ADP", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "GPE", "O", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "gus"
+                  :op2 "ipul")))
+
+# ::id 286
+# ::snt Ridlo menjelaskan, cara melaporkannya pun mudah.
+# ::tokens ["Ridlo", "menjelaskan", ",", "cara", "melaporkannya", "pun", "mudah", "."]
+# ::lemmas ["ridlo", "jelas", "", "cara", "lapor", "pun", "mudah", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "VERB", "PART", "ADJ", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Ridlo"))
+      :ARG1 (c / cara
+            :mod (l / lapor
+                  :mod (m / mudah))))
+
+# ::id 287
+# ::snt Bin menjelaskan, bahwa responden asal Pantura sebanyak 21,3 persen, meliputi Kabupaten Cirebon, Kota Cirebon, Kabupaten Indramayu dan Kabupaten Kuningan.
+# ::tokens ["Bin", "menjelaskan", ",", "bahwa", "responden", "asal", "Pantura", "sebanyak", "21,3", "persen", ",", "meliputi", "Kabupaten", "Cirebon", ",", "Kota", "Cirebon", ",", "Kabupaten", "Indramayu", "dan", "Kabupaten", "Kuningan", "."]
+# ::lemmas ["bin", "jelas", "", "bahwa", "responden", "asal", "pantura", "banyak", "21 3", "persen", "", "liput", "kabupaten", "cirebon", "", "kota", "cirebon", "", "kabupaten", "indramayu", "dan", "kabupaten", "kuningan", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "SCONJ", "NOUN", "ADP", "PROPN", "ADP", "NUM", "NOUN", "PUNCT", "VERB", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "PUNCT", "PROPN", "PROPN", "CCONJ", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "GPE", "O", "ORG", "LOC", "O", "GPE", "NOR", "O", "O", "O", "PER", "O", "GPE", "PER"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Bin"
+                  :op1 "Cirebon"
+                  :op1 "Indramayu"
+                  :op1 "Kuningan"))
+      :ARG1 (r / responden
+            :location (d / dan
+                  :op1 (k1 / kabupaten
+                        :name n)
+                  :op2 (k2 / kota
+                        :name n)
+                  :op3 (k3 / kabupaten
+                        :name n)
+                  :op4 (k4 / kabupaten
+                        :name n))
+            :mod (p / percentage-entity
+                  / pantura
+                  :mod p
+                  :value 21.3)))
+
+# ::id 288
+# ::snt Kiai Amirudin menjelaskan, NU hadir berfungsi sebagai penengah dalam negara ini.
+# ::tokens ["Kiai", "Amirudin", "menjelaskan", ",", "NU", "hadir", "berfungsi", "sebagai", "penengah", "dalam", "negara", "ini", "."]
+# ::lemmas ["kiai", "amirudin", "jelas", "", "nu", "hadir", "fungsi", "bagai", "tengah", "dalam", "negara", "ini", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PUNCT", "PROPN", "VERB", "VERB", "ADP", "NOUN", "ADP", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o / organisasi
+            / orang
+            :name (n / nama
+                  :op1 "Kiai"
+                  :op1 "Amirudin"
+                  :op1 "NU"))
+      :ARG1 (h / hadir
+            :ARG0 o
+            :mod (f / fungsi
+                  :mod (t / tengah
+                        :mod (n2 / negara
+                              :mid (i / ini))))))
+
+# ::id 289
+# ::snt Zudan menjelaskan, hak memilih dalam Pilkada merupakan sepenuhnya milik masyarakat.
+# ::tokens ["Zudan", "menjelaskan", ",", "hak", "memilih", "dalam", "Pilkada", "merupakan", "sepenuhnya", "milik", "masyarakat", "."]
+# ::lemmas ["zudan", "jelas", "", "hak", "pilih", "dalam", "pilkada", "rupa", "sepenuh", "milik", "masyarakat", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "VERB", "ADP", "PROPN", "VERB", "NOUN", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "PER", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Zudan"))
+      :ARG1 (p1 / pilih
+            :ARG1 (h / hak
+                  :mod (p2 / pilkada
+                        :mod (r / rupa
+                              :mod (p3 / penuh
+                                    :mod (m1 / milik
+                                          :mod (m2 / masyarakat))))))))
+
+# ::id 290
+# ::snt Hikmat menjelaskan, MIMPI merupakan kerja sama antara IKA Unpad dan KPU Provinsi Jawa Barat.
+# ::tokens ["Hikmat", "menjelaskan", ",", "MIMPI", "merupakan", "kerja", "sama", "antara", "IKA", "Unpad", "dan", "KPU", "Provinsi", "Jawa", "Barat", "."]
+# ::lemmas ["hikmat", "jelas", "", "mimpi", "rupa", "kerja", "sama", "antara", "ika", "unpad", "dan", "kpu", "provinsi", "jawa", "barat", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PROPN", "VERB", "NOUN", "ADJ", "ADP", "PROPN", "PROPN", "CCONJ", "PROPN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "ORG", "LOC", "O", "NOR", "O", "O", "PER"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Hikmat"
+                  :op1 "Jawa"
+                  :op2 "barat"))
+      :ARG1 (r / rupa
+            :ARG0 (m / mimpi)
+            :ARG1 (k / kpu
+                  / kerja
+                  :ARG1 (d / dan
+                        :op1 (i / ika
+                              :mod (u / unpad))
+                        :op2 k)
+                  :location (p / provinsi
+                        :name n)
+                  :mod (s / sama))))
+
+# ::id 296
+# ::snt Rusidi menjelaskan kasus ini berawal dari temuan Panitia Pengawas Lapangan.
+# ::tokens ["Rusidi", "menjelaskan", "kasus", "ini", "berawal", "dari", "temuan", "Panitia", "Pengawas", "Lapangan", "."]
+# ::lemmas ["rusidi", "jelas", "kasus", "ini", "awal", "dari", "temu", "panitia", "awas", "lapang", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "DET", "VERB", "ADP", "NOUN", "PROPN", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "ORG", "NOR", "PER"]
+(j / jelas
+      :ARG0 (r / rusidi)
+      :ARG1 (k / kasus
+            :mod (t / temu
+                  :mod (p1 / panitia
+                        :mod (p2 / pengawas
+                              :mod (l / lapangan))))))
+
+# ::id 297
+# ::snt Rusidi menjelaskan, "Fokus kami saat ini adalah kepada kedua tersangka".
+# ::tokens ["Rusidi", "menjelaskan", ",", "\"", "Fokus", "kami", "saat", "ini", "adalah", "kepada", "kedua", "tersangka", "\"", "."]
+# ::lemmas ["rusidi", "jelas", "", "", "fokus", "kami", "saat", "ini", "adalah", "kepada", "dua", "sangka", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "PROPN", "PRON", "NOUN", "DET", "AUX", "ADP", "NUM", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "CRD", "O"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Rusidi"))
+      :ARG1 (f / focus
+            :ARG0 (k / kami
+                  :ARG1 (t / tersangka))))
+
+# ::id 298
+# ::snt Yandri Susanto menjelaskan, "Bisa saja mereka bertemu dan banyak membicarakan banyak hal".
+# ::tokens ["Yandri", "Susanto", "menjelaskan", ",", "\"", "Bisa", "saja", "mereka", "bertemu", "dan", "banyak", "membicarakan", "banyak", "hal", "\"", "."]
+# ::lemmas ["yandri", "susanto", "jelas", "", "", "bisa", "saja", "mereka", "temu", "dan", "banyak", "bicara", "banyak", "hal", "", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "PUNCT", "PUNCT", "ADV", "ADV", "PRON", "VERB", "CCONJ", "ADV", "VERB", "ADV", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Yandri"
+                  :op2 "Susanto"))
+      :ARG1 (b / banyak
+            / bicara
+            / bisa
+            :ARG0 (m / mereka
+                  :ARG1 (d / dan
+                        :op1 (t / temu
+                              :op2 b)))
+            :ARG1 (h / hal)
+            :mod b))
+
+# ::id 299
+# ::snt Andi menjelaskan, keunggulan calon petahana itu terjadi pada hampir seluruh kecamatan di Maluku Tengah.
+# ::tokens ["Andi", "menjelaskan", ",", "keunggulan", "calon", "petahana", "itu", "terjadi", "pada", "hampir", "seluruh", "kecamatan", "di", "Maluku", "Tengah", "."]
+# ::lemmas ["andi", "jelas", "", "unggul", "calon", "tahana", "itu", "jadi", "pada", "hampir", "seluruh", "camat", "di", "malu", "tengah", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "NOUN", "NOUN", "DET", "VERB", "ADP", "ADV", "DET", "NOUN", "ADP", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "GPE", "O", "GPE", "O"]
+(j / jadi
+      / jelas
+      :ARG0 (a / andi)
+      :ARG0 (u / unggul
+            :location (k / kecamatan
+                  :name (n / nama
+                        :op1 "Maluku"
+                        :op2 "Tengah"))
+            :mod (c / calon
+                  :mod (p / petahana)))
+      :ARG1 j)
+
+# ::id 303
+# ::snt Quality control dilakukan terhadap hasil wawancara, yang dipilih secara random sebesar 20 persen dari total sampel.
+# ::tokens ["Quality", "control", "dilakukan", "terhadap", "hasil", "wawancara", ",", "yang", "dipilih", "secara", "random", "sebesar", "20", "persen", "dari", "total", "sampel", "."]
+# ::lemmas ["quality", "control", "laku", "hadap", "hasil", "wawancara", "", "yang", "pilih", "cara", "random", "besar", "20", "persen", "dari", "total", "sampel", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "ADP", "NOUN", "NOUN", "PUNCT", "PRON", "VERB", "ADP", "ADJ", "ADP", "NUM", "NOUN", "ADP", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "PRC", "O", "O", "O", "O"]
+(l / laku)
+
+# ::id 304
+# ::snt Margiono dan Syahri Mulyo melakukan hampir semua komunikasi.
+# ::tokens ["Margiono", "dan", "Syahri", "Mulyo", "melakukan", "hampir", "semua", "komunikasi", "."]
+# ::lemmas ["margiono", "dan", "syahri", "mulyo", "laku", "hampir", "semua", "komunikasi", ""]
+# ::pos_tags ["PROPN", "CCONJ", "PROPN", "PROPN", "VERB", "ADV", "DET", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "O", "PER", "O", "O", "O", "O", "O"]
+(l / laku
+      :ARG0 (d / dan
+            :ARG1 (k / komunikasi)
+            :op1 (o / orang
+                  :name (n / nama
+                        :op1 "Margiono"
+                        :op1 "Syahri"
+                        :op2 "Mulyo"))
+            :op2 o))
+
+# ::id 305
+# ::snt Calon wali kota Bekasi Nur Supriyanto melakukan ibadah umrah pada awal Maret lalu.
+# ::tokens ["Calon", "wali", "kota", "Bekasi", "Nur", "Supriyanto", "melakukan", "ibadah", "umrah", "pada", "awal", "Maret", "lalu", "."]
+# ::lemmas ["calon", "wali", "kota", "bekas", "nur", "supriyanto", "laku", "ibadah", "umrah", "pada", "awal", "maret", "lalu", ""]
+# ::pos_tags ["PROPN", "NOUN", "NOUN", "PROPN", "PROPN", "PROPN", "VERB", "NOUN", "NOUN", "ADP", "ADJ", "PROPN", "ADJ", "PUNCT"]
+# ::ner_tags ["O", "O", "NOR", "O", "PER", "O", "O", "O", "O", "O", "O", "DAT", "QTY"]
+(l / laku
+      :ARG0 (o / orang
+            :mod (c / calon
+                  :mod (w / wali
+                        :mod (k / kota)))
+            :name (n / nama
+                  :op1 "Nur"
+                  :op2 "Supriyanto"))
+      :ARG1 (i / ibadah
+            :mod (u / umrah)
+            :time (d / date-entity
+                  :bulan 9)))
+
+# ::id 306
+# ::snt Bahkan, pihaknya telah melakukan langkah-langkah untuk bisa mencetak 180.000 KTP elektronik bagi pemilih pada Pilkada Garut.
+# ::tokens ["Bahkan", ",", "pihaknya", "telah", "melakukan", "langkah-langkah", "untuk", "bisa", "mencetak", "180.000", "KTP", "elektronik", "bagi", "pemilih", "pada", "Pilkada", "Garut", "."]
+# ::lemmas ["bahkan", "", "pihak", "telah", "laku", "langkah", "untuk", "bisa", "cetak", "180 000", "ktp", "elektronik", "bagi", "pilih", "pada", "pilkada", "garut", ""]
+# ::pos_tags ["SCONJ", "PUNCT", "NOUN", "ADV", "VERB", "NOUN", "ADP", "ADV", "VERB", "NUM", "NOUN", "NOUN", "ADP", "NOUN", "ADP", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "CRD", "QTY", "O", "O", "O", "O", "ORG", "LOC"]
+(l / langkah
+      / laku
+      :ARG0 (p1 / pihak)
+      :ARG1 l
+      :mod (c / cetak
+            :ARG1 (p2 / pemilih
+                  :mod (p3 / pilkada
+                        :location (t / temporal-quantity
+                              / tempat
+                              :name (n / nama
+                                    :op1 "Garut")
+                              :quant 180.0
+                              :unit (k / ktp))))
+            :mod t))
+
+# ::id 310
+# ::snt Survei dilakukan pada 11-15 April 2018, secara tatap muka terhadap 1.000 responden.
+# ::tokens ["Survei", "dilakukan", "pada", "11-15", "April", "2018", ",", "secara", "tatap", "muka", "terhadap", "1.000", "responden", "."]
+# ::lemmas ["survei", "laku", "pada", "11-15", "april", "2018", "", "cara", "tatap", "muka", "hadap", "1 000", "responden", ""]
+# ::pos_tags ["PROPN", "VERB", "ADP", "NUM", "PROPN", "NUM", "PUNCT", "ADP", "NOUN", "NOUN", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "MON", "DAT", "MON", "O", "O", "O", "O", "CRD", "O"]
+(l / laku
+      :ARG1 (s / survei
+            :time (d / date-entity
+                  :bulan 4
+                  :hari 11-15
+                  :tahun 2018))
+      :mod (t / temporal-quantity
+            / tatap
+            :mod (m / muka
+                  :mod t)
+            :quant 1000
+            :unit (r / responden)))
+
+# ::id 311
+# ::snt Kebijakan tegas tentang penggunaan air tanah bagi pelaku usaha dan masyarakat perlu dilakukan.
+# ::tokens ["Kebijakan", "tegas", "tentang", "penggunaan", "air", "tanah", "bagi", "pelaku", "usaha", "dan", "masyarakat", "perlu", "dilakukan", "."]
+# ::lemmas ["bijak", "tegas", "tentang", "guna", "air", "tanah", "bagi", "laku", "usaha", "dan", "masyarakat", "perlu", "laku", ""]
+# ::pos_tags ["PROPN", "ADJ", "ADP", "NOUN", "NOUN", "NOUN", "ADP", "NOUN", "NOUN", "CCONJ", "NOUN", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(p / pelaku
+      / perlu
+      :ARG0 (k / kebijakan
+            :mod (t / tanah
+                  / tegas
+                  :mod (g / guna
+                        :ARG0 (d / dan
+                              :op1 p)
+                        :ARG1 (a / air
+                              :mod t)
+                        :op2 (m / masyarakat))))
+      :ARG1 (l / laku)
+      :mod (u / usaha))
+
+# ::id 314
+# ::snt KPU Kota Parepare telah melakukan konsultasi dengan KPU Provinsi Sulawesi Selatan dan KPU RI, sebelum melakukan pembatalan.
+# ::tokens ["KPU", "Kota", "Parepare", "telah", "melakukan", "konsultasi", "dengan", "KPU", "Provinsi", "Sulawesi", "Selatan", "dan", "KPU", "RI", ",", "sebelum", "melakukan", "pembatalan", "."]
+# ::lemmas ["kpu", "kota", "parepare", "telah", "laku", "konsultasi", "dengan", "kpu", "provinsi", "sulawesi", "selatan", "dan", "kpu", "ri", "", "belum", "laku", "batal", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "ADV", "VERB", "NOUN", "ADP", "PROPN", "PROPN", "PROPN", "PROPN", "CCONJ", "PROPN", "PROPN", "PUNCT", "ADP", "VERB", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "ORG", "PER", "O", "O", "O", "O", "ORG", "NOR", "ORG", "PER", "O", "ORG", "PER", "O", "O", "O"]
+(l / laku
+      :ARG0 (k1 / kpu
+            :location (k / kota
+                  :name (n / nama
+                        :op1 "Parepare"))))
+
+# ::id 317
+# ::snt Selanjutnya dengan temuan tersebut,
+# ::tokens ["Selanjutnya", "dengan", "temuan", "tersebut", ","]
+# ::lemmas ["lanjut", "dengan", "temu", "sebut", ""]
+# ::pos_tags ["ADV", "ADP", "NOUN", "DET", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O"]
+(l / lanjut
+      :ARG1 (t1 / temuan
+            :mod (t2 / tersebut)))
+
+# ::id 318
+# ::snt Bawaslu Riau melakukan proses pemeriksaan.
+# ::tokens ["Bawaslu", "Riau", "melakukan", "proses", "pemeriksaan", "."]
+# ::lemmas ["bawaslu", "riau", "laku", "proses", "periksa", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "NOUN", "NOUN", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O"]
+(l / laku
+      :ARG0 (b / bawaslu
+            :location (t / tempat
+                  :name (n / nama
+                        :op1 "Riau"))))
+
+# ::id 325
+# ::snt Ibadah umrah rencananya akan dilakukan di bulan Ramadan, tepatnya mulai 2 Juni.
+# ::tokens ["Ibadah", "umrah", "rencananya", "akan", "dilakukan", "di", "bulan", "Ramadan", ",", "tepatnya", "mulai", "2", "Juni", "."]
+# ::lemmas ["ibadah", "umrah", "rencana", "akan", "laku", "di", "bulan", "ramadan", "", "tepat", "mulai", "2", "juni", ""]
+# ::pos_tags ["PROPN", "NOUN", "NOUN", "ADV", "VERB", "ADP", "PROPN", "PROPN", "PUNCT", "ADV", "VERB", "NUM", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "PER", "O", "O", "CRD", "MON"]
+(l / laku
+      :ARG0 (i / ibadah
+            :mod (u / umrah))
+      :ARG1 (b / bulan
+            :mod (r / Ramadhan))
+      :time (d / date-entity
+            :bulan 6
+            :hari 2))
+
+# ::id 339
+# ::snt Camat Nanggalo Teddy Antonius menyebutkan, foto bersama petahana Mahyeldi Ansharullah yang dipasang di kantornya tersebut digunakan sebagai bahan penilaian camat berprestasi.
+# ::tokens ["Camat", "Nanggalo", "Teddy", "Antonius", "menyebutkan", ",", "foto", "bersama", "petahana", "Mahyeldi", "Ansharullah", "yang", "dipasang", "di", "kantornya", "tersebut", "digunakan", "sebagai", "bahan", "penilaian", "camat", "berprestasi", "."]
+# ::lemmas ["camat", "nanggalo", "teddy", "antonius", "sebut", "", "foto", "sama", "tahana", "mahyeldi", "ansharullah", "yang", "pasang", "di", "kantor", "sebut", "guna", "bagai", "bahan", "nilai", "camat", "prestasi", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PUNCT", "NOUN", "ADP", "NOUN", "PROPN", "PROPN", "PRON", "VERB", "ADP", "NOUN", "DET", "VERB", "ADP", "NOUN", "NOUN", "NOUN", "VERB", "PUNCT"]
+# ::ner_tags ["O", "NOR", "O", "PER", "O", "O", "O", "O", "ORG", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(s / sebut
+      :ARG0 (c / camat
+            :location (t / tempat
+                  :name (n / nama
+                        :op1 "Nanggalo"))))
+
+# ::id 405
+# ::snt Kepala Polsek Bogor Timur Komisaris Polisi Marsudi Widodo menuturkan "Saat kita tangkap, pelaku ini masih pada tidur".
+# ::tokens ["Kepala", "Polsek", "Bogor", "Timur", "Komisaris", "Polisi", "Marsudi", "Widodo", "menuturkan", "\"", "Saat", "kita", "tangkap", ",", "pelaku", "ini", "masih", "pada", "tidur", "\"", "."]
+# ::lemmas ["kepala", "polsek", "bogor", "timur", "komisaris", "polisi", "marsudi", "widodo", "tutur", "", "saat", "kita", "tangkap", "", "laku", "ini", "masih", "pada", "tidur", "", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "PROPN", "VERB", "PUNCT", "SCONJ", "PRON", "VERB", "PUNCT", "NOUN", "DET", "ADV", "ADP", "NOUN", "PUNCT", "PUNCT"]
+# ::ner_tags ["NOR", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(t / tutur
+      :ARG0 (k / kepala
+            :location (p / polsek
+                  :name (n / nama
+                        :op1 "Bogor"
+                        :op2 "Timur"))))
+
+# ::id 424
+# ::snt Nina menuturkan, materi dirancang oleh tim panelis yang berisi 18 orang pakar dan guru besar dari berbagai perguruan tinggi di Jawa Barat.
+# ::tokens ["Nina", "menuturkan", ",", "materi", "dirancang", "oleh", "tim", "panelis", "yang", "berisi", "18", "orang", "pakar", "dan", "guru", "besar", "dari", "berbagai", "perguruan", "tinggi", "di", "Jawa", "Barat", "."]
+# ::lemmas ["nina", "tutur", "", "materi", "rancang", "oleh", "tim", "panelis", "yang", "isi", "18", "orang", "pakar", "dan", "guru", "besar", "dari", "bagai", "guru", "tinggi", "di", "jawa", "barat", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "VERB", "ADP", "NOUN", "NOUN", "PRON", "VERB", "NUM", "NOUN", "NOUN", "CCONJ", "NOUN", "ADJ", "ADP", "DET", "NOUN", "ADJ", "ADP", "PROPN", "PROPN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "O", "O", "CRD", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "GPE", "O"]
+(t / temporal-quantity
+      / tim
+      / tutur
+      :ARG0 (n / nina
+            :ARG1 (r / rancang
+                  :ARG0 t))
+      :mod (p / panelis)
+      :mod (m / materi)
+      :mod (i / isi)
+      :mod t
+      :quant 18
+      :unit (o / orang))
+
+# ::id 428
+# ::snt Amin bertutur, "Akan dibahas di Gakkumdu".
+# ::tokens ["Amin", "bertutur", ",", "\"", "Akan", "dibahas", "di", "Gakkumdu", "\"", "."]
+# ::lemmas ["amin", "tutur", "", "", "akan", "bahas", "di", "gakkumdu", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "ADV", "VERB", "ADP", "PROPN", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O"]
+(t / tutur
+      :ARG0 (a / amin
+            :ARG1 (b / bahas
+                  :ARG1 (g / gakkumdu))))
+
+# ::id 706
+# ::snt Syafrudin mengatakan masih menyisakan sekitar 200 ribu jiwa warga Kota Bekasi yang mempunyai hak pilih untuk dimasukan dalam DPT.
+# ::tokens ["Syafrudin", "mengatakan", "masih", "menyisakan", "sekitar", "200", "ribu", "jiwa", "warga", "Kota", "Bekasi", "yang", "mempunyai", "hak", "pilih", "untuk", "dimasukan", "dalam", "DPT", "."]
+# ::lemmas ["syafrudin", "kata", "masih", "sisa", "sekitar", "200", "ribu", "jiwa", "warga", "kota", "bekas", "yang", "punya", "hak", "pilih", "untuk", "masuk", "dalam", "dpt", ""]
+# ::pos_tags ["PROPN", "VERB", "ADV", "VERB", "ADP", "NUM", "NOUN", "NOUN", "NOUN", "PROPN", "PROPN", "PRON", "VERB", "NOUN", "NOUN", "ADP", "VERB", "ADP", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "CRD", "MON", "O", "O", "ORG", "GPE", "O", "O", "O", "O", "O", "O", "O", "ORG"]
+(k1 / kata
+      :ARG0 (s1 / syafrudin
+            :ARG1 (s2 / sisa
+                  :mod (t / temporal-quantity
+                        :quant 200.0
+                        :unit (j / jiwa)))
+            :location (k2 / kota
+                  :name (n / nama
+                        :op1 "Bekasi"))))
+
+# ::id 711
+# ::snt Hilwan berkata, "Jika tidak punya KTP elektronik, ya, tidak punya hak pilih".
+# ::tokens ["Hilwan", "berkata", ",", "\"", "Jika", "tidak", "punya", "KTP", "elektronik", ",", "ya", ",", "tidak", "punya", "hak", "pilih", "\"", "."]
+# ::lemmas ["hilwan", "kata", "", "", "jika", "tidak", "punya", "ktp", "elektronik", "", "ya", "", "tidak", "punya", "hak", "pilih", "", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "PUNCT", "SCONJ", "PART", "VERB", "PROPN", "NOUN", "PUNCT", "PART", "PUNCT", "PART", "VERB", "NOUN", "ADJ", "PUNCT", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O"]
+(k / ktp
+      / kata
+      :ARG0 (h / hilwan
+            :ARG1 (p / punya
+                  :polarity -)
+            :ARG1 k)
+      :mod (e / elektronik))
+
+# ::id 775
+# ::snt Wali Kota Denpasar dua periode Rai Mantra mengatakan, aksi dan edukasi kepada masyarakat juga perlu digiatkan.
+# ::tokens ["Wali", "Kota", "Denpasar", "dua", "periode", "Rai", "Mantra", "mengatakan", ",", "aksi", "dan", "edukasi", "kepada", "masyarakat", "juga", "perlu", "digiatkan", "."]
+# ::lemmas ["wali", "kota", "denpasar", "dua", "periode", "rai", "mantra", "kata", "", "aksi", "dan", "edukasi", "kepada", "masyarakat", "juga", "perlu", "giat", ""]
+# ::pos_tags ["PROPN", "PROPN", "PROPN", "NUM", "NOUN", "PROPN", "PROPN", "VERB", "PUNCT", "NOUN", "CCONJ", "NOUN", "ADP", "NOUN", "ADV", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["ORG", "O", "O", "PRC", "O", "GPE", "PER", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+(k / kota
+      / kata
+      :ARG0 (w / wali
+            :location k)
+      :name (n / nama
+            :op1 "Denpasar"))
+
+# ::id 842
+# ::snt Cak Imin mengatakan demi meraih kemenangan, kini PKB harus kerja ekstra keras.
+# ::tokens ["Cak", "Imin", "mengatakan", "demi", "meraih", "kemenangan", ",", "kini", "PKB", "harus", "kerja", "ekstra", "keras", "."]
+# ::lemmas ["cak", "imin", "kata", "demi", "raih", "menang", "", "kini", "pkb", "harus", "kerja", "ekstra", "keras", ""]
+# ::pos_tags ["PROPN", "PROPN", "VERB", "ADP", "VERB", "NOUN", "PUNCT", "ADV", "PROPN", "ADV", "VERB", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O"]
+(k / kata
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Cak"
+                  :op2 "Imin")))
+
+# ::id 894
+# ::snt Sumarno mengungkapkan, partisipasi pemilih pada putaran kedua menunjukkan peningkatan partisipasi pemilih dibandingkan putaran pertama.
+# ::tokens ["Sumarno", "mengungkapkan", ",", "partisipasi", "pemilih", "pada", "putaran", "kedua", "menunjukkan", "peningkatan", "partisipasi", "pemilih", "dibandingkan", "putaran", "pertama", "."]
+# ::lemmas ["sumarno", "ungkap", "", "partisipasi", "pilih", "pada", "putar", "dua", "tunjuk", "tingkat", "partisipasi", "pilih", "banding", "putar", "pertama", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "NOUN", "ADP", "NOUN", "NUM", "VERB", "NOUN", "NOUN", "NOUN", "VERB", "NOUN", "NUM", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "CRD", "O", "O", "O", "O", "O", "O", "O"]
+(u / ungkap
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Sumarno"))
+      :ARG1 (b / banding
+            :op1 (p1 / partisipasi
+                  :mod (p2 / pemilih
+                        :mod (p3 / putaran
+                              :mod (k / kedua
+                                    :mod (t / tingkat
+                                          / tunjuk
+                                          :mod t
+                                          :mod (p4 / partisipasi
+                                                :mod (p5 / pemilih)))))))
+            :op2 (p / pertama
+                  / putaran
+                  :mod p)))
+
+# ::id 899
+# ::snt Dinas Dukcapil akan melakukan pelayanan rekam data KTP-el pada akhir pekan dan hari libur.
+# ::tokens ["Dinas", "Dukcapil", "akan", "melakukan", "pelayanan", "rekam", "data", "KTP-el", "pada", "akhir", "pekan", "dan", "hari", "libur", "."]
+# ::lemmas ["dinas", "dukcapil", "akan", "laku", "layan", "rekam", "data", "ktp-el", "pada", "akhir", "pekan", "dan", "hari", "libur", ""]
+# ::pos_tags ["PROPN", "PROPN", "ADV", "VERB", "NOUN", "NOUN", "NOUN", "PROPN", "ADP", "NOUN", "NOUN", "CCONJ", "NOUN", "ADJ", "PUNCT"]
+# ::ner_tags ["ORG", "PER", "O", "O", "O", "O", "O", "PER", "O", "O", "O", "O", "O", "O"]
+(l / laku)
+
+# ::id 900
+# ::snt Viryan menambahkan jumlah tersebut masih bisa bertambah.
+# ::tokens ["Viryan", "menambahkan", "jumlah", "tersebut", "masih", "bisa", "bertambah", "."]
+# ::lemmas ["viryan", "tambah", "jumlah", "sebut", "masih", "bisa", "tambah", ""]
+# ::pos_tags ["PROPN", "VERB", "NOUN", "DET", "ADV", "ADV", "VERB", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O"]
+(t1 / tambah
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Viryan"))
+      :ARG1 (b / bisa
+            :ARG0 (j / jumlah)
+            :ARG1 (t2 / tambah)))
+
+# ::id 904
+# ::snt Iing menjelaskan, acara debat akan dilaksanakan sebanyak tiga kali.
+# ::tokens ["Iing", "menjelaskan", ",", "acara", "debat", "akan", "dilaksanakan", "sebanyak", "tiga", "kali", "."]
+# ::lemmas ["iing", "jelas", "", "acara", "debat", "akan", "laksana", "banyak", "tiga", "kali", ""]
+# ::pos_tags ["PROPN", "VERB", "PUNCT", "NOUN", "NOUN", "ADV", "VERB", "ADP", "NUM", "NOUN", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "O", "CRD", "QTY"]
+(j / jelas
+      :ARG0 (o / orang
+            :name (n / nama
+                  :op1 "Iing"))
+      :ARG1 (a / acara
+            :mod (d / debat
+                  :mod (l / laksana
+                        :mod (t / tiga
+                              :mod (k / kali))))))
+
+# ::id 907
+# ::snt Pelapor cukup membuka situs resmi Dewan Pers yakni www.dewanpers.or.id.
+# ::tokens ["Pelapor", "cukup", "membuka", "situs", "resmi", "Dewan", "Pers", "yakni", "www.dewanpers.or.id", "."]
+# ::lemmas ["lapor", "cukup", "buka", "situs", "resmi", "dewan", "pers", "yakni", "www dewanpers or id", ""]
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "ADJ", "PROPN", "PROPN", "ADV", "PROPN", "PUNCT"]
+# ::ner_tags ["O", "O", "O", "O", "O", "PER", "LOC", "O", "O"]
+(b / buka
+      :ARG0 (p / pers
+            / pelapor
+            :ARG1 (s / situs
+                  :mod (d / dewan
+                        :mod p))
+            :ARG1 (w / www.dewanpers.or.id)))
+
+# ::id 908
+# ::snt Fadli juga menjelaskan hubungan yang dibangun PAN dan PKS selama ini sudah cukup solid.
+# ::tokens ["Fadli", "juga", "menjelaskan", "hubungan", "yang", "dibangun", "PAN", "dan", "PKS", "selama", "ini", "sudah", "cukup", "solid", "."]
+# ::lemmas ["fadli", "juga", "jelas", "hubung", "yang", "bangun", "pan", "dan", "pks", "lama", "ini", "sudah", "cukup", "solid", ""]
+# ::pos_tags ["PROPN", "ADV", "VERB", "NOUN", "PRON", "VERB", "PROPN", "CCONJ", "PROPN", "ADP", "DET", "ADV", "ADV", "ADJ", "PUNCT"]
+# ::ner_tags ["PER", "O", "O", "O", "O", "O", "ORG", "O", "PER", "O", "O", "O", "O", "O"]
+(j / jelas
+      :ARG0 (o1 / organisasi
+            / orang
+            :name (n / nama
+                  :op1 "Fadli"
+                  :op1 "PAN"
+                  :op1 "PKS"))
+      :ARG1 (h / hubungan
+            :mod (b / bangun
+                  :ARG0 (d / dan
+                        :mod (s / solid)
+                        :op1 o1
+                        :op2 (o2 / organisasi
+                              :name n)))))
+

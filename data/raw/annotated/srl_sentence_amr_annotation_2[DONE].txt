@@ -1,0 +1,881 @@
+﻿KPU membuat surat keputusan penetapan peserta, setelah pembacaan rekapitulasi nasional penetapan peserta pemilu.
+
+(b / buat
+	:ARG0 (k1 / kpu)
+	:ARG1 (k2 / keputusan
+    	:ARG1 (s / setelah
+        	:op1 ( p1 / pembacaan )
+        	:op2 ( r / rekapitulasi nasional )
+            :op3 ( p2 / peserta pemilu )
+--------------------------------------------------------------------------------------------------------------------------
+KPU membuat aturan itu juga untuk mempermudah pemberian sanksi apabila akun peserta pemilu melanggar ketentuan kampanye.
+
+(b / buat
+	:ARG0 (k / kpu)
+	:ARG1 (a / aturan
+    	:ARG1 (u / untuk
+        	:op1 ( p1 / pemberian )
+                          :mod ( s / sanksi)
+        	:op2 ( p2 / peserta pemilu )
+                          :mod ( p3 / pemilu)
+            :op3 ( k1 / ketentuan )
+                          :mod ( k2 / kampanye)
+-------------------------------------------------------------------------------------------------------------------------
+Hal itu membuat kinerja KPU kurang maksimal.
+
+(b / buat
+         :ARG0 (k1 / kpu)
+        : ARG1 (k2 / kinerja)
+                 :mod ( m / maksimal )))
+----------------------------------------------------------------------------------------------------------------------------
+Format debat sengaja dibuat lebih ringkas agar para calon bisa memberikan penjelasan secara detail dan mendalam terhadap topik yang diperdebatkan.
+
+(b / buat 
+	:ARG0 (p / para calon )
+	:ARG1 ( f / format
+    	:ARG1 ( d / dan
+        	:op1 (p / penjelasan)
+                          :mod ( d / detail)
+        	:op2 ( t  / topik )
+                         :mod ( d / diperdebatkan))
+----------------------------------------------------------------------------------------------------------------------------Jawaban Sudirman Said sontak membuat penonton riuh bahkan Ganjar turun dari kursinya dan menyalami Sudirman. 
+
+(b / buat
+:ARG0 ( o / orang 
+		:nama ( n / nama
+			:op1 “Sudirman” 
+			:op2 “Said” ))
+	:ARG1 (p / penonton
+    	:ARG1 (a / and
+        	                       :op1 (t / turun
+         ( op1 ( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Ganjar"))
+:op2 (m / menyalami
+          ( op1 ( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Sudirman"))
+------------------------------------------------------------------------------------------------------------------------------
+Hal tersebut lantaran Sudirman di Pilgub Jateng diusung oleh Gerindra dan sejauh ini diketahui dekat dengan Prabowo.
+
+(u / usung
+	:ARG0 (g / gerindra)
+:ARG1 ( o / orang 
+		       :nama ( n / nama
+			:op1 “Sudirman” 
+	:ARG1 (a / and
+        	:op1 ( p  / Pilgub
+            	:location ( p2 / province
+                	:name ( n / name
+                    	:op1 "Jateng" ))))
+        	:op2 ( d / dekat
+           :( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Prabowo"))
+-------------------------------------------------------------------------------------------------------------------------------
+Jawaban Sudirman Said sontak membuat penonton riuh bahkan Ganjar turun dari kursinya dan menyalami Sudirman. 
+
+(b / buat
+:ARG0 ( o / orang 
+		:nama ( n / nama
+			:op1 “Sudirman” 
+			:op2 “Said” ))
+	:ARG1 (p / penonton
+    	:ARG1 (a / and
+        	                       :op1 (t / turun
+         ( op1 ( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Ganjar"))
+:op2 (m / menyalami
+          ( op1 ( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Sudirman"))
+-------------------------------------------------------------------------------------------------------------------------------
+Hal tersebut lantaran Sudirman di Pilgub Jateng diusung oleh Gerindra dan sejauh ini diketahui dekat dengan Prabowo.
+
+(u / usung
+	:ARG0 (g / gerindra)
+:ARG1 ( o / orang 
+		       :nama ( n / nama
+			:op1 “Sudirman” 
+	:ARG1 (a / and
+        	:op1 ( p  / Pilgub
+            	:location ( p2 / province
+                	:name ( n / name
+                    	:op1 "Jateng" ))))
+        	:op2 ( d / dekat
+           :( o / orang
+                                                  :name ( n / nama 
+                                                   :op1 "Prabowo"))
+-----------------------------------------------------------------------------------------------------------------------------
+Konflik kepemilikian aset tanah pasar antara Pemerintah Kota Pekanbaru dengan Pemerintah Provinsi Riau membuat pembangunan pasar rakyat itu terbengkalai selama 17 tahun. 
+
+(b / buat
+	:ARG0 (k / kepemilikan)
+	:ARG1 (p / pembangunan
+            :ARG1 (d / dengan
+        	:op1 ( p1 / Pemerintah
+            	:location ( k / kota
+                	:name ( n / name
+                    	:op1 "Pekanbaru”))))
+        	:op2 ( p2 / Pemerintah
+            	:location ( p3 / province
+                	:name ( n / name
+                    	:op1 "Riau”))))
+-----------------------------------------------------------------------------------------------------------------------------
+Akibatnya, lebih dari seribu pedagang kecil yang berjualan di pasar Cik Puan Pekanbaru masih berstatus penghuni penampungan sementara sejak tahun 2001.
+
+(j / jual
+	:ARG0 (p / pedagang)
+                         :location ( p / pasar
+          :name ( n / name 
+	   :op1 “Cik”
+	   :op2 “Puan” ))))
+  :time ( d / date-entity 
+	 :tahun 2001)))
+------------------------------------------------------------------------------------------------------------------------------
+Kecenderungan Golkar ini sama dengan Partai Nasdem, 
+
+(c / cenderung 
+:ARG1 (d / dengan
+        	:op1 ( g / golkar)
+        	:op2 ( p / Partai Nasdem
+----------------------------------------------------------------------------------------------------------------------------
+tetapi kebanyakan kader dan pengurus Nasdem adalah mantan politikus Golkar, 
+
+( b / banyak
+          :ARG0 (d / dan
+                :op1 ( k / kader )                   
+                :op2 ( p / pengurus nasdem) 
+		:mod ( m / mantan politikus golkar )))
+----------------------------------------------------------------------------------------------------------------------------
+meskipun belum tercatat sebagai partai besar.
+
+( c / catat 
+	:ARG1 ( p / partai
+                   :mod ( b / besar )))
+----------------------------------------------------------------------------------------------------------------------------
+Josef tercatat sebagai pengurus DPP Partai Golkar dari tahun 1998 hingga pada tahun 2005.
+
+( c / catat 
+		:ARG0 ( J / Josef )
+		:ARG1 ( p / pengurus
+			:mod ( d / DPP Partai golkar )))
+            :time ( d / date-entity 
+	        :tahun 1998-2005	
+-------------------------------------------------------------------------------------------------------------------------------
+Komisi Pemilihan Umum mencatat ada 15 daerah pelaksana Pilkada 2018 yang masih memiliki satu pasangan calon kepala daerah. 
+
+( c / catat 
+:ARG0 ( k / kpu )
+                  :mod ( t / temporal-quantity
+				:quant 15 
+				:unit ( d / daerah )))
+:op1 (p/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+: mod ( c / calon kepala daerah)))
+-------------------------------------------------------------------------------------------------------------------------------
+Jumlah daerah dengan paslon kepala daerah tunggal ini diketahui semakin bertambah jika dibandingkan dengan data terakhir yang dicatat oleh KPU pada 20 Februari lalu. 
+
+(t / tambah 
+:ARG1 ( p / paslon )
+:op1 (k / kpu
+           :time ( d / date-entity 
+	:bulan 2
+	:hari 20))
+-----------------------------------------------------------------------------------------------------------------------------
+Bulan lalu, paslon tunggal tercatat ada di 13 daerah penyelenggara Pilkada 2018.
+
+(c / catat 
+:ARG1 ( p1 / paslon tunggal )
+:mod ( t / temporal-quantity
+			:quant 13
+			:unit ( d / daerah ))
+ 	 :op1 ( p2 / Pilkada
+            	:time ( d / date-entity
+                		:year 2018 ))))
+-------------------------------------------------------------------------------------------------------------------------------
+Komisi Pemilihan Umum mencatat ada 15 daerah pelaksana Pilkada 2018 yang masih memiliki satu pasangan calon kepala daerah. 
+
+( c / catat 
+:ARG1 ( k / kpu )
+                  :mod ( t / temporal-quantity
+				:quant 15 
+				:unit ( d / daerah )))
+:op1 (p/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+: mod ( c / calon kepala daerah)))
+------------------------------------------------------------------------------------------------------------------------------
+Jumlah daerah dengan paslon kepala daerah tunggal ini semakin bertambah dibandingkan dengan data terakhir yang dicatat oleh KPU pada Februari lalu.
+
+(t / tambah 
+:ARG1 ( p / paslon )
+:op1 (k / kpu
+           :time ( d / date-entity 
+	:bulan 2))
+----------------------------------------------------------------------------------------------------------------------------
+Komisi Pemilihan Umum Kota Bekasi, Jawa Barat mencatat sebanyak 1,3 juta lebih warga setempat masuk dalam Daftar Pemilih Sementara Pilkada 2018.
+
+( c / catat
+	: ARG1 ( k / kpu
+                  :mod ( t / temporal-quantity
+				:quant 1,3 juta 
+				:unit ( w / warga )))
+:op1 (p/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+-------------------------------------------------------------------------------------------------------------------------------
+KPU mencatat ada 15 daerah pelaksana Pilkada 2018 yang masih memiliki satu pasangan calon kepala daerah.
+
+( c / catat 
+:ARG1 ( k / kpu )
+                  :mod ( t / temporal-quantity
+				:quant 15 
+				:unit ( d / daerah )))
+:op1 (p/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+: mod ( c / calon kepala daerah)))
+------------------------------------------------------------------------------------------------------------------------------
+Bawaslu mencatat sudah ada lebih dari 400 dugaan pelanggaran aparatur sipil negara dalam Pilkada 2018.
+
+ (c / catat
+	:ARG0 (b / bawaslu)
+	:ARG1 (p / pelanggaran
+:mod ( t / temporal-quantity
+			:quant 400 
+			:unit ( d / dugaan )))
+:op1 (p/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+-------------------------------------------------------------------------------------------------------------------------------
+Sebelumnya, berdasarkan data yang dihimpun oleh KPU, jumlah data pemilih sementara dari 31 provinsi dengan kabupaten/kota penyelenggara Pilkada 2018 tercatat sebanyak 152.869.291 pemilih.
+
+( d / dasar 
+		:ARG0 ( k / kpu )
+		:ARG1 ( d / data
+                             :mod ( t / temporal-quantity
+				:quant 31 
+				:unit ( p1 / provinsi )))
+:op1 (p2/ pilkada
+           :time ( d / date-entity 
+	   :tahun 2018))
+                             :mod ( t / temporal-quantity
+				:quant 152.869.291 
+				:unit ( p3 / pemilih )))
+------------------------------------------------------------------------------------------------------------------------------
+Data tersebut juga mencatat pemilih dari kaum penyandang disabilitas sebanyak 51.514. 
+
+( c / catat 
+		:ARG1 ( p / pemilih )
+                             :mod ( t / temporal-quantity
+				:quant 51.514 
+				:unit ( o / orang )))
+-------------------------------------------------------------------------------------------------------------------------------
+Mereka semua tersebar di 5.957 desa yang terbagi ke dalam 74.944 tempat pemungutan suara.
+
+( s/ sebar
+		:ARG0 ( m / mereka
+                             :mod ( t / temporal-quantity
+				:quant 5.957 
+				:unit ( d / desa )))
+                             :mod ( t / temporal-quantity
+				:quant 74.944
+				:unit ( t / tps )))
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Sementara itu untuk remitansi pada 2016 secara keseluruhan tercatat Rp 1,7 triliun.
+
+(s / seluruh
+	: ARG1 (r/ remintansi
+           :time ( d / date-entity 
+	   :tahun 2016))
+	: mod (t / tercatat Rp 1,7 triliun))))
+------------------------------------------------------------------------------------------------------------------------------
+Rakata Institute mencatat, Neneng-Eka unggul atas empat pasangan calon lainnya dalam ajang Pilkada Bekasi 2017.
+
+(c / catat
+	:ARG0 (r / rakata institute)
+	:ARG1 (n / neneng-eka)
+:mod op1 ( p1 / Pilkada
+            		:location ( k / kota
+                			:name ( n / name
+                    				:op1 "Bekasi" ))))
+                    		:time ( d / date-entity
+                			:year 2017 ))))
+----------------------------------------------------------------------------------------------------------------------------
+Wiranto meminta KPK menunda sementara penegakan hukum terhadap calon kepala daerah.
+
+( m / minta 
+		:ARG0 ( w / wirnato )
+		:ARG1 ( k / kpk 
+			:mod ( m / menunda sementara penegakan hukum terhadap calon
+                                              kepala daerah )))
+-----------------------------------------------------------------------------------------------------------------------------
+Syapril meminta kepada Bawaslu serta seluruh tim pasangan calon untuk ikut bersama-sama pada masa pengumuman dan tanggapan masyarakat agar mendorong para pemilih yang telah memenuhi syarat untuk memilih.
+
+(m / minta
+	:ARG0 (s / syapril)
+	:ARG1 (b / bawaslu
+    		:ARG1 (a / and
+        			:op1 (m / masa pengumuman))))
+        			:op2 ( t / tanggapan masyarakat))))
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Warga yang datanya belum masuk dalam DPS untuk aktif melapor kepada RT, RW dan PPS setempat.
+
+( d / data 
+		:ARG0 ( w / warga )
+		:ARG1 ( d / dps 
+			:mod ( a / aktif melapor )))
+----------------------------------------------------------------------------------------------------------------------------
+Moderator debat dari Universitas Brawijaya Malang meminta kembali Margiono untuk mengkritisi paparan yang telah disampaikan Syahri Mulyo terkait visi misi pembangunan Tulungagung.
+
+( m1 / minta 
+		:ARG0 ( m2 / moderator )
+		:ARG1 ( m3 / margiono 
+			:mod ( m4 / mengkritisi papaparan )))
+-----------------------------------------------------------------------------------------------------------------------------
+Kapolri Jenderal Tito Karnavian meminta pasangan calon kepala daerah dan tim suksesnya sportif dalam mengikuti kontestasi politik. 
+
+(m / minta
+	:ARG0 :op1 ( o / orang
+                        :name ( n / nama 
+                                 :op1 "Tito"))
+		         :op2 “Karnavian”))
+	    	:ARG1 (a / and
+        			:op1 ( p / pasangan calon kepala daerah ))))
+        			:op2 ( t  / tim suksesnya sportif ))))
+-----------------------------------------------------------------------------------------------------------------------------
+Jangan sampai mengambil jalan pintas yang berpotensi melanggar hukum.
+
+( a / ambil
+	ARG1 (j / jalan
+       		:mod (p1 / pintas)
+       		:mod (p2 / potensi
+               	:mod ( l / langgar 
+                       		:ARG1 ( a / aturan ))))
+	:polarity - )
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Kontestan Pemilihan Gubernur Sumatra Utara 2018 diminta bertarung dengan mengedepankan konsep alih-alih memakai sentimen primordial untuk mendulang suara.
+
+( m / minta 
+	ARG0 ( k / kontestan
+           		 :mod ( p / pemilihan 
+                    		 :ARG1( g / gubernur 
+             	:location ( p / provinsi
+                 		:nama ( n / nama
+                         		:op1 "Sumatra"
+                        		 :op2 "Utara" ))
+             	 :time (d /date-entity
+                		 :year 2018)))
+	ARG1 (b / bertarung
+		: mod (d / depan
+		: mod (k / konsep
+		: mod (p / pakai
+		: mod (s / sentiment
+		: mod (p / primordial
+		: mod (d / dulang
+		: mod (s / suara))))))
+-------------------------------------------------------------------------------------------------------------------------------
+Wasekjen DPP PDI Perjuangan, Ahmad Basarah meminta, kalau ada tugas dinas atau kunjungan kerja, kader dan pengurus melakukannya di daerahnya masing-masing, bukan ke luar daerah apalagi ke luar negeri.
+--------------------
+Kang Uu juga meminta doa dari para kiai agar bisa memimpin Jabar dengan penuh amanah bersama Ridwan Kamil, calon Gubernur Jabar, pada acara Tabligh Akbar memperingati Isra Miraj dan menyongsong bulan suci Ramdhan 1439 H yang digelar Himpunan Alumni Miftahul Huda Cianjur di Lapangan Sepak Bola Bojong, Kabupaten Cianjur, Kamis 26 April.
+--------------------
+Ferdiman pun, meminta dinas kependudukan dan catatan sipil di masing-masing daerah untuk lebih sering turun langsung ke masyarakat untuk menyisir pemilih yang belum masuk DPT.
+--------------------
+KPU juga akan meminta bantuan personel kepolisian dan TNI untuk mengamankan distribusi dari gudang perusahaan, ke KPU kabupaten dan kota, hingga ke TPS.
+--------------------
+Ketua KPU Sulawesi Selatan Misna M. Attas meminta percetakan menyelesaikan pencetakan surat suara pilgub Sulsel dengan cepat.
+--------------------
+Dalam pesannya tersebut, Rizieq meminta koalisi keumatan untuk segera deklarasi terbuka sebelum menentukan capres dan cawapres.
+--------------------
+Menteri Keuangan Sri Mulyani meminta seluruh jajaran eselon I untuk memperhatikan kinerja bawahan yang berinteraksi dengan stakeholder di luar yang berpotensi untuk memunculkan tindak pungli.
+--------------------
+Selain untuk PDIP, dua kursi lainnya di MPR masing-masing diberikan untuk PKB dan Gerindra
+--------------------
+Anak-anak yang jadi pelajar di sekolah khusus sepak bola akan diberi kurikulum yang berbeda.
+
+( a / ajar 
+		:ARG0 ( a / anak-anak )
+    :location ( s / sekolah
+		:name ( n / name 
+			:op1 “khusus”
+			:op2 “sepak” 
+:op3 “bola”))))
+		     :mod (b1 / beri
+     :mod (k / kurikulum
+     :mod (b2 / beda )))
+-------------------------------------------------------------------------------------------------------------------------------
+Ketua Umum Gerakan Pemuda Ansor Yaqut Cholil Qoumas memberi kebebasan kepada kader organisasi kemasyarakatan ini untuk mendukung Ganjar Pranowo dan Taj Yasin atau Sudirman Said dan Fauziyah dalam pemilihan Gubernur Jawa Tengah 2018.
+--------------------
+Kepala desa, TNI, Polri, dan Aparatur Sipil Negara juga dilarang memberikan fasilitas kepada salah satu pasangan calon.
+--------------------
+Oleh karena itu, Bawaslu memberikan rekomendasi sanksi.
+
+( b / beri 
+		:ARG0 ( b / bawaslu )
+		:ARG1 ( r / rekomendasi 
+			:mod ( s / sanksi )))
+-------------------------------------------------------------------------------------------------------------------------------
+Bawaslu hingga saat ini terus memberikan penindakan berupa rekomendasi sanksi atas dugaan pelanggaran yang ada.
+
+( b / beri 
+		:ARG0 ( b / bawaslu )
+		:ARG1 ( p / penindakan
+			:mod ( r / rekomendasi
+:mod (s/ sanksi
+:mod (d/ dugaan)))
+:ARG1 (l / langgar)
+-----------------------------------------------------------------------------------------------------------------------------
+Cak Imin juga memberikan pernyataan tegas bahwa dirinya siap mendampingi Jokowi pada Pilpres 2019 mendatang.
+
+(b/ beri
+ARG0 ( o / orang 
+			:nama ( n / nama
+				:op1 “Cak” 
+				:op2 “Imin” ))
+		ARG1 (p1 / pernyataan
+			: mod (d1 / dirinya
+			: mod ( d2/ damping
+				ARG1 (o / orang
+				 	 : nama (n/ nama
+				    	   :op1 “Jokowi”)
+	: mod  ( p2 / Pilpres
+            	:time ( d / date-entity
+                		:year 2019 ))))
+-------------------------------------------------------------------------------------------------------------------------------
+Mantan Ketua MPR Amien Rais sebelumnya memberikan tausyiah dalam acara tasyakuran satu tahun Ustadzah Peduli Negeri di Balai Kota, Selasa.
+
+(b/ / beri
+	ARG0 ( m / mantan
+            :mod ( k / ketua
+	:mod ( m / mpr 
+                 : o/ orang
+:nama ( n / nama
+                         :op1 "Amien"
+                         :op2 "Rais" ))
+	ARG1 (t/ tausyiah
+		: mod (a/ acara
+		: mod ( t/ tasyakuran
+:location ( t / tempat
+                	:name ( n / name
+                    	:op1 "Balai"
+:op2 “kota” ))))
+		: mod (s/ Selasa)
+------------------------------------------------------------------------------------------------------------------------------
+Warga Al-Washliyah memberikan dukungan kepada Dewan Penasihat Al-Jam'iyatul Washliyah Edy Rahmayadi-Musa Rajekshah, yang maju pada Pemilihan Gubernur Sumut pada 27 Juni 2018.
+--------------------
+Anggoro Dwitjahyono juga memberikan harapan agar BPS di bawah kepemimpinan Kecuk bisa lebih baik.
+
+( b / beri
+	:ARG0 ( o/ orang
+		: nama (n/ nama
+			:op1 “Anggoro”
+			: op2 “Dwitjahyono”))
+	: ARG1 (h/ harapan
+		: mod (b1 / bpjs
+		: mod (b2 / bawah
+		: mod (p / pimpin
+			(o / orang
+			:nama (n/ nama
+				:op1 “Kecuk”))
+-----------------------------------------------------------------------------------------------------------------------------
+Kedua saksi pasangan calon memberikan banyak catatan pada Rapat pleno yang berlangsung panjang.
+--------------------
+Hasil penghitungan berdasarkan masuknya data model C1 ini bukan hasil final. KPU memberi keterangan bahwa jika terdapat kesalahan dalam model C1, akan dilakukan perbaikan pada proses rekapitulasi di tingkat atasnya.
+--------------------
+Ketua MPR Zulkifli Hasan memastikan pelantikan tambahan pimpinan di MPR digelar dalam pekan yang sama.
+
+(p / pasti
+ARG0 ( k / ketua
+            :mod ( m / mpr 
+                 :nama ( n / nama
+                         :op1 "Zulkifli"
+                         :op2 "Hasan" ))
+	ARG1 (p / pelantikan
+		: mod ( t/ tambah
+		: mod (p / pimpin
+			: ARG1 (m / mpr)
+		: mod (g / gelar
+		: mod (p / pekan))))
+-----------------------------------------------------------------------------------------------------------------------------
+Agus memastikan, pesannya itu tidak bermuatan politis untuk mendukung salah satu kandidat.
+
+( p/ pasti
+	ARG0 ( a/ agus
+	ARG1 (p / pesannya
+		:  mod (m/ muat
+		: mod ( p / politis
+		: mod ( d / dukung
+		: mod ( k / kandidat
+	  :polarity -)
+
+
+Pasangan Ida Bagus Rai Dharmawijaya Mantra dan Ketut Sudikerta memastikan implementasi pariwisata Bali yang ramah lingkungan jika keduanya terpilih menjadi gubernur dan wakil gubernur lima tahun mendatang.
+--------------------
+
+Meski demikian, Arif belum bisa memastikan kapan aturan itu akan terbit. Pasalnya, saat ini KPU masih terus berkonsultasi dengan DPR dan pemerintah mengenai empat PKPU lainnya.
+--------------------
+
+Rohmi memastikan akan menggalang dukungan sosial kepada para stakeholder yang berkompeten untuk merealisasikan cita cita ini,
+-------------------------------------------------------------------------------------------------------------------------
+
+menindaklanjuti rencana meningkatkan kesejahteraan anak anak buruh migran tersebut.
+
+( t / tindaklanjut
+	:ARG1 ( r / rencana
+		:mod ( t / tingkat
+		:mod ( s / sejahtera
+		:mod ( a / anak
+		:mod ( b / buruh
+		:mod ( m / migran)))))
+----------------------------------------------------------------------------------------------------------------------------
+Meski begitu, Nuraida memastikan segera memproses penjatuhan sanksi ketika pengaduan diterima.
+
+(p / pasti 
+	: ARG0 (n/ nuraida
+	: ARG1 (m / memproses
+		: mod (j/ jatuh
+		: mod (s/ sanksi
+		: mod (a/ adu
+		: mod (t/ terima))))
+-------------------------------------------------------------------------------------------------------------------------------
+Badan Pengawas Pemilu Sumatera Utara memastikan terus menyelidiki dugaan pelanggaran pemilu yang melibatkan pejabat di Dinas Pendidikan Sumatera Utara tersebut.
+
+(p/ pasti
+	ARG0 ( b / badan
+            :mod ( p / pengawas 
+                     :ARG1( p / pemilu 
+      		 :location ( p / provinsi
+                 		:nama ( n / nama
+                       			  :op1 "Sumatra"
+                         		  :op2 "Utara" ))
+	ARG1 (m / menyelidiki
+		: mod (l/ langar
+		: mod (p/ pemilu
+		: mod ( l/ libat
+		: mod (p / pejabat
+     :location ( g / gedung
+                 		:nama ( n / nama
+                       			  :op1 "dinas"
+                         		  :op2 "pendidikan"
+  :op3 “Sumatera”
+  :op4 “Utara” )))) 
+-------------------------------------------------------------------------------------------------------------------------------
+Pramono juga memastikan basis data hingga yang berada di luar negeri, tidak hanya basis data yang berada di dalam negeri.
+--------------------
+Sekretaris Kabinet Pramono Anung memastikan, hanya Presiden Joko Widodo yang mengetahui nasib dari Arcandra Tahar paska diberhentikan dari Menteri ESDM.
+--------------------
+Dua calon inkumben dipastikan bertarung di pilkada Kota Padang 2018.
+
+(p / pasti
+        : ARG0 (c / calon)
+        : ARG1 (b / bertarung
+               : mod (p/ pilkada
+                       :location ( k / kota
+                              :name (n/name
+                                 : op1 “Padang”
+                      : time (d / date-entity
+                           : tahun 2018
+-------------------------------------------------------------------------------------------------------------------------------
+Syamsuar memastikan pasar akan dibangun oleh pemerintah bila persoalan aset tuntas.
+
+( p1 / pasti 
+		:ARG0 ( s / syamsuar )
+		:ARG1 ( p2 / pasar 
+			:mod ( p3 / pemerintah 
+:mod (p4 / persoalan
+:mod (a / asset
+:mod (t / tuntas))))
+------------------------------------------------------------------------------------------------------------------------------
+Wiranto memastikan, pemerintah tidak melakukan intervensi terhadap proses hukum yang berjalan di KPK. Sebab, KPK bisa mengikuti imbauan yang disampaikan, bisa juga tidak.
+--------------------
+Anies jadi juara di TPS 28, Lebak Bulus, Jakarta Selatan.
+
+(j1 / jadi 
+     :ARG0 ( a / anies )
+     :ARG1 ( j2 / menang))
+            : location ( p / provinsi
+                       :name (n/name
+                              : op1 “jakarta ”
+		      : op2 “selatan”))
+-----------------------------------------------------------------------------------------------------------------------------
+Legalisir ijazah JR Saragih menjadi penyebab persyaratan pencalonannya menjadi calon gubernur Sumatera Utara tak lengkap. 
+-------------------------------------------------------------------------------------------------------------------------------
+JR Saragih sempat menggugat KPU dan dimenangkan sehingga Bawaslu Sumatera Utara meminta JR Saragih melakukan legalisir ulang di Jakarta
+--------------------
+Tahun 2008, Eshton menjadi calon wakil gubernur mendampingi Frans Lebu Raya dan menang dalam Pilkada itu.
+--------------------
+Emelia Julia Nomleni tercatat pernah menjadi anggota DPRD NTT periode 2009-2014.
+
+( c / catat 
+		:ARG0 (o / orang 
+                       		 :name ( n / nama
+                                 		 :op1 "Emelia"
+                                 		 :op2 "Julia”
+ :op3 “Nomleni" )))
+		:ARG1 ( a / anggota
+	 		 :location ( g / gedung
+				:name ( n / name 
+					:op1 “DPRD”
+					:op2 “NTT” ))))
+               		:time ( d / date-entity 
+				:tahun 200-2014))
+-------------------------------------------------------------------------------------------------------------------------------
+Namun, Viktor juga pernah menjadi anggota DPR RI dari Partai Golkar, yakni pada periode 2004-2009.
+
+( j / jadi
+	:ARG0 ( v/ viktor
+	:ARG1 ( a / anggota
+		:mod (d / dpr
+		:mod (r / ri
+		:mod ( p / partai
+		:mod ( g / golkar
+      :time ( d / date-entity 
+	:tahun 2004-2009))
+-------------------------------------------------------------------------------------------------------------------------------
+Setelah itu, Josef menjadi dosen Altri Kehakiman Jakarta.
+
+( j / jadi 
+		:ARG0 ( j / josef
+		:ARG1 ( d / dosen
+	 		 :location ( k / kota
+				:name ( n / name 
+					:op1 “Jakarta”
+------------------------------------------------------------------------------------------------------------------------------
+Setelah itu Josef menjadi Pokja DPP Partai Golkar.
+
+( j1 / jadi 
+		:ARG0 ( j2 / josef )
+		:ARG1 ( p1 / pokja 
+			:mod ( d / dpp
+:mod (p2 / partai
+:mod (g / golkar)))
+-------------------------------------------------------------------------------------------------------------------------------
+Partai Golkar menjadi salah satu pendukung pencalonan Jokowi, bersama dengan Partai NasDem, Partai Hanura, dan Partai Persatuan Pembangunan.
+--------------------
+Berdasarkan aturan PKPU, sekolah, rumah ibadah, pelayanan kesehatan dan gedung pemerintahan tidak dibolehkan dijadikan tempat kampanye.
+--------------------
+Calon Bupati Tulungagung Margiono menjadi perhatian dalam acara debat kandidat yang diselenggarakan Komisi Pemilihan Umum Kabupaten Tulungagung di Hotel Istana, Jumat malam, 23 Maret 2018.
+--------------------
+Tito tidak ingin lembaganya dijadikan alat politik untuk menjatuhkan lawan politik calon kepala daerah di pilkada.
+
+( j / jadi 
+		:ARG0 ( t / tito )
+		:ARG1 ( l / lembaga )
+		:mod (m / menjatuhkan
+		:mod (l / lawan
+		:mod (p1 / politik
+		:mod (p2 / pilkada))))
+		:polarity - )
+-------------------------------------------------------------------------------------------------------------------------------
+Di situlah praktik kecurangan seperti politik uang terjadi. 
+
+( c / curang
+	:ARG1 ( p / praktik
+		:mod ( p / politik
+		:mod ( u / uang))
+-------------------------------------------------------------------------------------------------------------------------------
+Oleh karena itu, Polri membentuk satuan tugas money politic untuk menindaklanjuti politik uang yang terjadi selama Pilkada 2018.
+--------------------
+Jika uang tak mampu memengaruhi pemilih, berita-berita negatif mengenai lawan politik kerap dijadikan senjata.
+--------------------
+Apalagi, masyarakat Sumut memiliki latar belakang primordial beragam sehingga sentimen identitas bisa menjadi bumerang.
+--------------------
+Bahkan, tidak jarang dijadikan sebagai tempat untuk menyebarkan ujaran kebencian dan permusuhan.
+--------------------
+Ke depan sampah bisa dijadikan alat tukar untuk mendapatkan beras, pulsa, dan berbagai kebutuhan masyarakat.
+--------------------
+Akhirnya menjadikan Bali kurang nyaman bagi wisatawan dunia.
+--------------------
+Data DPS ini menjadi rujukan KPU dalam menyusun DPT Pilkada 2018.
+--------------------
+Ada tiga poin yang akan menjadi acuan paslon ini dalam menjalankan pemerintahan jika terpilih nanti.
+--------------------
+Daerah-daerah ini menjadi prioritas karena banyak memiliki kendala di akses transportasi dan cuaca ekstrem yang bisa mengganggu proses pengiriman.
+--------------------
+Apalagi ada daerah yang menjadi prioritas dalam pendistribusian surat suara di Sulawesi Selatan. 
+------------------------------------------------------------------------------------------------------------------------------
+
+Di antaranya Kabupaten Luwu Utara, Selayar, dan Pangkep. Alasannya, wilayah tersebut jauh dari jangkauan.
+--------------------
+PKB saat ini juga menjadi satu partai yang kembali diperhitungkan di kancah perpolitikan Indonesia.
+--------------------
+Suhariyanto atau Kecuk digadang akan menjadi sosok pengganti Suryamin.
+--------------------
+Pungutan liar jadi perhatian khalayak luas. 
+
+( j / jadi
+	:ARG1 (p / pungutan
+		:mod ( l1 / liar
+		:mod ( h / hati
+		:mod ( k /  khalayak
+		:mod ( l2 / luas)))))
+-------------------------------------------------------------------------------------------------------------------------------
+Bahkan, Presiden Joko Widodo menyaksikan langsung Operasi Tangkap Tangan yang dilakukan Kepolisian terhadap pegawai Kementerian Perhubungan yang tengah melakukan tindak pungli.
+--------------------
+Ditambahkannya, ciri-ciri seorang demokrat, di antaranya bisa menjadi pendengar yang baik. 
+-----------------------------------------------------------------------------------------------------------------------------
+Di samping itu, seorang demokrat juga menghargai pendapat orang lain dan perbedaan yang ada. Jokowi menutup disambut aplaus kader PD, "Artinya, saya dan Pak SBY ini beda-beda tipis banget. Kalau saya seorang demokrat, Pak SBY tambah satu, yaitu ketua Partai Demokrat.
+------------------------------------------------------------------------------------------------------------------------------
+Jadi, tipis sekali".
+
+(j/ jadi
+	ARG1 (t / tipis
+		:mod (s/ sekali)
+------------------------------------------------------------------------------------------------------------------------------
+Selain itu, dua masalah lainnya yang menjadi prioritas di Jawa Barat yakni masalah persoalan anggaran yang kadang tak mengena saat diluncurkan menjadi sebuah program. 
+---------------------------------------------------------------------------------------------------------------------------
+Juga masalah distribusi pengelolaan antara provinsi dan daerah yang masih belum bisa sinergis.
+--------------------
+Idrus mengungkapkan, Dinamika JR Saragih akan berimplikasi pada nama baik dan elektabilitas Partai Demokrat 2019 mendatang
+--------------------
+Komisioner Komisi Pemilihan Umum RI Viryan mengungkapkan saat ini ada 6.768.025 pemilih yang belum memiliki Kartu Tanda Penduduk Elektronik atau Surat keterangan pengganti e-KTP.
+--------------------
+Direktur Operasi PT GMP Dodi Gustari mengungkapkan, pabriknya dalam satu hari mampu memproduksi hingga 7 ton kulit mentah yang diproses hingga nantinya siap diolah untuk berbagai kebutuhan.
+--------------------
+Sandiaga mengungkapkan, "Artinya kampanye Pak Dirman bukan kampanye yang memecah belah. Karena rakyat Indonesia khususnya di Jawa Tengah ini kan guyub rukun. Ini yang harus dijaga ke depan".
+--------------------
+Marsudi mengungkap, Tiga orang berinisial CDR, MAX, dan YRN baru menempati rumah kontrakan sebulan lalu.
+--------------------
+Prasetyo telah beberapa kali mengungkapkan wacana menunda proses hukum pasangan calon kepala daerah bermasalah.
+--------------------
+Pusat Pelaporan dan Analisis Transaksi Keuangan mengungkapkan telah menerima laporan 1.119 transaksi mencurigakan yang masuk pada akhir 2017 hingga awal 2018. 
+-------------------------------------------------------------------------------------------------------------------------------
+Diduga terkait pelaksanaan pilkada serentak tahun ini.
+
+(k / kait
+	:ARG1 (p1 / pelaksanaan
+		:mod (p2 / pilkada)
+		:mod (s / serentak)
+		:mod (t / tahun)
+		:mod (I / ini)
+-------------------------------------------------------------------------------------------------------------------------------
+Dian mengungkapkan "Ini terkait pilkada yang jelas, secara otomatis juga berkaitan dengan calon-calon kepala daerah itu".
+--------------------
+Titi mengungkapkan "Anggapannya, buat apa datang ke TPS, toh calon tunggal pasti menang".
+--------------------
+Tito mengungkapkan, "Prinsip saya sepakat untuk mensosialisasikan sampai ke bawah. Kami meningkatkan soliditas dan netralitas anggta TNI-Polri. Kami mengambil posisi netral".
+--------------------
+Gus Ipul mengungkapkan, "Saya ingin di sini ada inovasi mulai dari rasa, kemasan yang membuat brem ini tidak hanya semakin dikenal saja. Tetapi rasanya bisa bermacam-macam".
+--------------------
+Gogot mengungkapkan, rincian yang akan disampaikan kedua pasangan calon dalam keenam segmen debat publik pertama.
+
+( u / ungkap
+	:ARG0 ( g / gogot
+	:ARG1 ( r / rincian
+		:mod ( d / disampaikan))
+-------------------------------------------------------------------------------------------------------------------------------
+Iing mengungkapkan, sebab KBB merupakan daerah yang rawan bencana.
+
+(u / ungkap
+	:ARG0 (l / ling
+	:ARG1 (k / kbb
+		:mod (d / daerah
+		:mod (r /rawan
+		:mod (b/ bencana)))
+-------------------------------------------------------------------------------------------------------------------------------
+Iing mengungkapkan, format acara debat, relatif sama dengan acara debat lainnya.
+
+( u / ungkap
+	:ARG0 (l / ling
+	:ARG1 ( f / format
+		:mod (a / acara
+		:mod ( d/ debat
+			:mod (r / relative)
+				:ARG1 (s / sama))
+------------------------------------------------------------------------------------------------------------------------------
+Ketua KPU RI Arief Budiman mengungkapkan hal itu di Kantor KPU, Jakarta, Kamis 12 April 2018 malam.
+
+(u / ungkap
+ARG0 ( k / ketua
+           			 :mod ( k / kpu 
+                    			:ARG1( r / ri 
+      			 		:( o / orang
+                 					:nama ( n / nama
+                      					   :op1 "Arief"
+                       					   :op2 "Budiman" ))))
+:location ( k / kantor
+		:name ( n / name 
+			:op1 “KPU”))))
+:location ( k / kota
+		:name ( n / name 
+			:op1 “Jakarta”))))
+:mod (k/ kamis)
+:time ( d / date-entity 
+	:tahun 2018
+	:bulan 4
+	:hari 12))
+-------------------------------------------------------------------------------------------------------------------------------
+Komisioner Komisi Pemilihan Umum Viryan mengungkap lebih dari 147 juta pemilih yang telah masuk dalam data daftar pemilih tetap Pilkada Serentak 2018.
+--------------------
+Mantan Komisioner Komnas HAM Natalius Pigai mengungkapkan alasan kenapa dirinya selalu mengkritik kebijakan pemerintahan Presiden Joko Widodo.
+
+( u / ungkap
+	:ARG0 (m / mantan
+		:mod (k1 / komisioner
+		   : ARG1 (k2 / komnas
+			:mod (h / ham
+		(o/orang
+		    Nama (n/nama
+			:op1 “Natalius”
+			:op2 “Pigai”
+	:ARG1 (a / alasan
+		:mod (d / dirinya)
+		:mod (k3 / kritik)
+		:mod (k4 / kebijakan)
+		:mod (p/ pemerintahan)
+			(o / orang
+			   Nama (n/nama
+				:op1 “Joko”
+				:op2 “Widodo”))
+-------------------------------------------------------------------------------------------------------------------------------
+Zainal mengungkapkan, “Taufan Pawe datang mengklarifikasi tudingan dugaan dua item pelanggaran yang dilaporkan warga".
+--------------------
+Zainal mengungkapkan, “Taufan Pawe datang mengklarifikasi tudingan dugaan dua item pelanggaran yang dilaporkan warga".
+
+( u . ungkap
+		:ARG0 ( z/ zainal
+		:ARG1 ( d/ datang
+			:ARG0 (o/orang
+				:nama (n/nama
+					:op1 “taufan”
+					:op2 “pawe”
+			:ARG1 (k/ klarifikasi
+				:mod ( t/ tudingan
+				:mod ( d / dugaan
+				:mod ( l / langgar)))
+------------------------------------------------------------------------------------------------------------------------------
+Rohmi mengungkapkan, "Zul-Rohmi mengajak para pegiat sosial dan aktivis yang concern kepada buruh migran agar bahu membahu untuk merealisasikan ide dan gagasan mulia ini".
+
+(u / ungkap
+		:ARG0 (r / rohmi)
+		:ARG1 (a / ajak
+			:ARG0 (z / zul-rohmi
+			:ARG1 (d / dan
+					:op1 ( p / pegiat
+                   					:mod (s /sosial))
+    				            :op2 ( a / aktivis)
+					:mod (c / concern
+						:mod ( b/ buruh)
+						:mod ( m / migran)
+			:mod (b / bahu membahu
+			:mod (r / realisasi
+			:ARG1 ( d /dan
+				:op1 (I / ide
+				:op2 ( g / gagasan
+					:mod (m / mulia)			 
+-------------------------------------------------------------------------------------------------------------------------------
+

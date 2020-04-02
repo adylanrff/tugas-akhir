@@ -1,0 +1,769 @@
+﻿Calon wali kota Bekasi Nur Supriyanto melakukan ibadah umrah pada awal Maret lalu.
+
+(l/laku
+	:ARG0 (c/calon
+		:mod (w/wali
+		:mod (k/kota
+			: ( o/orang
+				:nama (n/nama
+					:op1 “Nur”
+					:op2 “Supriyanto”))
+	:ARG1 (i/ibadah)
+		:mod (u/umrah)
+    :time ( d / date-entity 
+	:bulan 9))
+
+
+Laporan dilakukan ke sentra penegakan hukum terpadu Bawaslu Jawa Barat, Kota Bandung, Selasa, 27 Maret 2018.
+
+(l/laku
+	:ARG0 (l / laporan)
+	:ARG1 (s/sentra
+		:mod (p/penegakan
+		:mod (h/hukum
+		:mod (t/terpadu
+		:mod (b/bawaslu
+	:location ( p / province
+		:name ( n / name 
+			:op1 “Jawa”
+			:op2 “Barat” ))))
+	:location ( k / kota
+		:name ( n / name 
+			:op1 “Bandung”))))
+	:mod (s/selasa)
+		:time ( d / date-entity 
+			:tahun 2018
+			:bulan 3
+			:hari 27 ))
+
+
+Penggantian dilakukan karena calon yang bersangkutan meninggal dunia. Calon yang dimaksud adalah calon wakil gubernur Kalimantan Timur, yaitu Nursyirwan Ismail.
+
+--------------------
+Bahkan, pihaknya telah melakukan langkah-langkah untuk bisa mencetak 180.000 KTP elektronik bagi pemilih pada Pilkada Garut.
+
+(l/laku
+	:ARG0 (p1/pihaknya
+	:ARG1 (l/langkah
+		:mod (c/cetak
+			:mod ( t / temporal-quantity
+				:quant 180.000 
+				:unit ( k / ktp )))
+		:mod (p2/pemilih
+		:mod (p3/pilkada
+	:location ( t / tempat
+		:name ( n / name 
+			:op1 “Garut”))))
+--------------------
+Pembahasan soal siapa calon wakil presiden pendamping Jokowi akan dilakukan setelah pelaksanaan Pilkada Serentak 2018.
+
+( l / laku
+	:ARG0 (c / calon
+		:mod (w/wakil
+		:mod (p1/presiden
+		:mod (p2/pendamping
+			: (o/orang
+				: nama (n/nama
+					:op1 “Jokowi”)))
+	:ARG1 (b/bahas
+		:mod (l/laksana
+		:mod (p/pilkada
+		:mod (s/serentak
+    :time ( d / date-entity 
+	:tahun 2018))
+--------------------
+KPU juga telah melakukan konsultasi dengan Komisi Yudisial, menindaklanjuti putusan bernomor 56/G/SPPU/2018/PTUN.JKT tersebut.
+
+--------------------
+Citra Publik Adv-Lingkaran Survei Indonesia Denny JA melakukan survei opini publik untuk Pilgub Sumut 2018.
+
+--------------------
+Survei dilakukan pada 11-15 April 2018, secara tatap muka terhadap 1.000 responden.
+
+(l/laku
+	:ARG1 (s/survei
+:time ( d / date-entity 
+	:tahun 2018
+	:bulan 4
+	:hari 11-15))
+		:mod (t/tatap
+		:mod (m/muka
+			: :mod ( t / temporal-quantity
+				:quant 1000 
+				:unit ( r/responden )))
+--------------------
+Kebijakan tegas tentang penggunaan air tanah bagi pelaku usaha dan masyarakat perlu dilakukan.
+
+(g/guna
+	:ARG1 (k/kebijakan
+		:mod (t/tegas
+			:ARG1 (d/dan
+				:op1 (p/pelaku
+					:mod (u/usaha)))
+				:op2 (m/masyarakat)
+			:mod (l/laku)
+
+--------------------
+Nilai tukar tambah juga dilakukan, salah satu caranya dengan mengaktifkan bank sampah.
+
+(t/tambah
+	:ARG1 (n/nilai
+		:mod (t/tukar
+		:mod (t/tambah
+			:ARG1 (a/aktif
+				:mod (b/bank
+				:mod (s/sampah)
+--------------------
+Perlindungan sumber daya air ini dilakukan mulai dari hulu hingga hilir.
+
+(l/laku
+	:ARG1 (l/lindung
+		:mod (s/sumber
+		:mod (d/daya
+		:mod (a/air
+			:mod (h1/hulu
+			:mod (h2/hingga
+			:mod (h3/hilir)))))
+
+--------------------
+KPU Kota Parepare telah melakukan konsultasi dengan KPU Provinsi Sulawesi Selatan dan KPU RI, sebelum melakukan pembatalan.
+
+(l/laku
+	:ARG0 (k1/kpu
+:location ( k / kota
+		:name ( n / name 
+			:op1 “Parepare”))))
+	:ARG1 (k2/konsultasi
+		:ARG1 (d/dan
+			:op1 (k3/kpu
+	     :location ( p / province
+		:name ( n / name 
+			:op1 “Sulawesi”
+			:op2 “Selatan” ))))
+	:op2 (k4/kpu
+		:location ( n / negara
+			:name ( n / name 
+				:op1 “RI”))))
+					:mod (l/laku)
+					:mod (b/batal)
+--------------------
+Wali Kota Parepare disebut melakukan pelanggaran administrasi dengan melakukan mutasi dan membagikan beras miskin dalam kurung waktu pelarangan kampanye, sesuai UU Nomor 10 tahun 2016 tentang Pemilihan Gubernur, Bupati dan Wali Kota.
+
+--------------------
+Ketika itu, anggota DPRD Bengkalis dari Partai Demokrat Nur Azmi Hasyim didampingi ajudannya melakukan reses dihadiri oleh masyarakat setempat di Lapangan Futsal Desa Parit.
+
+--------------------
+Selanjutnya dengan temuan tersebut, 
+
+(l/lanjut
+	:ARG1 (t1/temuan
+		:mod (t2/tersebut)))
+-------------------------------------------------------------------------------------------------------------------------------
+Bawaslu Riau melakukan proses pemeriksaan.
+
+(l/laku
+	:ARG0 (b/bawaslu
+:location ( t / tempat
+		:name ( n / name 
+			:op1 “Riau”))))
+----------------------------------------------------------------------------------------------------------------------------
+Survei terhadap 820 responden pemilik hak pilih ini dilakukan pada 12-21 Maret 2018 di Provinsi Jawa Tengah.
+
+(l/laku
+	:ARG0 (p/pemilik
+		:mod (h/hak
+		:mod (p/pilih)))
+	:ARG1 (s/survei
+		: mod ( t / temporal-quantity
+				:quant 820 
+				:unit ( r / responden )))
+:time ( d / date-entity 
+		:tahun 2018
+		:bulan 3
+		:hari 12 - 21 ))
+:location ( p / province
+		:name ( n / name 
+			:op1 “Jawa”
+			:op2 “Tengah” ))))
+--------------------
+Adapun penyelidikan sudah dilakukan selama sepekan.
+
+(l/laku
+	:ARG1 (s/selidik
+		:mod (p/pekan))
+--------------------
+Pencetakan surat suara itu dilakukan setelah disetujui semua komisioner dan anggota Komisi Pemilihan Umum Sulawesi Selatan.
+
+(l/laku
+	:ARG0 (p/pencetakan
+		:mod (s1/surat
+		:mod (s2/suara
+	:ARG1 (d/dan
+		:op1 (k/komisioner
+		:op2 (a/anggota
+			:mod (k/komisi
+			:mod (p/pemilihan
+			:mod (u/umum
+		:location ( p / province
+				:name ( n / name 
+					:op1 “Sulawesi”
+					:op2 “Selatan” ))))
+--------------------
+Gerilya pertama dilakukan dengan menyambangi komunitas petani hutan, petani tebu, hingga komunitas pendidikan di pedalaman Jatiroto, Lumajang, Jawa Timur.
+
+(l/laku
+	:ARG0 (g/gerilya
+		:mod (p/pertama
+	:ARG1 (h/hingga
+		:op1 (k/komunitas
+			:mod (p/petani
+			:mod (h/hutan
+		:op2 (p/petani
+			:mod (t/tebu
+		:op3 (k/komunitas
+			:mod (p/Pendidikan
+				:mod (d/dalam
+				:mod (j/jatiroto
+			:location ( t / tempat
+				:name ( n / name 
+					:op1 “Lumajang”))))
+						:location ( p / province
+								:name ( n / name 
+									:op1 “Jawa”
+									:op2 “Timur” ))))
+--------------------
+Ketua Umum Gerindra Prabowo Subianto dan Ketua Dewan Kehormatan Partai Amanat Nasional, Amien Rais, melakukan ibadah umrah dalam waktu yang hampir berbarengan.
+
+(l/laku
+	:ARG0 (d/dan
+		:op1 (k1/ketua
+			:mod (u/umum
+			:mod (g/gerindra
+				 : (o/orang
+					:nama (n/nama
+						:op1 “Prabowo”
+						:op2 “Subianto”))
+		:op2 (k2/ ketua
+			:mod (d/dewan
+			:mod (k3/kehormatan
+			:mod (p/partai
+			:mod (a/amanat
+			:mod (n/nasional
+				: (o/orang
+					: nama(n/nama
+						:op1 “Amien”
+						:op2 “Rais”)))
+	:ARG1 (i/ibadah
+		:mod (u/umrah))
+			:mod (w/waktu	
+			:mod (b/bareng)
+--------------------
+Ketua Umum Partai Gerindra Prabowo Subianto, Amien Rais dan Ketua Umum PKS Sohibul Iman akan melakukan sejumlah kunjungan dan umrah bersama.
+
+(l/laku
+	:ARG0 (d/dan
+		:op1 (k1/ketua
+			:mod (u/umum
+			:mod (p/partai
+			:mod (g/gerindra
+				: (o/orang
+					: nama (n/nama
+						:op1 “Prabowo”
+						:op2 “Subianto”)))
+		:op2 (o/orang
+			: nama (n/nama
+				:op1 “Amien
+				:op2 “Rais”))
+		:op3 (k2/ketua
+			:mod (u/umum
+			:mod (p/pks
+				: (o/orang
+					: nama (n/nama
+						:op1 “Sohibul”
+						:op2 “Iman”))
+	:ARG1 (d/dan
+		:op1 (k/kunjungan
+		:op2 (u/umrah)))
+			:mod (s/sama)
+--------------------
+Ibadah umrah rencananya akan dilakukan di bulan Ramadan, tepatnya mulai 2 Juni.
+
+(l/laku
+	:ARG0 (i/ibadah
+		:mod (u/umrah))
+	:ARG1 (b/bulan
+		:mod (r/Ramadhan))
+    :time ( d / date-entity 
+	:bulan 6
+	:hari 2))
+--------------------
+Komisi Pemilihan Umum tengah melakukan penghitungan suara atau real count Pilkada DKI 2017 putaran kedua.
+
+(l/laku
+	:ARG0 (k/ketua
+		:mod (p/pemilihan
+		:mod (u/umum
+	:ARG1 (h/hitung
+		:ARG1 (a/atau
+			:op1 (s/suara
+			:op2 (r/real
+				:mod (c/count
+		:mod (p/pilkada
+	:location ( p / province
+		:name ( n / name 
+			:op1 “DKI”))))
+:time ( d / date-entity 
+		:tahun 2017))
+			:mod (p/putaran)
+			:mod (k/kedua)
+--------------------
+Selain melakukan hitung cepat, kata dia, pihaknya juga melakukan real count dari seluruh TPS di 23 kecamatan. Direktur Eksekutif Script Survei Indonesia Yuhardin berkata, "Hasil sementara real count tidak jauh beda dengan quick count. Hasil real count bisa diketahui besok pagi".
+
+--------------------
+Kedua petahana, Wali Kota Mahyeldi dan Wakil Wali Kota Emzalmi yang kini duduk sebagai pemimpin Padang periode 2014-2019, melakukan pertarungan Pemilihan kepala daerah 2018.
+
+--------------------
+Namun setelah sampai di kantor Suku Dinas Pendidikan Wilayah II Jakarta Pusat, JR Saragih tidak melakukan legalisir ijazah atau Surat Tanda Tamat Belajar SMA-nya, melainkan leges Surat Keterangan Pengganti Ijazah.
+
+--------------------
+KPU Sumut melakukan pembacaan pada Kamis 15 Maret dilaksanakan setelah JR Saragih melakukan legalisasi atas fotokopi ijazah SMA miliknya.
+
+--------------------
+Komisi Independen Pemilu, KIP, Aceh, menyebutkan tidak ada gangguan berarti ataupun protes selama pemungutan dan penghitungan suara pilkada Aceh, dalam laman resminya.
+
+--------------------
+Anggota Badan Pengawas Pemilu Bawaslu Fritz Edward Siregar menyebut pernyataan Menteri Koordinator Bidang Politik, Hukum, dan Keamanan Wiranto soal penundaan penetapan tersangka calon kepala daerah tak mewakili institusinya.
+
+--------------------
+Hanta menyebutkan, dengan kondisi tersebut, jumlah pemilih yang belum menentukan pilihannya akan sangat menentukan.
+
+--------------------
+Ketua Umum PDI Perjuangan Megawati Soekarnoputri, dalam sebuah pemberitaan menyebut, memilih Emelia lantaran sosoknya yang sederhana, rapih, tekun dan berbakti kepada masyarakat kecil. Karakter keibuan itu yang membuat Megawati kepincut dengan Emelia.
+
+--------------------
+Bamsoet menyebutkan, "Pasal mengenai penambahan satu kursi Wakil Ketua DPR di UU MD3, tidak termasuk dalam pasal yang akan diuji materiil oleh Mahkamah Konstitusi," Senin 19 Maret.
+
+--------------------
+Sementara itu, pelantikan pimpinan MPR disebutkan digelar setelah pelantikan pimpinan DPR.
+
+(l/lantik
+	:ARG0 (p1/pimpinan
+		:mod (m/mpr))
+	:ARG1 (p2/pimpinan
+		:mod (d/dpr))
+--------------------
+Ketua Panwaslu Padang Dorri Putra menyebutkan, berdasarkan kajian pihaknya, Dian Fakri terbukti melakukan pelanggaran dan akan diadukan ke Komisi Aparatur Sipil Negara melalui Bawaslu Provinsi Sumbar dan Bawaslu RI.
+
+--------------------
+Dorri menyebutkan, hal terkait sanksi yang akan diterima menjadi kewenangan KASN.
+
+(s/sebut
+	:ARG0 (d/dorri)
+	:ARG1 (s/sanksi
+		:mod (t/terima
+			:mod (w/wenang
+			:mod (a/asn))) 
+
+--------------------
+Camat Nanggalo Teddy Antonius menyebutkan, foto bersama petahana Mahyeldi Ansharullah yang dipasang di kantornya tersebut digunakan sebagai bahan penilaian camat berprestasi.
+
+(s/sebut
+	:ARG0 (c/camat
+:location ( t / tempat
+      :name ( n / name 
+		:op1 “Nanggalo”))))
+: (o/orang
+	: nama (n/nama
+		:op1 “Teddy”
+		:op2 “Antonius”
+	:ARG1 (f/foto
+		:mod (p/petahana
+			: (o/orang
+				: nama(n/nama
+					:op1 “Mahyedi”
+					:op2 “Ansharullah”))
+		:mod (p/pasang
+		:mod (k/kantor
+			:mod (g/guna
+			:mod (b/bahan
+			:mod (p/penilaian
+			:mod (c/camat
+			:mod (p/prestasi)))))
+--------------------
+Ketua Umum Airlangga Hartarto menyebutkan pertemuan dengan PDIP ini untuk konsolidasi koalisi partai menjelang pemilihan umum 2019.
+
+(s/sebut
+	:ARG0 (k1/ketua
+		:mod (u/umum
+			: (o/orang
+				: nama(n/nama
+					:op1 “Airlangga”
+					:op2 “Hartanto”
+	:ARG1 (t/temu
+		:mod (p1/pdip
+			:mod (k2/konsolidasi
+			:mod (k3/koalisi
+			:mod (p2/partai
+				:mod (p/pemilihan
+				:mod (u/umum)))
+			:time ( d / date-entity 
+				:tahun 2019))
+--------------------
+Airlangga menyebutkan kedatangan PDIP ini adalah yang pertama.
+
+(s/sebut
+	:ARG0 (a/airlangga
+	:ARG1 (d/datang
+		:mod (p/pdip
+		:mod (p/pertama
+
+--------------------
+Charta Politika menyebutkan, paslon pejawat Ridho-Bachtiar memperoleh 27,1 persen, Herman HN Sutono 20,1 persen, Mustafa Ahmad Jajuli 10,4 persen, dan Arinal Djunaidi Chusnuniah 7,4 persen di Bandar Lampung, Selasa 20 Maret.
+
+--------------------
+Tim kedua pasangan disebutkan masih solid untuk mengawal kemenangan.
+
+(s/sebut
+	:ARG0 (t/tim
+		:mod (k/kedua
+		:mod (p/pasangan)))
+	:ARG1 (s/solid
+		:mod (k/kawal
+		:mod (m/menang)))
+--------------------
+Ulung menyebut, dari pengakuan para pelaku, uang palsu senilai Rp 6 miliar akan dikirim kepada pemesan yang berada di wilayah Tangerang Selatan.
+
+(s/sebut
+	:ARG0 (u/ulung
+	:ARG1 (a/aku
+		:ARG0 (p1/pelaku
+		:ARG1 (u/uang
+			:mod (p2/palsu
+			:mod (r/rp 6 miliar
+			:mod (k/kirim
+			:mod (p3/pesan
+		:location ( w / wilayah
+				:name ( n / name 
+					:op1 “Tangerang”
+					:op2 “Selatan” ))))
+--------------------
+Ulung menyebut "Pelaku ini memesan dengan perbandingan satu pecahan Rp 100.000 asli ditukar dengan tiga uang palsu dengan nominal yang sama".
+
+(s/sebut
+	:ARG0 (u/ulung
+	:ARG1 (p1/pesan
+		:ARG0 (p2/pelaku
+		:ARG1 (d/dengan
+			:op1 (b/banding
+				:mod (s/satu
+				:mod (p/pecahan
+				:mod (r/rp 100.000
+					:mod (a/asli
+				:mod (t/tukar))))
+			:op2 (t/tiga
+				:mod (u/uang
+				:mod (p/palsu
+					:mod (n/nominal
+					:mod (s/sama))))
+--------------------
+Ulung menyebut "Modusnya, selain mengedarkan uang palsu, para pelaku ini juga terlibat penipuan".
+
+--------------------
+Marsudi menyebut "Rumah kontrakan itu jadi tempat mereka untuk istirahat dan nyimpan uang palsunya".
+
+(s/sebut
+	:ARG0 (m/marsudi
+	:ARG1 (d/dan
+		:op1 (r/rumah
+			:mod (k/kontrakan
+			:mod (t/tempat
+			:mod (m/mereka
+			:mod (i/istirahat))))
+		:op2 (s/simpan
+			:mod (u/uang
+			:mod (p/palsu)))
+--------------------
+Tito Karnavian menyebutkan bahwa menunda proses hukum bagi para calon kepala daerah peserta pilkada merupakan salah satu upaya agar menciptakan kondisi yang kondusif selama proses pilkada. Tito Karnavian menyebutkan, jika proses hukum tidak ditunda, berpotensi menimbulkan kegaduhan.
+
+--------------------
+Gus Mus menyebut keamanan Jawa Tengah terletak di karakter masyarakat itu sendiri.
+
+(s/sebut
+	:ARG0 (o/orang
+		:nama (n/nama
+			:op1 “Gus”
+			:op2 “Mus”
+	:ARG1 (a/aman
+:location ( p / province
+:name ( n / name 
+		:op1 “Jawa”
+		:op2 “Tengah” ))))
+:mod (k/karakter
+:mod (m/masyarakat
+:mod (s/sendiri)))
+--------------------
+Romdin menyebutkan, begitupun untuk Kota Sukabumi tingkat popularitas Demiz masih mengungguli pasangan lain. Sementara, elektabilitas Emil unggul tipis yakni 40, 75 persen dibanding Demiz yakni 40 persen.
+
+--------------------
+UU Nomor 3/2002 tentang Pertahanan Negara dan UU TNI Nomor 34/2004 menyebutkan TNI berperan sebagai alat negara di bidang pertahanan yang memiliki tugas pokok untuk menegakkan kedaulatan negara, mempertahankan keutuhan wilayah Negara Kesatuan Republik Indonesia yang berdasarkan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. Selain itu, melindungi segenap bangsa dan seluruh tumpah darah Indonesia dari ancaman dan gangguan terhadap keutuhan bangsa dan negara.
+
+--------------------
+Pramono menyebutkan, KPU akan lebih banyak melakukan sosialisasi kepada masyarakat di daerah yang memiliki paslon tunggal.
+
+--------------------
+Belakangan, nama mantan Panglima TNI Jenderal Gatot Nurmantyo santer disebut-sebut dalam bursa calon presiden dan calon wakil presiden jelang Pilpres 2019.
+
+--------------------
+Wasekjen DPP PDI Perjuangan, Ahmad Basarah menyebutkan, caranya, menemui konstituen memenangkan Gus Ipul-Puti Guntur.
+
+--------------------
+Pigai pun menyebut sejumlah nama orang Papua yang pernah menjabat di era pemerintahan Presiden SBY. Antara lain, mantan Menteri Perhubungan Freddy Numberi, Staf Khusus Presiden Bidang Pembangunan Daerah dan Otonomi Daerah, Velix Vernando Wanggai.
+
+--------------------
+Rusidi menyebutkan kedua tersangka dikenakan pasal 187 A, perubahan dari pasal 74 ayat 4 UU nomor 10 tahun 2016.
+
+--------------------
+Poin 4 huruf a, b, dan c menyebutkan pasangan calon, tim kampanye, partai politik, dan relawan dilarang melakukan kegiatan keagamaan seperti mengucapkan selamat berpuasa hingga berinfak dan bersedekah selama Ramadan.
+
+--------------------
+Adapun edaran yang direvisi bertanggal 18 Mei menyebutkan larangan yang jauh lebih spesifik.
+
+--------------------
+Poin 4 menyebutkan pasangan calon maupun tim kampanye dilarang menyampaikan ucapan selamat menyambut Ramadan dalam bentuk iklan di televisi, radio, media cetak, dan elektronik.
+
+--------------------
+Rommy menyebutkan, selain unggul di sejumlah survei, pasangan yang biasa disebut Rindu itu juga didukung dengan kerja politik partai pendukung dan para relawan yang hasilnya mulai terlihat.
+
+--------------------
+Fadli pun menyebut koalisi tersebut lebih tepat apabila dinamakan Koalisi Keumatan dan Kerakyatan.
+
+--------------------
+Pramono menyebutkan, program tax amnety atau pengampunan pajak ini memiliki tujuan yang baik, salah satunya memuaskan atau meningkatkan basis data perpajakan nasional.
+
+--------------------
+Sekretaris Kabinet Pramono Anung menyebutkan, Presiden Joko Widodo menginstruksikan seluruh pejabat pemerintah untuk meyakinkan kembali siapa pun pada program tax amnesty atau pengampunan pajak.
+
+--------------------
+Subhan menyebut jumlah daftar pemilih tambahan dari pemilih surat keterangan dan KTP elektronik sebanyak 15.017.
+
+--------------------
+Jadi, Fritz mengaku terkejut saat Wiranto menyatakan hal tersebut dalam konferensi pers.
+
+(a/aku
+	:ARG0 (f/fritz)
+	:ARG1 (k/kejut)
+		: (o/orang
+			:nama (n/nama
+				:op1 “Wiranto”)))
+		:mod (n/nyata
+		:mod (h/hal
+		:mod (t/tersebut
+		:mod (k/konferensi
+		:mod (p/pers)))))
+--------------------
+Kepala Bagian Operasional Polrestabes Medan AKBP I Gede Nakti Widhiarta mengakui pengamanan memang ekstra maksimal ini.
+
+--------------------
+Faisal mengakui ada keganjilan dalam perkara hilang ijazah JR Saragih ketika hendak dilegalisir pasca-putusan Bawaslu Sumut.
+
+--------------------
+Toni mengaku pemanggilan ini terkait permintaan klarifikasi apakah Bupati Tuban ini sudah mengajukan izin cuti atau tidak dari gubernur. Apalagi kampanye ini dilakukan di sebuah lembaga pendidikan.
+
+--------------------
+Nur mengakui, alat peraga, poster, dan video merupakan dukungan yang dilakukan oleh loyalis HRS di Kota Bekasi.
+
+--------------------
+Kepala Polresta Bogor Kota Komisaris Besar Ulung Sampurna Jaya mengaku akan mendalami kasus peredaran uang palsu senilai Rp 6 miliar untuk melacak keterlibatan pihak lain. Termasuk, mencari kaitannya antara kasus peredaran uang palsu senilai Rp 6 miliar dengan pelaksanaan pemilihan kepala daerah serentak.
+
+--------------------
+Tito mengakui bahwa melalui Pilkada langsung ruang demokrasi serta hak untuk dipilih dan memilih terbuka lebar. Namun tidak dapat dibantah bahwa Pilkada secara langsung juga telah menciptakan polarisasi di tengah-tengah masyarakat.
+
+--------------------
+Ketua KPU Kota Tasikmalaya Cholis Muchlis mengakui target itu terbilang tinggi baik di tingkat kota/kabupaten atau provinsi.
+
+(a/aku
+	:ARG0 (k/ketua
+		:mod (k/kpu
+:location ( k / kota
+		:name ( n / name 
+			:op1 “Tasikmalaya”))))
+	: (o/orang
+		: nama (n/nama
+			:op1 “Cholis”
+			:op2 “Muchlis”)))
+	:ARG1 (t/target
+		:mod (b/bilang
+		:mod (t/tinggi
+			:ARG1 (a/atau
+				:op1 (t/tingkat
+					:mod (k/kota/kabupaten
+				:op2 (p/provinsi))))
+--------------------
+Oded mengaku telah memiliki program untuk menurunkan angka kemiskinan. Salah satunya dengan memfasilitasi masyarakat lewat program warung warga mandiri.
+
+--------------------
+Sementara itu, Kepala Bidang Pelayanan Pendaftaran Penduduk Disdukcapil Kabupaten Garut Evip Zulfikar mengakui bahwa KPU telah berkoordinasi dengan pihaknya.
+
+--------------------
+Pengurus DPD PDI Perjuangan Jatim sekaligus Bupati Ngawi Budi Sulistyono mengaku siap menjalankan instruksi ketua umum dan berupaya fokus memenangkan pasangan Gus Ipul-Puti Guntur di Pilkada Jatim.
+
+--------------------
+Ronny mengakui bahwa nama Ahmad Heryawan yang mendukung pasangan Asyik sangat berpengaruh.
+
+(a/aku
+	:ARG0 (r/ronny
+	:ARG1 (o/orang
+			: nama (n/nama
+				:op1 “Ahmad”
+				:op2 “Heryawan”
+		:mod (d/dukung
+		:mod (p/pasangan
+			:mod (a/asyik
+		:mod (p/pengaruh))))
+--------------------
+Seusai pemeriksaan, kepada awak media Taufan Pawe mengaku tidak bersalah.
+
+--------------------
+Taufan mengaku pembagian beras Rastra adalah kebijakan nasional.
+
+(a/aku
+	:ARG0 (t/taufan
+	:ARG1 (b/bagi
+		:mod (b/beras
+		:mod (r/rastra
+		:mod (a/adalah
+		:mod (k/lebijakan
+		:mod (n/nasional)))))
+--------------------
+Hudri mengaku telah berperan aktif meminta ke Setjen KPU Pusat agar segera diisi. Namun, masih belum ada keputusan.
+
+--------------------
+Hudri mengakui kekosongan dua pejabat di KPU mengganggu kinerja KPU.
+
+(a/aku
+	:ARG0 (h/hudri
+	:ARG1 (k/kosong
+		:mod (d/dua
+		:mod (p/pejabat
+	:location ( t / tempat
+		:name ( n / name 
+			:op1 “KPU”))))
+		:mod (g/ganggu
+		:mod (k/kinerja
+			:mod (k/kpu))))
+--------------------
+Hudri mengaku beruntung karena memiliki tenaga kontrak 10 bulan.
+
+(a/aku
+	:ARG0 (h/hudri
+	:ARG1 (u/untung
+		:mod (m/milik
+		:mod (t/tenaga
+		:mod (k/kontrak
+			:mod ( t / temporal-quantity
+				:quant 10 
+				:unit ( b / bulan )))
+--------------------
+Salah satu penyandang tuna netra yang ikut dalam sosialisasi dan pendidikan pemilih, Slamet, mengaku kalau dirinya sudah paham cara mencoblos calon gubernur dan wakil gubernur. Sebab sudah beberapa kali ikut Pemilu.
+
+--------------------
+Penyandang tuna netra lain, Lilik, mengaku kalau dirinya baru pertama kali ini ikut Pemilu.
+
+--------------------
+Seusai pemeriksaan, kepada awak media Taufan Pawe mengaku tidak bersalah.
+
+--------------------
+Terkait pembagian beras Rastra, Taufan mengaku pembagian beras Rastra adalah kebijakan nasional.
+
+--------------------
+Soleh mengaku memiliki data bahwa jumlah pegawai yang dimutasi As'at sebanyak 513, tapi praktiknya 563.
+
+--------------------
+Meski begitu, Misna mengakui tak bagus juga jika surat suara terlalu cepat sampai di kabupaten/kota. Pasalnya, jika surat suara sudah turun ke daerah, pengamanannya merepotkan.
+
+--------------------
+Karena itu, Edy mengaku berterima kasih atas dukungannya.
+
+(a/aku
+	:ARG0 (e/edy
+	:ARG1 (t/terima
+		:mod (k/kasih
+		:mod (a/atas
+		:mod (d/dukungan))))
+--------------------
+Sebelumnya, Ketua Tim Pemenangan Pemilihan Presiden 2019 dari Partai Gerindra Sandiaga Salahuddin Uno mengaku, Ketua Umum Partai Gerindra Prabowo Subianto akan memiliki beberapa agenda bersama, Amien Rais dan Ketua Umum PKS Sohibul Iman.
+
+--------------------
+Megawati mengaku sudah berkomunikasi dengan KH Said Aqil Siradj, dengan KH Maimoen Zubair, atau Mbah Maimoen, serta para Kiai soal memilih Taj Yasin.
+
+--------------------
+Megawati mengaku selalu mendengar suara dari bawah.
+
+(a/aku
+	:ARG0 (m/megawati
+	:ARG1 (d/dengar
+		:mod (s/suara
+		:mod (b/bawah)))
+--------------------
+Akan tetapi, Sekretaris Kabinet Pramono Anung mengaku masih belum mengetahui nasib dari Arcandra Tahar, meskipun saat ini santer disebut-sebut kembali menjabat sebagai orang nomor satu di ESDM.
+
+--------------------
+Presiden Joko Widodo mengaku heran dengan tudingan sebagai seorang pemimpin otoriter yang dialamatkan kepadanya oleh sejumlah pihak.
+
+(a/aku
+	:ARG0 (p/presiden
+		: (o/orang
+			:nama (n/nama
+				:op1 “Joko”
+				:op2 “Widodo”))))
+	:ARG1 (h/heran)
+		:mod (t/tudingan
+		:mod (p/pemimpin
+		:mod (o/otoriter
+		:mod (a/alamat
+		:mod (p/pada
+			:mod (o/oleh
+		:mod (j/jumlah
+		:mod (p/pihak)))))
+--------------------
+Jokowi sendiri mengaku dirinya merasa tidak memiliki tanda-tanda sebagai pemimpin yang sewenang-wenang. Hal itu dikatakannya saat menghadiri pembukaan Rapat Pimpinan Nasional Partai Demokrat di Sentul International Convention Center, Kabupaten Bogor, Sabtu 10 Maret 2018.
+
+--------------------
+Jokowi bahkan mengaku selalu tersenyum saat beraktivitas. Oleh sebab itu, Jokowi berani mengklaim bukan seorang pemimpin otoriter.
+
+--------------------
+Poniran, warga Desa PIR Tran Sosa Unit VI, mengaku tidak menyangka atas kehadiran Djarot Saiful Hidayat ke desa yang berada di perbatasan itu.
+
+--------------------
+Dalam kunjungan itu, Djarot Saiful Hidayat mengaku bangga dan merasa diberkahi hingga bisa bersilaturahmi dan bertatap muka dengan masyarakat yang mayoritas bekerja di perkebunan itu.
+
+--------------------
+Di hadapan warga, Djarot Saiful mengaku terkejut dengan kondisi jalan menuju desa yang rusak, sehingga mengganggu kelancaran aktivitas masyarakat.
+
+--------------------
+Wiranto menuturkan, pasangan calon kepala daerah yang sudah terdaftar bukan lagi hanya sekadar pribadi, tetapi sudah menjadi milik partai dan milik masyarakat sebagai pendukungnya.
+
+--------------------
+Hanta bertutur, "Kata kuncinya ada di undecided voters ini. Sebab, tren elektabilitas naik atau menurun itu tidak begitu jauh jaraknya," 
+
+--------------------
+Teddy menuturkan, "Saya memastikan tidak memihak salah satu pasang calon. Ini sesuai dengan ketentuan ASN harus netral dalam pilkada"
+
+--------------------
+Airlangga bertutur, "Kita terus menjalin komunikasi dengan partai yang mempunyai potensi berkoalisi dengan kita,"
+
+(t/tutur
+	:ARG0 (a/airlangga
+	:ARG1 (j/jalin
+		:ARG0 (k1/kita
+		:ARG1 (k2/komunikasi
+			:mod (p1/partai
+			:mod (p2/punya
+			:mod (p3/potensi
+			:mod (k3/koalisi
+			:mod (k4/kita)))))
+--------------------
+Ling bertutur, "Kampanye ini dilaksanakan sampai 23 Juni 2018. Artinya, ada waktu yang cukup panjang, sekitar empat bulan, untuk mereka melaksanakan kampanye"
+
+--------------------
+

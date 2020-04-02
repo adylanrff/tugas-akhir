@@ -1,0 +1,593 @@
+﻿Uu berpendapat, padahal kiai juga bisa ikut terlibat dalam memecahjan berbagai masalah sosial di luar pesantren.
+
+(d/dapat
+	:ARG0 (u/uu
+	:ARG1 (l1/libat
+		:ARG0 (k/kiai
+		:ARG1 (p1/pecah
+			:mod(m/masalah
+			:mod (s/sosial
+			:mod (2l/uar
+			:mod (p2/pesantren)
+--------------------
+Komisioner Komisi Pemilihan Umum Provinsi Jawa Barat Bidang Data dan Perencanaan Ferdima Barighuna berpendapat, jumlah pemilih Pilgub Jawa Barat dapat bertambah karena ada pemilih yang belum terdaftar dalam DPT.
+
+--------------------
+Selain itu, Ferdiman berpendapat, terdapat juga pemilih potensial yang telah berusia 17 tahun pada pencoblosan 27 Juni mendatang.
+
+--------------------
+Pigai berpendapat, perlakuan pemerintah pada zaman Presiden Susilo Bambang Yudhoyono lebih memanusiakan masyarakat Papua ketimbang era Presiden Jokowi.
+
+--------------------
+Pigai berpendapat,  kritiknya terhadap pemerintah selalu berdasarkan data dan fakta di lapangan.
+
+(d/dapat
+	:ARG0 (p/pigai
+	:ARG1 (p/pemerintah
+		:ARG1 (k/kritik
+			:ARG1 (d/dan
+				:op1 (d/data
+				:op2 (f/fakta)))
+					:mod (l/lapangan)
+--------------------
+Hevy berpendapat untuk memudahkan penyandang tuna netra memilih calonnya, pihaknya akan menyediakan tamplet atau alat bantu braille, di setiap tempat pemungutan suara.
+
+--------------------
+Puan berpendapat, dengan menggunakan slogan tersebut, PDI-P sukses pada Pemilu 2014 dengan memperoleh kursi terbanyak di DPR serta memenangi pilpres.
+
+--------------------
+Rahmat berpendapat, permasalahan TransPatriot selesai saat wali kota melimpahkan ke badan usaha daerah dan badan aset daerah untuk dilaporkan ke DPRD.
+
+--------------------
+Nur berpendapat, jawaban Rahmat tidak sesuai jiwa kepemimpinan.
+
+(d/dapat
+	:ARG0 (n/nur
+	:ARG1 (s/sesuai
+	:polarity -)
+		:ARG0 (r/rahmat
+		:ARG1 (j1/jawaban
+			:mod (j2/jiwa
+			:mod (p/pimpin))))
+--------------------
+Okan berpendapat, tingkat elektabilitas calon dalam survei ini menunjukkan, bahwa persaingan masih sangat ketat dan dinamis, apalagi 38,88 persen responden dalam survei ini mengaku belum yakin pada pilihannya, atau masih bisa berubah pilihan.
+
+--------------------
+Rohmi berpendapat, sebagai pahlawan devisa harusnya kehidupan sosial dan ekonomi keluarga dan anak-anak TKI mendapatkan atensi dari para pemangku kebijakan.
+
+(d/dapat
+	:ARG0 (r/rohmi
+	:ARG1 (d/devisa
+		:ARG0 (p/pahlawan
+		:ARG1 (d/dan
+			:op1 (h/hidup
+				:mod (s/sosial
+			:op2 (e/ekonomi
+				:mod (k/keluarga
+			:op3 (a/anak
+				:mod (t/tki
+					:mod (d/dapat
+					:mod (a/atensi
+					:mod (p/pangku
+					:mod (b/bijak))))
+--------------------
+Rohmi berpendapat, sudah selayaknya ada feedback atau social responsibility yang nyata dan tepat guna diberikan oleh Pemda dalam bentuk stimulus bantuan khusus untuk biaya pendidikan dan jaminan kesehatan anak-anak buruh migran miskin tersebut.
+
+--------------------
+Soleh berpendapat, kasus yang ia laporkan pada intinya ada mutasi menjelang inkumben cuti kampanye.
+
+(d/dapat
+	:ARG0 (s/soleh
+	:ARG1 (l/lapor
+		:ARG0 (i/ia
+		:ARG1 (k/kasus
+			:mod (m/mutase
+			:mod (j/jelang
+			:mod (i/inkuben
+			:mod (c/cuti
+			:mod (k/kampanye)))
+--------------------
+Kuskridho berpendapat, hasil survei Indikator Politik Indonesia menemukan fakta mayoritas responden survei di Jawa Tengah yang memilih Joko Widodo juga memberikan politiknya untuk Ganjar Pranowo, kedua politikus ini sama-sama diusung oleh Partai Demokrasi Perjuangan Indonesia.
+
+--------------------
+Ganjar Pranowo-Taj Yasin mendapatkan 72,4 persen, sedangkan Said-Ida hanya 21 persen.
+
+(d/dapat
+	:ARG0 (g/ganjar pranowo-taj yasin)
+:mod (  p / percentage-entity 
+	:value 72.4 ))
+	:ARG0 (s/said-ida
+            :mod (  p / percentage-entity 
+	:value 21 ))
+--------------------
+Joko Widodo-Jusuf Kalla mendapat suara 5,5 juta di kandang Banteng, pada pemilu Presiden 2014.
+
+(d/dapat
+	:ARG0 (j/joko Widodo-jusuf kalla
+            :mod ( t / temporal-quantity
+				:quant 5,5 juta
+				:unit ( s / suara )))
+					:mod (k/kandang
+					:mod (b/banteng
+						:mod (p/pemilu
+						:mod (p/presiden
+							:time ( d / date-entity 
+								:tahun 2014)))))
+
+--------------------
+Sedangkan Prabowo Subianto-Hatta Rajasa mendapat 2,7 juta suara.
+
+(d/dapat
+	:ARG0 (p/Prabowo subianto-hatta rajasa)
+	:mod ( t / temporal-quantity
+				:quant 2,7 juta
+				:unit ( s / suara )))
+--------------------
+Nuraida berpendapat, lembaganya secara resmi belum menerima pengaduan dari Badan Pengawas Pemilu atau masyarakat berkaitan dengan kasus netralitas ASN di Sumatera Utara tersebut.
+
+--------------------
+Rommy berpendapat, pesaing terberat Ridwan Kamil-Uu adalah pasangan 2D, Deddy Mizwar-Dedi Mulyadi.
+
+--------------------
+Saat ini, Direktur Utama PT Adi Perkasa Makassar, Makmur Nakku berpendapat, pihaknya menggunakan tiga mesin cetak, dengan jumlah surat suara yang mampu dicetak per jam 75 ribu lembar.
+
+--------------------
+Achmad berpendapat, kehadiran tim PPP sekaligus melengkapi pergerakan tim resmi yang sudah berjalan.
+
+(d/dapat
+	:ARG0 (a/chmad
+	:ARG1 (h/hadir
+		:ARG0 (t/tim PPP
+		:ARG1 (l/lengkap
+			:mod (g/gerak
+			:mod (t/tim
+			:mod (r/resmi
+			:mod (s/sudah
+			:mod (j/jalan))))
+--------------------
+Hasil lengkap survei Litbang Kompas tentang elektabilitas calon kepala daerah di Jawa Timur dapat dibaca lengkap di harian Kompas dan kompas.id edisi Kamis 31 Mei 2018.
+
+--------------------
+Anggota Badan Komunikasi DPP Partai Gerindra Andre Rosiade berpendapat pihak-pihak yang menuding Prabowo melakukan umrah politik sebenarnya sedang panik.
+
+(d/dapat
+	:ARG0 (a/anggota
+		:mod (b/badan
+		:mod (k/komunikasi
+		:mod (d/dpp
+			:mod (p/partai
+			:mod (g/gerindra
+				: (o/orang
+					:nama (n/nama
+						:op1 “Andre”
+						:op2 “Rosiade”
+	:ARG1 (t/tuding
+		:ARG0 (p1/Prabowo
+		:ARG1 (l/laku
+			:mod (u/umrah
+			:mod (p2/politik
+			:mod (p3/panik))))
+--------------------
+Sehingga, Andre berpendapat, pihak-pihak yang menuding Prabowo melakukan umrah politik mengeluarkan pernyataan yang tidak masuk akal.
+
+(d/dapat
+	:ARG0 (a/andre
+	:ARG1 (t/tuding
+		:ARG0 (p/pihak
+		:ARG 1(p/Prabowo
+			:mod (l/laku
+			:mod (u/umrah
+			:mod (p/politik
+			:mod (l/luar
+			:mod (n/nyata
+			:mod (m/masuk
+				:mod (a/akal
+				:polarity -)
+--------------------
+Andre berpendapat, Prabowo dan Amien Rais hanya sekadar umrah biasa tidak ada niatan untuk membahas pilpres di Tanah Suci.
+
+(d/dapat
+	:ARG0 (a/andre
+	:ARG1 (u/umrah
+		:ARG0  (d/dan
+			:op1 (o/orang
+				:nama (n/nama
+					:op1 “Prabowo”
+			:op2 (o/orang
+				:nama (n/nama
+					:op1 “Amien”
+					:op2 “Rais”
+		:ARG1 (n/niat
+			:polarity -)
+				:mod (b/bahas
+				:mod (p/pilpres
+			:location ( t / tempat
+				:name ( n / name 
+					:op1 “Tanah”
+					:op2 “Suci” ))))
+--------------------
+Bahkan Politikus Partai PAN, Yandri Susanto berpendapat,  justu pembahasan mengenai capres lebih bagus kalau dibicarakan di Tanah Suci.
+
+(d/dapat
+	:ARG0 (p/politikus
+		:mod (p/partai
+		:mod (p/pan
+			: (o/orang
+				:nama (n/nama
+					:op1 “Yandri”
+					:op2 “Susanto”
+	:ARG1 (b/bahas
+		:mod (c/capres
+		:mod (b/bicara
+	:location ( p / province
+		:name ( t / tempat 
+			:op1 “Tanah”
+			:op2 “Suci” ))))
+--------------------
+Fadli berpendapat, tujuan pilpres bukan sekadar menjadi capres atau cawapres, melainkan untuk menang.
+
+--------------------
+Ganjar berpendapat, industri rokok tidak hanya menjadi penopang ekonomi nasional, tapi lebih khusus menjadi sandaran hidup ribuan pekerja selama puluhan tahun.
+
+--------------------
+Hasil penghitungan Pilkada Kota Tasikmalaya itu mendapatkan respons keberatan dari tim sukses peserta pasangan nomor urut satu dan tiga.
+
+--------------------
+sedangkan pasangan Wahidin Halim-Andika Hazrumy mendapat 259.701 suara.
+
+(d.dapat
+	:ARG0 (p/pasangan
+		: (o/orang
+			:nama (n/nama
+				:op1 “Wahidin Alim-Andika Hazrumy”
+	:mod ( t / temporal-quantity
+				:quant 259.701 
+				:unit ( s / suara )))
+--------------------
+Subhan berpendapat, Pleno penghitungan suara berjalan lancar. Hanya ada koreksi kecil di Kecamatan Setu terkait dengan pemilih yang jumlah totalnya keliru antara pemilih perempuan dan laki-laki, namun tidak mengubah jumlah total.
+
+--------------------
+Pasangan Wahidin-Andika mendapatkan suara sebanyak 254.182.
+
+(d/dapat
+	:ARG0 (p/pasangan
+		: (o/orang
+			:nama (n/nama
+				:op1 “Wahidin-Andika”
+	:mod ( t / temporal-quantity
+				:quant 254.182 
+				:unit ( s / suara )))
+--------------------
+sedangkan Rano-Embay mendapatkan 333.079 suara.
+
+(d/dapat
+	:ARG0 (r/rano-embay
+	:mod ( t / temporal-quantity
+				:quant 333.079 
+				:unit ( s / suara )))
+--------------------
+Andi berpendapat, angka yang didapat itu telah memastikan bahwa calon tunggal pasangan Tulus akan memenangi Pilkada Maluku Tengah.
+
+--------------------
+Direktur Eksekutif Script Survei Indonesia Yuhardin berpendapat sampel tersebut tersebar secara proporsional di seluruh kecamatan dan menggunakan metode acak bertingkat dengan tingkat kepercayaan 95 persen serta tingkat kesalahan 1 persen.
+
+--------------------
+Berdasarkan data KPU pukul 02.45 WIB, Adriatma yang merupakan anak dari Wali Kota Kendari dua periode, Asrun, dan pasangannya mendapatkan suara 40,99 persen atau 61.918 suara.
+
+--------------------
+Menteri Hukum dan HAM, Yasonna H. Laoly, berpendapat, penerbitan perpu untuk calon kepala daerah yang berstatus tersangka berpotensi melanggar asas keadilan calon kepala daerah.
+
+--------------------
+Yasonna berpendapat, penerbitan perpu akan membuat calon kepala daerah kehilangan hak untuk sosialisasi dalam pemilihan kepala daerah.
+
+--------------------
+Yasonna tak sependapat.
+
+(d/dapat
+	:ARG0 (y/yasonna
+	:polarity -)
+--------------------
+Yasonna berpendapat, KPK memiliki kewenangan untuk menetapkan siapapun untuk menjadi tersangka.
+
+(d/dapat
+ 	:ARG0 (y/yasonna
+	:ARG1 (w/wenang
+		:ARG0 (k/kpk
+		:ARG1 (m/milik
+			:mod (t1/tetap
+			:mod (s/siapapun
+			:mod (j/jadi
+			:mod (t2/tersangka))))
+--------------------
+Yasonna, yang juga politikus PDI Perjuangan, berpendapat pemerintah tidak akan mengintervensi proses hukum yang berjalan di lembaga anti rasuah.
+
+--------------------
+Deddy Mizwar berpendapat, reformasi birokrasi harus terus dilakukan secara lebih efektif, efisien, akuntabel, dan transparan dengan pendekatan keterbukaan melalui teknologi informasi.
+
+--------------------
+Benget berpendapat, sidang PT TUN terakhir digelar pada Rabu 14 Maret lalu.
+
+(d/dapat
+	:ARG0 (b/benget
+	:ARG1 (p/pt tun
+		:ARG1 (s/siding
+			:mod (a/akhir
+			:mod (r/rabu
+		:time ( d / date-entity 
+			:bulan 3
+			:hari 14))
+--------------------
+Benget berpendapat, hingga saat ini belum bisa disimpulkan apa yang terjadi di Pilkada Kabupaten Simalungun.
+
+(d/dapat
+	:ARG0 (b/benget
+	:ARG1 (s/simpul
+		:mod (p/pilkada
+	:location ( k / kabupaten
+		:name ( n / name 
+			:op1 “Simalungun”))))
+--------------------
+Girindra berpendapat, untuk mengajukan capres dan cawapres pada Pemilu 2019 adalah hasil dari pemilu sebelumnya, yakni Pemilu 2014.
+
+--------------------
+Arinal berpendapat, peluncuran gagasan Kartu Petani Berjaya didasari oleh visi dan misi pasangan Arinal-Nunik, yakni ingin meningkatkan kesejahteraan para petani karena sekitar 70 persen warga Lampung berprofesi sebagai petani.
+
+--------------------
+Juru bicara DPA Partai Aceh, Suadi Sulaiman berkata, "Di sejumlah besar di kabupaten di Aceh, dengan data ke kita, pasangan Muzakir Manaf-TA Khalid unggul," kepada BBC Indonesia, Rabu 15 Februari malam.
+
+--------------------
+Lebih lanjut Suadi mengatakan, setidaknya pasangan calonnya untuk sementara meraup suara terbanyak di setidaknya sembilan kabupaten, di antaranya Kabupaten Pidie Jaya, Aceh Timur dan Aceh Utara.
+
+--------------------
+Saudi berkata, "Justru yang menuding itu yang melakukan intimidasi selama ini,"
+
+--------------------
+Ketua KIP Aceh Ridwan Hadi berkata, "Hasil pantauan kami, berlangsung aman dan kondusif," Rabu 15 Februari.
+
+(k/kata
+	:ARG0 (k/ketua
+		:mod (k/kip
+	:location ( p / province
+		:name ( n / name 
+			:op1 “Aceh”))))
+	: (o/orang
+		:nama (n/nama
+			:op1 “Ridwan”
+			:op2 “Hadi”))
+	:ARG1 (p/pantauan
+		:ARG0 (k/kami
+		:ARG1 (d/dan
+			:op1 (a/aman)
+			:op2 (k/kondusif)
+				:mod (r/rabu
+		:time ( d / date-entity 
+			:bulan 2
+			:hari 15))
+--------------------
+Jalu berkata, "Jadinya, banyak calon yang diusung oleh Nasdem menang," 
+
+(k/kata
+	:ARG0 (j/jalu
+	:ARG1 (u/usung
+		:ARG0 (b/banyak
+			:mod (c/calon
+		:ARG1 (n/nasdem
+			:mod (m/menang)))
+--------------------
+Viva mengatakan masih menunggu secara resmi hasil KPU.
+
+(k/kata
+	:ARG0 (v/viva
+	:ARG1 (t/tunggu
+		:mod (r/resmi
+		:mod (h/hasil
+		:mod (k/kpu))))
+--------------------
+Viva mengatakan PAN mengapresiasi kerja keras penyelenggara pilkada 2017 ini.
+
+(k/kata
+	:ARG0 (v/viva
+	:ARG1 (a/apresiasi
+		:ARG0 (p/pan
+		:ARG1 (k/kerja
+			:mod (k/keras
+			:mod (s/selenggara
+			:mod (p/pilkada
+		:time ( d / date-entity 
+			:tahun 2017))
+--------------------
+Viva mengatakan, "Pilkada 2017 telah usai. Meski ada sebagian daerah masih bersengketa terkait hasil pilkada, semuanya harus diarahkan secara konstitusional melalui jalur hukum yang telah diatur undang-undang. Marilah kita semua bergandeng tangan, menyatukan hati dan perasaan, baik paslon yang kalah maupun yang menang di pilkada,". 
+
+--------------------
+Ketua Umum DPP Partai Gerindra Prabowo Subianto berkata pada orasi politik, “Ada 101 daerah yang menggelar pilkada, 85 di antaranya sudah menetapkan hasil peroleh suara. Dari 85 daerah itu, kita menang di 45 kabupaten/kota dan tiga provinsi,” di hadapan ribuan kader Partai Gerindra Sulteng di Kota Palu, Sabtu 25 Februari.
+
+--------------------
+Prabowo yang akan mencalonkan diri lagi pada Pilpres 2019 nanti itu kemudian mengatakan dengan nada bertanya: apa yang buat Gerindra tetap menang?
+
+--------------------
+Fritz mengatakan, Bawaslu maupun Komisi Pemilihan Umum tidak pernah meminta adanya penundaan proses hukum tersebut. 
+
+--------------------
+Fritz berkata, "Saya dengan KPU saling berpandangan saat Menko Polhukam bilang demikian. Karena kami tidak meminta adanya penundaan,". 
+
+--------------------
+Hanta berkata dalam paparan survei Poltracking Indonesia bertajuk 'Peta Elektoral Kandidat Cagub-Cawagub Pilkada Jatim 2018', “Gap keunggulan itu masih jauh di bawah angka undecided voters yang lebih dari 21 persen,” di Hotel Sari Pan Pacific, Thamrin, Jakarta Pusat, Ahad 18 Maret.
+
+--------------------
+Hanta berkata dalam paparan survei Poltracking Indonesia bertajuk 'Peta Elektoral Kandidat Cagub-Cawagub Pilkada Jatim 2018', “Gap keunggulan itu masih jauh di bawah angka undecided voters yang lebih dari 21 persen,” di Hotel Sari Pan Pacific, Thamrin, Jakarta Pusat, Ahad 18 Maret.
+
+--------------------
+Sandiaga berkata, "Hari ini bersama Ustaz Syaikhu dan tim Asyik cek ekonomi masyarakat yang selama ini banyak dikeluhkan. Kami inginkan ekonomi masyarakat bergerak, lapangan kerja tercipta. Contohnya di Inimart, di mana bisa memberdayakan UMKM, sehingga ekonomi rakyat bisa tumbuh,"
+
+--------------------
+Cawagub Syaikhu mengatakan Inimart merupakan salah satu contoh suksesnya ekonomi masyarakat. Meski dihadapkan dengan berbagai kekuatan ritel lainnya, Inimart bisa tumbuh, bergerak dan bertahan.
+
+--------------------
+Cawagub Syaikhu berkata, "Semoga ini bisa diduplikasi di tempat-tempat lainnya. Sehingga basis perekonomian berbasis pesantren ini bisa tumbuh dan bertahan untuk mendapatkan keuntungan. Sehingga pesantren bisa tumbuh lebih baik lagi," 
+
+--------------------
+komisioner KPU Riau Divisi Program dan Data, Syapril Abdullah berkata, "Jumlah pemilih di DPS itu memungkinkan jumlahnya bertambah menjelang penetapan Daftar Pemilih Tetap," di Pekanbaru, Sabtu, 17 Maret 2018.
+
+--------------------
+Syapril berkata, untuk penambahan jumlah pemilih, dapat berasal dari jumlah pemilih potensial non-KTP elektronik atau Suket yang sudah keluar Nomor Induk Kependudukan-nya.
+
+--------------------
+Wakil Ketua KPK Laode Muhammad Syarif berkata, "KPK telah menemukan bukti permulaan yang cukup adanya dugaan tindak pidana korupsi,"  di kantor KPK, Jumat, 16 Maret 2018. 
+
+--------------------
+Ketua Dewan Kehormatan Penyelenggara Pemilu Harjono mengatakan Badan Pengawas Pemilu perlu membuktikan apakah dokumen legalisir ijazah milik JR Saragih sah atau tidak. Keaslian legalisir itu yang menjadi masalah dalam pencalonan JR Saragih.
+
+--------------------
+Harjono berkata, “Diklarifikasi dengan datang lagi ke Jakarta untuk membuktikan dokumen legalisirnya sah atau palsu. Karena yang diragukan kan dokumen legalisirnya,” kepada Tempo pada Ahad, 18 Maret 2016.
+
+--------------------
+Harjono mengatakan, jika ijazahnya memang ada, sebenarnya JR Saragih tetap memenuhi syarat menjadi calon gubernur Sumatera Utara.
+
+--------------------
+Harjono mengatakan, Bawaslu harus mempertayakan apakah ijazah itu hilang setelah dilegalisir atau sebelumnya.
+
+--------------------
+Karena itu, Harjono mengatakan JR Saragih seharusnya membuktikan keaslian ijazah yang JR Saragih miliki. Karena, jika ijazah maupun legalisirnya tidak sah, maka kasus itu menjadi semakin rumit.
+
+--------------------
+Zulkifl berkata, "DPR akan sidang paripurna hari Selasa 20/3/2018. Saya MPR, Selasa atau Rabu 21 Maret, sama. Karena undang-undang sudah disahkan, harus kita laksanakan. Kita ini negara hukum. Undang-undang sudah ada, maka kita taat-patuh pada hukum, kita laksanakan secepatnya," Kamis 15 Maret.
+
+--------------------
+JR Saragih mengatakan secara singkat, "Saya sudah selesai diperiksa, saya akan kembali bekerja seperti biasa sebagai bupati Simalungun. Sambil menunggu putusan PT TUN Medan," Senin 19 Maret 2018.
+
+--------------------
+Ketua Bawaslu Sumut Syafrida R Rasahan mengatakan, JR Saragih ditetapkan sebagai tersangka kasus dugaan penggunaan dokumen palsu saat pencalonan dirinya sebagai gubernur dan wakil gubernur Sumut 2018-2023.
+
+--------------------
+Syafrida mengatakan, "Bukan hanya Pak JR, KPU juga tidak bisa menghadiri panggilan kita dengan alasan kesibukan. Akhirnya kita limpahkan ke Sentra Gakkumdu untuk penyidikan dan penyelidikan lebih lanjut," 
+
+--------------------
+Nakti mengatakan, "Untuk mengantisipasi hal-hal yang tidak diinginkan," 
+
+(k/kata
+	:ARG0 (n/nakti
+	:ARG1 (a/antisipasi
+		:mod (h/hal
+		:mod (i/ingin
+		:polarity -)
+--------------------
+Ikhwaluddin berkata secara singkat, "Intinya kita tetap kooperatif, menunjukkan itikad baik sebagai negarawan karena JR Saragih juga bupati Simalungun," 
+
+--------------------
+Andi mengatakan, "Kita memiliki bukti konkrit. JR Saragih melanggar UU Nomor 10 Tahun 2016 Pasal 184 tentang pilkada dengan ancaman hukuman enam tahun penjara,"
+
+--------------------
+Airlangga mengatakan, "Tentunya ke depan kita melihat pada 2019, PDIP dan Golkar mengusung presiden, Pak Jokowi, tentu kita menyikronkan langkah-langkah ke depan," di kantor DPP Partai Golkar, Slipi, Jakarta, Selasa, 20 Maret 2018.
+
+--------------------
+Airlangga mengatakan, "Baru kali ini PDIP ke kantor Partai Golkar. Kalau pertemuan informal, sudah dilakukan dalam pertemuan untuk pilkada,"
+
+--------------------
+Namun, Airlangga berkata, pertemuan ini dilakukan untuk menyerap aspirasi dari PDI Perjuangan.
+
+(k/kata
+	:ARG0 (a/airlangga
+	:ARG1 (l/laku
+		:ARG1 (t/temu
+			:mod (s/serap
+			:mod (a/aspirasi
+				:mod (p/pdi
+				:mod (p/perjuangan)))
+--------------------
+Airlangga mengatakan adanya kemungkinan kunjungan balasan ke PDI Perjuangan.
+
+(k/kata
+	:ARG0 (a/airlangga
+	:ARG1 (k/kunjungan
+		:mod (b/balas
+	:location ( g / gedung
+		:name ( n / name 
+			:op1 “PDI”
+			:op2 “Perjuangan” ))))
+--------------------
+Ketua KPU Kabupaten Bandung Barat Iing Nurdin mengatakan, tiga pasangan calon peserta dalam Pilbup Bandung Barat 2018 selanjutnya dijadwalkan mengikuti pengundian nomor urut pasangan calon.
+
+--------------------
+ling berkata, "Setelah penetapan calon ini, selanjutnya kami akan melakukan pengundian nomor urut, 13 Februari 2018 besok. Setelah itu, pada hari yang sama, kami juga akan melakukan deklarasi pilkada damai bersama para pasangan calon. Ini merupakan bagian yang tidak terpisahkan," 
+
+--------------------
+ling berkata sesuai dengan Peraturan KPU Nomor 1 Tahun 2017, ketiga paslon akan memulai masa kampanye pada 15 Februari 2018.
+
+--------------------
+Ketua KPU Kab Bandung Barat, Iing Nurdin mengatakan, kegiatan hari ini merupakan pengundian nomor urut pasangan calon Bupati dan Wakil Bupati Bandung Barat dilanjutkan dengan deklarasi bersama pilkada damai.
+
+--------------------
+Direktur Eksekutif Charta Politika Yunarto Wijaya berkata, ''Mayoritas masyarakat menyukai nama yang dikenal".
+
+(k/kata
+	:ARG0 (d/direktur
+		:mod (e/eksekutif
+		:mod (c/charta
+		:mod (p/politika
+			: (o/orang
+				:nama (n/nama
+					:op1 “Yunarto”
+					:op2 :Wijaya”
+	:ARG1 (s/suka
+		:ARG0 (m1/mayoritas
+			:mod (m2/masyarakat
+		:ARG1 (n/nama
+			:mod (k/kenal)))
+--------------------
+Viryan berkata, "Jumlahnya lumayan banyak. Lebih detil akan kami umumkan nanti, datanya ada".
+
+--------------------
+Viryan berkata, "Harapannya simple saja, sangat berharap pemerintah bisa menyelesaikan pencetakan e-KTP atau penerbitan surat keterangan".
+
+--------------------
+Komisioner KPAI bidang Pengasuhan, Rita berkata, "Sebenarnya orang tua harus melihat yang terbaik bagi anak," di Jakarta, Selasa, 20 Maret 2018.
+
+--------------------
+Selain itu, Rita berkata mengikuti kampanye bagi anak menjadi rentan karena dapat terjebak dalam kerusuhan saat ada kegiatan politik secara terbuka.
+
+--------------------
+Rita berkata, "Ini yang sebenarnya pernah terjadi di Aceh sampai ada yang tertembak. Itu penting untuk kepentingan anak agar jadi prioritas".
+
+--------------------
+Rita mengatakan masa anak adalah periode emas yang tidak dapat tergantikan. Maka dari itu, orang tua sebaiknya bijak untuk tidak melibatkan anak dalam kegiatan kampanye politik.
+
+--------------------
+Rita berkata, "Lebih baik mengalah untuk mereka".
+
+(k/kata
+	:ARG0 (r/rita
+	:ARG1 (k/kalah
+		:ARG1 (l/lebih
+			:mod (b/baik
+			:mod (m/mereka)))
+--------------------
+Ketua KPU Kota Malang, Zaenudin mengatakan, meski ada penetapan tersangka terhadap calon, tahapan Pilkada Kota Malang 2018 tetap jalan seperti yang sudah dijadwalkan.
+
+--------------------
+Ketua KPU Kota Malang, Zaenudin berkata, "Perlu kami sampaikan proses tahapan Pilkada Kota Malang berjalan sebagaimana yang sudah kita jadwalkan," Kamis 22 Maret 2018.
+
+--------------------
+Ketua KPU Kota Malang, Zaenudin berkata ada dua prasyarat yang memenuhi untuk dilakukan penggantian calon yang sudah ditetapkan. Yakni meninggal dunia dan mendapat sanksi pidana yang memiliki kekuatan hukum tetap. Sementara status tersangka masih belum berkekuatan hukum tetap.
+
+--------------------
+Ketua KPU Kota Malang, Zaenudin berkata, "Terkait dengan calon yang menyandang status tersangka bahwa ini tidak mempengaruhi proses pencalonan dan tahapan yang berlangsung. Artinya bahwa penggantian calon yang sudah ditetapkan ada dua prasyarat, yang pertama meninggal dunia, yang kedua dijatuhi pidana yang telah berkekuatan hukum tetap".
+
+--------------------
+Rai Mantra mengatakan, "Saya sejak menjabat Wali Kota Denpasar tahun 2013 bersama DPRD Denpasar menolak proyek pembangunan Teluk Benoa di Kabupaten Badung, Bali," di Denpasar, Jumat, 23 Maret 2018.
+
+--------------------
+Rai Mantra mengatakan pihaknya secara tegas menolak segala kegiatan yang merugikan masyarakat.
+
+(k/kata
+	:ARG0 (o/orang
+		:nama (n/nama
+			:op1 “Rai”
+			:op2 “Mantra”
+	:ARG1 (p/pihak
+		:mod (t/tegas
+		:mod (t/tolak
+		:mod (k/kegiatan
+		:mod (r/rugi
+		:mod (m/masyarakat))))
+--------------------
+
